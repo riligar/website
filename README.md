@@ -13,3 +13,6 @@ Strong. Secure. Awesome. Try our random password generator.
 - [Minesweeper](https://minesweeper.online/)
 - [Futoshiki](https://www.futoshiki.com/)
 - [2048](https://pt.2048.org/)
+
+
+Maze - https://www.youtube.com/watch?v=HxoCaobgg70
