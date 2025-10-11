@@ -1,5 +1,7 @@
-import { render } from "preact"
+import React from "react"
+import { createRoot } from "react-dom/client"
+import AppRoutes from "./routes.jsx"
 
-import Routes from "./routes.jsx"
-
-render(<Routes />, document.getElementById("app"))
+const container = document.getElementById("app")
+const root = createRoot(container)
+root.render(<AppRoutes />)

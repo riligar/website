@@ -2,7 +2,7 @@ import "@mantine/core/styles.css"
 import "./assets/style.css"
 
 import { MantineProvider, createTheme } from "@mantine/core"
-import { LocationProvider, Router } from "preact-iso"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Home from "./pages/home.jsx"
 import Generator from "./pages/generator.jsx"
@@ -24,17 +24,18 @@ const theme = createTheme({
     headings: { fontFamily: "Montserrat, sans-serif" }
 })
 
-export default () => (
-    <LocationProvider>
+export default function AppRoutes() {
+    return (
         <MantineProvider theme={theme}>
-            <Router>
-                <Home path="/" />
-                <Manager path="/manager" />
-                <Generator path="/generator" />
-                <SendPassword path="/send-password" />
-                <SendText path="/send-text" />
-                {/* <NotFound default /> */}
-            </Router>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/manager" element={<Manager />} />
+                    <Route path="/generator" element={<Generator />} />
+                    <Route path="/send-password" element={<SendPassword />} />
+                    <Route path="/send-text" element={<SendText />} />
+                </Routes>
+            </BrowserRouter>
         </MantineProvider>
-    </LocationProvider>
-)
+    )
+}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "preact/hooks";
+import { useState, useEffect, useCallback } from "react";
 
 // Constants
 const GRID_SIZE = { width: 28, height: 31 };

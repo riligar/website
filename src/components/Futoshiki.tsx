@@ -1,6 +1,6 @@
 
 // https://www.futoshiki.com/
-import { useState, useEffect, useCallback } from "preact/hooks";
+import { useState, useEffect, useCallback } from "react";
 
 import { IconArrowNarrowLeft, IconArrowNarrowUp, IconArrowNarrowRight, IconArrowNarrowDown } from "@tabler/icons-react"
 

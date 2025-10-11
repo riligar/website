@@ -24,7 +24,7 @@ import { IconSquareAsterisk, IconFileText, IconLockPassword, IconChevronDown, Ic
 
 import classes from "./header.module.css"
 
-import { useLocation } from "preact-iso"
+import { useNavigate } from "react-router-dom"
 
 import logo from "/image/favicon-32x32.png"
 
@@ -56,14 +56,14 @@ const mockdata = [
 ]
 
 export default function HeaderMegaMenu() {
-    const location = useLocation()
+    const navigate = useNavigate()
 
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false)
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
     const theme = useMantineTheme()
 
     const links = mockdata.map(item => (
-        <UnstyledButton className={classes.subLink} key={item.title} onClick={() => location.route(item.pathname)}>
+        <UnstyledButton className={classes.subLink} key={item.title} onClick={() => navigate(item.pathname)}>
             <Group wrap="nowrap" align="flex-start">
                 <ThemeIcon size={34} variant="default" radius="md">
                     <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "react";
 
 const GRID_SIZE = 10;
 const BOMB_COUNT = 10;

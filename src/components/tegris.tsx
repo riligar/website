@@ -1,4 +1,4 @@
-import { useState, useEffect } from "preact/hooks";
+import { useState, useEffect } from "react";
 
 const GRID_WIDTH = 10;
 const GRID_HEIGHT = 20;

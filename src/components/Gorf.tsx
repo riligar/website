@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from "preact/hooks";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 type Difficulty = "beginner" | "intermediate" | "expert";
 
