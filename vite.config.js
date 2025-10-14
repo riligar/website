@@ -21,9 +21,9 @@ export default defineConfig({
             // },
             includeAssets: ['favicon.png', 'apple-touch-icon.png', 'masked-icon.svg'],
             manifest: {
-                name: 'Passwords',
-                short_name: 'Passwords',
-                description: 'A powerful generator for powerful passwords to protect your online accounts.',
+                name: 'Riligar',
+                short_name: 'Riligar',
+                description: 'Soluções inovadoras para gerenciamento seguro de senhas e dados.',
                 theme_color: '#ffffff',
                 icons: [
                     {

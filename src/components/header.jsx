@@ -87,7 +87,7 @@ export default function HeaderMegaMenu() {
                     <Group gap="xs">
                         <Image src={logo} h={30} />
                         <Text size="lg" fw={900} mt={1}>
-                            Passwords
+                            Riligar
                         </Text>
                     </Group>
                     {/* <IconAlignBoxRightStretch size={30} /> */}

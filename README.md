@@ -1,18 +1,18 @@
-## Passwords
+## Riligar - Password Management Solutions
 
-Strong. Secure. Awesome. Try our random password generator.
+Soluções completas e seguras para gerenciamento de senhas e dados sensíveis.
 
-### Components
+### Funcionalidades
 
-- [Mantine](https://mantine.dev/)
+- **Password Manager**: Gerencie suas senhas de forma segura
+- **Password Generator**: Gerador de senhas fortes e seguras
+- **Send Password**: Compartilhe senhas de forma segura
+- **Send Text**: Envie textos criptografados
+
+### Tecnologias Utilizadas
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Mantine UI](https://mantine.dev/)
+- [React Router](https://reactrouter.com/)
 - [Tabler Icons](https://tabler.io/icons)
-- [Tabler Icons for React](https://tabler.io/docs/icons/react)
-
-### References
-
-- [Minesweeper](https://minesweeper.online/)
-- [Futoshiki](https://www.futoshiki.com/)
-- [2048](https://pt.2048.org/)
-
-
-Maze - https://www.youtube.com/watch?v=HxoCaobgg70

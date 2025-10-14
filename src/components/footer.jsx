@@ -1,4 +1,4 @@
-import logo from "/images/logo-arcade.svg"
+import logo from "/image/favicon-32x32.png"
 
 import { Text, Container, ActionIcon, Group, rem, Image, Anchor } from "@mantine/core"
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from "@tabler/icons-react"
@@ -7,30 +7,30 @@ import classes from "./footer.module.css"
 
 const data = [
     {
-        title: "About",
+        title: "Empresa",
         links: [
-            { label: "Features", link: "#" },
-            { label: "Pricing", link: "#" },
-            { label: "Support", link: "#" },
-            { label: "Forums", link: "#" }
+            { label: "Sobre Nós", link: "#" },
+            { label: "Serviços", link: "#" },
+            { label: "Suporte", link: "#" },
+            { label: "Contato", link: "#" }
         ]
     },
     {
-        title: "Project",
+        title: "Soluções",
         links: [
-            { label: "Contribute", link: "#" },
-            { label: "Media assets", link: "#" },
-            { label: "Changelog", link: "#" },
-            { label: "Releases", link: "#" }
+            { label: "Password Manager", link: "/manager" },
+            { label: "Password Generator", link: "/generator" },
+            { label: "Send Password", link: "/send-password" },
+            { label: "Send Text", link: "/send-text" }
         ]
     },
     {
-        title: "Community",
+        title: "Recursos",
         links: [
-            { label: "Join Discord", link: "#" },
-            { label: "Follow on Twitter", link: "#" },
-            { label: "Email newsletter", link: "#" },
-            { label: "GitHub discussions", link: "#" }
+            { label: "Documentação", link: "#" },
+            { label: "Blog", link: "#" },
+            { label: "FAQ", link: "#" },
+            { label: "Política de Privacidade", link: "#" }
         ]
     }
 ]
@@ -60,15 +60,15 @@ export default function FooterLinks() {
         <footer className={classes.footer}>
             <Container className={classes.inner}>
                 <div className={classes.logo}>
-                    <Image src={logo} h={30} w={30} alt="Arcade" />
+                    <Image src={logo} h={30} w={30} alt="Riligar" />
                     <Text size="xs" c="dimmed" className={classes.description}>
-                        Clássicos que nunca envelhecem — jogue no seu navegador.
+                        Soluções inovadoras para gerenciamento seguro de senhas e dados.
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter}>
-                <Text c="dimmed" size="sm">© {new Date().getFullYear()} Arcade. Todos os direitos reservados.</Text>
+                <Text c="dimmed" size="sm">© {new Date().getFullYear()} Riligar. Todos os direitos reservados.</Text>
 
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
                     <ActionIcon size="lg" color="gray" variant="subtle">
