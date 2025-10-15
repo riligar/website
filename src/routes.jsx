@@ -4,6 +4,8 @@ import './assets/style.css'
 import { MantineProvider, createTheme } from '@mantine/core'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { loadAnalytics } from './utils/analytics.js'
+
 import Home from './pages/home.jsx'
 // import Generator from "./pages/generator.jsx"
 // import Manager from "./pages/manager.jsx"
@@ -25,6 +27,10 @@ const theme = createTheme({
 })
 
 export default function AppRoutes() {
+    useEffect(() => {
+        loadAnalytics()
+    }, [])
+
     return (
         <MantineProvider theme={theme}>
             <BrowserRouter>
