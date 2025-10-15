@@ -1,14 +1,14 @@
-import "@mantine/core/styles.css"
-import "./assets/style.css"
+import '@mantine/core/styles.css'
+import './assets/style.css'
 
-import { MantineProvider, createTheme } from "@mantine/core"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { MantineProvider, createTheme } from '@mantine/core'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from "./pages/home.jsx"
-import Generator from "./pages/generator.jsx"
-import Manager from "./pages/manager.jsx"
-import SendPassword from "./pages/send-password.jsx"
-import SendText from "./pages/send-text.jsx"
+import Home from './pages/home.jsx'
+// import Generator from "./pages/generator.jsx"
+// import Manager from "./pages/manager.jsx"
+// import SendPassword from "./pages/send-password.jsx"
+// import SendText from "./pages/send-text.jsx"
 
 // import {
 //   SignedIn,
@@ -19,9 +19,9 @@ import SendText from "./pages/send-text.jsx"
 // import NotFound from './pages/404.jsx'
 
 const theme = createTheme({
-    fontFamily: "Montserrat, sans-serif",
-    fontFamilyMonospace: "Monaco, Courier, monospace",
-    headings: { fontFamily: "Montserrat, sans-serif" }
+    fontFamily: 'Montserrat, sans-serif',
+    fontFamilyMonospace: 'Monaco, Courier, monospace',
+    headings: { fontFamily: 'Montserrat, sans-serif' },
 })
 
 export default function AppRoutes() {
@@ -29,11 +29,14 @@ export default function AppRoutes() {
         <MantineProvider theme={theme}>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/manager" element={<Manager />} />
+                    <Route
+                        path="/"
+                        element={<Home />}
+                    />
+                    {/* <Route path="/manager" element={<Manager />} />
                     <Route path="/generator" element={<Generator />} />
                     <Route path="/send-password" element={<SendPassword />} />
-                    <Route path="/send-text" element={<SendText />} />
+                    <Route path="/send-text" element={<SendText />} /> */}
                 </Routes>
             </BrowserRouter>
         </MantineProvider>

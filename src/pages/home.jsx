@@ -2,9 +2,9 @@ import { Space } from '@mantine/core'
 
 import Layout from '@/layout'
 
-import Hero from '@/components/manager/hero'
-import Features from '@/components/manager/features'
-import Faq from '@/components/manager/faq'
+import Hero from '@/components/hero'
+import Features from '@/components/features'
+import Faq from '@/components/faq'
 
 export default function Page() {
     return (

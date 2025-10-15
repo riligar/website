@@ -1,13 +1,13 @@
 export function generatePassword(length, includeNumbers = true, includeSymbols = true) {
-    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    const lowercase = "abcdefghijklmnopqrstuvwxyz"
-    const symbols = "!@#$%^&*()_+[]{}|;:,.<>?"
-    const numbers = "0123456789"
+    const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const lowercase = 'abcdefghijklmnopqrstuvwxyz'
+    const symbols = '!@#$%^&*()_+[]{}|;:,.<>?'
+    const numbers = '0123456789'
 
     let allChars = uppercase + lowercase
 
     // Arrays para garantir inclusão
-    let guaranteedChars = ""
+    let guaranteedChars = ''
 
     if (includeNumbers) {
         allChars += numbers
@@ -23,7 +23,8 @@ export function generatePassword(length, includeNumbers = true, includeSymbols =
     const array = new Uint32Array(length - guaranteedChars.length)
 
     // Preenche o array com números aleatórios usando o crypto.getRandomValues
-    window.crypto.getRandomValues(array)
+    const cryptoObj = typeof window !== 'undefined' ? window.crypto : crypto
+    cryptoObj.getRandomValues(array)
 
     for (let i = 0; i < array.length; i++) {
         const randomIndex = array[i] % allChars.length
@@ -32,7 +33,7 @@ export function generatePassword(length, includeNumbers = true, includeSymbols =
 
     // Embaralha a senha para que os caracteres garantidos não estejam sempre no início
     return password
-        .split("")
+        .split('')
         .sort(() => 0.5 - Math.random())
-        .join("")
+        .join('')
 }
