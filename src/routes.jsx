@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '@mantine/core/styles.css'
 import './assets/style.css'
 
