@@ -16,43 +16,43 @@ import {
     Collapse,
     ScrollArea,
     rem,
-    useMantineTheme
-} from "@mantine/core"
+    useMantineTheme,
+} from '@mantine/core'
 
-import { useDisclosure } from "@mantine/hooks"
-import { IconSquareAsterisk, IconFileText, IconLockPassword, IconChevronDown, IconPassword } from "@tabler/icons-react"
+import { useDisclosure } from '@mantine/hooks'
+import { IconSquareAsterisk, IconFileText, IconLockPassword, IconChevronDown, IconPassword } from '@tabler/icons-react'
 
-import classes from "./header.module.css"
+import classes from './header.module.css'
 
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
-import logo from "/image/favicon-32x32.png"
+import logo from '/image/riligar-logotipo.png'
 
 const mockdata = [
     {
         icon: IconLockPassword,
-        title: "Password Manager",
-        description: "The fluid of Smeargle’s tail secretions changes",
-        pathname: "/manager"
+        title: 'Password Manager',
+        description: 'The fluid of Smeargle’s tail secretions changes',
+        pathname: '/manager',
     },
     {
         icon: IconPassword,
-        title: "Password Generator",
-        description: "A powerful generator for powerful passwords to protect your online accounts",
-        pathname: "/generator"
+        title: 'Password Generator',
+        description: 'A powerful generator for powerful passwords to protect your online accounts',
+        pathname: '/generator',
     },
     {
         icon: IconSquareAsterisk,
-        title: "Send Password",
-        description: "Yanma is capable of seeing 360 degrees without",
-        pathname: "/send-password"
+        title: 'Send Password',
+        description: 'Yanma is capable of seeing 360 degrees without',
+        pathname: '/send-password',
     },
     {
         icon: IconFileText,
-        title: "Send Text",
-        description: "The shell’s rounded shape and the grooves on its.",
-        pathname: "/send-text"
-    }
+        title: 'Send Text',
+        description: 'The shell’s rounded shape and the grooves on its.',
+        pathname: '/send-text',
+    },
 ]
 
 export default function HeaderMegaMenu() {
@@ -63,16 +63,36 @@ export default function HeaderMegaMenu() {
     const theme = useMantineTheme()
 
     const links = mockdata.map(item => (
-        <UnstyledButton className={classes.subLink} key={item.title} onClick={() => navigate(item.pathname)}>
-            <Group wrap="nowrap" align="flex-start">
-                <ThemeIcon size={34} variant="default" radius="md">
-                    <item.icon style={{ width: rem(22), height: rem(22) }} color={theme.colors.blue[6]} />
+        <UnstyledButton
+            className={classes.subLink}
+            key={item.title}
+            onClick={() => navigate(item.pathname)}
+        >
+            <Group
+                wrap="nowrap"
+                align="flex-start"
+            >
+                <ThemeIcon
+                    size={34}
+                    variant="default"
+                    radius="md"
+                >
+                    <item.icon
+                        style={{ width: rem(22), height: rem(22) }}
+                        color={theme.colors.blue[6]}
+                    />
                 </ThemeIcon>
                 <div>
-                    <Text size="sm" fw={500}>
+                    <Text
+                        size="sm"
+                        fw={500}
+                    >
                         {item.title}
                     </Text>
-                    <Text size="xs" c="dimmed">
+                    <Text
+                        size="xs"
+                        c="dimmed"
+                    >
                         {item.description}
                     </Text>
                 </div>
@@ -83,23 +103,52 @@ export default function HeaderMegaMenu() {
     return (
         <Box pb={21}>
             <header className={classes.header}>
-                <Group justify="space-between" h="100%">
+                <Group
+                    justify="space-between"
+                    h="100%"
+                >
                     <Group gap="xs">
-                        <Image src={logo} h={30} />
-                        <Text size="lg" fw={900} mt={1}>
+                        <Image
+                            src={logo}
+                            h={30}
+                        />
+                        {/* <Text
+                            size="lg"
+                            fw={900}
+                            mt={1}
+                        >
                             Riligar
-                        </Text>
+                        </Text> */}
                     </Group>
                     {/* <IconAlignBoxRightStretch size={30} /> */}
-                    <Group h="100%" gap={0} visibleFrom="sm">
-                        <a href="/" className={classes.link}>
+                    <Group
+                        h="100%"
+                        gap={0}
+                        visibleFrom="sm"
+                    >
+                        <a
+                            href="/"
+                            className={classes.link}
+                        >
                             Home
                         </a>
-                        <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
+                        <HoverCard
+                            width={600}
+                            position="bottom"
+                            radius="md"
+                            shadow="md"
+                            withinPortal
+                        >
                             <HoverCard.Target>
-                                <a href="#" className={classes.link}>
+                                <a
+                                    href="#"
+                                    className={classes.link}
+                                >
                                     <Center inline>
-                                        <Box component="span" mr={5}>
+                                        <Box
+                                            component="span"
+                                            mr={5}
+                                        >
                                             Solutions
                                         </Box>
                                         <IconChevronDown
@@ -110,8 +159,11 @@ export default function HeaderMegaMenu() {
                                 </a>
                             </HoverCard.Target>
 
-                            <HoverCard.Dropdown style={{ overflow: "hidden" }}>
-                                <Group justify="space-between" px="md">
+                            <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+                                <Group
+                                    justify="space-between"
+                                    px="md"
+                                >
                                     <Text fw={500}>How will we help you</Text>
                                     {/* <Anchor href="#" fz="xs">
                                         View all
@@ -120,17 +172,26 @@ export default function HeaderMegaMenu() {
 
                                 <Divider my="sm" />
 
-                                <SimpleGrid cols={2} spacing={0}>
+                                <SimpleGrid
+                                    cols={2}
+                                    spacing={0}
+                                >
                                     {links}
                                 </SimpleGrid>
 
                                 <div className={classes.dropdownFooter}>
                                     <Group justify="space-between">
                                         <div>
-                                            <Text fw={500} fz="sm">
+                                            <Text
+                                                fw={500}
+                                                fz="sm"
+                                            >
                                                 Get started
                                             </Text>
-                                            <Text size="xs" c="dimmed">
+                                            <Text
+                                                size="xs"
+                                                c="dimmed"
+                                            >
                                                 Their food sources have decreased, and their numbers
                                             </Text>
                                         </div>
@@ -139,7 +200,10 @@ export default function HeaderMegaMenu() {
                                 </div>
                             </HoverCard.Dropdown>
                         </HoverCard>
-                        <a href="#" className={classes.link}>
+                        <a
+                            href="#"
+                            className={classes.link}
+                        >
                             Learn
                         </a>
                         {/* <a href="#" className={classes.link}>
@@ -150,7 +214,11 @@ export default function HeaderMegaMenu() {
                         <Button variant="default">Log in</Button>
                         <Button>Sign up</Button>
                     </Group>
-                    <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+                    <Burger
+                        opened={drawerOpened}
+                        onClick={toggleDrawer}
+                        hiddenFrom="sm"
+                    />
                 </Group>
             </header>
 
@@ -161,32 +229,59 @@ export default function HeaderMegaMenu() {
                 padding="md"
                 title="Navigation"
                 hiddenFrom="sm"
-                zIndex={1000000}>
-                <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+                zIndex={1000000}
+            >
+                <ScrollArea
+                    h={`calc(100vh - ${rem(80)})`}
+                    mx="-md"
+                >
                     <Divider my="sm" />
 
-                    <a href="/" className={classes.link}>
+                    <a
+                        href="/"
+                        className={classes.link}
+                    >
                         Home
                     </a>
-                    <UnstyledButton className={classes.link} onClick={toggleLinks}>
+                    <UnstyledButton
+                        className={classes.link}
+                        onClick={toggleLinks}
+                    >
                         <Center inline>
-                            <Box component="span" mr={5}>
+                            <Box
+                                component="span"
+                                mr={5}
+                            >
                                 Solutions
                             </Box>
-                            <IconChevronDown style={{ width: rem(16), height: rem(16) }} color={theme.colors.blue[6]} />
+                            <IconChevronDown
+                                style={{ width: rem(16), height: rem(16) }}
+                                color={theme.colors.blue[6]}
+                            />
                         </Center>
                     </UnstyledButton>
                     <Collapse in={linksOpened}>{links}</Collapse>
-                    <a href="#" className={classes.link}>
+                    <a
+                        href="#"
+                        className={classes.link}
+                    >
                         Learn
                     </a>
-                    <a href="#" className={classes.link}>
+                    <a
+                        href="#"
+                        className={classes.link}
+                    >
                         Academy
                     </a>
 
                     <Divider my="sm" />
 
-                    <Group justify="center" grow pb="xl" px="md">
+                    <Group
+                        justify="center"
+                        grow
+                        pb="xl"
+                        px="md"
+                    >
                         <Button variant="default">Log in</Button>
                         <Button>Sign up</Button>
                     </Group>
