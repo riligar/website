@@ -101,126 +101,128 @@ export default function HeaderMegaMenu() {
     ))
 
     return (
-        <Box pb={21}>
-            <header className={classes.header}>
-                <Group
-                    justify="space-between"
-                    h="100%"
-                >
-                    <Group gap="xs">
-                        <Image
-                            src={logo}
-                            h={30}
-                        />
-                        {/* <Text
+        <>
+            <Box className={classes.headerWrapper}>
+                <header className={classes.header}>
+                    <Group
+                        justify="space-between"
+                        h="100%"
+                    >
+                        <Group gap="xs">
+                            <Image
+                                src={logo}
+                                h={30}
+                            />
+                            {/* <Text
                             size="lg"
                             fw={900}
                             mt={1}
                         >
                             Riligar
                         </Text> */}
-                    </Group>
-                    {/* <IconAlignBoxRightStretch size={30} /> */}
-                    <Group
-                        h="100%"
-                        gap={0}
-                        visibleFrom="sm"
-                    >
-                        <a
-                            href="/"
-                            className={classes.link}
+                        </Group>
+                        {/* <IconAlignBoxRightStretch size={30} /> */}
+                        <Group
+                            h="100%"
+                            gap={0}
+                            visibleFrom="sm"
                         >
-                            Home
-                        </a>
-                        <HoverCard
-                            width={600}
-                            position="bottom"
-                            radius="md"
-                            shadow="md"
-                            withinPortal
-                        >
-                            <HoverCard.Target>
-                                <a
-                                    href="#"
-                                    className={classes.link}
-                                >
-                                    <Center inline>
-                                        <Box
-                                            component="span"
-                                            mr={5}
-                                        >
-                                            Solutions
-                                        </Box>
-                                        <IconChevronDown
-                                            style={{ width: rem(16), height: rem(16) }}
-                                            color={theme.colors.blue[6]}
-                                        />
-                                    </Center>
-                                </a>
-                            </HoverCard.Target>
+                            <a
+                                href="/"
+                                className={classes.link}
+                            >
+                                Home
+                            </a>
+                            <HoverCard
+                                width={600}
+                                position="bottom"
+                                radius="md"
+                                shadow="md"
+                                withinPortal
+                            >
+                                <HoverCard.Target>
+                                    <a
+                                        href="#"
+                                        className={classes.link}
+                                    >
+                                        <Center inline>
+                                            <Box
+                                                component="span"
+                                                mr={5}
+                                            >
+                                                Solutions
+                                            </Box>
+                                            <IconChevronDown
+                                                style={{ width: rem(16), height: rem(16) }}
+                                                color={theme.colors.blue[6]}
+                                            />
+                                        </Center>
+                                    </a>
+                                </HoverCard.Target>
 
-                            <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
-                                <Group
-                                    justify="space-between"
-                                    px="md"
-                                >
-                                    <Text fw={500}>How will we help you</Text>
-                                    {/* <Anchor href="#" fz="xs">
+                                <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+                                    <Group
+                                        justify="space-between"
+                                        px="md"
+                                    >
+                                        <Text fw={500}>How will we help you</Text>
+                                        {/* <Anchor href="#" fz="xs">
                                         View all
                                     </Anchor> */}
-                                </Group>
-
-                                <Divider my="sm" />
-
-                                <SimpleGrid
-                                    cols={2}
-                                    spacing={0}
-                                >
-                                    {links}
-                                </SimpleGrid>
-
-                                <div className={classes.dropdownFooter}>
-                                    <Group justify="space-between">
-                                        <div>
-                                            <Text
-                                                fw={500}
-                                                fz="sm"
-                                            >
-                                                Get started
-                                            </Text>
-                                            <Text
-                                                size="xs"
-                                                c="dimmed"
-                                            >
-                                                Their food sources have decreased, and their numbers
-                                            </Text>
-                                        </div>
-                                        <Button variant="default">Stop taking risks</Button>
                                     </Group>
-                                </div>
-                            </HoverCard.Dropdown>
-                        </HoverCard>
-                        <a
-                            href="#"
-                            className={classes.link}
-                        >
-                            Learn
-                        </a>
-                        {/* <a href="#" className={classes.link}>
+
+                                    <Divider my="sm" />
+
+                                    <SimpleGrid
+                                        cols={2}
+                                        spacing={0}
+                                    >
+                                        {links}
+                                    </SimpleGrid>
+
+                                    <div className={classes.dropdownFooter}>
+                                        <Group justify="space-between">
+                                            <div>
+                                                <Text
+                                                    fw={500}
+                                                    fz="sm"
+                                                >
+                                                    Get started
+                                                </Text>
+                                                <Text
+                                                    size="xs"
+                                                    c="dimmed"
+                                                >
+                                                    Their food sources have decreased, and their numbers
+                                                </Text>
+                                            </div>
+                                            <Button variant="default">Stop taking risks</Button>
+                                        </Group>
+                                    </div>
+                                </HoverCard.Dropdown>
+                            </HoverCard>
+                            <a
+                                href="#"
+                                className={classes.link}
+                            >
+                                Learn
+                            </a>
+                            {/* <a href="#" className={classes.link}>
                             Academy
                         </a> */}
+                        </Group>
+                        <Group visibleFrom="sm">
+                            <Button variant="default">Log in</Button>
+                            <Button>Sign up</Button>
+                        </Group>
+                        <Burger
+                            opened={drawerOpened}
+                            onClick={toggleDrawer}
+                            hiddenFrom="sm"
+                        />
                     </Group>
-                    <Group visibleFrom="sm">
-                        <Button variant="default">Log in</Button>
-                        <Button>Sign up</Button>
-                    </Group>
-                    <Burger
-                        opened={drawerOpened}
-                        onClick={toggleDrawer}
-                        hiddenFrom="sm"
-                    />
-                </Group>
-            </header>
+                </header>
+            </Box>
 
             <Drawer
                 opened={drawerOpened}
@@ -287,6 +289,16 @@ export default function HeaderMegaMenu() {
                     </Group>
                 </ScrollArea>
             </Drawer>
-        </Box>
+
+            {/* Spacer para compensar o header fixo */}
+            <Box
+                style={{ height: rem(70) }}
+                visibleFrom="sm"
+            />
+            <Box
+                style={{ height: rem(60) }}
+                hiddenFrom="sm"
+            />
+        </>
     )
 }
