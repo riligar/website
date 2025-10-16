@@ -162,6 +162,10 @@ export default function Testimonials() {
                     mt={50}
                 >
                     <Button
+                        component="a"
+                        href="https://blog.ciromaciel.click"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="md"
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}

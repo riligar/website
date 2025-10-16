@@ -1,6 +1,9 @@
 import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
 
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de iniciar um projeto com a RiLiGar. Podemos conversar?')
+const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
+
 const steps = [
     {
         icon: IconMessageCircle,
@@ -134,6 +137,10 @@ export default function Process() {
                     mt={60}
                 >
                     <Button
+                        component="a"
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="lg"
                         leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
                     >

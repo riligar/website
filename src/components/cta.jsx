@@ -2,6 +2,11 @@ import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@ma
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
 
 export default function CTA() {
+    const whatsappMessage = encodeURIComponent(
+        'Olá! Gostaria de conhecer mais sobre as soluções da RiLiGar. Podemos agendar uma conversa?'
+    )
+    const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
+
     return (
         <Box
             component="section"
@@ -38,12 +43,18 @@ export default function CTA() {
                     gap="md"
                 >
                     <Button
+                        component="a"
+                        href="/contact"
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
                         Explore Solutions
                     </Button>
                     <Button
+                        component="a"
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="xl"
                         variant="outline"
                         leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}

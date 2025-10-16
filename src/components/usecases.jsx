@@ -21,6 +21,11 @@ import {
     IconArrowRight,
 } from '@tabler/icons-react'
 
+const whatsappMessage = encodeURIComponent(
+    'Olá! Gostaria de discutir meu caso de uso com a RiLiGar. Podemos conversar?'
+)
+const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
+
 const useCases = [
     {
         icon: IconRobot,
@@ -173,6 +178,10 @@ export default function UseCases() {
                     mt={50}
                 >
                     <Button
+                        component="a"
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="lg"
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}

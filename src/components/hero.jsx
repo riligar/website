@@ -2,6 +2,11 @@ import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem, Button, Group } fr
 import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
 
 export default function Hero() {
+    const whatsappMessage = encodeURIComponent(
+        'Olá! Gostaria de conhecer mais sobre as soluções da RiLiGar. Podemos conversar?'
+    )
+    const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
+
     return (
         <Box
             component="section"
@@ -102,6 +107,8 @@ export default function Hero() {
                         style={{ flexWrap: 'wrap' }}
                     >
                         <Button
+                            component="a"
+                            href="/contact"
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}
@@ -109,6 +116,10 @@ export default function Hero() {
                             Explore Solutions
                         </Button>
                         <Button
+                            component="a"
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             size="lg"
                             variant="outline"
                             leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}

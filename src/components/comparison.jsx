@@ -199,6 +199,8 @@ export default function Comparison() {
                     mt="xl"
                 >
                     <Button
+                        component="a"
+                        href="/about"
                         size="md"
                         variant="light"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
