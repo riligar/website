@@ -1,5 +1,5 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
-import { IconRocket, IconMail } from '@tabler/icons-react'
+import { IconRocket, IconCalendar } from '@tabler/icons-react'
 
 export default function CTA() {
     return (
@@ -37,14 +37,14 @@ export default function CTA() {
                 >
                     <Button
                         size="xl"
-                        leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
+                        leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
                         Explore Solutions
                     </Button>
                     <Button
                         size="xl"
                         variant="outline"
-                        leftSection={<IconMail style={{ width: rem(20), height: rem(20) }} />}
+                        leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
                     >
                         Schedule a Call
                     </Button>

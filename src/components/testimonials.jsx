@@ -1,5 +1,5 @@
-import { Box, Title, Text, Card, SimpleGrid, Avatar, Group, Rating, Container, Badge } from '@mantine/core'
-import { IconQuote } from '@tabler/icons-react'
+import { Box, Title, Text, Card, SimpleGrid, Avatar, Group, Rating, Container, Badge, Button, rem } from '@mantine/core'
+import { IconQuote, IconArrowRight } from '@tabler/icons-react'
 
 const testimonials = [
     {
@@ -151,6 +151,19 @@ export default function Testimonials() {
                         </Card>
                     ))}
                 </SimpleGrid>
+
+                <Group
+                    justify="center"
+                    mt={50}
+                >
+                    <Button
+                        size="md"
+                        variant="outline"
+                        rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
+                    >
+                        Read More Stories
+                    </Button>
+                </Group>
             </Container>
         </Box>
     )

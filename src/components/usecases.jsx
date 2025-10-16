@@ -1,5 +1,25 @@
-import { Box, Title, Text, Container, Card, SimpleGrid, Badge, Group, List, ThemeIcon, rem } from '@mantine/core'
-import { IconCheck, IconRobot, IconChartBar, IconCloudComputing, IconSparkles } from '@tabler/icons-react'
+import {
+    Box,
+    Title,
+    Text,
+    Container,
+    Card,
+    SimpleGrid,
+    Badge,
+    Group,
+    List,
+    ThemeIcon,
+    rem,
+    Button,
+} from '@mantine/core'
+import {
+    IconCheck,
+    IconRobot,
+    IconChartBar,
+    IconCloudComputing,
+    IconSparkles,
+    IconArrowRight,
+} from '@tabler/icons-react'
 
 const useCases = [
     {
@@ -142,6 +162,19 @@ export default function UseCases() {
                         </Card>
                     ))}
                 </SimpleGrid>
+
+                <Group
+                    justify="center"
+                    mt={50}
+                >
+                    <Button
+                        size="lg"
+                        variant="outline"
+                        rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
+                    >
+                        Discuss Your Use Case
+                    </Button>
+                </Group>
             </Container>
         </Box>
     )

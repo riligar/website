@@ -1,5 +1,5 @@
-import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group } from '@mantine/core'
-import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp } from '@tabler/icons-react'
+import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
+import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
 
 const steps = [
     {
@@ -125,6 +125,18 @@ export default function Process() {
                         </Box>
                     ))}
                 </SimpleGrid>
+
+                <Group
+                    justify="center"
+                    mt={60}
+                >
+                    <Button
+                        size="lg"
+                        leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
+                    >
+                        Start Your Project Today
+                    </Button>
+                </Group>
             </Container>
         </Box>
     )

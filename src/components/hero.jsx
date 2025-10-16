@@ -1,5 +1,5 @@
 import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem, Button, Group } from '@mantine/core'
-import { IconCheck, IconRocket } from '@tabler/icons-react'
+import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
 
 export default function Hero() {
     return (
@@ -104,6 +104,7 @@ export default function Hero() {
                         <Button
                             size="lg"
                             variant="outline"
+                            leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
                         >
                             Talk to Us
                         </Button>

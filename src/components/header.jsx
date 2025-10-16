@@ -20,7 +20,15 @@ import {
 } from '@mantine/core'
 
 import { useDisclosure } from '@mantine/hooks'
-import { IconChartBar, IconCloudComputing, IconRobot, IconSparkles, IconChevronDown } from '@tabler/icons-react'
+import {
+    IconChartBar,
+    IconCloudComputing,
+    IconRobot,
+    IconSparkles,
+    IconChevronDown,
+    IconLayoutGrid,
+    IconPhone,
+} from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
 
 import classes from './header.module.css'
@@ -205,7 +213,14 @@ export default function HeaderMegaMenu() {
                                                     Discover the perfect solution for your business
                                                 </Text>
                                             </div>
-                                            <Button variant="default">View Solutions</Button>
+                                            <Button
+                                                variant="default"
+                                                leftSection={
+                                                    <IconLayoutGrid style={{ width: rem(16), height: rem(16) }} />
+                                                }
+                                            >
+                                                View Solutions
+                                            </Button>
                                         </Group>
                                     </div>
                                 </HoverCard.Dropdown>
@@ -227,10 +242,16 @@ export default function HeaderMegaMenu() {
                             <Button
                                 size="xs"
                                 variant="outline"
+                                leftSection={<IconLayoutGrid style={{ width: rem(14), height: rem(14) }} />}
                             >
                                 Solutions
                             </Button>
-                            <Button size="xs">Contact Us</Button>
+                            <Button
+                                size="xs"
+                                leftSection={<IconPhone style={{ width: rem(14), height: rem(14) }} />}
+                            >
+                                Contact Us
+                            </Button>
                         </Group>
                         <Burger
                             opened={drawerOpened}
@@ -299,8 +320,15 @@ export default function HeaderMegaMenu() {
                         pb="xl"
                         px="md"
                     >
-                        <Button variant="default">Solutions</Button>
-                        <Button>Contact Us</Button>
+                        <Button
+                            variant="default"
+                            leftSection={<IconLayoutGrid style={{ width: rem(16), height: rem(16) }} />}
+                        >
+                            Solutions
+                        </Button>
+                        <Button leftSection={<IconPhone style={{ width: rem(16), height: rem(16) }} />}>
+                            Contact Us
+                        </Button>
                     </Group>
                 </ScrollArea>
             </Drawer>

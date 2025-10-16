@@ -1,5 +1,5 @@
-import { Box, Title, Text, Container, Table, Badge, Group, ThemeIcon, rem } from '@mantine/core'
-import { IconCheck, IconX } from '@tabler/icons-react'
+import { Box, Title, Text, Container, Table, Badge, Group, ThemeIcon, rem, Button } from '@mantine/core'
+import { IconCheck, IconX, IconArrowRight } from '@tabler/icons-react'
 
 const comparisons = [
     {
@@ -185,10 +185,24 @@ export default function Comparison() {
                     c="dimmed"
                     ta="center"
                     mt="xl"
+                    mb="lg"
                 >
                     We focus on what matters: solving your problems efficiently with solutions that work. No
                     bureaucracy, no bloated teams, no maximizing billable hours—just honest, expert work.
                 </Text>
+
+                <Group
+                    justify="center"
+                    mt="xl"
+                >
+                    <Button
+                        size="md"
+                        variant="light"
+                        rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
+                    >
+                        See How We Work
+                    </Button>
+                </Group>
             </Container>
         </Box>
     )
