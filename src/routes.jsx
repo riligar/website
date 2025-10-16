@@ -10,18 +10,7 @@ import { loadAnalytics } from './utils/analytics.js'
 import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Contact from './pages/contact.jsx'
-// import Generator from "./pages/generator.jsx"
-// import Manager from "./pages/manager.jsx"
-// import SendPassword from "./pages/send-password.jsx"
-// import SendText from "./pages/send-text.jsx"
-
-// import {
-//   SignedIn,
-//   SignedOut,
-//   SignInButton,
-//   UserButton,
-// } from "@clerk/clerk-react";
-// import NotFound from './pages/404.jsx'
+import NotFoundPage from './pages/404.jsx'
 
 const theme = createTheme({
     fontFamily: 'Montserrat, sans-serif',
@@ -50,10 +39,10 @@ export default function AppRoutes() {
                         path="/contact"
                         element={<Contact />}
                     />
-                    {/* <Route path="/manager" element={<Manager />} />
-                    <Route path="/generator" element={<Generator />} />
-                    <Route path="/send-password" element={<SendPassword />} />
-                    <Route path="/send-text" element={<SendText />} /> */}
+                    <Route
+                        path="*"
+                        element={<NotFoundPage />}
+                    />
                 </Routes>
             </BrowserRouter>
         </MantineProvider>

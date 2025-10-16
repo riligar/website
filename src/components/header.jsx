@@ -26,8 +26,7 @@ import {
     IconRobot,
     IconSparkles,
     IconChevronDown,
-    IconLayoutGrid,
-    IconPhone,
+    IconRocket,
 } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
 
@@ -71,6 +70,12 @@ export default function HeaderMegaMenu() {
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
     const [scrolled, setScrolled] = useState(false)
     const theme = useMantineTheme()
+
+    // WhatsApp link with pre-filled message
+    const whatsappMessage = encodeURIComponent(
+        "Hi! I'm interested in learning more about RiLiGar's solutions. I'd like to discuss how AI Agents, Salesforce solutions, or SaaS platforms could help my business."
+    )
+    const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
     useEffect(() => {
         const handleScroll = () => {
@@ -128,19 +133,18 @@ export default function HeaderMegaMenu() {
                         justify="space-between"
                         h="100%"
                     >
-                        <Group gap="xs">
-                            <Image
-                                src={logo}
-                                h={30}
-                            />
-                            {/* <Text
-                            size="lg"
-                            fw={900}
-                            mt={1}
+                        <UnstyledButton
+                            component="a"
+                            href="/"
+                            style={{ display: 'flex', alignItems: 'center' }}
                         >
-                            Riligar
-                        </Text> */}
-                        </Group>
+                            <Group gap="xs">
+                                <Image
+                                    src={logo}
+                                    h={30}
+                                />
+                            </Group>
+                        </UnstyledButton>
                         {/* <IconAlignBoxRightStretch size={30} /> */}
                         <Group
                             h="100%"
@@ -214,12 +218,14 @@ export default function HeaderMegaMenu() {
                                                 </Text>
                                             </div>
                                             <Button
+                                                component="a"
+                                                href={whatsappLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                                 variant="default"
-                                                leftSection={
-                                                    <IconLayoutGrid style={{ width: rem(16), height: rem(16) }} />
-                                                }
+                                                leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                                             >
-                                                View Solutions
+                                                Start a Project
                                             </Button>
                                         </Group>
                                     </div>
@@ -240,17 +246,14 @@ export default function HeaderMegaMenu() {
                         </Group>
                         <Group visibleFrom="sm">
                             <Button
-                                size="xs"
-                                variant="outline"
-                                leftSection={<IconLayoutGrid style={{ width: rem(14), height: rem(14) }} />}
+                                component="a"
+                                href={whatsappLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                size="md"
+                                leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                             >
-                                Solutions
-                            </Button>
-                            <Button
-                                size="xs"
-                                leftSection={<IconPhone style={{ width: rem(14), height: rem(14) }} />}
-                            >
-                                Contact Us
+                                Start a Project
                             </Button>
                         </Group>
                         <Burger
@@ -321,13 +324,14 @@ export default function HeaderMegaMenu() {
                         px="md"
                     >
                         <Button
-                            variant="default"
-                            leftSection={<IconLayoutGrid style={{ width: rem(16), height: rem(16) }} />}
+                            component="a"
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            size="lg"
+                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            Solutions
-                        </Button>
-                        <Button leftSection={<IconPhone style={{ width: rem(16), height: rem(16) }} />}>
-                            Contact Us
+                            Start a Project
                         </Button>
                     </Group>
                 </ScrollArea>
