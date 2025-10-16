@@ -16,7 +16,7 @@ export default function CTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Ready to Transform Your Business?
+                    Find the Perfect Solution for Your Business
                 </Title>
 
                 <Text
@@ -27,8 +27,8 @@ export default function CTA() {
                     maw={600}
                     mx="auto"
                 >
-                    Let's discuss how RiLiGar can help you build powerful, efficient solutions that drive real growth.
-                    No pressure, just honest conversation between technical experts.
+                    Whether you need AI Agents, Salesforce solutions, SaaS platforms, or AI integration—we have the
+                    expertise to deliver. Let's explore which solution fits your needs best.
                 </Text>
 
                 <Group
@@ -39,14 +39,14 @@ export default function CTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                     >
-                        Start Your Project
+                        Explore Solutions
                     </Button>
                     <Button
                         size="xl"
                         variant="outline"
                         leftSection={<IconMail style={{ width: rem(20), height: rem(20) }} />}
                     >
-                        Contact Us
+                        Schedule a Call
                     </Button>
                 </Group>
 
@@ -61,13 +61,13 @@ export default function CTA() {
                             fw={700}
                             c="blue"
                         >
-                            100%
+                            4+
                         </Text>
                         <Text
                             size="sm"
                             c="dimmed"
                         >
-                            Client Satisfaction
+                            Solutions Available
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -76,13 +76,13 @@ export default function CTA() {
                             fw={700}
                             c="blue"
                         >
-                            Fast
+                            2-3 Weeks
                         </Text>
                         <Text
                             size="sm"
                             c="dimmed"
                         >
-                            Response Time
+                            To First Results
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -91,13 +91,13 @@ export default function CTA() {
                             fw={700}
                             c="blue"
                         >
-                            Clean
+                            24/7
                         </Text>
                         <Text
                             size="sm"
                             c="dimmed"
                         >
-                            Code Quality
+                            AI Agents Working
                         </Text>
                     </Box>
                 </Group>

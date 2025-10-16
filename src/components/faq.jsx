@@ -2,43 +2,53 @@ import { Box, Title, Text, Accordion, Space } from '@mantine/core'
 
 const faq = [
     {
-        question: 'What services does RiLiGar provide?',
-        answer: `RiLiGar specializes in three core areas: Salesforce development, SaaS application development, and AI integration. We create custom Salesforce components and Lightning Web Components that enhance your CRM workflows. Our SaaS solutions are built with clean, lightweight architecture designed for maximum performance and cost-efficiency. Additionally, we integrate cutting-edge AI technologies to automate processes and unlock new capabilities for your business.`,
+        question: 'What solutions does RiLiGar offer?',
+        answer: `RiLiGar delivers four main solutions: AI Agents, Salesforce Solutions, SaaS Platforms, and AI Integration Services. Our AI Agents are intelligent autonomous systems that work 24/7 to automate tasks and make decisions. We build custom Salesforce components and Lightning Web Components that enhance your CRM. Our SaaS platforms are built with modern, scalable architecture. And our AI integration services bring cutting-edge AI capabilities to your existing systems.`,
     },
     {
-        question: 'Why choose RiLiGar over larger development agencies?',
+        question: 'What are AI Agents and how can they help my business?',
+        answer: `AI Agents are intelligent, autonomous software systems that can perform tasks, make decisions, and learn from interactions without constant human supervision. Unlike traditional automation, AI Agents understand context, adapt to new situations, and handle complex workflows.
+      <br/>
+      <br/>
+      Our AI Agents can handle customer service inquiries, analyze data to provide insights, monitor systems and respond to issues, process documents and extract information, manage scheduling and logistics, and much more. They work continuously, scale instantly, and improve over time—freeing your team to focus on strategic work while the agents handle routine tasks.
+      <br/>
+      <br/>
+      The result is reduced operational costs, faster response times, 24/7 availability, consistent quality, and the ability to scale without adding headcount.`,
+    },
+    {
+        question: 'How do I know which solution is right for my business?',
         answer: `
-      As a focused, dedicated team, we bring personal attention to every project. Unlike large agencies where you're just another ticket number, at RiLiGar you work directly with experienced engineers who care deeply about your success. Our small team size means faster communication, more flexibility, and a genuine partnership approach. We combine the expertise of enterprise-level engineers with the agility and cost-effectiveness of a boutique firm.
+      The best solution depends on your specific challenges and goals. AI Agents are ideal if you have repetitive tasks, need 24/7 operations, or want to scale without adding staff. Salesforce Solutions work best when you need to enhance your existing Salesforce platform or build custom CRM functionality. SaaS Platforms are perfect when you need a complete application built from scratch. AI Integration is right when you want to add intelligent capabilities to your existing systems.
       <br/>
       <br/>
-      Our development philosophy centers on clean, efficient code—no bloat, no unnecessary complexity. We believe in building solutions that are not only powerful today but remain maintainable and scalable for years to come. Every project gets our full attention and commitment to excellence.
+      We start every engagement with a discovery conversation to understand your needs. We'll recommend the solution (or combination of solutions) that makes the most sense for your situation. No pressure, no upselling—just honest guidance from experienced engineers who want to see you succeed.
       `,
     },
     {
-        question: 'What makes your Salesforce components unique?',
+        question: 'Can AI Agents integrate with our existing tools and systems?',
         answer: `
-      Our Salesforce component library is built on the principle that tools should enhance—not disrupt—your existing workflows. We focus on creating Lightning Web Components that are intuitive, performant, and seamlessly integrate with your Salesforce environment. Each component is designed with clean code practices, comprehensive documentation, and real-world use cases in mind.
+      Absolutely! Our AI Agents are designed to work with your existing technology stack. They can integrate with CRMs like Salesforce, communication platforms like Slack and Microsoft Teams, project management tools, databases, APIs, and virtually any system with an interface.
       <br/>
       <br/>
-      We don't just build components; we solve business problems. Whether you need custom data visualizations, workflow automation, or integration with external systems, our components are crafted to deliver measurable value and improve team productivity.
+      We don't believe in rip-and-replace. Instead, we build agents that complement and enhance your current workflows. The agents can pull data from multiple sources, make decisions based on your business rules, and take actions across different platforms—all while maintaining security and compliance standards.
       `,
     },
     {
-        question: 'How do you approach SaaS development?',
+        question: 'How quickly can you deploy a solution?',
         answer: `
-      Our SaaS development philosophy is built on three pillars: performance, simplicity, and cost-effectiveness. We use modern JavaScript frameworks and best practices to create applications that are lightning-fast and resource-efficient. This means lower hosting costs for you and better user experiences for your customers.
+      Timeline varies based on complexity, but we're known for fast delivery without sacrificing quality. For AI Agents, we can often have a proof-of-concept running in 2-3 weeks, with production deployment in 4-8 weeks. Salesforce components typically take 2-6 weeks depending on complexity. SaaS platforms range from 8-16 weeks for MVPs.
       <br/>
       <br/>
-      We start every SaaS project by deeply understanding your business model and target users. Then we architect solutions that scale with your growth—from MVP to enterprise-level deployment. Our code is clean, well-documented, and built with maintainability in mind, so you're never locked into our services if you choose to take development in-house later.
+      We follow an agile approach with regular check-ins and demos, so you see progress constantly. Many clients start realizing value even before full deployment, as we can often roll out features incrementally rather than waiting for everything to be complete.
       `,
     },
     {
-        question: 'Can you integrate AI into existing systems?',
+        question: 'What makes your approach different from other development firms?',
         answer: `
-      Absolutely! We specialize in practical AI integration that delivers real business value. Whether you want to add intelligent automation to your Salesforce workflows, implement natural language processing in your SaaS application, or leverage machine learning for data insights, we can help.
+      We focus on solutions, not just code. Every project starts with understanding your business challenge, not just technical requirements. We're a focused team of experienced engineers who work directly with you—no layers of project managers or account executives. This means faster decisions, clearer communication, and better results.
       <br/>
       <br/>
-      We work with leading AI platforms and APIs, and we're experienced in both off-the-shelf AI solutions and custom model development. Our approach focuses on finding the right AI solution for your specific use case—not forcing AI where it doesn't add value. We believe AI should augment human capabilities, not replace them.
+      Our solutions-first approach means we might recommend an AI Agent when others would propose custom development, or suggest a Salesforce component when others want to build from scratch. We care about solving your problem efficiently, not maximizing billable hours. Plus, our code is clean, well-documented, and built to last—you're getting a quality asset, not technical debt.
       `,
     },
     {

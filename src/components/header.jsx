@@ -20,7 +20,7 @@ import {
 } from '@mantine/core'
 
 import { useDisclosure } from '@mantine/hooks'
-import { IconChartBar, IconCloudComputing, IconBrain, IconCode, IconChevronDown } from '@tabler/icons-react'
+import { IconChartBar, IconCloudComputing, IconRobot, IconSparkles, IconChevronDown } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
 
 import classes from './header.module.css'
@@ -31,28 +31,28 @@ import logo from '/image/riligar-logotipo.png'
 
 const mockdata = [
     {
+        icon: IconRobot,
+        title: 'AI Agents',
+        description: 'Intelligent autonomous agents that automate tasks and make decisions for your business',
+        pathname: '/ai-agents',
+    },
+    {
         icon: IconChartBar,
-        title: 'Salesforce Development',
-        description: 'Custom Lightning Web Components and Salesforce solutions that enhance your CRM',
+        title: 'Salesforce Solutions',
+        description: 'Custom components, integrations, and automations for your Salesforce platform',
         pathname: '/salesforce',
     },
     {
         icon: IconCloudComputing,
-        title: 'SaaS Development',
-        description: 'High-performance, scalable applications built with clean code and smart architecture',
+        title: 'SaaS Platforms',
+        description: 'End-to-end SaaS development with modern, scalable architecture',
         pathname: '/saas',
     },
     {
-        icon: IconBrain,
+        icon: IconSparkles,
         title: 'AI Integration',
-        description: 'Intelligent automation and AI-powered tools that transform your workflows',
-        pathname: '/ai-solutions',
-    },
-    {
-        icon: IconCode,
-        title: 'Consulting',
-        description: 'Technical expertise and strategic guidance for your development projects',
-        pathname: '/consulting',
+        description: 'Add AI capabilities to your existing systems and workflows',
+        pathname: '/ai-integration',
     },
 ]
 
@@ -202,10 +202,10 @@ export default function HeaderMegaMenu() {
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    Let's discuss how we can help your business grow
+                                                    Discover the perfect solution for your business
                                                 </Text>
                                             </div>
-                                            <Button variant="default">Contact Us</Button>
+                                            <Button variant="default">View Solutions</Button>
                                         </Group>
                                     </div>
                                 </HoverCard.Dropdown>
@@ -228,9 +228,9 @@ export default function HeaderMegaMenu() {
                                 size="xs"
                                 variant="outline"
                             >
-                                Our Work
+                                Solutions
                             </Button>
-                            <Button size="xs">Get Started</Button>
+                            <Button size="xs">Contact Us</Button>
                         </Group>
                         <Burger
                             opened={drawerOpened}
@@ -299,8 +299,8 @@ export default function HeaderMegaMenu() {
                         pb="xl"
                         px="md"
                     >
-                        <Button variant="default">Our Work</Button>
-                        <Button>Get Started</Button>
+                        <Button variant="default">Solutions</Button>
+                        <Button>Contact Us</Button>
                     </Group>
                 </ScrollArea>
             </Drawer>

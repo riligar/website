@@ -7,21 +7,21 @@ import classes from './footer.module.css'
 
 const data = [
     {
-        title: 'Company',
+        title: 'Solutions',
         links: [
-            { label: 'About Us', link: '#' },
-            { label: 'Our Team', link: '#' },
-            { label: 'Careers', link: '#' },
-            { label: 'Contact', link: '#' },
+            { label: 'AI Agents', link: '/ai-agents' },
+            { label: 'Salesforce Solutions', link: '/salesforce' },
+            { label: 'SaaS Platforms', link: '/saas' },
+            { label: 'AI Integration', link: '/ai-integration' },
         ],
     },
     {
-        title: 'Services',
+        title: 'Company',
         links: [
-            { label: 'Salesforce Development', link: '/salesforce' },
-            { label: 'SaaS Development', link: '/saas' },
-            { label: 'AI Integration', link: '/ai-solutions' },
-            { label: 'Consulting', link: '/consulting' },
+            { label: 'About Us', link: '#' },
+            { label: 'Our Approach', link: '#' },
+            { label: 'Contact', link: '#' },
+            { label: 'Careers', link: '#' },
         ],
     },
     {
@@ -75,7 +75,8 @@ export default function FooterLinks() {
                         c="dimmed"
                         className={classes.description}
                     >
-                        Empowering businesses with smart, streamlined solutions in Salesforce, SaaS, and AI.
+                        Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration
+                        services.
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>

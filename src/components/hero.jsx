@@ -17,15 +17,16 @@ export default function Hero() {
                         // size={{ base: 36, sm: 42, md: 48 }}
                         style={{ lineHeight: 1.2 }}
                     >
-                        Empower Your Business <br /> with Smart Solutions
+                        Solutions That Transform <br /> Your Business
                     </Title>
                     <Text
                         size="lg"
                         c="dimmed"
                         mt="xl"
                     >
-                        We transform complex challenges into streamlined, high-performance solutions. Specializing in
-                        Salesforce development, SaaS applications, and AI-powered tools that drive real business growth.
+                        We deliver powerful solutions tailored to your needs. From Salesforce components to intelligent
+                        AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution is designed to
+                        solve real problems and drive measurable results.
                     </Text>
 
                     <List
@@ -50,15 +51,15 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Salesforce Excellence
+                                AI Agents
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Custom Salesforce components and solutions that enhance productivity and streamline your
-                                workflows
+                                Intelligent autonomous agents that work 24/7, automating tasks, making decisions, and
+                                delivering insights
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -66,14 +67,14 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Intelligent SaaS
+                                Salesforce Solutions
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Lightweight, cost-effective applications built with clean code and smart architecture
+                                Custom components and integrations that supercharge your CRM and boost team productivity
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -81,14 +82,14 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                AI-Powered Innovation
+                                SaaS & AI Integration
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Leverage cutting-edge AI to automate processes and unlock new opportunities for growth
+                                High-performance platforms with AI capabilities that scale with your business growth
                             </Text>
                         </List.Item>
                     </List>
@@ -98,13 +99,13 @@ export default function Hero() {
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            Start Your Project
+                            Explore Solutions
                         </Button>
                         <Button
                             size="lg"
                             variant="outline"
                         >
-                            View Our Work
+                            Talk to Us
                         </Button>
                     </Group>
                 </Grid.Col>
