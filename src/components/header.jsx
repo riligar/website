@@ -20,7 +20,7 @@ import {
 } from '@mantine/core'
 
 import { useDisclosure } from '@mantine/hooks'
-import { IconSquareAsterisk, IconFileText, IconLockPassword, IconChevronDown, IconPassword } from '@tabler/icons-react'
+import { IconChartBar, IconCloudComputing, IconBrain, IconCode, IconChevronDown } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
 
 import classes from './header.module.css'
@@ -31,28 +31,28 @@ import logo from '/image/riligar-logotipo.png'
 
 const mockdata = [
     {
-        icon: IconLockPassword,
-        title: 'Password Manager',
-        description: 'The fluid of Smeargle’s tail secretions changes',
-        pathname: '/manager',
+        icon: IconChartBar,
+        title: 'Salesforce Development',
+        description: 'Custom Lightning Web Components and Salesforce solutions that enhance your CRM',
+        pathname: '/salesforce',
     },
     {
-        icon: IconPassword,
-        title: 'Password Generator',
-        description: 'A powerful generator for powerful passwords to protect your online accounts',
-        pathname: '/generator',
+        icon: IconCloudComputing,
+        title: 'SaaS Development',
+        description: 'High-performance, scalable applications built with clean code and smart architecture',
+        pathname: '/saas',
     },
     {
-        icon: IconSquareAsterisk,
-        title: 'Send Password',
-        description: 'Yanma is capable of seeing 360 degrees without',
-        pathname: '/send-password',
+        icon: IconBrain,
+        title: 'AI Integration',
+        description: 'Intelligent automation and AI-powered tools that transform your workflows',
+        pathname: '/ai-solutions',
     },
     {
-        icon: IconFileText,
-        title: 'Send Text',
-        description: 'The shell’s rounded shape and the grooves on its.',
-        pathname: '/send-text',
+        icon: IconCode,
+        title: 'Consulting',
+        description: 'Technical expertise and strategic guidance for your development projects',
+        pathname: '/consulting',
     },
 ]
 
@@ -177,10 +177,7 @@ export default function HeaderMegaMenu() {
                                         justify="space-between"
                                         px="md"
                                     >
-                                        <Text fw={500}>How will we help you</Text>
-                                        {/* <Anchor href="#" fz="xs">
-                                        View all
-                                    </Anchor> */}
+                                        <Text fw={500}>Our Services</Text>
                                     </Group>
 
                                     <Divider my="sm" />
@@ -199,16 +196,16 @@ export default function HeaderMegaMenu() {
                                                     fw={500}
                                                     fz="sm"
                                                 >
-                                                    Get started
+                                                    Ready to get started?
                                                 </Text>
                                                 <Text
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    Their food sources have decreased, and their numbers
+                                                    Let's discuss how we can help your business grow
                                                 </Text>
                                             </div>
-                                            <Button variant="default">Stop taking risks</Button>
+                                            <Button variant="default">Contact Us</Button>
                                         </Group>
                                     </div>
                                 </HoverCard.Dropdown>
@@ -217,15 +214,23 @@ export default function HeaderMegaMenu() {
                                 href="#"
                                 className={classes.link}
                             >
-                                Learn
+                                About Us
                             </a>
-                            {/* <a href="#" className={classes.link}>
-                            Academy
-                        </a> */}
+                            <a
+                                href="#"
+                                className={classes.link}
+                            >
+                                Contact
+                            </a>
                         </Group>
                         <Group visibleFrom="sm">
-                            <Button size="xs">Log in</Button>
-                            <Button size="xs">Sign up</Button>
+                            <Button
+                                size="xs"
+                                variant="outline"
+                            >
+                                Our Work
+                            </Button>
+                            <Button size="xs">Get Started</Button>
                         </Group>
                         <Burger
                             opened={drawerOpened}
@@ -279,16 +284,14 @@ export default function HeaderMegaMenu() {
                         href="#"
                         className={classes.link}
                     >
-                        Learn
+                        About Us
                     </a>
                     <a
                         href="#"
                         className={classes.link}
                     >
-                        Academy
+                        Contact
                     </a>
-
-                    {/* <Divider my="sm" /> */}
 
                     <Group
                         justify="center"
@@ -296,8 +299,8 @@ export default function HeaderMegaMenu() {
                         pb="xl"
                         px="md"
                     >
-                        <Button variant="default">Log in</Button>
-                        <Button>Sign up</Button>
+                        <Button variant="default">Our Work</Button>
+                        <Button>Get Started</Button>
                     </Group>
                 </ScrollArea>
             </Drawer>

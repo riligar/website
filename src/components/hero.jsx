@@ -1,5 +1,5 @@
-import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem } from '@mantine/core'
-import { IconCheck } from '@tabler/icons-react'
+import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem, Button, Group } from '@mantine/core'
+import { IconCheck, IconRocket } from '@tabler/icons-react'
 
 export default function Hero() {
     return (
@@ -13,18 +13,19 @@ export default function Hero() {
             >
                 <Grid.Col span={{ base: 12, md: 6 }}>
                     <Title
-                        order={1}
-                        size={{ base: 36, sm: 42, md: 48 }}
+                        order={2}
+                        // size={{ base: 36, sm: 42, md: 48 }}
                         style={{ lineHeight: 1.2 }}
                     >
-                        Strong. Secure. Awesome.
+                        Empower Your Business <br /> with Smart Solutions
                     </Title>
                     <Text
                         size="lg"
                         c="dimmed"
                         mt="xl"
                     >
-                        A powerful generator for powerful passwords to protect your online accounts.
+                        We transform complex challenges into streamlined, high-performance solutions. Specializing in
+                        Salesforce development, SaaS applications, and AI-powered tools that drive real business growth.
                     </Text>
 
                     <List
@@ -49,15 +50,15 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Advanced Security
+                                Salesforce Excellence
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Randomly generated passwords are much harder to predict or crack compared to manually
-                                created ones
+                                Custom Salesforce components and solutions that enhance productivity and streamline your
+                                workflows
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -65,14 +66,14 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Prevents Password Reuse
+                                Intelligent SaaS
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                A password generator ensures you have unique passwords for each account
+                                Lightweight, cost-effective applications built with clean code and smart architecture
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -80,17 +81,32 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Secure Character Combination
+                                AI-Powered Innovation
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Our generator uses a mix of uppercase, lowercase letters, numbers, and symbols
+                                Leverage cutting-edge AI to automate processes and unlock new opportunities for growth
                             </Text>
                         </List.Item>
                     </List>
+
+                    <Group mt={40}>
+                        <Button
+                            size="lg"
+                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
+                        >
+                            Start Your Project
+                        </Button>
+                        <Button
+                            size="lg"
+                            variant="outline"
+                        >
+                            View Our Work
+                        </Button>
+                    </Group>
                 </Grid.Col>
 
                 <Grid.Col span={{ base: 12, md: 6 }}>
@@ -104,7 +120,7 @@ export default function Hero() {
                     >
                         <Image
                             src="/image/home-001.svg"
-                            alt="Password Manager Illustration"
+                            alt="RiLiGar Solutions"
                             style={{
                                 width: '100%',
                                 maxWidth: '500px',

@@ -7,30 +7,30 @@ import classes from './footer.module.css'
 
 const data = [
     {
-        title: 'Empresa',
+        title: 'Company',
         links: [
-            { label: 'Sobre Nós', link: '#' },
-            { label: 'Serviços', link: '#' },
-            { label: 'Suporte', link: '#' },
-            { label: 'Contato', link: '#' },
+            { label: 'About Us', link: '#' },
+            { label: 'Our Team', link: '#' },
+            { label: 'Careers', link: '#' },
+            { label: 'Contact', link: '#' },
         ],
     },
     {
-        title: 'Soluções',
+        title: 'Services',
         links: [
-            { label: 'Password Manager', link: '/manager' },
-            { label: 'Password Generator', link: '/generator' },
-            { label: 'Send Password', link: '/send-password' },
-            { label: 'Send Text', link: '/send-text' },
+            { label: 'Salesforce Development', link: '/salesforce' },
+            { label: 'SaaS Development', link: '/saas' },
+            { label: 'AI Integration', link: '/ai-solutions' },
+            { label: 'Consulting', link: '/consulting' },
         ],
     },
     {
-        title: 'Recursos',
+        title: 'Resources',
         links: [
-            { label: 'Documentação', link: '#' },
+            { label: 'Case Studies', link: '#' },
             { label: 'Blog', link: '#' },
             { label: 'FAQ', link: '#' },
-            { label: 'Política de Privacidade', link: '#' },
+            { label: 'Privacy Policy', link: '#' },
         ],
     },
 ]
@@ -75,7 +75,7 @@ export default function FooterLinks() {
                         c="dimmed"
                         className={classes.description}
                     >
-                        Soluções inovadoras para gerenciamento seguro de senhas e dados.
+                        Empowering businesses with smart, streamlined solutions in Salesforce, SaaS, and AI.
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
@@ -85,7 +85,7 @@ export default function FooterLinks() {
                     c="dimmed"
                     size="sm"
                 >
-                    © {new Date().getFullYear()} Riligar. Todos os direitos reservados.
+                    © {new Date().getFullYear()} RiLiGar. All rights reserved. Built with excellence.
                 </Text>
 
                 <Group

@@ -2,107 +2,103 @@ import { Box, Title, Text, Accordion, Space } from '@mantine/core'
 
 const faq = [
     {
-        question: 'Is the Password Generator safe to use?',
-        answer: `Absolutely! Password Generator uses mathematical entropy to create a random password consisting of numbers, letters, and symbols. The characters rendered from this auto password generator are entirely random and won't transmit over the internet, providing the most secure password during the password generator process. No one, not even Password Generator, can see your private, personal password.`,
+        question: 'What services does RiLiGar provide?',
+        answer: `RiLiGar specializes in three core areas: Salesforce development, SaaS application development, and AI integration. We create custom Salesforce components and Lightning Web Components that enhance your CRM workflows. Our SaaS solutions are built with clean, lightweight architecture designed for maximum performance and cost-efficiency. Additionally, we integrate cutting-edge AI technologies to automate processes and unlock new capabilities for your business.`,
     },
     {
-        question: 'Why should I use a password generator?',
+        question: 'Why choose RiLiGar over larger development agencies?',
         answer: `
-      Computers can quickly and easily guess passwords. Any hacker using a traditional desktop computer would have the opportunity to test billions of different passwords in several seconds. We've developed an online password generator to help you keep your private information secure. Our free password generator relies on mathematical randomness from an algorithm to create truly secure, random passwords.
+      As a focused, dedicated team, we bring personal attention to every project. Unlike large agencies where you're just another ticket number, at RiLiGar you work directly with experienced engineers who care deeply about your success. Our small team size means faster communication, more flexibility, and a genuine partnership approach. We combine the expertise of enterprise-level engineers with the agility and cost-effectiveness of a boutique firm.
       <br/>
       <br/>
-      Most people are not good at picking random passwords and have a habit of using common names, numbers, and characters. No matter how clever you think you are, most computers can easily guess human-generated passwords. Generating a password using a combination of alphanumeric characters and special symbols ensures its security.
-      <br/>
-      <br/>
-      Avoid putting your personal information at risk with Password Generator. Our password creator generates a combination of keys to help you maximize safety and security while logging into different accounts. We don't create or store anything. Instead, your device generates the local mathematical entropy to complete the password generate process.
+      Our development philosophy centers on clean, efficient code—no bloat, no unnecessary complexity. We believe in building solutions that are not only powerful today but remain maintainable and scalable for years to come. Every project gets our full attention and commitment to excellence.
       `,
     },
     {
-        question: 'Do I need a unique password for every account?',
+        question: 'What makes your Salesforce components unique?',
         answer: `
-      Yes, it is crucial to have a unique password for every online account you might have. Once passwords get saved due to a security breach, the hackers often keep them in a leaked password database. Protect yourself from having your personal information exposed on the dark web by using the Password Generator. It will create random passwords for you to use for each account to never have to recycle your passwords again.
+      Our Salesforce component library is built on the principle that tools should enhance—not disrupt—your existing workflows. We focus on creating Lightning Web Components that are intuitive, performant, and seamlessly integrate with your Salesforce environment. Each component is designed with clean code practices, comprehensive documentation, and real-world use cases in mind.
       <br/>
       <br/>
-      Adding an extra character, symbol, or number to a password you've used with other accounts won't suffice. Save yourself time and frustration with an added level of protection by utilizing our strong password generator. The free password generator is easy to use and can help you keep your identity from landing on the dark web, where hackers and cybercriminals could use it to their advantage.
+      We don't just build components; we solve business problems. Whether you need custom data visualizations, workflow automation, or integration with external systems, our components are crafted to deliver measurable value and improve team productivity.
       `,
     },
     {
-        question: 'What are the top 10 worst passwords?',
+        question: 'How do you approach SaaS development?',
         answer: `
-      Here are the 10 worst passwords of the year. Common passwords show how terrible humans are at generating random characters. Use an algorithmic generator instead (like the one above)!
+      Our SaaS development philosophy is built on three pillars: performance, simplicity, and cost-effectiveness. We use modern JavaScript frameworks and best practices to create applications that are lightning-fast and resource-efficient. This means lower hosting costs for you and better user experiences for your customers.
       <br/>
       <br/>
-      <ul>
-      <li>123456</li>
-      <li>Password</li>
-      <li>12345678</li>
-      <li>Qwerty</li>
-      <li>12345</li>
-      <li>123456789</li>
-      <li>Letmein</li>
-      <li>1234567</li>
-      <li>Football</li>
-      <li>iloveyou</li>
-      </ul>
-      <br/>
-      Remember, human-created passwords are weak passwords. The human mind cannot compete with a server guessing billions of permutations per second.
-      <br/>
-      <br/>
-      Hacked passwords use common words and phrases. Prevent a dictionary attack with a strong password. Bookmark this page so you always generate random characters in the future.
+      We start every SaaS project by deeply understanding your business model and target users. Then we architect solutions that scale with your growth—from MVP to enterprise-level deployment. Our code is clean, well-documented, and built with maintainability in mind, so you're never locked into our services if you choose to take development in-house later.
       `,
     },
     {
-        question: 'What is the best password generator?',
+        question: 'Can you integrate AI into existing systems?',
         answer: `
-      The best password generator uses cryptographic entropy to generate random passwords for use online. However, we've built the Password Generator to eliminate that frustration while serving as a free password generator for the public. The webpage relies solely on your computer as the password creator. The randomized auto password generator leaves you with safe, secure passwords to use online and offline.
+      Absolutely! We specialize in practical AI integration that delivers real business value. Whether you want to add intelligent automation to your Salesforce workflows, implement natural language processing in your SaaS application, or leverage machine learning for data insights, we can help.
       <br/>
       <br/>
-      We've developed an authentic, strong password generator that won't create a single fake password or store your details online. As a result, nothing gets transmitted online, making this a safer experience. Therefore, use our secure password generator on your browser to create a unique password. Our organization has an incredible reputation as a company that takes safety and security seriously.
+      We work with leading AI platforms and APIs, and we're experienced in both off-the-shelf AI solutions and custom model development. Our approach focuses on finding the right AI solution for your specific use case—not forcing AI where it doesn't add value. We believe AI should augment human capabilities, not replace them.
       `,
     },
     {
-        question: 'What are the requirements for a strong password?',
+        question: 'What is your development process?',
         answer: `
-      If you want a strong password, you need to create random passwords using cryptographic entropy. Unfortunately, human-generated passwords are always weak. Why? Because humans have predictable patterns when typing on a keyboard. No matter how clever you think you are, the chances are that a hacker guessing billions of random passwords will crack it. The Password Generator instantly renders long and cryptographically secure characters. These characters are rendered locally on your machine. Password Generator never generates, sends, receives, nor stores any passwords. The auto password generator is a valuable tool to use when you want to access the power of your computer and its perfect cryptographic power.
+      We follow an agile, iterative approach that keeps you involved throughout the development process. Projects typically start with a discovery phase where we deeply understand your requirements, goals, and constraints. Then we move into rapid prototyping to validate concepts early.
       <br/>
       <br/>
-      Everyone wants to have a strong random password for their important accounts. Unfortunately, no matter how clever you are, it is impossible for any human being to construct a strong password by typing on a keyboard. Only mathematical entropy can generate sufficient randomness to avoid a password breach by hackers. Using a random password generator tool like Password Generator is far preferable to typing a password because it uses truly random symbols and characters. There is always a chance hackers would access your passwords by guessing human-typed letter and number combinations. However, Password Generator allows you to access the power of your own computer to create impossible-to-guess character strings.
-    `,
-    },
-    {
-        question: 'How do I get a random password?',
-        answer: `
-      To prevent sophisticated hackers from getting into your accounts, you need to use a random password generator to keep your accounts safe. The password generator will create dozens of random passwords consisting of numbers, letters, and symbols that even the most skilled hackers cannot guess. Safe password generators make use of cryptographic entropy or randomness. Avoid using the most common security questions and answers to make a password strong. It would be best to never use the same password for various important accounts. Random password generators use passwords that contain at least 16 characters, one uppercase letter, one number, one special symbol, and one lowercase letter. When creating passwords, people often use phone numbers, social security numbers, postcodes, ID card numbers, house numbers, and birthdays -- all of which are easy to guess.
+      Development happens in sprints with regular check-ins and demos. You'll see progress constantly and have opportunities to provide feedback at every stage. We prioritize delivering working software early and often, so you can start realizing value quickly. Testing and quality assurance are built into every sprint—not tacked on at the end.
       <br/>
       <br/>
-      If using a free password generator, do not grant permissions to any web browser to save your passwords, because they often are breached quickly. In addition, you should avoid logging on to financial accounts on public computers or whenever connected to a free VPN, web proxy, or public Wi-Fi. Public internet connections are often unencrypted. Hackers can intercept data within cafés, hotels, airports, and conference centers. Protect your information with Password Generator public Wi-Fi safety guide.
+      Communication is paramount. You'll have direct access to the engineers working on your project, and we're responsive via email, chat, or video calls. No bureaucracy, no layers of project managers—just direct, honest communication between technical experts.
       `,
     },
     {
-        question: 'Can password generators be hacked?',
+        question: 'How do you ensure code quality and security?',
         answer: `
-        You are putting yourself at risk if you are entrusting an unknown online random sequence generator tool for your passwords. If you use a free password generator online, the site might be decrypted or presenting compromised information, meaning hackers could access your personal details. Multiple factors like cryptographic techniques, algorithms, updating routines, and web to server communication protocols collaborate to create an unbreakable random password creator. The best way to reduce risk is to use a renowned random password generator tool -- like this webpage, built by Password Generator, a multi-billion dollar company with over a decade of audited public filings. The Password Generator relies on modern security algorithms with regular updates to always stay ahead of hacking techniques. Password Generator creates random passwords on users' local machines -- never transmitted over the internet -- and does not store the passwords. So, there is zero hacking risk when using the Password Generator here. Only you can view the characters that your own computer is rendering -- within your browser alone.
+      Quality and security are non-negotiable at RiLiGar. Every line of code goes through rigorous review processes. We follow industry best practices including secure coding standards, automated testing, and continuous integration/continuous deployment (CI/CD) pipelines.
+      <br/>
+      <br/>
+      For security, we implement a defense-in-depth strategy with multiple layers of protection. This includes input validation, authentication and authorization controls, encryption of sensitive data, and regular security audits. We stay current with the latest security vulnerabilities and best practices, ensuring your applications are protected against emerging threats.
+      <br/>
+      <br/>
+      We also believe in clean, readable code that's easy to maintain. Our codebase includes comprehensive documentation, follows consistent coding standards, and is architected for long-term maintainability. You're not just getting a working application—you're getting a quality software asset.
       `,
     },
     {
-        question: 'Is there a secure way to store passwords?',
+        question: 'What are your pricing and engagement models?',
         answer: `
-      Generating random passwords is one thing but remembering them is another. When you have a random password for each account, it is hard to remember what you have used because of all the random letters and numbers. So, you are probably wondering if there is a secure way to store the passwords created using the secure password generator. Advanced technology makes it possible to keep your passwords stored with ease. In addition, you can use a reliable, safe password manager to keep your information private. However, you will always need to avoid scam websites. You will also need to avoid sharing your password with anyone else.
+      We offer flexible engagement models to fit different project needs and budgets. For well-defined projects, we can provide fixed-price quotes. For ongoing development or projects with evolving requirements, we offer time-and-materials arrangements with transparent hourly rates.
       <br/>
       <br/>
-      Most people have multiple digital accounts, such as banking apps and gaming sites. It is not easy to memorize many passwords, but using the same password is a massive vulnerability. So, is there a secure way to store distinct passwords? You can save your passwords traditionally by saving them into a biometric USB. However, these come with risk that someone could coerce you into unlocking your USB at some point. Always use a secure password manager to keep sensitive information in encrypted storage. Password managers' cryptography render passwords inaccessible to hackers.
+      We also provide retainer-based partnerships for clients who need continuous development support or want to ensure priority access to our team. This model works great for companies building SaaS products or maintaining Salesforce implementations.
+      <br/>
+      <br/>
+      Our pricing is competitive and transparent—no hidden fees, no surprises. We'll work with you to find an engagement model that aligns with your budget and project goals. Contact us for a detailed quote tailored to your specific needs.
       `,
     },
     {
-        question: 'What makes a password safe?',
+        question: 'Do you provide ongoing support and maintenance?',
         answer: `
-      Constructing a solid password is a daunting task, particularly when you need to have a strong password for multiple sites. It quickly becomes tough to memorize the passwords with cryptographic entropy that combine characters and special symbols. It is one of the reasons that many people use identical passwords for multiple sites, even though they know that it is unsafe.
+      Yes! We stand behind our work with comprehensive support options. After project delivery, we offer maintenance packages that include bug fixes, security updates, performance monitoring, and feature enhancements. We can also provide training for your team to help them get the most out of the solutions we build.
       <br/>
       <br/>
-      If your passwords get hacked, your information is exposed to the public. Hand-typing passwords is also a big no-no because of the greater risk of a security breach. The secure password generator creates passwords with a minimum of 16 characters, including at least one number, symbols, and some uppercase characters. Never save these random passwords to the web browsers because they are easily accessible. Use both upper and lowercase letters in a password.
+      Our support is proactive, not reactive. We monitor applications for potential issues and address them before they impact your users. For Salesforce projects, we stay current with Salesforce releases and ensure your custom components remain compatible with platform updates.
       <br/>
       <br/>
-      In this digital era, it is crucial to create a random password for each site that will protect your sensitive information. Uniqueness, length, uppercase and lowercase letters, special characters, symbols, and numbers are the critical characteristics that make a password safe. While it may seem complicated, you can use Password Generator tool. The Password Generator generates some of the most unbreakable passwords. The convenient auto password generator even lets you set password length and character combinations for creating a customized password. It operates on the users' machine to generate password options for sites and does not store passwords on its server.      
+      We believe in building long-term partnerships, not just completing projects. Many of our clients work with us continuously as their trusted technology partner, and we're proud to grow alongside their businesses.
+      `,
+    },
+    {
+        question: 'How do I get started with RiLiGar?',
+        answer: `
+      Getting started is simple! Reach out to us via email or through our contact form with a brief description of your project or challenge. We'll schedule a free consultation call to discuss your needs, timeline, and budget.
+      <br/>
+      <br/>
+      During that initial conversation, we'll explore whether we're a good fit for your project. If so, we'll provide a detailed proposal outlining our approach, timeline, and investment. Once you approve, we can typically start work within a week.
+      <br/>
+      <br/>
+      No pressure, no hard sell—just honest conversation between technical experts. We're excited to learn about your business and explore how we can help you succeed. Let's build something great together!
       `,
     },
 ]
@@ -110,14 +106,14 @@ const faq = [
 export default function Faq() {
     return (
         <Box>
-            <Title ta="center">Password Generator FAQs</Title>
+            <Title ta="center">Frequently Asked Questions</Title>
 
             <Text
                 c="dimmed"
                 ta="center"
                 mt="md"
             >
-                Questions about this random password generator? Answers below!
+                Everything you need to know about working with RiLiGar
             </Text>
             <Space h="lg" />
             <Accordion variant="separated">

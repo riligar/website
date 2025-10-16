@@ -1,24 +1,42 @@
 import { Badge, Group, Title, Text, Card, SimpleGrid, Box, rem, useMantineTheme } from '@mantine/core'
-import { IconFingerprint, IconKey, IconLock } from '@tabler/icons-react'
+import { IconCloudComputing, IconChartBar, IconBrain, IconCode, IconRocket, IconShield } from '@tabler/icons-react'
 
 const mockdata = [
     {
-        title: 'Long',
+        title: 'Salesforce Development',
         description:
-            'The longer a password, the more secure it is. A strong password should be at least 10 characters long.',
-        icon: IconKey,
+            'Build custom Salesforce components, Lightning Web Components, and integrations that supercharge your CRM. We create tools that fit seamlessly into your existing workflows.',
+        icon: IconChartBar,
     },
     {
-        title: 'Complex',
+        title: 'SaaS Applications',
         description:
-            "Strong passwords use a combination of letters, numbers, cases, and symbols to form an unpredictable string of characters that doesn't resemble words or names.",
-        icon: IconLock,
+            'Develop high-performance, scalable SaaS solutions with clean architecture. Lightweight applications that deliver maximum value without the bloat.',
+        icon: IconCloudComputing,
     },
     {
-        title: 'Unique',
+        title: 'AI Integration',
         description:
-            'A strong password should be unique to each account to reduce vulnerability in the event of a hack.',
-        icon: IconFingerprint,
+            'Harness the power of artificial intelligence to automate tasks, gain insights, and create intelligent workflows that transform how your team works.',
+        icon: IconBrain,
+    },
+    {
+        title: 'Clean Code Philosophy',
+        description:
+            'Every line of code matters. We build with maintainability, performance, and scalability in mind—creating solutions that stand the test of time.',
+        icon: IconCode,
+    },
+    {
+        title: 'Rapid Development',
+        description:
+            'Fast iterations without compromising quality. Get your product to market quickly with our streamlined development process and agile methodology.',
+        icon: IconRocket,
+    },
+    {
+        title: 'Enterprise Security',
+        description:
+            'Security is built-in, not bolted-on. We follow industry best practices to ensure your data and applications are protected at every level.',
+        icon: IconShield,
     },
 ]
 
@@ -29,7 +47,6 @@ export default function Features() {
             key={feature.title}
             shadow="md"
             radius="md"
-            // className={classes.card}
             padding="lg"
         >
             <feature.icon
@@ -61,28 +78,29 @@ export default function Features() {
                     variant="filled"
                     size="lg"
                 >
-                    Protection Against Automated Attacks
+                    Trusted by Forward-Thinking Companies
                 </Badge>
             </Group>
 
             <Title
                 order={2}
-                // className={classes.title}
                 ta="center"
                 mt="sm"
             >
-                What makes passwords strong?
+                What makes us different?
             </Title>
 
             <Text
                 c="dimmed"
                 ta="center"
                 mt="md"
+                maw={800}
+                mx="auto"
             >
-                Strong passwords are unique and random. Humans aren't very good at coming up with passwords that are
-                either of those things, let alone both. So we created the 1Password Strong Password Generator tool to
-                create secure, complex passwords – including ones that combine upper and lowercase letters, numbers, and
-                special characters.
+                We believe that great software is born from a commitment to clean, functional, and intelligent design.
+                Our development philosophy centers on creating solutions that are powerful yet simple, cost-effective
+                yet enterprise-grade. We focus on what matters: delivering exceptional value that drives measurable
+                growth.
             </Text>
 
             <SimpleGrid
