@@ -18,7 +18,7 @@ const data = [
     {
         title: 'Company',
         links: [
-            { label: 'About Us', link: '#' },
+            { label: 'About Us', link: '/about' },
             { label: 'Our Approach', link: '#' },
             { label: 'Contact', link: '#' },
             { label: 'Careers', link: '#' },

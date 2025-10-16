@@ -226,7 +226,7 @@ export default function HeaderMegaMenu() {
                                 </HoverCard.Dropdown>
                             </HoverCard>
                             <a
-                                href="#"
+                                href="/about"
                                 className={classes.link}
                             >
                                 About Us
@@ -302,7 +302,7 @@ export default function HeaderMegaMenu() {
                     </UnstyledButton>
                     <Collapse in={linksOpened}>{links}</Collapse>
                     <a
-                        href="#"
+                        href="/about"
                         className={classes.link}
                     >
                         About Us

@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { loadAnalytics } from './utils/analytics.js'
 
 import Home from './pages/home.jsx'
+import About from './pages/about.jsx'
 // import Generator from "./pages/generator.jsx"
 // import Manager from "./pages/manager.jsx"
 // import SendPassword from "./pages/send-password.jsx"
@@ -39,6 +40,10 @@ export default function AppRoutes() {
                     <Route
                         path="/"
                         element={<Home />}
+                    />
+                    <Route
+                        path="/about"
+                        element={<About />}
                     />
                     {/* <Route path="/manager" element={<Manager />} />
                     <Route path="/generator" element={<Generator />} />
