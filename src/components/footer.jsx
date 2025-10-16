@@ -9,53 +9,58 @@ import classes from './footer.module.css'
 
 const data = [
     {
-        title: <Trans>Solutions</Trans>,
+        id: 'solutions',
+        titleKey: 'Solutions',
         links: [
-            { label: <Trans>AI Agents</Trans>, link: '/ai-agents' },
-            { label: <Trans>Salesforce Solutions</Trans>, link: '/salesforce' },
-            { label: <Trans>SaaS Platforms</Trans>, link: '/saas' },
-            { label: <Trans>AI Integration</Trans>, link: '/ai-integration' },
+            { id: 'ai-agents', labelKey: 'AI Agents', link: '/ai-agents' },
+            { id: 'salesforce', labelKey: 'Salesforce Solutions', link: '/salesforce' },
+            { id: 'saas', labelKey: 'SaaS Platforms', link: '/saas' },
+            { id: 'ai-integration', labelKey: 'AI Integration', link: '/ai-integration' },
         ],
     },
     {
-        title: <Trans>Company</Trans>,
+        id: 'company',
+        titleKey: 'Company',
         links: [
-            { label: <Trans>About Us</Trans>, link: '/about' },
-            { label: <Trans>Contact</Trans>, link: '/contact' },
-            { label: <Trans>Blog</Trans>, link: 'https://blog.ciromaciel.click', external: true },
+            { id: 'about', labelKey: 'About Us', link: '/about' },
+            { id: 'contact', labelKey: 'Contact', link: '/contact' },
+            { id: 'blog', labelKey: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
         ],
     },
     {
-        title: <Trans>Connect</Trans>,
+        id: 'connect',
+        titleKey: 'Connect',
         links: [
-            { label: <Trans>LinkedIn</Trans>, link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
-            { label: <Trans>Instagram</Trans>, link: 'https://www.instagram.com/ciro.maciel/', external: true },
-            { label: <Trans>YouTube</Trans>, link: 'https://www.youtube.com/@ciro-maciel', external: true },
+            { id: 'linkedin', labelKey: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
+            { id: 'instagram', labelKey: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
+            { id: 'youtube', labelKey: 'YouTube', link: 'https://www.youtube.com/@ciro-maciel', external: true },
         ],
     },
 ]
 
 export default function FooterLinks() {
     const groups = data.map(group => {
-        const links = group.links.map((link, index) => (
+        const links = group.links.map(link => (
             <Text
-                key={index}
+                key={link.id}
                 className={classes.link}
                 component="a"
                 href={link.link}
                 target={link.external ? '_blank' : undefined}
                 rel={link.external ? 'noopener noreferrer' : undefined}
             >
-                {link.label}
+                <Trans>{link.labelKey}</Trans>
             </Text>
         ))
 
         return (
             <div
                 className={classes.wrapper}
-                key={group.title}
+                key={group.id}
             >
-                <Text className={classes.title}>{group.title}</Text>
+                <Text className={classes.title}>
+                    <Trans>{group.titleKey}</Trans>
+                </Text>
                 {links}
             </div>
         )

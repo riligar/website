@@ -4,65 +4,46 @@ import { Trans } from '@lingui/react/macro'
 
 const mockdata = [
     {
-        title: <Trans>AI Agents</Trans>,
-        description: (
-            <Trans>
-                Deploy intelligent autonomous agents that work continuously for your business. From customer service to
-                data analysis, our AI agents handle complex tasks, make informed decisions, and learn from
-                interactions—all while you focus on growth.
-            </Trans>
-        ),
+        id: 'ai-agents',
+        titleKey: 'AI Agents',
+        descriptionKey:
+            'Deploy intelligent autonomous agents that work continuously for your business. From customer service to data analysis, our AI agents handle complex tasks, make informed decisions, and learn from interactions—all while you focus on growth.',
         icon: IconRobot,
         highlight: true,
     },
     {
-        title: <Trans>Salesforce Solutions</Trans>,
-        description: (
-            <Trans>
-                Custom Lightning Web Components, integrations, and automations for Salesforce. Component libraries that
-                enhance your CRM capabilities and streamline your sales, service, and marketing workflows.
-            </Trans>
-        ),
+        id: 'salesforce',
+        titleKey: 'Salesforce Solutions',
+        descriptionKey:
+            'Custom Lightning Web Components, integrations, and automations for Salesforce. Component libraries that enhance your CRM capabilities and streamline your sales, service, and marketing workflows.',
         icon: IconChartBar,
     },
     {
-        title: <Trans>SaaS Platforms</Trans>,
-        description: (
-            <Trans>
-                End-to-end SaaS solutions built with modern architecture. From MVP to enterprise-scale, we deliver
-                lightweight, high-performance applications that are easy to maintain and cost-effective to run.
-            </Trans>
-        ),
+        id: 'saas',
+        titleKey: 'SaaS Platforms',
+        descriptionKey:
+            'End-to-end SaaS solutions built with modern architecture. From MVP to enterprise-scale, we deliver lightweight, high-performance applications that are easy to maintain and cost-effective to run.',
         icon: IconCloudComputing,
     },
     {
-        title: <Trans>AI Integration Services</Trans>,
-        description: (
-            <Trans>
-                Integrate cutting-edge AI capabilities into your existing systems. Natural language processing, machine
-                learning models, predictive analytics, and intelligent automation—tailored to your specific use cases.
-            </Trans>
-        ),
+        id: 'ai-integration',
+        titleKey: 'AI Integration Services',
+        descriptionKey:
+            'Integrate cutting-edge AI capabilities into your existing systems. Natural language processing, machine learning models, predictive analytics, and intelligent automation—tailored to your specific use cases.',
         icon: IconSparkles,
     },
     {
-        title: <Trans>Custom Development</Trans>,
-        description: (
-            <Trans>
-                Bespoke solutions designed around your unique business requirements. Clean, maintainable code that
-                scales with your needs and stands the test of time.
-            </Trans>
-        ),
+        id: 'custom-dev',
+        titleKey: 'Custom Development',
+        descriptionKey:
+            'Bespoke solutions designed around your unique business requirements. Clean, maintainable code that scales with your needs and stands the test of time.',
         icon: IconBrain,
     },
     {
-        title: <Trans>Consulting & Strategy</Trans>,
-        description: (
-            <Trans>
-                Technical guidance and strategic planning for your technology initiatives. We help you make informed
-                decisions about architecture, tooling, and implementation approaches.
-            </Trans>
-        ),
+        id: 'consulting',
+        titleKey: 'Consulting & Strategy',
+        descriptionKey:
+            'Technical guidance and strategic planning for your technology initiatives. We help you make informed decisions about architecture, tooling, and implementation approaches.',
         icon: IconShield,
     },
 ]
@@ -71,7 +52,7 @@ export default function Features() {
     const theme = useMantineTheme()
     const features = mockdata.map(feature => (
         <Card
-            key={feature.title}
+            key={feature.id}
             shadow="md"
             radius="md"
             padding="lg"
@@ -105,14 +86,14 @@ export default function Features() {
                 fw={500}
                 mt="md"
             >
-                {feature.title}
+                <Trans>{feature.titleKey}</Trans>
             </Text>
             <Text
                 fz="sm"
                 c="dimmed"
                 mt="sm"
             >
-                {feature.description}
+                <Trans>{feature.descriptionKey}</Trans>
             </Text>
         </Card>
     ))

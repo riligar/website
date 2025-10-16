@@ -20,6 +20,7 @@ import {
     IconSparkles,
     IconArrowRight,
 } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent(
     'Olá! Gostaria de discutir meu caso de uso com a RiLiGar. Podemos conversar?'
@@ -28,34 +29,38 @@ const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
 const useCases = [
     {
+        id: 'customer-service',
         icon: IconRobot,
-        badge: 'AI Agents',
-        title: 'Customer Service Automation',
-        description:
+        badgeKey: 'AI Agents',
+        titleKey: 'Customer Service Automation',
+        descriptionKey:
             'Deploy AI agents that handle customer inquiries, provide instant responses, and escalate complex issues to your team—all while learning from every interaction.',
         benefits: ['24/7 availability', 'Instant responses', 'Consistent quality', 'Scales effortlessly'],
     },
     {
+        id: 'sales-pipeline',
         icon: IconChartBar,
-        badge: 'Salesforce',
-        title: 'Sales Pipeline Intelligence',
-        description:
+        badgeKey: 'Salesforce',
+        titleKey: 'Sales Pipeline Intelligence',
+        descriptionKey:
             'Custom Salesforce components that provide real-time insights, automate data entry, and help your sales team focus on closing deals instead of administrative tasks.',
         benefits: ['Real-time dashboards', 'Automated workflows', 'Better forecasting', 'Higher productivity'],
     },
     {
+        id: 'industry-saas',
         icon: IconCloudComputing,
-        badge: 'SaaS Platform',
-        title: 'Industry-Specific SaaS',
-        description:
+        badgeKey: 'SaaS Platform',
+        titleKey: 'Industry-Specific SaaS',
+        descriptionKey:
             'Build a complete SaaS platform tailored to your industry. From MVP to enterprise-scale, we handle everything: architecture, development, deployment, and scaling.',
         benefits: ['Rapid MVP launch', 'Scalable architecture', 'Cost-effective hosting', 'Modern tech stack'],
     },
     {
+        id: 'document-processing',
         icon: IconSparkles,
-        badge: 'AI Integration',
-        title: 'Document Processing System',
-        description:
+        badgeKey: 'AI Integration',
+        titleKey: 'Document Processing System',
+        descriptionKey:
             'Integrate AI to automatically extract, analyze, and process documents. Turn unstructured data into actionable insights without manual data entry.',
         benefits: ['Automated extraction', 'High accuracy', 'Time savings', 'Error reduction'],
     },
@@ -77,7 +82,7 @@ export default function UseCases() {
                         variant="filled"
                         size="lg"
                     >
-                        Real-World Applications
+                        <Trans>Real-World Applications</Trans>
                     </Badge>
                 </Group>
 
@@ -87,7 +92,7 @@ export default function UseCases() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    See How Our Solutions Work in Practice
+                    <Trans>See How Our Solutions Work in Practice</Trans>
                 </Title>
 
                 <Text
@@ -97,16 +102,18 @@ export default function UseCases() {
                     maw={700}
                     mx="auto"
                 >
-                    These are just a few examples. Every solution is customized to your specific needs and industry.
+                    <Trans>
+                        These are just a few examples. Every solution is customized to your specific needs and industry.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2 }}
                     spacing="lg"
                 >
-                    {useCases.map((useCase, index) => (
+                    {useCases.map(useCase => (
                         <Card
-                            key={index}
+                            key={useCase.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -122,7 +129,7 @@ export default function UseCases() {
                                     size="sm"
                                     variant="light"
                                 >
-                                    {useCase.badge}
+                                    <Trans>{useCase.badgeKey}</Trans>
                                 </Badge>
                             </Group>
 
@@ -130,7 +137,7 @@ export default function UseCases() {
                                 order={4}
                                 mb="xs"
                             >
-                                {useCase.title}
+                                <Trans>{useCase.titleKey}</Trans>
                             </Title>
 
                             <Text
@@ -138,7 +145,7 @@ export default function UseCases() {
                                 c="dimmed"
                                 mb="md"
                             >
-                                {useCase.description}
+                                <Trans>{useCase.descriptionKey}</Trans>
                             </Text>
 
                             <Text
@@ -146,7 +153,7 @@ export default function UseCases() {
                                 fw={600}
                                 mb="xs"
                             >
-                                Key Benefits:
+                                <Trans>Key Benefits:</Trans>
                             </Text>
 
                             <List
@@ -166,7 +173,9 @@ export default function UseCases() {
                                 }
                             >
                                 {useCase.benefits.map((benefit, idx) => (
-                                    <List.Item key={idx}>{benefit}</List.Item>
+                                    <List.Item key={idx}>
+                                        <Trans>{benefit}</Trans>
+                                    </List.Item>
                                 ))}
                             </List>
                         </Card>
@@ -186,7 +195,7 @@ export default function UseCases() {
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        Discuss Your Use Case
+                        <Trans>Discuss Your Use Case</Trans>
                     </Button>
                 </Group>
             </Container>

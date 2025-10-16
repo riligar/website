@@ -1,35 +1,40 @@
 import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de iniciar um projeto com a RiLiGar. Podemos conversar?')
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
 const steps = [
     {
+        id: 'discovery',
         icon: IconMessageCircle,
-        title: 'Discovery Call',
-        description:
+        titleKey: 'Discovery Call',
+        descriptionKey:
             'We start with a conversation about your challenges and goals. No sales pitch—just experienced engineers understanding your needs.',
         number: '01',
     },
     {
+        id: 'design',
         icon: IconBulb,
-        title: 'Solution Design',
-        description:
+        titleKey: 'Solution Design',
+        descriptionKey:
             'We recommend the best solution (or combination) for your situation. AI Agent? Salesforce component? SaaS platform? We map it out clearly.',
         number: '02',
     },
     {
+        id: 'development',
         icon: IconRocket,
-        title: 'Rapid Development',
-        description:
+        titleKey: 'Rapid Development',
+        descriptionKey:
             'Fast iterations with regular demos. You see progress constantly and provide feedback at every step. Many clients see value in 2-3 weeks.',
         number: '03',
     },
     {
+        id: 'deploy',
         icon: IconTrendingUp,
-        title: 'Deploy & Scale',
-        description:
+        titleKey: 'Deploy & Scale',
+        descriptionKey:
             'Launch your solution with confidence. We provide training, documentation, and ongoing support as you grow and scale.',
         number: '04',
     },
@@ -54,7 +59,7 @@ export default function Process() {
                         variant="filled"
                         size="lg"
                     >
-                        Simple Process
+                        <Trans>Simple Process</Trans>
                     </Badge>
                 </Group>
 
@@ -64,7 +69,7 @@ export default function Process() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    From Idea to Impact in Weeks, Not Months
+                    <Trans>From Idea to Impact in Weeks, Not Months</Trans>
                 </Title>
 
                 <Text
@@ -74,17 +79,19 @@ export default function Process() {
                     maw={700}
                     mx="auto"
                 >
-                    Our streamlined process gets you results fast. No bureaucracy, no endless meetings—just focused
-                    collaboration between technical experts.
+                    <Trans>
+                        Our streamlined process gets you results fast. No bureaucracy, no endless meetings—just focused
+                        collaboration between technical experts.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, sm: 2, lg: 4 }}
                     spacing="xl"
                 >
-                    {steps.map((step, index) => (
+                    {steps.map(step => (
                         <Box
-                            key={index}
+                            key={step.id}
                             style={{ position: 'relative' }}
                         >
                             <Text
@@ -119,14 +126,14 @@ export default function Process() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {step.title}
+                                <Trans>{step.titleKey}</Trans>
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                {step.description}
+                                <Trans>{step.descriptionKey}</Trans>
                             </Text>
                         </Box>
                     ))}
@@ -144,7 +151,7 @@ export default function Process() {
                         size="lg"
                         leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
                     >
-                        Start Your Project Today
+                        <Trans>Start Your Project Today</Trans>
                     </Button>
                 </Group>
             </Container>
