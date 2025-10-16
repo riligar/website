@@ -58,7 +58,11 @@ const useCases = [
 
 export default function UseCases() {
     return (
-        <Box py={80}>
+        <Box
+            component="section"
+            aria-label="Real-world use cases"
+            py={80}
+        >
             <Container size="xl">
                 <Group
                     justify="center"

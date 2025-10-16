@@ -47,6 +47,8 @@ const comparisons = [
 export default function Comparison() {
     return (
         <Box
+            component="section"
+            aria-label="Comparison with other agencies"
             py={80}
             style={{
                 background: 'linear-gradient(180deg, rgba(249, 250, 251, 1) 0%, rgba(255, 255, 255, 0) 100%)',

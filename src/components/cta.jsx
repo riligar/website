@@ -4,6 +4,8 @@ import { IconRocket, IconCalendar } from '@tabler/icons-react'
 export default function CTA() {
     return (
         <Box
+            component="section"
+            aria-label="Call to action"
             py={80}
             style={{
                 background: 'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%)',

@@ -25,7 +25,11 @@ const stats = [
 
 export default function Stats() {
     return (
-        <Box py={80}>
+        <Box
+            component="section"
+            aria-label="Statistics and impact numbers"
+            py={80}
+        >
             <Container size="xl">
                 <Title
                     order={2}

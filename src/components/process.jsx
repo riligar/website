@@ -35,6 +35,8 @@ const steps = [
 export default function Process() {
     return (
         <Box
+            component="section"
+            aria-label="Our development process"
             py={80}
             style={{
                 background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(249, 250, 251, 1) 100%)',

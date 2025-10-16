@@ -92,7 +92,11 @@ export default function Features() {
     ))
 
     return (
-        <Box py="xl">
+        <Box
+            component="section"
+            aria-label="Solutions portfolio"
+            py="xl"
+        >
             <Group justify="center">
                 <Badge
                     variant="filled"

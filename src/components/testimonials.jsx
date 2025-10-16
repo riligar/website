@@ -54,7 +54,11 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <Box py="xl">
+        <Box
+            component="section"
+            aria-label="Client testimonials"
+            py="xl"
+        >
             <Container size="xl">
                 <Group
                     justify="center"

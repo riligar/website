@@ -21,10 +21,12 @@ export default defineConfig({
             // },
             includeAssets: ['favicon.png', 'apple-touch-icon.png', 'masked-icon.svg'],
             manifest: {
-                name: 'Riligar',
-                short_name: 'Riligar',
-                description: 'Soluções inovadoras para gerenciamento seguro de senhas e dados.',
-                theme_color: '#ffffff',
+                name: 'RiLiGar - AI Agents, Salesforce & SaaS Solutions',
+                short_name: 'RiLiGar',
+                description:
+                    'Intelligent AI Agents, custom Salesforce solutions, and scalable SaaS platforms. Purpose-driven technology that delivers results.',
+                theme_color: '#228be6',
+                background_color: '#ffffff',
                 icons: [
                     {
                         src: 'image/android-chrome-512x512.png',

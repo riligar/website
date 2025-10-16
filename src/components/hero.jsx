@@ -4,6 +4,8 @@ import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
 export default function Hero() {
     return (
         <Box
+            component="section"
+            aria-label="Hero section"
             mt={80}
             mb={80}
         >
@@ -13,7 +15,8 @@ export default function Hero() {
             >
                 <Grid.Col span={{ base: 12, md: 6 }}>
                     <Title
-                        order={2}
+                        order={1}
+                        component="h1"
                         // size={{ base: 36, sm: 42, md: 48 }}
                         style={{ lineHeight: 1.2 }}
                     >

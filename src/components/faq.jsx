@@ -115,7 +115,10 @@ const faq = [
 
 export default function Faq() {
     return (
-        <Box>
+        <Box
+            component="section"
+            aria-label="Frequently asked questions"
+        >
             <Title ta="center">Frequently Asked Questions</Title>
 
             <Text

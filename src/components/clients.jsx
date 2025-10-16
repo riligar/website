@@ -14,6 +14,8 @@ const clients = [
 export default function Clients() {
     return (
         <Box
+            component="section"
+            aria-label="Our clients"
             py={60}
             style={{
                 borderTop: '1px solid #e9ecef',
