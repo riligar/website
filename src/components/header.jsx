@@ -232,7 +232,7 @@ export default function HeaderMegaMenu() {
                                 About Us
                             </a>
                             <a
-                                href="#"
+                                href="/contact"
                                 className={classes.link}
                             >
                                 Contact
@@ -308,7 +308,7 @@ export default function HeaderMegaMenu() {
                         About Us
                     </a>
                     <a
-                        href="#"
+                        href="/contact"
                         className={classes.link}
                     >
                         Contact

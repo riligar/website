@@ -20,7 +20,7 @@ const data = [
         links: [
             { label: 'About Us', link: '/about' },
             { label: 'Our Approach', link: '#' },
-            { label: 'Contact', link: '#' },
+            { label: 'Contact', link: '/contact' },
             { label: 'Careers', link: '#' },
         ],
     },
