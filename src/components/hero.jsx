@@ -1,10 +1,9 @@
-import { Container, Title, Grid, Box, Text, List, ThemeIcon, Image, rem } from '@mantine/core'
+import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem } from '@mantine/core'
 import { IconCheck } from '@tabler/icons-react'
 
 export default function Hero() {
     return (
-        <Container
-            size="lg"
+        <Box
             mt={80}
             mb={80}
         >
@@ -115,6 +114,6 @@ export default function Hero() {
                     </Box>
                 </Grid.Col>
             </Grid>
-        </Container>
+        </Box>
     )
 }

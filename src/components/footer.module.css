@@ -32,6 +32,10 @@
 .inner {
   display: flex;
   justify-content: space-between;
+  max-width: rem(1280px);
+  margin: 0 auto;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
 
   @media (max-width: $mantine-breakpoint-sm) {
     flex-direction: column;
@@ -79,6 +83,11 @@
   margin-top: var(--mantine-spacing-xl);
   padding-top: var(--mantine-spacing-xl);
   /* padding-bottom: var(--mantine-spacing-xl); */
+  max-width: rem(1280px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
 
