@@ -5,20 +5,33 @@
   right: 0;
   z-index: 1000;
   background-color: light-dark(
-    rgba(255, 255, 255, 0.95),
-    rgba(26, 27, 30, 0.95)
+    rgba(255, 255, 255, 0.85),
+    rgba(26, 27, 30, 0.85)
   );
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   border-bottom: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
   box-shadow: light-dark(
     0 1px 3px rgba(0, 0, 0, 0.05),
-    0 1px 3px rgba(0, 0, 0, 0.3)
+    0 1px 3px rgba(0, 0, 0, 0.2)
+  );
+  transition: all 0.3s ease;
+}
+
+.headerWrapper.scrolled {
+  background-color: light-dark(
+    rgba(255, 255, 255, 0.98),
+    rgba(26, 27, 30, 0.98)
+  );
+  backdrop-filter: blur(12px);
+  box-shadow: light-dark(
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.4)
   );
 }
 
 .header {
-  height: rem(70px);
+  height: rem(60px);
   max-width: rem(1280px);
   margin: 0 auto;
   padding-left: var(--mantine-spacing-md);

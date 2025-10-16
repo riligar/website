@@ -21,6 +21,7 @@ import {
 
 import { useDisclosure } from '@mantine/hooks'
 import { IconSquareAsterisk, IconFileText, IconLockPassword, IconChevronDown, IconPassword } from '@tabler/icons-react'
+import { useState, useEffect } from 'react'
 
 import classes from './header.module.css'
 
@@ -60,7 +61,18 @@ export default function HeaderMegaMenu() {
 
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false)
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
+    const [scrolled, setScrolled] = useState(false)
     const theme = useMantineTheme()
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 20
+            setScrolled(isScrolled)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     const links = mockdata.map(item => (
         <UnstyledButton
@@ -102,7 +114,7 @@ export default function HeaderMegaMenu() {
 
     return (
         <>
-            <Box className={classes.headerWrapper}>
+            <Box className={`${classes.headerWrapper} ${scrolled ? classes.scrolled : ''}`}>
                 <header className={classes.header}>
                     <Group
                         justify="space-between"
@@ -212,8 +224,8 @@ export default function HeaderMegaMenu() {
                         </a> */}
                         </Group>
                         <Group visibleFrom="sm">
-                            <Button variant="default">Log in</Button>
-                            <Button>Sign up</Button>
+                            <Button size="xs">Log in</Button>
+                            <Button size="xs">Sign up</Button>
                         </Group>
                         <Burger
                             opened={drawerOpened}
@@ -276,7 +288,7 @@ export default function HeaderMegaMenu() {
                         Academy
                     </a>
 
-                    <Divider my="sm" />
+                    {/* <Divider my="sm" /> */}
 
                     <Group
                         justify="center"
