@@ -1,7 +1,7 @@
 import logo from '/image/riligar-logo.webp'
 
-import { Text, Container, ActionIcon, Group, rem, Image, Anchor } from '@mantine/core'
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react'
+import { Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core'
+import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react'
 
 import classes from './footer.module.css'
 
@@ -19,18 +19,16 @@ const data = [
         title: 'Company',
         links: [
             { label: 'About Us', link: '/about' },
-            { label: 'Our Approach', link: '#' },
             { label: 'Contact', link: '/contact' },
-            { label: 'Careers', link: '#' },
+            { label: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
         ],
     },
     {
-        title: 'Resources',
+        title: 'Connect',
         links: [
-            { label: 'Case Studies', link: '#' },
-            { label: 'Blog', link: '#' },
-            { label: 'FAQ', link: '#' },
-            { label: 'Privacy Policy', link: '#' },
+            { label: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
+            { label: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
+            { label: 'YouTube', link: 'https://www.youtube.com/@ciro-maciel', external: true },
         ],
     },
 ]
@@ -43,7 +41,8 @@ export default function FooterLinks() {
                 className={classes.link}
                 component="a"
                 href={link.link}
-                onClick={event => event.preventDefault()}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
             >
                 {link.label}
             </Text>
@@ -96,16 +95,24 @@ export default function FooterLinks() {
                     wrap="nowrap"
                 >
                     <ActionIcon
+                        component="a"
+                        href="https://www.linkedin.com/in/ciromaciel/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="lg"
                         color="gray"
                         variant="subtle"
                     >
-                        <IconBrandTwitter
+                        <IconBrandLinkedin
                             style={{ width: rem(18), height: rem(18) }}
                             stroke={1.5}
                         />
                     </ActionIcon>
                     <ActionIcon
+                        component="a"
+                        href="https://www.youtube.com/@ciro-maciel"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="lg"
                         color="gray"
                         variant="subtle"
@@ -116,6 +123,10 @@ export default function FooterLinks() {
                         />
                     </ActionIcon>
                     <ActionIcon
+                        component="a"
+                        href="https://www.instagram.com/ciro.maciel/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         size="lg"
                         color="gray"
                         variant="subtle"
