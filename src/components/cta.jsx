@@ -1,4 +1,4 @@
-import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
+import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
 
 export default function CTA() {
@@ -52,10 +52,10 @@ export default function CTA() {
                     </Button>
                 </Group>
 
-                <Group
-                    justify="center"
+                <SimpleGrid
+                    cols={{ base: 1, sm: 3 }}
+                    spacing={{ base: 'md', sm: 'xl' }}
                     mt={40}
-                    gap={50}
                 >
                     <Box ta="center">
                         <Text
@@ -102,7 +102,7 @@ export default function CTA() {
                             AI Agents Working
                         </Text>
                     </Box>
-                </Group>
+                </SimpleGrid>
             </Container>
         </Box>
     )

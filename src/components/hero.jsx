@@ -17,7 +17,7 @@ export default function Hero() {
                     <Title
                         order={1}
                         component="h1"
-                        // size={{ base: 36, sm: 42, md: 48 }}
+                        size={{ base: 32, sm: 40, md: 48 }}
                         style={{ lineHeight: 1.2 }}
                     >
                         Solutions That Transform <br /> Your Business
@@ -97,10 +97,15 @@ export default function Hero() {
                         </List.Item>
                     </List>
 
-                    <Group mt={40}>
+                    <Group
+                        mt={40}
+                        gap="md"
+                        style={{ flexWrap: 'wrap' }}
+                    >
                         <Button
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
+                            style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
                             Explore Solutions
                         </Button>
@@ -108,6 +113,7 @@ export default function Hero() {
                             size="lg"
                             variant="outline"
                             leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
+                            style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
                             Talk to Us
                         </Button>

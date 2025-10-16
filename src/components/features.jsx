@@ -110,6 +110,7 @@ export default function Features() {
                 order={2}
                 ta="center"
                 mt="sm"
+                size={{ base: 28, sm: 32, md: 36 }}
             >
                 Our Solutions Portfolio
             </Title>

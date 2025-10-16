@@ -99,12 +99,13 @@ export default function FooterLinks() {
                         href="https://www.linkedin.com/in/ciromaciel/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        size="lg"
+                        size="xl"
                         color="gray"
                         variant="subtle"
+                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandLinkedin
-                            style={{ width: rem(18), height: rem(18) }}
+                            style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
                     </ActionIcon>
@@ -113,12 +114,13 @@ export default function FooterLinks() {
                         href="https://www.youtube.com/@ciro-maciel"
                         target="_blank"
                         rel="noopener noreferrer"
-                        size="lg"
+                        size="xl"
                         color="gray"
                         variant="subtle"
+                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandYoutube
-                            style={{ width: rem(18), height: rem(18) }}
+                            style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
                     </ActionIcon>
@@ -127,12 +129,13 @@ export default function FooterLinks() {
                         href="https://www.instagram.com/ciro.maciel/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        size="lg"
+                        size="xl"
                         color="gray"
                         variant="subtle"
+                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandInstagram
-                            style={{ width: rem(18), height: rem(18) }}
+                            style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
                     </ActionIcon>

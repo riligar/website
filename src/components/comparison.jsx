@@ -71,6 +71,7 @@ export default function Comparison() {
                     order={2}
                     ta="center"
                     mb="md"
+                    size={{ base: 28, sm: 32, md: 36 }}
                 >
                     Why Choose RiLiGar?
                 </Title>

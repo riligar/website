@@ -59,6 +59,7 @@ export default function Process() {
                     order={2}
                     ta="center"
                     mb="md"
+                    size={{ base: 28, sm: 32, md: 36 }}
                 >
                     From Idea to Impact in Weeks, Not Months
                 </Title>

@@ -35,6 +35,7 @@ export default function Stats() {
                     order={2}
                     ta="center"
                     mb={60}
+                    size={{ base: 28, sm: 32, md: 36 }}
                 >
                     Solutions That Deliver Measurable Results
                 </Title>
@@ -61,11 +62,13 @@ export default function Stats() {
                             }}
                         >
                             <Text
-                                size="48px"
+                                style={{
+                                    fontSize: 'clamp(32px, 8vw, 48px)',
+                                    lineHeight: 1,
+                                }}
                                 fw={900}
                                 c="blue"
                                 mb="xs"
-                                style={{ lineHeight: 1 }}
                             >
                                 {stat.value}
                             </Text>

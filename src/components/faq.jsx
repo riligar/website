@@ -119,7 +119,12 @@ export default function Faq() {
             component="section"
             aria-label="Frequently asked questions"
         >
-            <Title ta="center">Frequently Asked Questions</Title>
+            <Title
+                ta="center"
+                size={{ base: 28, sm: 32, md: 36 }}
+            >
+                Frequently Asked Questions
+            </Title>
 
             <Text
                 c="dimmed"
