@@ -70,24 +70,33 @@ export default function AIAgentsHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <strong>Autonomous Decision-Making:</strong> Agents that understand context and act
-                            independently
+                            <Trans>
+                                <strong>Autonomous Decision-Making:</strong> Agents that understand context and act
+                                independently
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>24/7 Operation:</strong> Never sleep, never take breaks, always consistent
+                            <Trans>
+                                <strong>24/7 Operation:</strong> Never sleep, never take breaks, always consistent
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Continuous Learning:</strong> Get smarter with every interaction and feedback loop
+                            <Trans>
+                                <strong>Continuous Learning:</strong> Get smarter with every interaction and feedback
+                                loop
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Instant Scalability:</strong> Handle 10 or 10,000 tasks simultaneously without
-                            adding headcount
+                            <Trans>
+                                <strong>Instant Scalability:</strong> Handle 10 or 10,000 tasks simultaneously without
+                                adding headcount
+                            </Trans>
                         </Text>
                     </List.Item>
                 </List>
@@ -100,7 +109,7 @@ export default function AIAgentsHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Discuss Your Use Case
+                        <Trans>Discuss Your Use Case</Trans>
                     </Button>
                 </Group>
             </Container>

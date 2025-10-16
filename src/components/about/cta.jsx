@@ -85,19 +85,21 @@ export default function AboutCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    Want to know more about my journey? Visit my{' '}
-                    <Text
-                        component="a"
-                        href="https://blog.ciromaciel.click/sobre-mim"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        c="blue"
-                        fw={600}
-                        style={{ textDecoration: 'underline', cursor: 'pointer' }}
-                    >
-                        personal blog
-                    </Text>{' '}
-                    to learn more about my story and philosophy.
+                    <Trans>
+                        Want to know more about my journey? Visit my{' '}
+                        <Text
+                            component="a"
+                            href="https://blog.ciromaciel.click/sobre-mim"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            c="blue"
+                            fw={600}
+                            style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                        >
+                            personal blog
+                        </Text>{' '}
+                        to learn more about my story and philosophy.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

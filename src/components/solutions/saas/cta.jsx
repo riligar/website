@@ -22,7 +22,7 @@ export default function SaaSCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Ready to Build Your SaaS?
+                    <Trans>Ready to Build Your SaaS?</Trans>
                 </Title>
                 <Text
                     size="lg"
@@ -32,8 +32,10 @@ export default function SaaSCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    Let's discuss your SaaS idea. We'll design the architecture, choose the right tech stack, and
-                    deliver an MVP in 8-16 weeks.
+                    <Trans>
+                        Let's discuss your SaaS idea. We'll design the architecture, choose the right tech stack, and
+                        deliver an MVP in 8-16 weeks.
+                    </Trans>
                 </Text>
                 <Group
                     justify="center"
@@ -47,7 +49,7 @@ export default function SaaSCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Start Your SaaS Project
+                        <Trans>Start Your SaaS Project</Trans>
                     </Button>
                 </Group>
                 <Text
@@ -56,8 +58,10 @@ export default function SaaSCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    Most SaaS projects start with a technical discovery phase to validate architecture before full
-                    development.
+                    <Trans>
+                        Most SaaS projects start with a technical discovery phase to validate architecture before full
+                        development.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

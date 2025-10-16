@@ -24,7 +24,7 @@ export default function SalesforceCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Ready to Supercharge Your Salesforce?
+                    <Trans>Ready to Supercharge Your Salesforce?</Trans>
                 </Title>
 
                 <Text
@@ -35,8 +35,10 @@ export default function SalesforceCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    Let's discuss how custom development can transform your Salesforce org. Whether it's Lightning Web
-                    Components, integrations, or automation—we'll build exactly what your business needs.
+                    <Trans>
+                        Let's discuss how custom development can transform your Salesforce org. Whether it's Lightning
+                        Web Components, integrations, or automation—we'll build exactly what your business needs.
+                    </Trans>
                 </Text>
 
                 <Group
@@ -51,7 +53,7 @@ export default function SalesforceCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Start Your Salesforce Project
+                        <Trans>Start Your Salesforce Project</Trans>
                     </Button>
                 </Group>
 
@@ -61,7 +63,9 @@ export default function SalesforceCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    Most Salesforce projects deliver first results in 2-4 weeks with our agile development process.
+                    <Trans>
+                        Most Salesforce projects deliver first results in 2-4 weeks with our agile development process.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

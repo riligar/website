@@ -71,26 +71,34 @@ export default function SalesforceHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <strong>Lightning Web Components:</strong> Modern, performant custom components for any use
-                            case
+                            <Trans>
+                                <strong>Lightning Web Components:</strong> Modern, performant custom components for any
+                                use case
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Custom Integrations:</strong> Connect Salesforce with any system—APIs, databases,
-                            external apps
+                            <Trans>
+                                <strong>Custom Integrations:</strong> Connect Salesforce with any system—APIs,
+                                databases, external apps
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Process Automation:</strong> Flows, Apex triggers, and custom logic that eliminate
-                            manual work
+                            <Trans>
+                                <strong>Process Automation:</strong> Flows, Apex triggers, and custom logic that
+                                eliminate manual work
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Component Libraries:</strong> Reusable, documented components that boost
-                            productivity across teams
+                            <Trans>
+                                <strong>Component Libraries:</strong> Reusable, documented components that boost
+                                productivity across teams
+                            </Trans>
                         </Text>
                     </List.Item>
                 </List>
@@ -103,7 +111,7 @@ export default function SalesforceHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Discuss Your Salesforce Project
+                        <Trans>Discuss Your Salesforce Project</Trans>
                     </Button>
                 </Group>
             </Container>

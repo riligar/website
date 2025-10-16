@@ -11,39 +11,45 @@ import { Trans } from '@lingui/react/macro'
 
 const capabilities = [
     {
+        id: 'nlu',
         icon: IconMessageDots,
-        title: 'Natural Language Understanding',
-        description:
+        titleKey: 'Natural Language Understanding',
+        descriptionKey:
             'Agents that understand intent, context, and nuance in human language. Handle complex queries, multi-turn conversations, and ambiguous requests with human-like comprehension.',
     },
     {
+        id: 'reasoning',
         icon: IconBrain,
-        title: 'Reasoning & Planning',
-        description:
+        titleKey: 'Reasoning & Planning',
+        descriptionKey:
             'Break down complex goals into actionable steps. Our agents use chain-of-thought reasoning to plan sequences of actions, handle edge cases, and adapt when plans need adjustment.',
     },
     {
+        id: 'execution',
         icon: IconRobot,
-        title: 'Autonomous Execution',
-        description:
+        titleKey: 'Autonomous Execution',
+        descriptionKey:
             "Agents don't just suggest—they act. Make API calls, query databases, update records, send notifications, and orchestrate multi-step workflows without human intervention.",
     },
     {
+        id: 'rag',
         icon: IconFileAnalytics,
-        title: 'Document Processing & RAG',
-        description:
+        titleKey: 'Document Processing & RAG',
+        descriptionKey:
             'Extract, analyze, and synthesize information from documents, databases, and knowledge bases. Retrieval-Augmented Generation ensures accurate, grounded responses based on your data.',
     },
     {
+        id: 'analytics',
         icon: IconChartBar,
-        title: 'Data Analysis & Insights',
-        description:
+        titleKey: 'Data Analysis & Insights',
+        descriptionKey:
             'Agents that query databases, run analytics, generate reports, and surface insights. Turn raw data into actionable intelligence automatically.',
     },
     {
+        id: 'collaboration',
         icon: IconAutomation,
-        title: 'Multi-Agent Collaboration',
-        description:
+        titleKey: 'Multi-Agent Collaboration',
+        descriptionKey:
             'Complex tasks handled by specialized agent teams. Each agent has specific expertise, they communicate, delegate, and coordinate to solve problems too complex for any single agent.',
     },
 ]
@@ -61,7 +67,7 @@ export default function AIAgentsCapabilities() {
                     ta="center"
                     mb="md"
                 >
-                    What Our AI Agents Can Do
+                    <Trans>What Our AI Agents Can Do</Trans>
                 </Title>
 
                 <Text
@@ -72,17 +78,19 @@ export default function AIAgentsCapabilities() {
                     mx="auto"
                     mb={60}
                 >
-                    Beyond simple chatbots—these are intelligent systems that understand, reason, plan, and execute
-                    complex tasks autonomously.
+                    <Trans>
+                        Beyond simple chatbots—these are intelligent systems that understand, reason, plan, and execute
+                        complex tasks autonomously.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2, lg: 3 }}
                     spacing="xl"
                 >
-                    {capabilities.map((capability, index) => (
+                    {capabilities.map(capability => (
                         <Card
-                            key={index}
+                            key={capability.id}
                             shadow="sm"
                             radius="md"
                             padding="xl"
@@ -105,13 +113,13 @@ export default function AIAgentsCapabilities() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {capability.title}
+                                <Trans>{capability.titleKey}</Trans>
                             </Text>
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                {capability.description}
+                                <Trans>{capability.descriptionKey}</Trans>
                             </Text>
                         </Card>
                     ))}

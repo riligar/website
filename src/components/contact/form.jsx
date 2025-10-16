@@ -81,13 +81,13 @@ export default function ContactForm() {
                         fw={600}
                         mb="xs"
                     >
-                        Based in Brazil 🇧🇷 | Working with Clients Worldwide 🌎
+                        <Trans>Based in Brazil 🇧🇷 | Working with Clients Worldwide 🌎</Trans>
                     </Text>
                     <Text
                         size="sm"
                         c="dimmed"
                     >
-                        Remote-first approach • Flexible time zones • Clear communication
+                        <Trans>Remote-first approach • Flexible time zones • Clear communication</Trans>
                     </Text>
                 </Box>
             </Container>

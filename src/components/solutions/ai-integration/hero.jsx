@@ -71,22 +71,31 @@ export default function AIIntegrationHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <strong>No Rip-and-Replace:</strong> AI enhances your existing systems, doesn't replace them
+                            <Trans>
+                                <strong>No Rip-and-Replace:</strong> AI enhances your existing systems, doesn't replace
+                                them
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Custom AI Models:</strong> Fine-tuned for your data and use cases
+                            <Trans>
+                                <strong>Custom AI Models:</strong> Fine-tuned for your data and use cases
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>API-First:</strong> Easy integration with any application or platform
+                            <Trans>
+                                <strong>API-First:</strong> Easy integration with any application or platform
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Production-Ready:</strong> Reliable, monitored, and scalable AI services
+                            <Trans>
+                                <strong>Production-Ready:</strong> Reliable, monitored, and scalable AI services
+                            </Trans>
                         </Text>
                     </List.Item>
                 </List>
@@ -99,7 +108,7 @@ export default function AIIntegrationHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Discuss AI Integration
+                        <Trans>Discuss AI Integration</Trans>
                     </Button>
                 </Group>
             </Container>

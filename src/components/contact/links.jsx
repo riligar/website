@@ -115,13 +115,13 @@ export default function ContactLinks() {
                             <Button
                                 fullWidth
                                 variant="light"
+                                color={link.color}
                                 size="md"
                                 rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                                 component="a"
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: link.color, borderColor: link.color }}
                             >
                                 <Trans>{link.buttonTextKey}</Trans>
                             </Button>

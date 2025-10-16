@@ -24,7 +24,9 @@ export default function AboutStory() {
                         size="lg"
                         mb="md"
                     >
-                        Hi, I'm <strong>Ciro Cesar Maciel</strong>, founder of RiLiGar.
+                        <Trans>
+                            Hi, I'm <strong>Ciro Cesar Maciel</strong>, founder of RiLiGar.
+                        </Trans>
                     </Text>
 
                     <Text
@@ -32,9 +34,11 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        I've been passionate about technology for over two decades. My journey started early—building
-                        systems for large corporations, solving complex problems, and leading technical teams through
-                        critical moments.
+                        <Trans>
+                            I've been passionate about technology for over two decades. My journey started
+                            early—building systems for large corporations, solving complex problems, and leading
+                            technical teams through critical moments.
+                        </Trans>
                     </Text>
 
                     <Text
@@ -42,9 +46,11 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        But in <strong>2024</strong>, something shifted. I decided I wanted to direct my energy toward
-                        projects that truly made sense—not just technically impressive, but meaningful. Projects that
-                        could improve daily life, increase productivity, and bring more balance.
+                        <Trans>
+                            But in <strong>2024</strong>, something shifted. I decided I wanted to direct my energy
+                            toward projects that truly made sense—not just technically impressive, but meaningful.
+                            Projects that could improve daily life, increase productivity, and bring more balance.
+                        </Trans>
                     </Text>
 
                     <Text
@@ -52,20 +58,24 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        With the support of my wife, <strong>Andréa</strong>, and my son, <strong>Edgar</strong>, I
-                        transformed lines of code into solutions with direct impact on our routine. What started as
-                        tools for our family gradually became my purpose.
+                        <Trans>
+                            With the support of my wife, <strong>Andréa</strong>, and my son, <strong>Edgar</strong>, I
+                            transformed lines of code into solutions with direct impact on our routine. What started as
+                            tools for our family gradually became my purpose.
+                        </Trans>
                     </Text>
 
                     <Text
                         c="dimmed"
                         style={{ lineHeight: 1.8 }}
                     >
-                        Today, RiLiGar combines my experience in enterprise software development with cutting-edge AI
-                        capabilities. We study, apply, and deploy <strong>AI Agents</strong>, build powerful
-                        <strong> Salesforce solutions</strong>, create <strong>scalable SaaS platforms</strong>, and
-                        integrate AI into existing systems—all with one goal:{' '}
-                        <em>helping businesses evolve with technology that works</em>.
+                        <Trans>
+                            Today, RiLiGar combines my experience in enterprise software development with cutting-edge
+                            AI capabilities. We study, apply, and deploy <strong>AI Agents</strong>, build powerful
+                            <strong> Salesforce solutions</strong>, create <strong>scalable SaaS platforms</strong>, and
+                            integrate AI into existing systems—all with one goal:{' '}
+                            <em>helping businesses evolve with technology that works</em>.
+                        </Trans>
                     </Text>
                 </Paper>
 
@@ -92,15 +102,17 @@ export default function AboutStory() {
                                 <IconRocket style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title="20+ Years in Technology"
+                        title={<Trans>20+ Years in Technology</Trans>}
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            Built systems for major corporations, led technical teams, and solved complex problems at
-                            scale. Gained deep expertise in software architecture, development processes, and team
-                            leadership.
+                            <Trans>
+                                Built systems for major corporations, led technical teams, and solved complex problems
+                                at scale. Gained deep expertise in software architecture, development processes, and
+                                team leadership.
+                            </Trans>
                         </Text>
                     </Timeline.Item>
 
@@ -114,14 +126,16 @@ export default function AboutStory() {
                                 <IconBulb style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title="The 2024 Decision"
+                        title={<Trans>The 2024 Decision</Trans>}
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            Decided to focus on projects with real purpose. Started developing tools that increase
-                            productivity and bring more balance to daily life—beginning with our own family's needs.
+                            <Trans>
+                                Decided to focus on projects with real purpose. Started developing tools that increase
+                                productivity and bring more balance to daily life—beginning with our own family's needs.
+                            </Trans>
                         </Text>
                     </Timeline.Item>
 
@@ -135,14 +149,16 @@ export default function AboutStory() {
                                 <IconHeart style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title="Family-Driven Innovation"
+                        title={<Trans>Family-Driven Innovation</Trans>}
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            With Andréa and Edgar's support, transformed code into impactful solutions. What we built
-                            for ourselves became tools that could help others.
+                            <Trans>
+                                With Andréa and Edgar's support, transformed code into impactful solutions. What we
+                                built for ourselves became tools that could help others.
+                            </Trans>
                         </Text>
                     </Timeline.Item>
 
@@ -156,15 +172,17 @@ export default function AboutStory() {
                                 <IconTrendingUp style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title="RiLiGar Today"
+                        title={<Trans>RiLiGar Today</Trans>}
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            Now delivering enterprise-grade solutions: AI Agents, Salesforce components, SaaS platforms,
-                            and AI integration services. Helping businesses evolve with less noise, more clarity, and
-                            consistent results.
+                            <Trans>
+                                Now delivering enterprise-grade solutions: AI Agents, Salesforce components, SaaS
+                                platforms, and AI integration services. Helping businesses evolve with less noise, more
+                                clarity, and consistent results.
+                            </Trans>
                         </Text>
                     </Timeline.Item>
                 </Timeline>

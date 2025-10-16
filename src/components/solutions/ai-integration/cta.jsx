@@ -22,7 +22,7 @@ export default function AIIntegrationCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Ready to Add AI to Your Systems?
+                    <Trans>Ready to Add AI to Your Systems?</Trans>
                 </Title>
                 <Text
                     size="lg"
@@ -32,8 +32,10 @@ export default function AIIntegrationCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    Let's explore how AI can enhance your existing applications. We'll identify opportunities, design
-                    the integration, and deliver measurable results.
+                    <Trans>
+                        Let's explore how AI can enhance your existing applications. We'll identify opportunities,
+                        design the integration, and deliver measurable results.
+                    </Trans>
                 </Text>
                 <Group
                     justify="center"
@@ -47,7 +49,7 @@ export default function AIIntegrationCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Start AI Integration Project
+                        <Trans>Start AI Integration Project</Trans>
                     </Button>
                 </Group>
                 <Text
@@ -56,8 +58,10 @@ export default function AIIntegrationCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    Most AI integration projects start with a proof-of-concept to validate the approach before full
-                    deployment.
+                    <Trans>
+                        Most AI integration projects start with a proof-of-concept to validate the approach before full
+                        deployment.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

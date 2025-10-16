@@ -70,23 +70,32 @@ export default function SaaSHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <strong>Modern Tech Stack:</strong> React, Node.js, PostgreSQL, Redis—proven technologies
+                            <Trans>
+                                <strong>Modern Tech Stack:</strong> React, Node.js, PostgreSQL, Redis—proven
+                                technologies
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Cloud-Native:</strong> Built for AWS, GCP, or Azure with auto-scaling and high
-                            availability
+                            <Trans>
+                                <strong>Cloud-Native:</strong> Built for AWS, GCP, or Azure with auto-scaling and high
+                                availability
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Clean Architecture:</strong> Maintainable, testable, and ready to scale
+                            <Trans>
+                                <strong>Clean Architecture:</strong> Maintainable, testable, and ready to scale
+                            </Trans>
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <strong>Cost-Effective:</strong> Optimized infrastructure that doesn't waste resources
+                            <Trans>
+                                <strong>Cost-Effective:</strong> Optimized infrastructure that doesn't waste resources
+                            </Trans>
                         </Text>
                     </List.Item>
                 </List>
@@ -99,7 +108,7 @@ export default function SaaSHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Discuss Your SaaS Idea
+                        <Trans>Discuss Your SaaS Idea</Trans>
                     </Button>
                 </Group>
             </Container>

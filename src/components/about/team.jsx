@@ -75,9 +75,11 @@ export default function AboutTeam() {
                                     mb="md"
                                     style={{ lineHeight: 1.6 }}
                                 >
-                                    20+ years building enterprise systems, leading technical teams, and solving complex
-                                    problems. Specialized in AI, Salesforce development, and scalable software
-                                    architecture. Passionate about technology with purpose.
+                                    <Trans>
+                                        20+ years building enterprise systems, leading technical teams, and solving
+                                        complex problems. Specialized in AI, Salesforce development, and scalable
+                                        software architecture. Passionate about technology with purpose.
+                                    </Trans>
                                 </Text>
 
                                 <Group gap="xs">
@@ -85,7 +87,7 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        AI Engineering
+                                        <Trans>AI Engineering</Trans>
                                     </Badge>
                                     <Badge
                                         size="sm"
@@ -97,13 +99,13 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        SaaS Architecture
+                                        <Trans>SaaS Architecture</Trans>
                                     </Badge>
                                     <Badge
                                         size="sm"
                                         variant="outline"
                                     >
-                                        Leadership
+                                        <Trans>Leadership</Trans>
                                     </Badge>
                                 </Group>
                             </Box>
@@ -126,7 +128,7 @@ export default function AboutTeam() {
                         ta="center"
                         mb="md"
                     >
-                        Behind Every Solution
+                        <Trans>Behind Every Solution</Trans>
                     </Title>
 
                     <Text
@@ -136,10 +138,12 @@ export default function AboutTeam() {
                         mx="auto"
                         style={{ lineHeight: 1.8 }}
                     >
-                        While I lead the technical work, none of this would be possible without the support of my
-                        family. <strong>Andréa</strong> and <strong>Edgar</strong> inspire me daily to build technology
-                        that creates more time for what matters most. This personal motivation drives us to deliver
-                        solutions that genuinely improve lives—not just bottom lines.
+                        <Trans>
+                            While I lead the technical work, none of this would be possible without the support of my
+                            family. <strong>Andréa</strong> and <strong>Edgar</strong> inspire me daily to build
+                            technology that creates more time for what matters most. This personal motivation drives us
+                            to deliver solutions that genuinely improve lives—not just bottom lines.
+                        </Trans>
                     </Text>
                 </Box>
             </Container>

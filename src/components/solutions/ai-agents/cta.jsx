@@ -24,7 +24,7 @@ export default function AIAgentsCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Ready to Deploy AI Agents?
+                    <Trans>Ready to Deploy AI Agents?</Trans>
                 </Title>
 
                 <Text
@@ -35,8 +35,10 @@ export default function AIAgentsCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    Let's discuss your specific use case. We'll explore how AI Agents can automate tasks, reduce costs,
-                    and scale your operations—with measurable ROI.
+                    <Trans>
+                        Let's discuss your specific use case. We'll explore how AI Agents can automate tasks, reduce
+                        costs, and scale your operations—with measurable ROI.
+                    </Trans>
                 </Text>
 
                 <Group
@@ -51,7 +53,7 @@ export default function AIAgentsCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Start Your AI Agent Project
+                        <Trans>Start Your AI Agent Project</Trans>
                     </Button>
                 </Group>
 
@@ -61,7 +63,10 @@ export default function AIAgentsCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    Most projects start with a 2-week proof-of-concept to validate the approach before full deployment.
+                    <Trans>
+                        Most projects start with a 2-week proof-of-concept to validate the approach before full
+                        deployment.
+                    </Trans>
                 </Text>
             </Container>
         </Box>
