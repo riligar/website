@@ -11,6 +11,10 @@ import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Contact from './pages/contact.jsx'
 import NotFoundPage from './pages/404.jsx'
+import AIAgentsPage from './pages/ai-agents.jsx'
+import SalesforcePage from './pages/salesforce.jsx'
+import SaaSPage from './pages/saas.jsx'
+import AIIntegrationPage from './pages/ai-integration.jsx'
 
 const theme = createTheme({
     fontFamily: 'Montserrat, sans-serif',
@@ -38,6 +42,22 @@ export default function AppRoutes() {
                     <Route
                         path="/contact"
                         element={<Contact />}
+                    />
+                    <Route
+                        path="/ai-agents"
+                        element={<AIAgentsPage />}
+                    />
+                    <Route
+                        path="/salesforce"
+                        element={<SalesforcePage />}
+                    />
+                    <Route
+                        path="/saas"
+                        element={<SaaSPage />}
+                    />
+                    <Route
+                        path="/ai-integration"
+                        element={<AIIntegrationPage />}
                     />
                     <Route
                         path="*"
