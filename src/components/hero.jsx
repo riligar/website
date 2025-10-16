@@ -17,7 +17,6 @@ export default function Hero() {
                     <Title
                         order={1}
                         component="h1"
-                        size={{ base: 32, sm: 40, md: 48 }}
                         style={{ lineHeight: 1.2 }}
                     >
                         Solutions That Transform <br /> Your Business

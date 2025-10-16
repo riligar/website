@@ -28,7 +28,6 @@ export default function AIAgentsHero() {
                     component="h1"
                     ta="center"
                     mb="xl"
-                    size={{ base: 32, sm: 40, md: 48 }}
                     style={{ lineHeight: 1.2 }}
                 >
                     Autonomous AI Agents That Work <br /> While You Focus on Growth
