@@ -1,5 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconCloudComputing, IconCheck, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function SaaSHero() {
     return (
@@ -19,7 +20,7 @@ export default function SaaSHero() {
                         size="xl"
                         leftSection={<IconCloudComputing style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        SaaS Platforms
+                        <Trans>SaaS Platforms</Trans>
                     </Badge>
                 </Group>
 
@@ -30,7 +31,9 @@ export default function SaaSHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Scalable SaaS Platforms <br /> Built Right From Day One
+                    <Trans>
+                        Scalable SaaS Platforms <br /> Built Right From Day One
+                    </Trans>
                 </Title>
 
                 <Text
@@ -42,8 +45,10 @@ export default function SaaSHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    We build modern, high-performance SaaS applications with clean architecture. From MVP to enterprise
-                    scale—lightweight, fast, and cost-effective to run.
+                    <Trans>
+                        We build modern, high-performance SaaS applications with clean architecture. From MVP to
+                        enterprise scale—lightweight, fast, and cost-effective to run.
+                    </Trans>
                 </Text>
 
                 <List

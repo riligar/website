@@ -8,6 +8,7 @@ import {
     IconApi,
     IconCheck,
 } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const techStack = [
     {

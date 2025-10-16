@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconBolt, IconClock, IconChartLine, IconShieldCheck } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const metrics = [
     { icon: IconBolt, value: '90%', label: 'Automation Rate', description: 'Tasks automated with AI integration' },

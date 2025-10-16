@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconClock, IconCoin, IconUsers, IconTrendingUp } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const metrics = [
     {

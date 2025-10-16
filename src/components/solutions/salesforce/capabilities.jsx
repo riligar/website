@@ -7,6 +7,7 @@ import {
     IconSettings,
     IconShield,
 } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const capabilities = [
     {

@@ -1,5 +1,6 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconMessageCircle, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function AboutCTA() {
     return (
@@ -16,7 +17,7 @@ export default function AboutCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Let's Build Something Meaningful Together
+                    <Trans>Let's Build Something Meaningful Together</Trans>
                 </Title>
 
                 <Text
@@ -27,8 +28,10 @@ export default function AboutCTA() {
                     maw={600}
                     mx="auto"
                 >
-                    If you believe in technology with purpose and want a partner who's personally invested in your
-                    success, let's talk.
+                    <Trans>
+                        If you believe in technology with purpose and want a partner who's personally invested in your
+                        success, let's talk.
+                    </Trans>
                 </Text>
 
                 <Group
@@ -44,7 +47,7 @@ export default function AboutCTA() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        YouTube Channel
+                        <Trans>YouTube Channel</Trans>
                     </Button>
                 </Group>
 

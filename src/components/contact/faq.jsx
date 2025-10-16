@@ -1,29 +1,42 @@
 import { Box, Title, Text, Container, Accordion } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 const contactFaq = [
     {
-        question: 'What information should I include when reaching out?',
-        answer: 'Share your business challenge, project goals, timeline, and budget range if possible. The more context you provide, the better I can tailor my response to your specific needs.',
+        id: 'info',
+        questionKey: 'What information should I include when reaching out?',
+        answerKey:
+            'Share your business challenge, project goals, timeline, and budget range if possible. The more context you provide, the better I can tailor my response to your specific needs.',
     },
     {
-        question: 'Do you offer free consultations?',
-        answer: "Yes! The initial consultation is always free. We'll discuss your project, explore potential solutions, and see if we're a good fit—no obligation, no sales pressure.",
+        id: 'consultation',
+        questionKey: 'Do you offer free consultations?',
+        answerKey:
+            "Yes! The initial consultation is always free. We'll discuss your project, explore potential solutions, and see if we're a good fit—no obligation, no sales pressure.",
     },
     {
-        question: 'What types of projects do you take on?',
-        answer: 'I focus on AI Agents, Salesforce solutions, SaaS platforms, and AI integration projects. If it involves intelligent automation, Salesforce development, or scalable web applications, I can likely help.',
+        id: 'projects',
+        questionKey: 'What types of projects do you take on?',
+        answerKey:
+            'I focus on AI Agents, Salesforce solutions, SaaS platforms, and AI integration projects. If it involves intelligent automation, Salesforce development, or scalable web applications, I can likely help.',
     },
     {
-        question: 'What is your typical project size?',
-        answer: 'I work with projects ranging from small Salesforce components (2-4 weeks) to complete SaaS platforms (3-6 months). Both startups and established businesses are welcome.',
+        id: 'size',
+        questionKey: 'What is your typical project size?',
+        answerKey:
+            'I work with projects ranging from small Salesforce components (2-4 weeks) to complete SaaS platforms (3-6 months). Both startups and established businesses are welcome.',
     },
     {
-        question: 'Do you work with international clients?',
-        answer: 'Absolutely! I work with clients worldwide and am comfortable with different time zones. Communication happens via video calls, email, and project management tools.',
+        id: 'international',
+        questionKey: 'Do you work with international clients?',
+        answerKey:
+            'Absolutely! I work with clients worldwide and am comfortable with different time zones. Communication happens via video calls, email, and project management tools.',
     },
     {
-        question: "What if I'm not sure what solution I need?",
-        answer: "That's perfectly fine! Many clients reach out with a challenge but aren't sure about the best solution. That's where my expertise comes in—I'll recommend the approach that makes the most sense for your situation.",
+        id: 'unsure',
+        questionKey: "What if I'm not sure what solution I need?",
+        answerKey:
+            "That's perfectly fine! Many clients reach out with a challenge but aren't sure about the best solution. That's where my expertise comes in—I'll recommend the approach that makes the most sense for your situation.",
     },
 ]
 
@@ -36,7 +49,7 @@ export default function ContactFAQ() {
                     ta="center"
                     mb="md"
                 >
-                    Common Questions
+                    <Trans>Common Questions</Trans>
                 </Title>
 
                 <Text
@@ -46,22 +59,24 @@ export default function ContactFAQ() {
                     maw={700}
                     mx="auto"
                 >
-                    Quick answers to questions you might have before reaching out.
+                    <Trans>Quick answers to questions you might have before reaching out.</Trans>
                 </Text>
 
                 <Accordion variant="separated">
-                    {contactFaq.map((item, index) => (
+                    {contactFaq.map(item => (
                         <Accordion.Item
-                            key={index}
-                            value={item.question}
+                            key={item.id}
+                            value={item.questionKey}
                         >
-                            <Accordion.Control>{item.question}</Accordion.Control>
+                            <Accordion.Control>
+                                <Trans>{item.questionKey}</Trans>
+                            </Accordion.Control>
                             <Accordion.Panel>
                                 <Text
                                     size="sm"
                                     c="dimmed"
                                 >
-                                    {item.answer}
+                                    <Trans>{item.answerKey}</Trans>
                                 </Text>
                             </Accordion.Panel>
                         </Accordion.Item>

@@ -1,42 +1,47 @@
 import { Box, Container, SimpleGrid, Card, Group, Text, ThemeIcon, rem, Button } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandInstagram, IconBrandYoutube, IconWorld, IconArrowRight } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const socialLinks = [
     {
+        id: 'linkedin',
         icon: IconBrandLinkedin,
-        name: 'LinkedIn',
-        description: 'Connect professionally and see my career journey',
+        nameKey: 'LinkedIn',
+        descriptionKey: 'Connect professionally and see my career journey',
         username: '@ciromaciel',
         url: 'https://www.linkedin.com/in/ciromaciel/',
         color: '#0A66C2',
-        buttonText: 'Connect on LinkedIn',
+        buttonTextKey: 'Connect on LinkedIn',
     },
     {
+        id: 'instagram',
         icon: IconBrandInstagram,
-        name: 'Instagram',
-        description: 'Follow my daily insights and behind-the-scenes',
+        nameKey: 'Instagram',
+        descriptionKey: 'Follow my daily insights and behind-the-scenes',
         username: '@ciro.maciel',
         url: 'https://www.instagram.com/ciro.maciel/',
         color: '#E4405F',
-        buttonText: 'Follow on Instagram',
+        buttonTextKey: 'Follow on Instagram',
     },
     {
+        id: 'youtube',
         icon: IconBrandYoutube,
-        name: 'YouTube',
-        description: 'Watch tutorials, insights and technology content',
+        nameKey: 'YouTube',
+        descriptionKey: 'Watch tutorials, insights and technology content',
         username: '@ciro-maciel',
         url: 'https://www.youtube.com/@ciro-maciel',
         color: '#FF0000',
-        buttonText: 'Subscribe on YouTube',
+        buttonTextKey: 'Subscribe on YouTube',
     },
     {
+        id: 'blog',
         icon: IconWorld,
-        name: 'Personal Blog',
-        description: 'Read about my journey, philosophy and learnings',
+        nameKey: 'Personal Blog',
+        descriptionKey: 'Read about my journey, philosophy and learnings',
         username: 'blog.ciromaciel.click',
         url: 'https://blog.ciromaciel.click/sobre-mim',
         color: '#228BE6',
-        buttonText: 'Visit Blog',
+        buttonTextKey: 'Visit Blog',
     },
 ]
 
@@ -48,9 +53,9 @@ export default function ContactLinks() {
                     cols={{ base: 1, sm: 2, lg: 2 }}
                     spacing="xl"
                 >
-                    {socialLinks.map((link, index) => (
+                    {socialLinks.map(link => (
                         <Card
-                            key={index}
+                            key={link.id}
                             shadow="md"
                             padding="xl"
                             radius="md"
@@ -86,7 +91,7 @@ export default function ContactLinks() {
                                         fw={700}
                                         mb={4}
                                     >
-                                        {link.name}
+                                        <Trans>{link.nameKey}</Trans>
                                     </Text>
                                     <Text
                                         size="sm"
@@ -104,7 +109,7 @@ export default function ContactLinks() {
                                 mb="lg"
                                 style={{ lineHeight: 1.6 }}
                             >
-                                {link.description}
+                                <Trans>{link.descriptionKey}</Trans>
                             </Text>
 
                             <Button
@@ -118,7 +123,7 @@ export default function ContactLinks() {
                                 rel="noopener noreferrer"
                                 style={{ color: link.color, borderColor: link.color }}
                             >
-                                {link.buttonText}
+                                <Trans>{link.buttonTextKey}</Trans>
                             </Button>
                         </Card>
                     ))}

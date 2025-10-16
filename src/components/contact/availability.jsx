@@ -1,26 +1,31 @@
 import { Box, Title, Text, Container, SimpleGrid, Card, ThemeIcon, rem } from '@mantine/core'
 import { IconClock, IconWorld, IconMessageCheck, IconCalendar } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const availabilityInfo = [
     {
+        id: 'response',
         icon: IconClock,
-        title: 'Response Time',
-        description: 'Typically within 24 hours on business days. Urgent matters get priority attention.',
+        titleKey: 'Response Time',
+        descriptionKey: 'Typically within 24 hours on business days. Urgent matters get priority attention.',
     },
     {
+        id: 'global',
         icon: IconWorld,
-        title: 'Global Availability',
-        description: 'Working with clients worldwide. Flexible with time zones and scheduling.',
+        titleKey: 'Global Availability',
+        descriptionKey: 'Working with clients worldwide. Flexible with time zones and scheduling.',
     },
     {
+        id: 'communication',
         icon: IconMessageCheck,
-        title: 'Communication',
-        description: 'Clear, direct communication. No bureaucracy, just honest technical discussions.',
+        titleKey: 'Communication',
+        descriptionKey: 'Clear, direct communication. No bureaucracy, just honest technical discussions.',
     },
     {
+        id: 'kickoff',
         icon: IconCalendar,
-        title: 'Project Kickoff',
-        description: 'Most projects can start within 1-2 weeks after initial consultation.',
+        titleKey: 'Project Kickoff',
+        descriptionKey: 'Most projects can start within 1-2 weeks after initial consultation.',
     },
 ]
 
@@ -38,7 +43,7 @@ export default function ContactAvailability() {
                     ta="center"
                     mb="md"
                 >
-                    What to Expect
+                    <Trans>What to Expect</Trans>
                 </Title>
 
                 <Text
@@ -48,17 +53,19 @@ export default function ContactAvailability() {
                     maw={700}
                     mx="auto"
                 >
-                    When you reach out, you're connecting directly with me—not a sales team or account manager. Here's
-                    what you can expect from our collaboration.
+                    <Trans>
+                        When you reach out, you're connecting directly with me—not a sales team or account manager.
+                        Here's what you can expect from our collaboration.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2, lg: 4 }}
                     spacing="lg"
                 >
-                    {availabilityInfo.map((info, index) => (
+                    {availabilityInfo.map(info => (
                         <Card
-                            key={index}
+                            key={info.id}
                             shadow="sm"
                             padding="lg"
                             radius="md"
@@ -78,14 +85,14 @@ export default function ContactAvailability() {
                                 size="lg"
                                 mb="xs"
                             >
-                                {info.title}
+                                <Trans>{info.titleKey}</Trans>
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                {info.description}
+                                <Trans>{info.descriptionKey}</Trans>
                             </Text>
                         </Card>
                     ))}

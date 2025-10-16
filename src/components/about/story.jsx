@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, Paper, Timeline, rem, ThemeIcon } from '@mantine/core'
 import { IconRocket, IconBulb, IconHeart, IconTrendingUp } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function AboutStory() {
     return (
@@ -10,7 +11,7 @@ export default function AboutStory() {
                     ta="center"
                     mb="xl"
                 >
-                    Our Story
+                    <Trans>Our Story</Trans>
                 </Title>
 
                 <Paper
@@ -73,7 +74,7 @@ export default function AboutStory() {
                     ta="center"
                     mb={40}
                 >
-                    The Journey
+                    <Trans>The Journey</Trans>
                 </Title>
 
                 <Timeline

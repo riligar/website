@@ -1,41 +1,48 @@
 import { Box, Title, Text, Container, SimpleGrid, Card, ThemeIcon, rem } from '@mantine/core'
 import { IconTarget, IconCode, IconUsers, IconHeart, IconBrain, IconTrendingUp } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const values = [
     {
+        id: 'purpose',
         icon: IconTarget,
-        title: 'Purpose-Driven',
-        description:
+        titleKey: 'Purpose-Driven',
+        descriptionKey:
             'Every solution we build serves a real purpose. We focus on projects that solve actual problems and deliver measurable value—not just technical complexity for its own sake.',
     },
     {
+        id: 'code',
         icon: IconCode,
-        title: 'Clean Code Philosophy',
-        description:
+        titleKey: 'Clean Code Philosophy',
+        descriptionKey:
             "We believe in code that's maintainable, scalable, and built to last. No shortcuts, no technical debt—just quality software that stands the test of time.",
     },
     {
+        id: 'collaboration',
         icon: IconUsers,
-        title: 'Direct Collaboration',
-        description:
+        titleKey: 'Direct Collaboration',
+        descriptionKey:
             'You work directly with experienced engineers who care about your success. No layers of project managers—just honest, expert collaboration between technical professionals.',
     },
     {
+        id: 'family',
         icon: IconHeart,
-        title: 'Family Values',
-        description:
+        titleKey: 'Family Values',
+        descriptionKey:
             'We understand work-life balance because we live it. Our solutions are designed by people who value family time and know that better tools mean more time for what matters.',
     },
     {
+        id: 'ai',
         icon: IconBrain,
-        title: 'AI Expertise',
-        description:
+        titleKey: 'AI Expertise',
+        descriptionKey:
             'We study and apply AI to create real business value. From autonomous agents to intelligent integrations, we leverage cutting-edge technology with practical wisdom.',
     },
     {
+        id: 'evolution',
         icon: IconTrendingUp,
-        title: 'Constant Evolution',
-        description:
+        titleKey: 'Constant Evolution',
+        descriptionKey:
             "We're always learning, improving, and raising our own standards. This commitment to growth means you get solutions that reflect the latest best practices and innovations.",
     },
 ]
@@ -54,7 +61,7 @@ export default function AboutValues() {
                     ta="center"
                     mb="md"
                 >
-                    Our Values
+                    <Trans>Our Values</Trans>
                 </Title>
 
                 <Text
@@ -64,16 +71,16 @@ export default function AboutValues() {
                     maw={700}
                     mx="auto"
                 >
-                    These principles guide every decision we make and every solution we build.
+                    <Trans>These principles guide every decision we make and every solution we build.</Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2, lg: 3 }}
                     spacing="lg"
                 >
-                    {values.map((value, index) => (
+                    {values.map(value => (
                         <Card
-                            key={index}
+                            key={value.id}
                             shadow="sm"
                             padding="lg"
                             radius="md"
@@ -93,14 +100,14 @@ export default function AboutValues() {
                                 size="lg"
                                 mb="xs"
                             >
-                                {value.title}
+                                <Trans>{value.titleKey}</Trans>
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                {value.description}
+                                <Trans>{value.descriptionKey}</Trans>
                             </Text>
                         </Card>
                     ))}

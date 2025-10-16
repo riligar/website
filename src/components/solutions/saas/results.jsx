@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconRocket, IconCoin, IconGauge, IconShield } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const metrics = [
     { icon: IconRocket, value: '8-16 weeks', label: 'MVP Delivery', description: 'Launch your SaaS product fast' },

@@ -1,4 +1,5 @@
 import { Box, Title, Text, Container, Card, SimpleGrid, Avatar, Group, Badge } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 export default function AboutTeam() {
     return (
@@ -9,7 +10,7 @@ export default function AboutTeam() {
                     ta="center"
                     mb="md"
                 >
-                    The Team
+                    <Trans>The Team</Trans>
                 </Title>
 
                 <Text
@@ -19,8 +20,10 @@ export default function AboutTeam() {
                     maw={700}
                     mx="auto"
                 >
-                    RiLiGar is a family-driven company. We're small by design—focused, dedicated, and personally
-                    invested in every project we take on.
+                    <Trans>
+                        RiLiGar is a family-driven company. We're small by design—focused, dedicated, and personally
+                        invested in every project we take on.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
@@ -62,7 +65,7 @@ export default function AboutTeam() {
                                         variant="light"
                                         size="sm"
                                     >
-                                        Founder & Lead Engineer
+                                        <Trans>Founder & Lead Engineer</Trans>
                                     </Badge>
                                 </Group>
 

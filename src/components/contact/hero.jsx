@@ -1,4 +1,5 @@
 import { Title, Text, Container, Box, Badge, Group } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 export default function ContactHero() {
     return (
@@ -15,18 +16,17 @@ export default function ContactHero() {
                         variant="filled"
                         size="lg"
                     >
-                        Get in Touch
+                        <Trans>Get in Touch</Trans>
                     </Badge>
                 </Group>
 
                 <Title
                     order={1}
                     ta="center"
-                    // size={{ base: 36, sm: 42, md: 52 }}
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Let's Connect
+                    <Trans>Let's Connect</Trans>
                 </Title>
 
                 <Text
@@ -37,8 +37,10 @@ export default function ContactHero() {
                     mx="auto"
                     style={{ lineHeight: 1.6 }}
                 >
-                    Ready to transform your business with purpose-driven technology? Reach out through any of these
-                    channels—I'm always happy to discuss new projects and opportunities.
+                    <Trans>
+                        Ready to transform your business with purpose-driven technology? Reach out through any of these
+                        channels—I'm always happy to discuss new projects and opportunities.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

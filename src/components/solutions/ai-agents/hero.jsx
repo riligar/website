@@ -1,5 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconRobot, IconCheck, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function AIAgentsHero() {
     return (
@@ -19,7 +20,7 @@ export default function AIAgentsHero() {
                         size="xl"
                         leftSection={<IconRobot style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        AI Agents
+                        <Trans>AI Agents</Trans>
                     </Badge>
                 </Group>
 
@@ -30,7 +31,9 @@ export default function AIAgentsHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Autonomous AI Agents That Work <br /> While You Focus on Growth
+                    <Trans>
+                        Autonomous AI Agents That Work <br /> While You Focus on Growth
+                    </Trans>
                 </Title>
 
                 <Text
@@ -42,8 +45,10 @@ export default function AIAgentsHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    Deploy intelligent agents that understand context, make decisions, learn from interactions, and
-                    execute tasks autonomously. Available 24/7, scalable instantly, improving continuously.
+                    <Trans>
+                        Deploy intelligent agents that understand context, make decisions, learn from interactions, and
+                        execute tasks autonomously. Available 24/7, scalable instantly, improving continuously.
+                    </Trans>
                 </Text>
 
                 <List

@@ -1,5 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconSparkles, IconCheck, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function AIIntegrationHero() {
     return (
@@ -19,7 +20,7 @@ export default function AIIntegrationHero() {
                         size="xl"
                         leftSection={<IconSparkles style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        AI Integration
+                        <Trans>AI Integration</Trans>
                     </Badge>
                 </Group>
 
@@ -30,7 +31,9 @@ export default function AIIntegrationHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Add AI Capabilities <br /> To Your Existing Systems
+                    <Trans>
+                        Add AI Capabilities <br /> To Your Existing Systems
+                    </Trans>
                 </Title>
 
                 <Text
@@ -42,8 +45,11 @@ export default function AIIntegrationHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    Integrate cutting-edge AI into your current applications and workflows. Natural language processing,
-                    document analysis, predictive analytics, and intelligent automation—tailored to your specific needs.
+                    <Trans>
+                        Integrate cutting-edge AI into your current applications and workflows. Natural language
+                        processing, document analysis, predictive analytics, and intelligent automation—tailored to your
+                        specific needs.
+                    </Trans>
                 </Text>
 
                 <List

@@ -1,5 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconChartBar, IconCheck, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function SalesforceHero() {
     return (
@@ -19,7 +20,7 @@ export default function SalesforceHero() {
                         size="xl"
                         leftSection={<IconChartBar style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        Salesforce Solutions
+                        <Trans>Salesforce Solutions</Trans>
                     </Badge>
                 </Group>
 
@@ -30,7 +31,9 @@ export default function SalesforceHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Custom Salesforce Development <br /> That Supercharges Your CRM
+                    <Trans>
+                        Custom Salesforce Development <br /> That Supercharges Your CRM
+                    </Trans>
                 </Title>
 
                 <Text
@@ -42,8 +45,11 @@ export default function SalesforceHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    Build Lightning Web Components, custom integrations, and automations that transform Salesforce into
-                    exactly what your business needs. Clean, maintainable code that scales with your organization.
+                    <Trans>
+                        Build Lightning Web Components, custom integrations, and automations that transform Salesforce
+                        into exactly what your business needs. Clean, maintainable code that scales with your
+                        organization.
+                    </Trans>
                 </Text>
 
                 <List

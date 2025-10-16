@@ -1,4 +1,5 @@
 import { Title, Text, Container, Box, Badge, Group } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 export default function AboutHero() {
     return (
@@ -15,18 +16,19 @@ export default function AboutHero() {
                         variant="filled"
                         size="lg"
                     >
-                        About RiLiGar
+                        <Trans>About RiLiGar</Trans>
                     </Badge>
                 </Group>
 
                 <Title
                     order={1}
                     ta="center"
-                    // size={{ base: 36, sm: 42, md: 52 }}
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    Building Technology <br /> with Purpose
+                    <Trans>
+                        Building Technology <br /> with Purpose
+                    </Trans>
                 </Title>
 
                 <Text
@@ -37,8 +39,10 @@ export default function AboutHero() {
                     mx="auto"
                     style={{ lineHeight: 1.6 }}
                 >
-                    RiLiGar was born from a simple belief: technology should solve real problems and improve lives.
-                    We're not chasing trends—we're building solutions that matter.
+                    <Trans>
+                        RiLiGar was born from a simple belief: technology should solve real problems and improve lives.
+                        We're not chasing trends—we're building solutions that matter.
+                    </Trans>
                 </Text>
             </Container>
         </Box>

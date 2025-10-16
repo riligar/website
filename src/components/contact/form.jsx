@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, Paper, Group, Button, rem } from '@mantine/core'
 import { IconMail, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function ContactForm() {
     return (
@@ -22,7 +23,7 @@ export default function ContactForm() {
                         ta="center"
                         mb="md"
                     >
-                        Prefer Direct Contact?
+                        <Trans>Prefer Direct Contact?</Trans>
                     </Title>
 
                     <Text
@@ -33,8 +34,10 @@ export default function ContactForm() {
                         maw={600}
                         mx="auto"
                     >
-                        For business inquiries, project discussions, or partnership opportunities, feel free to reach
-                        out directly via email or LinkedIn message.
+                        <Trans>
+                            For business inquiries, project discussions, or partnership opportunities, feel free to
+                            reach out directly via email or LinkedIn message.
+                        </Trans>
                     </Text>
 
                     <Group
@@ -50,7 +53,7 @@ export default function ContactForm() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Message on LinkedIn
+                            <Trans>Message on LinkedIn</Trans>
                         </Button>
                     </Group>
 
@@ -60,7 +63,7 @@ export default function ContactForm() {
                         ta="center"
                         mt="xl"
                     >
-                        I typically respond within 24 hours. Looking forward to hearing from you!
+                        <Trans>I typically respond within 24 hours. Looking forward to hearing from you!</Trans>
                     </Text>
                 </Paper>
 

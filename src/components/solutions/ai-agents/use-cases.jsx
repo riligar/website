@@ -1,5 +1,6 @@
 import { Box, Title, Text, Container, Card, SimpleGrid, Badge, List, ThemeIcon, rem } from '@mantine/core'
 import { IconCheck } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 const useCases = [
     {

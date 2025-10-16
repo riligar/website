@@ -1,5 +1,6 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function AIAgentsCTA() {
     const whatsappMessage = encodeURIComponent(

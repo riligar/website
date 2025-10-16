@@ -1,4 +1,5 @@
 import { Box, Title, Text, Accordion, Space } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 const faq = [
     {

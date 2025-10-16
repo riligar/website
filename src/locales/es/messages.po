@@ -16,20 +16,30 @@ msgstr ""
 #. placeholder {0}: feature.descriptionKey
 #. placeholder {0}: feature.titleKey
 #. placeholder {0}: group.titleKey
+#: src/components/about/values.jsx:103
+#: src/components/about/values.jsx:110
 #: src/components/comparison.jsx:138
-#: src/components/features.jsx:83
-#: src/components/features.jsx:90
+#: src/components/contact/availability.jsx:85
+#: src/components/contact/availability.jsx:92
+#: src/components/contact/faq.jsx:65
+#: src/components/contact/faq.jsx:71
+#: src/components/contact/links.jsx:94
+#: src/components/contact/links.jsx:112
+#: src/components/contact/links.jsx:126
+#: src/components/features.jsx:89
+#: src/components/features.jsx:96
 #: src/components/footer.jsx:52
 #: src/components/footer.jsx:62
-#: src/components/process.jsx:125
-#: src/components/process.jsx:132
-#: src/components/usecases.jsx:128
-#: src/components/usecases.jsx:136
-#: src/components/usecases.jsx:144
+#: src/components/process.jsx:129
+#: src/components/process.jsx:136
+#: src/components/testimonials.jsx:123
+#: src/components/usecases.jsx:132
+#: src/components/usecases.jsx:140
+#: src/components/usecases.jsx:148
 msgid "{0}"
 msgstr ""
 
-#: src/components/usecases.jsx:173
+#: src/components/usecases.jsx:177
 msgid "{benefit}"
 msgstr ""
 
@@ -42,17 +52,30 @@ msgstr "© {0} RiLiGar. Todos los derechos reservados. Construido con excelencia
 #~ msgid "24/7 availability"
 #~ msgstr ""
 
+#: src/components/about/hero.jsx:19
+msgid "About RiLiGar"
+msgstr "Acerca de RiLiGar"
+
 #: src/components/header.jsx:243
 #: src/components/header.jsx:316
 msgid "About Us"
 msgstr "Sobre Nosotros"
 
+#: src/components/solutions/ai-integration/hero.jsx:34
+msgid "Add AI Capabilities <0/> To Your Existing Systems"
+msgstr ""
+
 #: src/components/header.jsx:64
 msgid "Add AI capabilities to your existing systems and workflows"
 msgstr "Agrega capacidades de IA a tus sistemas y flujos de trabajo existentes"
 
+#: src/components/contact/process.jsx:84
+msgid "Agreement & Kickoff"
+msgstr "Acuerdo e Inicio"
+
 #: src/components/header.jsx:43
 #: src/components/hero.jsx:66
+#: src/components/solutions/ai-agents/hero.jsx:23
 msgid "AI Agents"
 msgstr "Agentes IA"
 
@@ -69,6 +92,7 @@ msgid "AI Agents working continuously for your business"
 msgstr "Agentes IA trabajando continuamente para tu negocio"
 
 #: src/components/header.jsx:63
+#: src/components/solutions/ai-integration/hero.jsx:23
 msgid "AI Integration"
 msgstr "Integración IA"
 
@@ -84,13 +108,17 @@ msgstr "Integración IA"
 #~ msgid "Automated workflows"
 #~ msgstr ""
 
+#: src/components/solutions/ai-agents/hero.jsx:34
+msgid "Autonomous AI Agents That Work <0/> While You Focus on Growth"
+msgstr ""
+
 #: src/components/stats.jsx:7
 msgid "Average productivity increase with our Salesforce components"
 msgstr "Aumento promedio de productividad con nuestros componentes Salesforce"
 
 #: src/components/NotFound.jsx:68
 msgid "Back to Home"
-msgstr ""
+msgstr "Volver al Inicio"
 
 #: src/components/features.jsx:51
 #~ msgid "Bespoke solutions designed around your unique business requirements. Clean, maintainable code that scales with your needs and stands the test of time."
@@ -108,6 +136,14 @@ msgstr ""
 #~ msgid "Build a complete SaaS platform tailored to your industry. From MVP to enterprise-scale, we handle everything: architecture, development, deployment, and scaling."
 #~ msgstr ""
 
+#: src/components/solutions/salesforce/hero.jsx:46
+msgid "Build Lightning Web Components, custom integrations, and automations that transform Salesforce into exactly what your business needs. Clean, maintainable code that scales with your organization."
+msgstr ""
+
+#: src/components/about/hero.jsx:29
+msgid "Building Technology <0/> with Purpose"
+msgstr ""
+
 #: src/components/stats.jsx:22
 msgid "Clean, maintainable code in every project"
 msgstr "Código limpio y mantenible en cada proyecto"
@@ -115,6 +151,10 @@ msgstr "Código limpio y mantenible en cada proyecto"
 #: src/components/comparison.jsx:27
 #~ msgid "Clean, maintainable code standard"
 #~ msgstr ""
+
+#: src/components/contact/faq.jsx:46
+msgid "Common Questions"
+msgstr "Preguntas Frecuentes"
 
 #: src/components/footer.jsx:21
 #~ msgid "Company"
@@ -161,6 +201,10 @@ msgstr "Componentes personalizados, integraciones y automatizaciones para tu pla
 #~ msgid "Custom Salesforce components that provide real-time insights, automate data entry, and help your sales team focus on closing deals instead of administrative tasks."
 #~ msgstr ""
 
+#: src/components/solutions/salesforce/hero.jsx:34
+msgid "Custom Salesforce Development <0/> That Supercharges Your CRM"
+msgstr ""
+
 #: src/components/usecases.jsx:34
 #~ msgid "Customer Service Automation"
 #~ msgstr ""
@@ -177,9 +221,17 @@ msgstr "Ofreciendo soluciones poderosas: Agentes IA, Salesforce, plataformas Saa
 #~ msgid "Deploy AI agents that handle customer inquiries, provide instant responses, and escalate complex issues to your team—all while learning from every interaction."
 #~ msgstr ""
 
+#: src/components/solutions/ai-agents/hero.jsx:46
+msgid "Deploy intelligent agents that understand context, make decisions, learn from interactions, and execute tasks autonomously. Available 24/7, scalable instantly, improving continuously."
+msgstr ""
+
 #: src/components/features.jsx:9
 #~ msgid "Deploy intelligent autonomous agents that work continuously for your business. From customer service to data analysis, our AI agents handle complex tasks, make informed decisions, and learn from interactions—all while you focus on growth."
 #~ msgstr "Despliega agentes autónomos inteligentes que trabajan continuamente para tu negocio. Desde servicio al cliente hasta análisis de datos, nuestros agentes IA manejan tareas complejas, toman decisiones informadas y aprenden de las interacciones, todo mientras te enfocas en el crecimiento."
+
+#: src/components/contact/process.jsx:105
+msgid "Development & Delivery"
+msgstr "Desarrollo y Entrega"
 
 #: src/components/comparison.jsx:7
 #~ msgid "Direct access to experienced engineers"
@@ -193,15 +245,19 @@ msgstr "Descubra la solución perfecta para su negocio"
 #~ msgid "Discovery Call"
 #~ msgstr ""
 
-#: src/components/usecases.jsx:194
+#: src/components/usecases.jsx:198
 msgid "Discuss Your Use Case"
-msgstr ""
+msgstr "Discute Tu Caso de Uso"
 
 #: src/components/usecases.jsx:70
 #~ msgid "Document Processing System"
 #~ msgstr ""
 
-#: src/components/features.jsx:126
+#: src/components/testimonials.jsx:98
+msgid "Don't just take our word for it. Here's what companies say about working with RiLiGar."
+msgstr ""
+
+#: src/components/features.jsx:132
 msgid "Each solution is crafted to address specific business challenges. We combine cutting-edge technology with clean, maintainable code to deliver tools that are powerful, reliable, and built to last. From AI Agents that work autonomously to Salesforce components that boost productivity—we have the solutions you need to thrive."
 msgstr "Cada solución está diseñada para abordar desafíos empresariales específicos. Combinamos tecnología de vanguardia con código limpio y mantenible para entregar herramientas poderosas, confiables y construidas para durar. Desde Agentes IA que trabajan autónomamente hasta componentes Salesforce que aumentan la productividad: tenemos las soluciones que necesitas para prosperar."
 
@@ -236,9 +292,9 @@ msgstr "Iteraciones rápidas significan validación rápida y ROI más rápido"
 
 #: src/components/comparison.jsx:112
 msgid "Feature"
-msgstr ""
+msgstr "Característica"
 
-#: src/components/features.jsx:70
+#: src/components/features.jsx:76
 msgid "Featured Solution"
 msgstr "Solución Destacada"
 
@@ -246,13 +302,29 @@ msgstr "Solución Destacada"
 msgid "Find the Perfect Solution for Your Business"
 msgstr "Encuentra la Solución Perfecta para Tu Negocio"
 
-#: src/components/process.jsx:68
-msgid "From Idea to Impact in Weeks, Not Months"
+#: src/components/contact/form.jsx:37
+msgid "For business inquiries, project discussions, or partnership opportunities, feel free to reach out directly via email or LinkedIn message."
 msgstr ""
+
+#: src/components/about/team.jsx:65
+msgid "Founder & Lead Engineer"
+msgstr "Fundador e Ingeniero Principal"
+
+#: src/components/contact/process.jsx:24
+msgid "From first contact to project launch, here's the simple process we follow to ensure your success."
+msgstr ""
+
+#: src/components/process.jsx:72
+msgid "From Idea to Impact in Weeks, Not Months"
+msgstr "De la Idea al Impacto en Semanas, No Meses"
 
 #: src/components/clients.jsx:95
 msgid "From startups to enterprises, we deliver solutions that drive growth across industries"
 msgstr ""
+
+#: src/components/contact/hero.jsx:19
+msgid "Get in Touch"
+msgstr "Ponte en Contacto"
 
 #: src/components/usecases.jsx:74
 #~ msgid "High accuracy"
@@ -271,9 +343,33 @@ msgstr "Plataformas de alto rendimiento con capacidades de IA que escalan con el
 msgid "Home"
 msgstr "Inicio"
 
+#: src/components/contact/process.jsx:14
+msgid "How We'll Work Together"
+msgstr ""
+
+#: src/components/contact/form.jsx:63
+msgid "I typically respond within 24 hours. Looking forward to hearing from you!"
+msgstr ""
+
+#: src/components/contact/process.jsx:70
+msgid "I'll provide a detailed proposal outlining the recommended solution, timeline, and investment. We'll refine the plan together until it perfectly fits your needs and budget."
+msgstr ""
+
+#: src/components/contact/process.jsx:112
+msgid "I'll start building your solution with regular check-ins and demos. You'll see progress constantly and have opportunities to provide feedback at every stage until launch."
+msgstr ""
+
+#: src/components/about/cta.jsx:31
+msgid "If you believe in technology with purpose and want a partner who's personally invested in your success, let's talk."
+msgstr ""
+
 #: src/components/usecases.jsx:58
 #~ msgid "Industry-Specific SaaS"
 #~ msgstr ""
+
+#: src/components/contact/process.jsx:42
+msgid "Initial Conversation"
+msgstr "Conversación Inicial"
 
 #: src/components/footer.jsx:32
 #~ msgid "Instagram"
@@ -291,6 +387,10 @@ msgstr "Inicio"
 #~ msgid "Integrate cutting-edge AI capabilities into your existing systems. Natural language processing, machine learning models, predictive analytics, and intelligent automation—tailored to your specific use cases."
 #~ msgstr "Integra capacidades de IA de vanguardia en tus sistemas existentes. Procesamiento de lenguaje natural, modelos de machine learning, análisis predictivo y automatización inteligente, adaptados a tus casos de uso específicos."
 
+#: src/components/solutions/ai-integration/hero.jsx:46
+msgid "Integrate cutting-edge AI into your current applications and workflows. Natural language processing, document analysis, predictive analytics, and intelligent automation—tailored to your specific needs."
+msgstr ""
+
 #: src/components/header.jsx:45
 msgid "Intelligent autonomous agents that automate tasks and make decisions for your business"
 msgstr "Agentes autónomos inteligentes que automatizan tareas y toman decisiones para tu negocio"
@@ -299,17 +399,29 @@ msgstr "Agentes autónomos inteligentes que automatizan tareas y toman decisione
 msgid "Intelligent autonomous agents that work 24/7, automating tasks, making decisions, and delivering insights"
 msgstr "Agentes autónomos inteligentes que trabajan 24/7, automatizando tareas, tomando decisiones y entregando información"
 
-#: src/components/usecases.jsx:152
+#: src/components/usecases.jsx:156
 msgid "Key Benefits:"
-msgstr ""
+msgstr "Beneficios Clave:"
 
 #: src/components/process.jsx:30
 #~ msgid "Launch your solution with confidence. We provide training, documentation, and ongoing support as you grow and scale."
 #~ msgstr ""
 
+#: src/components/about/cta.jsx:20
+msgid "Let's Build Something Meaningful Together"
+msgstr ""
+
+#: src/components/contact/hero.jsx:29
+msgid "Let's Connect"
+msgstr "Conectemos"
+
 #: src/components/footer.jsx:31
 #~ msgid "LinkedIn"
 #~ msgstr "LinkedIn"
+
+#: src/components/contact/form.jsx:53
+msgid "Message on LinkedIn"
+msgstr "Mensaje en LinkedIn"
 
 #: src/components/usecases.jsx:64
 #~ msgid "Modern tech stack"
@@ -327,25 +439,49 @@ msgstr "Nunca pierdas una oportunidad o consulta de cliente"
 msgid "No technical debt, no messy shortcuts"
 msgstr "Sin deuda técnica, sin atajos desordenados"
 
+#: src/components/contact/process.jsx:91
+msgid "Once we agree on the approach, we'll formalize the partnership and schedule a detailed kickoff meeting. This is where we dive deep into requirements and set clear expectations."
+msgstr ""
+
 #: src/components/NotFound.jsx:42
 msgid "Oops! Nothing Here"
-msgstr ""
+msgstr "¡Ups! Nada Aquí"
 
 #: src/components/header.jsx:196
 msgid "Our Services"
 msgstr "Nuestros Servicios"
 
-#: src/components/features.jsx:116
+#: src/components/features.jsx:122
 msgid "Our Solutions Portfolio"
 msgstr "Nuestro Portafolio de Soluciones"
 
-#: src/components/process.jsx:78
+#: src/components/about/story.jsx:14
+msgid "Our Story"
+msgstr "Nuestra Historia"
+
+#: src/components/process.jsx:82
 msgid "Our streamlined process gets you results fast. No bureaucracy, no endless meetings—just focused collaboration between technical experts."
 msgstr ""
+
+#: src/components/about/values.jsx:64
+msgid "Our Values"
+msgstr "Nuestros Valores"
 
 #: src/components/comparison.jsx:42
 #~ msgid "Personal attention to every project"
 #~ msgstr ""
+
+#: src/components/contact/form.jsx:26
+msgid "Prefer Direct Contact?"
+msgstr ""
+
+#: src/components/contact/process.jsx:63
+msgid "Proposal & Planning"
+msgstr "Propuesta y Planificación"
+
+#: src/components/contact/faq.jsx:56
+msgid "Quick answers to questions you might have before reaching out."
+msgstr ""
 
 #: src/components/process.jsx:23
 #~ msgid "Rapid Development"
@@ -355,16 +491,32 @@ msgstr ""
 #~ msgid "Rapid MVP launch"
 #~ msgstr ""
 
+#: src/components/testimonials.jsx:180
+msgid "Read More Stories"
+msgstr "Leer Más Historias"
+
 #: src/components/header.jsx:216
 msgid "Ready to get started?"
 msgstr "¿Listo para comenzar?"
+
+#: src/components/contact/hero.jsx:40
+msgid "Ready to transform your business with purpose-driven technology? Reach out through any of these channels—I'm always happy to discuss new projects and opportunities."
+msgstr ""
 
 #: src/components/usecases.jsx:49
 #~ msgid "Real-time dashboards"
 #~ msgstr ""
 
-#: src/components/usecases.jsx:81
+#: src/components/usecases.jsx:85
 msgid "Real-World Applications"
+msgstr "Aplicaciones del Mundo Real"
+
+#: src/components/about/team.jsx:23
+msgid "RiLiGar is a family-driven company. We're small by design—focused, dedicated, and personally invested in every project we take on."
+msgstr ""
+
+#: src/components/about/hero.jsx:40
+msgid "RiLiGar was born from a simple belief: technology should solve real problems and improve lives. We're not chasing trends—we're building solutions that matter."
 msgstr ""
 
 #: src/components/hero.jsx:102
@@ -376,6 +528,7 @@ msgstr "SaaS e Integración IA"
 #~ msgstr ""
 
 #: src/components/header.jsx:57
+#: src/components/solutions/saas/hero.jsx:23
 msgid "SaaS Platforms"
 msgstr "Plataformas SaaS"
 
@@ -393,12 +546,17 @@ msgstr "Plataformas SaaS"
 
 #: src/components/header.jsx:51
 #: src/components/hero.jsx:84
+#: src/components/solutions/salesforce/hero.jsx:23
 msgid "Salesforce Solutions"
 msgstr "Soluciones Salesforce"
 
 #: src/components/usecases.jsx:62
 #~ msgid "Scalable architecture"
 #~ msgstr ""
+
+#: src/components/solutions/saas/hero.jsx:34
+msgid "Scalable SaaS Platforms <0/> Built Right From Day One"
+msgstr ""
 
 #: src/components/usecases.jsx:40
 #~ msgid "Scales effortlessly"
@@ -408,17 +566,17 @@ msgstr "Soluciones Salesforce"
 msgid "Schedule a Call"
 msgstr "Agendar una Llamada"
 
-#: src/components/usecases.jsx:91
+#: src/components/usecases.jsx:95
 msgid "See How Our Solutions Work in Practice"
-msgstr ""
+msgstr "Ve Cómo Funcionan Nuestras Soluciones en la Práctica"
 
 #: src/components/comparison.jsx:225
 msgid "See How We Work"
-msgstr ""
+msgstr "Ver Cómo Trabajamos"
 
-#: src/components/process.jsx:58
+#: src/components/process.jsx:62
 msgid "Simple Process"
-msgstr ""
+msgstr "Proceso Simple"
 
 #: src/components/process.jsx:17
 #~ msgid "Solution Design"
@@ -437,7 +595,7 @@ msgstr "Soluciones Disponibles"
 msgid "Solutions That Deliver Measurable Results"
 msgstr "Soluciones que Generan Resultados Medibles"
 
-#: src/components/features.jsx:106
+#: src/components/features.jsx:112
 msgid "Solutions That Deliver Results"
 msgstr "Soluciones que Generan Resultados"
 
@@ -455,9 +613,9 @@ msgstr ""
 msgid "Start a Project"
 msgstr "Iniciar un Proyecto"
 
-#: src/components/process.jsx:150
+#: src/components/process.jsx:154
 msgid "Start Your Project Today"
-msgstr ""
+msgstr "Comienza Tu Proyecto Hoy"
 
 #: src/components/hero.jsx:140
 msgid "Talk to Us"
@@ -471,16 +629,28 @@ msgstr "Los equipos trabajan más rápido cuando las herramientas se ajustan a s
 #~ msgid "Technical guidance and strategic planning for your technology initiatives. We help you make informed decisions about architecture, tooling, and implementation approaches."
 #~ msgstr "Orientación técnica y planificación estratégica para tus iniciativas tecnológicas. Te ayudamos a tomar decisiones informadas sobre arquitectura, herramientas y enfoques de implementación."
 
+#: src/components/about/story.jsx:77
+msgid "The Journey"
+msgstr "El Viaje"
+
 #: src/components/NotFound.jsx:55
 msgid "The page you're looking for doesn't exist. You may have mistyped the address, or the page has been moved. Let's get you back on track."
 msgstr ""
 
 #: src/components/comparison.jsx:75
 msgid "The RiLiGar Difference"
+msgstr "La Diferencia RiLiGar"
+
+#: src/components/about/team.jsx:13
+msgid "The Team"
+msgstr "El Equipo"
+
+#: src/components/usecases.jsx:105
+msgid "These are just a few examples. Every solution is customized to your specific needs and industry."
 msgstr ""
 
-#: src/components/usecases.jsx:101
-msgid "These are just a few examples. Every solution is customized to your specific needs and industry."
+#: src/components/about/values.jsx:74
+msgid "These principles guide every decision we make and every solution we build."
 msgstr ""
 
 #: src/components/usecases.jsx:75
@@ -501,10 +671,18 @@ msgstr "Para primer prototipo funcional"
 
 #: src/components/clients.jsx:37
 msgid "Trusted by Forward-Thinking Companies"
-msgstr ""
+msgstr "Confiado por Empresas Visionarias"
+
+#: src/components/testimonials.jsx:88
+msgid "Trusted by Teams That Build Amazing Things"
+msgstr "Confiado por Equipos Que Construyen Cosas Increíbles"
 
 #: src/components/comparison.jsx:128
 msgid "Typical Agencies"
+msgstr "Agencias Típicas"
+
+#: src/components/solutions/saas/hero.jsx:46
+msgid "We build modern, high-performance SaaS applications with clean architecture. From MVP to enterprise scale—lightweight, fast, and cost-effective to run."
 msgstr ""
 
 #: src/components/hero.jsx:37
@@ -523,8 +701,24 @@ msgstr ""
 #~ msgid "We start with a conversation about your challenges and goals. No sales pitch—just experienced engineers understanding your needs."
 #~ msgstr ""
 
+#: src/components/contact/process.jsx:49
+msgid "We'll have a free consultation call to discuss your challenges, goals, and vision. I'll ask questions to understand your needs and share initial thoughts on potential solutions."
+msgstr ""
+
 #: src/components/comparison.jsx:95
 msgid "We're not just another development agency. We're a focused team that delivers solutions—not just code. Here's what makes us different."
+msgstr ""
+
+#: src/components/testimonials.jsx:78
+msgid "What Our Clients Say"
+msgstr "Lo Que Dicen Nuestros Clientes"
+
+#: src/components/contact/availability.jsx:46
+msgid "What to Expect"
+msgstr "Qué Esperar"
+
+#: src/components/contact/availability.jsx:56
+msgid "When you reach out, you're connecting directly with me—not a sales team or account manager. Here's what you can expect from our collaboration."
 msgstr ""
 
 #: src/components/cta.jsx:38
@@ -533,8 +727,12 @@ msgstr "Ya sea que necesites Agentes IA, soluciones Salesforce, plataformas SaaS
 
 #: src/components/comparison.jsx:85
 msgid "Why Choose RiLiGar?"
-msgstr ""
+msgstr "¿Por Qué Elegir RiLiGar?"
 
 #: src/components/footer.jsx:33
 #~ msgid "YouTube"
 #~ msgstr "YouTube"
+
+#: src/components/about/cta.jsx:47
+msgid "YouTube Channel"
+msgstr "Canal de YouTube"
