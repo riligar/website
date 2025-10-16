@@ -1,5 +1,6 @@
 import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem, Button, Group } from '@mantine/core'
 import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function Hero() {
     const whatsappMessage = encodeURIComponent(
@@ -24,16 +25,20 @@ export default function Hero() {
                         component="h1"
                         style={{ lineHeight: 1.2 }}
                     >
-                        Solutions That Transform <br /> Your Business
+                        <Trans>
+                            Solutions That Transform <br /> Your Business
+                        </Trans>
                     </Title>
                     <Text
                         size="lg"
                         c="dimmed"
                         mt="xl"
                     >
-                        We deliver powerful solutions tailored to your needs. From Salesforce components to intelligent
-                        AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution is designed to
-                        solve real problems and drive measurable results.
+                        <Trans>
+                            We deliver powerful solutions tailored to your needs. From Salesforce components to
+                            intelligent AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution
+                            is designed to solve real problems and drive measurable results.
+                        </Trans>
                     </Text>
 
                     <List
@@ -58,15 +63,17 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                AI Agents
+                                <Trans>AI Agents</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Intelligent autonomous agents that work 24/7, automating tasks, making decisions, and
-                                delivering insights
+                                <Trans>
+                                    Intelligent autonomous agents that work 24/7, automating tasks, making decisions,
+                                    and delivering insights
+                                </Trans>
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -74,14 +81,17 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Salesforce Solutions
+                                <Trans>Salesforce Solutions</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Custom components and integrations that supercharge your CRM and boost team productivity
+                                <Trans>
+                                    Custom components and integrations that supercharge your CRM and boost team
+                                    productivity
+                                </Trans>
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -89,14 +99,16 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                SaaS & AI Integration
+                                <Trans>SaaS & AI Integration</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                High-performance platforms with AI capabilities that scale with your business growth
+                                <Trans>
+                                    High-performance platforms with AI capabilities that scale with your business growth
+                                </Trans>
                             </Text>
                         </List.Item>
                     </List>
@@ -113,7 +125,7 @@ export default function Hero() {
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
-                            Explore Solutions
+                            <Trans>Explore Solutions</Trans>
                         </Button>
                         <Button
                             component="a"
@@ -125,7 +137,7 @@ export default function Hero() {
                             leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
-                            Talk to Us
+                            <Trans>Talk to Us</Trans>
                         </Button>
                     </Group>
                 </Grid.Col>

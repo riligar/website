@@ -1,5 +1,6 @@
 import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
 export default function CTA() {
     const whatsappMessage = encodeURIComponent(
@@ -23,7 +24,7 @@ export default function CTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    Find the Perfect Solution for Your Business
+                    <Trans>Find the Perfect Solution for Your Business</Trans>
                 </Title>
 
                 <Text
@@ -34,8 +35,10 @@ export default function CTA() {
                     maw={600}
                     mx="auto"
                 >
-                    Whether you need AI Agents, Salesforce solutions, SaaS platforms, or AI integration—we have the
-                    expertise to deliver. Let's explore which solution fits your needs best.
+                    <Trans>
+                        Whether you need AI Agents, Salesforce solutions, SaaS platforms, or AI integration—we have the
+                        expertise to deliver. Let's explore which solution fits your needs best.
+                    </Trans>
                 </Text>
 
                 <Group
@@ -48,7 +51,7 @@ export default function CTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Explore Solutions
+                        <Trans>Explore Solutions</Trans>
                     </Button>
                     <Button
                         component="a"
@@ -59,7 +62,7 @@ export default function CTA() {
                         variant="outline"
                         leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        Schedule a Call
+                        <Trans>Schedule a Call</Trans>
                     </Button>
                 </Group>
 
@@ -80,7 +83,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            Solutions Available
+                            <Trans>Solutions Available</Trans>
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -95,7 +98,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            To First Results
+                            <Trans>To First Results</Trans>
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -110,7 +113,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            AI Agents Working
+                            <Trans>AI Agents Working</Trans>
                         </Text>
                     </Box>
                 </SimpleGrid>

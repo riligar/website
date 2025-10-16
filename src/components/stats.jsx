@@ -1,25 +1,26 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
+import { Trans } from '@lingui/react/macro'
 
 const stats = [
     {
         value: '40%',
-        label: 'Average productivity increase with our Salesforce components',
-        description: 'Teams work faster when tools fit their workflows',
+        label: <Trans>Average productivity increase with our Salesforce components</Trans>,
+        description: <Trans>Teams work faster when tools fit their workflows</Trans>,
     },
     {
         value: '24/7',
-        label: 'AI Agents working continuously for your business',
-        description: 'Never miss an opportunity or customer inquiry',
+        label: <Trans>AI Agents working continuously for your business</Trans>,
+        description: <Trans>Never miss an opportunity or customer inquiry</Trans>,
     },
     {
         value: '2-3 Weeks',
-        label: 'To first working prototype',
-        description: 'Fast iterations mean quick validation and faster ROI',
+        label: <Trans>To first working prototype</Trans>,
+        description: <Trans>Fast iterations mean quick validation and faster ROI</Trans>,
     },
     {
         value: '100%',
-        label: 'Clean, maintainable code in every project',
-        description: 'No technical debt, no messy shortcuts',
+        label: <Trans>Clean, maintainable code in every project</Trans>,
+        description: <Trans>No technical debt, no messy shortcuts</Trans>,
     },
 ]
 
@@ -37,7 +38,7 @@ export default function Stats() {
                     mb={60}
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    Solutions That Deliver Measurable Results
+                    <Trans>Solutions That Deliver Measurable Results</Trans>
                 </Title>
 
                 <SimpleGrid

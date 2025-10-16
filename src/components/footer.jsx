@@ -2,33 +2,35 @@ import logo from '/image/riligar-logo.webp'
 
 import { Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react'
+import { Trans } from '@lingui/react/macro'
 
+import LanguageSelector from './LanguageSelector'
 import classes from './footer.module.css'
 
 const data = [
     {
-        title: 'Solutions',
+        title: <Trans>Solutions</Trans>,
         links: [
-            { label: 'AI Agents', link: '/ai-agents' },
-            { label: 'Salesforce Solutions', link: '/salesforce' },
-            { label: 'SaaS Platforms', link: '/saas' },
-            { label: 'AI Integration', link: '/ai-integration' },
+            { label: <Trans>AI Agents</Trans>, link: '/ai-agents' },
+            { label: <Trans>Salesforce Solutions</Trans>, link: '/salesforce' },
+            { label: <Trans>SaaS Platforms</Trans>, link: '/saas' },
+            { label: <Trans>AI Integration</Trans>, link: '/ai-integration' },
         ],
     },
     {
-        title: 'Company',
+        title: <Trans>Company</Trans>,
         links: [
-            { label: 'About Us', link: '/about' },
-            { label: 'Contact', link: '/contact' },
-            { label: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
+            { label: <Trans>About Us</Trans>, link: '/about' },
+            { label: <Trans>Contact</Trans>, link: '/contact' },
+            { label: <Trans>Blog</Trans>, link: 'https://blog.ciromaciel.click', external: true },
         ],
     },
     {
-        title: 'Connect',
+        title: <Trans>Connect</Trans>,
         links: [
-            { label: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
-            { label: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
-            { label: 'YouTube', link: 'https://www.youtube.com/@ciro-maciel', external: true },
+            { label: <Trans>LinkedIn</Trans>, link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
+            { label: <Trans>Instagram</Trans>, link: 'https://www.instagram.com/ciro.maciel/', external: true },
+            { label: <Trans>YouTube</Trans>, link: 'https://www.youtube.com/@ciro-maciel', external: true },
         ],
     },
 ]
@@ -74,19 +76,29 @@ export default function FooterLinks() {
                         c="dimmed"
                         className={classes.description}
                     >
-                        Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration
-                        services.
+                        <Trans>
+                            Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration
+                            services.
+                        </Trans>
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
             </Container>
             <Container className={classes.afterFooter}>
-                <Text
-                    c="dimmed"
-                    size="sm"
+                <Group
+                    gap="md"
+                    align="center"
                 >
-                    © {new Date().getFullYear()} RiLiGar. All rights reserved. Built with excellence.
-                </Text>
+                    <Text
+                        c="dimmed"
+                        size="sm"
+                    >
+                        <Trans>
+                            © {new Date().getFullYear()} RiLiGar. All rights reserved. Built with excellence.
+                        </Trans>
+                    </Text>
+                    <LanguageSelector />
+                </Group>
 
                 <Group
                     gap={0}

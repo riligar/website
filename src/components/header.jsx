@@ -29,6 +29,7 @@ import {
     IconRocket,
 } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
+import { Trans } from '@lingui/react/macro'
 
 import classes from './header.module.css'
 
@@ -39,26 +40,28 @@ import logo from '/image/riligar-logotipo.png'
 const mockdata = [
     {
         icon: IconRobot,
-        title: 'AI Agents',
-        description: 'Intelligent autonomous agents that automate tasks and make decisions for your business',
+        title: <Trans>AI Agents</Trans>,
+        description: (
+            <Trans>Intelligent autonomous agents that automate tasks and make decisions for your business</Trans>
+        ),
         pathname: '/ai-agents',
     },
     {
         icon: IconChartBar,
-        title: 'Salesforce Solutions',
-        description: 'Custom components, integrations, and automations for your Salesforce platform',
+        title: <Trans>Salesforce Solutions</Trans>,
+        description: <Trans>Custom components, integrations, and automations for your Salesforce platform</Trans>,
         pathname: '/salesforce',
     },
     {
         icon: IconCloudComputing,
-        title: 'SaaS Platforms',
-        description: 'End-to-end SaaS development with modern, scalable architecture',
+        title: <Trans>SaaS Platforms</Trans>,
+        description: <Trans>End-to-end SaaS development with modern, scalable architecture</Trans>,
         pathname: '/saas',
     },
     {
         icon: IconSparkles,
-        title: 'AI Integration',
-        description: 'Add AI capabilities to your existing systems and workflows',
+        title: <Trans>AI Integration</Trans>,
+        description: <Trans>Add AI capabilities to your existing systems and workflows</Trans>,
         pathname: '/ai-integration',
     },
 ]
@@ -155,7 +158,7 @@ export default function HeaderMegaMenu() {
                                 href="/"
                                 className={classes.link}
                             >
-                                Home
+                                <Trans>Home</Trans>
                             </a>
                             <HoverCard
                                 width={600}
@@ -174,7 +177,7 @@ export default function HeaderMegaMenu() {
                                                 component="span"
                                                 mr={5}
                                             >
-                                                Solutions
+                                                <Trans>Solutions</Trans>
                                             </Box>
                                             <IconChevronDown
                                                 style={{ width: rem(16), height: rem(16) }}
@@ -189,7 +192,9 @@ export default function HeaderMegaMenu() {
                                         justify="space-between"
                                         px="md"
                                     >
-                                        <Text fw={500}>Our Services</Text>
+                                        <Text fw={500}>
+                                            <Trans>Our Services</Trans>
+                                        </Text>
                                     </Group>
 
                                     <Divider my="sm" />
@@ -208,13 +213,13 @@ export default function HeaderMegaMenu() {
                                                     fw={500}
                                                     fz="sm"
                                                 >
-                                                    Ready to get started?
+                                                    <Trans>Ready to get started?</Trans>
                                                 </Text>
                                                 <Text
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    Discover the perfect solution for your business
+                                                    <Trans>Discover the perfect solution for your business</Trans>
                                                 </Text>
                                             </div>
                                             <Button
@@ -225,7 +230,7 @@ export default function HeaderMegaMenu() {
                                                 variant="default"
                                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                                             >
-                                                Start a Project
+                                                <Trans>Start a Project</Trans>
                                             </Button>
                                         </Group>
                                     </div>
@@ -235,13 +240,13 @@ export default function HeaderMegaMenu() {
                                 href="/about"
                                 className={classes.link}
                             >
-                                About Us
+                                <Trans>About Us</Trans>
                             </a>
                             <a
                                 href="/contact"
                                 className={classes.link}
                             >
-                                Contact
+                                <Trans>Contact</Trans>
                             </a>
                         </Group>
                         <Group visibleFrom="sm">
@@ -253,7 +258,7 @@ export default function HeaderMegaMenu() {
                                 size="md"
                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                             >
-                                Start a Project
+                                <Trans>Start a Project</Trans>
                             </Button>
                         </Group>
                         <Burger
@@ -270,7 +275,7 @@ export default function HeaderMegaMenu() {
                 onClose={closeDrawer}
                 size="100%"
                 padding="md"
-                title="Navigation"
+                title={<Trans>Navigation</Trans>}
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
@@ -284,7 +289,7 @@ export default function HeaderMegaMenu() {
                         href="/"
                         className={classes.link}
                     >
-                        Home
+                        <Trans>Home</Trans>
                     </a>
                     <UnstyledButton
                         className={classes.link}
@@ -295,7 +300,7 @@ export default function HeaderMegaMenu() {
                                 component="span"
                                 mr={5}
                             >
-                                Solutions
+                                <Trans>Solutions</Trans>
                             </Box>
                             <IconChevronDown
                                 style={{ width: rem(16), height: rem(16) }}
@@ -308,13 +313,13 @@ export default function HeaderMegaMenu() {
                         href="/about"
                         className={classes.link}
                     >
-                        About Us
+                        <Trans>About Us</Trans>
                     </a>
                     <a
                         href="/contact"
                         className={classes.link}
                     >
-                        Contact
+                        <Trans>Contact</Trans>
                     </a>
 
                     <Group
@@ -331,7 +336,7 @@ export default function HeaderMegaMenu() {
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            Start a Project
+                            <Trans>Start a Project</Trans>
                         </Button>
                     </Group>
                 </ScrollArea>
