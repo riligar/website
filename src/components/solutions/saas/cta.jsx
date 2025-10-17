@@ -1,10 +1,11 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function SaaSCTA() {
+    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        "Hi! I'm interested in building a SaaS platform. I'd like to discuss architecture, tech stack, and delivery timeline for a new SaaS product."
+        _("Hi! I'm interested in building a SaaS platform. I'd like to discuss architecture, tech stack, and delivery timeline for a new SaaS product.")
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

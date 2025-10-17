@@ -20,7 +20,7 @@ import {
     IconSparkles,
     IconArrowRight,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent(
     'Olá! Gostaria de discutir meu caso de uso com a RiLiGar. Podemos conversar?'

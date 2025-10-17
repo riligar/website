@@ -1,10 +1,11 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function AIAgentsCTA() {
+    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        "Hi! I'm interested in deploying AI Agents for my business. I'd like to discuss specific use cases and see how autonomous agents could help us scale."
+        _("Hi! I'm interested in deploying AI Agents for my business. I'd like to discuss specific use cases and see how autonomous agents could help us scale.")
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

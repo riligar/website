@@ -29,7 +29,7 @@ import {
     IconRocket,
 } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 import classes from './header.module.css'
 
@@ -68,6 +68,7 @@ const mockdata = [
 
 export default function HeaderMegaMenu() {
     const navigate = useNavigate()
+    const { _ } = useLingui()
 
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false)
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
@@ -76,7 +77,9 @@ export default function HeaderMegaMenu() {
 
     // WhatsApp link with pre-filled message
     const whatsappMessage = encodeURIComponent(
-        "Hi! I'm interested in learning more about RiLiGar's solutions. I'd like to discuss how AI Agents, Salesforce solutions, or SaaS platforms could help my business."
+        _(
+            "Hi! I'm interested in learning more about RiLiGar's solutions. I'd like to discuss how AI Agents, Salesforce solutions, or SaaS platforms could help my business."
+        )
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

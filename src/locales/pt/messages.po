@@ -177,8 +177,8 @@ msgstr "20+ anos de engenharia de software significam que sabemos como construir
 msgid "About RiLiGar"
 msgstr "Sobre a RiLiGar"
 
-#: src/components/header.jsx:243
-#: src/components/header.jsx:316
+#: src/components/header.jsx:244
+#: src/components/header.jsx:317
 msgid "About Us"
 msgstr "Sobre Nós"
 
@@ -199,7 +199,7 @@ msgid "Agreement & Kickoff"
 msgstr "Acordo e Início"
 
 #: src/components/header.jsx:43
-#: src/components/hero.jsx:64
+#: src/components/hero.jsx:65
 #: src/components/solutions/ai-agents/hero.jsx:23
 msgid "AI Agents"
 msgstr "Agentes IA"
@@ -212,7 +212,7 @@ msgstr "Os Agentes de IA entregam ROI mensurável desde o primeiro dia. Não sã
 #~ msgid "AI Agents deployment capability"
 #~ msgstr ""
 
-#: src/components/cta.jsx:116
+#: src/components/cta.jsx:117
 msgid "AI Agents Working"
 msgstr "Agentes IA Trabalhando"
 
@@ -329,8 +329,8 @@ msgstr "Perguntas Frequentes"
 #~ msgid "Consulting & Strategy"
 #~ msgstr "Consultoria e Estratégia"
 
-#: src/components/header.jsx:249
-#: src/components/header.jsx:322
+#: src/components/header.jsx:250
+#: src/components/header.jsx:323
 msgid "Contact"
 msgstr "Contato"
 
@@ -338,7 +338,7 @@ msgstr "Contato"
 #~ msgid "Cost-effective hosting"
 #~ msgstr ""
 
-#: src/components/hero.jsx:89
+#: src/components/hero.jsx:90
 msgid "Custom components and integrations that supercharge your CRM and boost team productivity"
 msgstr "Componentes personalizados e integrações que turbina seu CRM e aumentam a produtividade da equipe"
 
@@ -398,7 +398,7 @@ msgstr "Desenvolvimento e Entrega"
 #~ msgid "Direct access to experienced engineers"
 #~ msgstr ""
 
-#: src/components/header.jsx:222
+#: src/components/header.jsx:223
 msgid "Discover the perfect solution for your business"
 msgstr "Descubra a solução perfeita para o seu negócio"
 
@@ -451,8 +451,8 @@ msgstr "Desenvolvimento SaaS de ponta a ponta com arquitetura moderna e escaláv
 msgid "Everything you need to know about working with RiLiGar"
 msgstr "Tudo que você precisa saber sobre trabalhar com a RiLiGar"
 
-#: src/components/cta.jsx:54
-#: src/components/hero.jsx:126
+#: src/components/cta.jsx:55
+#: src/components/hero.jsx:127
 msgid "Explore Solutions"
 msgstr "Explorar Soluções"
 
@@ -484,7 +484,7 @@ msgstr "Característica"
 msgid "Featured Solution"
 msgstr "Solução Destaque"
 
-#: src/components/cta.jsx:27
+#: src/components/cta.jsx:28
 msgid "Find the Perfect Solution for Your Business"
 msgstr "Encontre a Solução Perfeita para o Seu Negócio"
 
@@ -528,7 +528,7 @@ msgstr "Olá, sou <0>Ciro Cesar Maciel</0>, fundador da RiLiGar."
 #~ msgid "High accuracy"
 #~ msgstr ""
 
-#: src/components/hero.jsx:107
+#: src/components/hero.jsx:108
 msgid "High-performance platforms with AI capabilities that scale with your business growth"
 msgstr "Plataformas de alto desempenho com capacidades de IA que escalam com o crescimento do seu negócio"
 
@@ -536,8 +536,8 @@ msgstr "Plataformas de alto desempenho com capacidades de IA que escalam com o c
 #~ msgid "Higher productivity"
 #~ msgstr ""
 
-#: src/components/header.jsx:161
-#: src/components/header.jsx:292
+#: src/components/header.jsx:162
+#: src/components/header.jsx:293
 msgid "Home"
 msgstr "Início"
 
@@ -601,7 +601,7 @@ msgstr "Integração Sem Interrupção"
 msgid "Intelligent autonomous agents that automate tasks and make decisions for your business"
 msgstr "Agentes autônomos inteligentes que automatizam tarefas e tomam decisões para o seu negócio"
 
-#: src/components/hero.jsx:71
+#: src/components/hero.jsx:72
 msgid "Intelligent autonomous agents that work 24/7, automating tasks, making decisions, and delivering insights"
 msgstr "Agentes autônomos inteligentes que trabalham 24/7, automatizando tarefas, tomando decisões e fornecendo insights"
 
@@ -625,19 +625,19 @@ msgstr "Vamos Construir Algo Significativo Juntos"
 msgid "Let's Connect"
 msgstr "Vamos Conectar"
 
-#: src/components/solutions/salesforce/cta.jsx:38
+#: src/components/solutions/salesforce/cta.jsx:39
 msgid "Let's discuss how custom development can transform your Salesforce org. Whether it's Lightning Web Components, integrations, or automation—we'll build exactly what your business needs."
 msgstr "Vamos discutir como o desenvolvimento personalizado pode transformar sua organização Salesforce. Sejam Lightning Web Components, integrações ou automação—construiremos exatamente o que seu negócio precisa."
 
-#: src/components/solutions/saas/cta.jsx:35
+#: src/components/solutions/saas/cta.jsx:36
 msgid "Let's discuss your SaaS idea. We'll design the architecture, choose the right tech stack, and deliver an MVP in 8-16 weeks."
 msgstr "Vamos discutir sua ideia de SaaS. Projetaremos a arquitetura, escolheremos a stack tecnológica certa e entregaremos um MVP em 8-16 semanas."
 
-#: src/components/solutions/ai-agents/cta.jsx:38
+#: src/components/solutions/ai-agents/cta.jsx:39
 msgid "Let's discuss your specific use case. We'll explore how AI Agents can automate tasks, reduce costs, and scale your operations—with measurable ROI."
 msgstr "Vamos discutir seu caso de uso específico. Exploraremos como os Agentes de IA podem automatizar tarefas, reduzir custos e escalar suas operações—com ROI mensurável."
 
-#: src/components/solutions/ai-integration/cta.jsx:35
+#: src/components/solutions/ai-integration/cta.jsx:36
 msgid "Let's explore how AI can enhance your existing applications. We'll identify opportunities, design the integration, and deliver measurable results."
 msgstr "Vamos explorar como a IA pode melhorar suas aplicações existentes. Identificaremos oportunidades, projetaremos a integração e entregaremos resultados mensuráveis."
 
@@ -657,23 +657,23 @@ msgstr "Mensagem no LinkedIn"
 msgid "Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just solid engineering."
 msgstr "Tecnologias modernas e comprovadas que entregam desempenho, confiabilidade e manutenibilidade. Sem hype—apenas engenharia sólida."
 
-#: src/components/solutions/ai-integration/cta.jsx:61
+#: src/components/solutions/ai-integration/cta.jsx:62
 msgid "Most AI integration projects start with a proof-of-concept to validate the approach before full deployment."
 msgstr "A maioria dos projetos de integração de IA começa com uma prova de conceito para validar a abordagem antes da implantação completa."
 
-#: src/components/solutions/ai-agents/cta.jsx:66
+#: src/components/solutions/ai-agents/cta.jsx:67
 msgid "Most projects start with a 2-week proof-of-concept to validate the approach before full deployment."
 msgstr "A maioria dos projetos começa com uma prova de conceito de 2 semanas para validar a abordagem antes da implantação completa."
 
-#: src/components/solutions/saas/cta.jsx:61
+#: src/components/solutions/saas/cta.jsx:62
 msgid "Most SaaS projects start with a technical discovery phase to validate architecture before full development."
 msgstr "A maioria dos projetos SaaS começa com uma fase de descoberta técnica para validar a arquitetura antes do desenvolvimento completo."
 
-#: src/components/solutions/salesforce/cta.jsx:66
+#: src/components/solutions/salesforce/cta.jsx:67
 msgid "Most Salesforce projects deliver first results in 2-4 weeks with our agile development process."
 msgstr "A maioria dos projetos Salesforce entrega primeiros resultados em 2-4 semanas com nosso processo de desenvolvimento ágil."
 
-#: src/components/header.jsx:278
+#: src/components/header.jsx:279
 msgid "Navigation"
 msgstr "Navegação"
 
@@ -705,7 +705,7 @@ msgstr "Nossa Stack Tecnológica SaaS"
 msgid "Our Salesforce Technology Stack"
 msgstr "Nossa Stack Tecnológica Salesforce"
 
-#: src/components/header.jsx:196
+#: src/components/header.jsx:197
 msgid "Our Services"
 msgstr "Nossos Serviços"
 
@@ -753,23 +753,23 @@ msgstr "Respostas rápidas a perguntas que você pode ter antes de entrar em con
 msgid "Read More Stories"
 msgstr "Ler Mais Histórias"
 
-#: src/components/solutions/ai-integration/cta.jsx:25
+#: src/components/solutions/ai-integration/cta.jsx:26
 msgid "Ready to Add AI to Your Systems?"
 msgstr "Pronto para Adicionar IA aos Seus Sistemas?"
 
-#: src/components/solutions/saas/cta.jsx:25
+#: src/components/solutions/saas/cta.jsx:26
 msgid "Ready to Build Your SaaS?"
 msgstr "Pronto para Construir Seu SaaS?"
 
-#: src/components/solutions/ai-agents/cta.jsx:27
+#: src/components/solutions/ai-agents/cta.jsx:28
 msgid "Ready to Deploy AI Agents?"
 msgstr "Pronto para Implantar Agentes de IA?"
 
-#: src/components/header.jsx:216
+#: src/components/header.jsx:217
 msgid "Ready to get started?"
 msgstr "Pronto para começar?"
 
-#: src/components/solutions/salesforce/cta.jsx:27
+#: src/components/solutions/salesforce/cta.jsx:28
 msgid "Ready to Supercharge Your Salesforce?"
 msgstr "Pronto para Potencializar Seu Salesforce?"
 
@@ -809,7 +809,7 @@ msgstr "RiLiGar Hoje"
 msgid "RiLiGar was born from a simple belief: technology should solve real problems and improve lives. We're not chasing trends—we're building solutions that matter."
 msgstr "RiLiGar nasceu de uma crença simples: a tecnologia deve resolver problemas reais e melhorar vidas. Não perseguimos tendências—construímos soluções que importam."
 
-#: src/components/hero.jsx:100
+#: src/components/hero.jsx:101
 msgid "SaaS & AI Integration"
 msgstr "SaaS e Integração IA"
 
@@ -839,7 +839,7 @@ msgstr "Plataformas SaaS"
 #~ msgstr ""
 
 #: src/components/header.jsx:51
-#: src/components/hero.jsx:82
+#: src/components/hero.jsx:83
 #: src/components/solutions/salesforce/hero.jsx:23
 msgid "Salesforce Solutions"
 msgstr "Soluções Salesforce"
@@ -856,7 +856,7 @@ msgstr "Plataformas SaaS Escaláveis <0/> Construídas Corretamente Desde o Prim
 #~ msgid "Scales effortlessly"
 #~ msgstr ""
 
-#: src/components/cta.jsx:65
+#: src/components/cta.jsx:66
 msgid "Schedule a Call"
 msgstr "Agendar uma Chamada"
 
@@ -876,12 +876,12 @@ msgstr "Processo Simples"
 #~ msgid "Solution Design"
 #~ msgstr ""
 
-#: src/components/header.jsx:180
-#: src/components/header.jsx:303
+#: src/components/header.jsx:181
+#: src/components/header.jsx:304
 msgid "Solutions"
 msgstr "Soluções"
 
-#: src/components/cta.jsx:86
+#: src/components/cta.jsx:87
 msgid "Solutions Available"
 msgstr "Soluções Disponíveis"
 
@@ -893,7 +893,7 @@ msgstr "Soluções que Geram Resultados Mensuráveis"
 msgid "Solutions That Deliver Results"
 msgstr "Soluções que Geram Resultados"
 
-#: src/components/hero.jsx:28
+#: src/components/hero.jsx:29
 msgid "Solutions That Transform Your Business"
 msgstr "Soluções Que Transformam Seu Negócio"
 
@@ -901,17 +901,17 @@ msgstr "Soluções Que Transformam Seu Negócio"
 #~ msgid "Solutions-first approach (not just code)"
 #~ msgstr ""
 
-#: src/components/header.jsx:233
-#: src/components/header.jsx:261
-#: src/components/header.jsx:339
+#: src/components/header.jsx:234
+#: src/components/header.jsx:262
+#: src/components/header.jsx:340
 msgid "Start a Project"
 msgstr "Iniciar um Projeto"
 
-#: src/components/solutions/ai-integration/cta.jsx:52
+#: src/components/solutions/ai-integration/cta.jsx:53
 msgid "Start AI Integration Project"
 msgstr "Iniciar Projeto de Integração de IA"
 
-#: src/components/solutions/ai-agents/cta.jsx:56
+#: src/components/solutions/ai-agents/cta.jsx:57
 msgid "Start Your AI Agent Project"
 msgstr "Inicie Seu Projeto de Agentes de IA"
 
@@ -919,15 +919,15 @@ msgstr "Inicie Seu Projeto de Agentes de IA"
 msgid "Start Your Project Today"
 msgstr "Comece Seu Projeto Hoje"
 
-#: src/components/solutions/saas/cta.jsx:52
+#: src/components/solutions/saas/cta.jsx:53
 msgid "Start Your SaaS Project"
 msgstr "Inicie Seu Projeto SaaS"
 
-#: src/components/solutions/salesforce/cta.jsx:56
+#: src/components/solutions/salesforce/cta.jsx:57
 msgid "Start Your Salesforce Project"
 msgstr "Inicie Seu Projeto Salesforce"
 
-#: src/components/hero.jsx:138
+#: src/components/hero.jsx:139
 msgid "Talk to Us"
 msgstr "Falar Conosco"
 
@@ -987,7 +987,7 @@ msgstr "Estes princípios guiam cada decisão que tomamos e cada solução que c
 #~ msgid "Time savings"
 #~ msgstr ""
 
-#: src/components/cta.jsx:101
+#: src/components/cta.jsx:102
 msgid "To First Results"
 msgstr "Para Primeiros Resultados"
 
@@ -1036,7 +1036,7 @@ msgstr "Construímos Agentes de IA com tecnologias de ponta e frameworks testado
 msgid "We build modern, high-performance SaaS applications with clean architecture. From MVP to enterprise scale—lightweight, fast, and cost-effective to run."
 msgstr "Construímos aplicações SaaS modernas e de alto desempenho com arquitetura limpa. Do MVP à escala empresarial—leves, rápidas e custo-efetivas para operar."
 
-#: src/components/hero.jsx:35
+#: src/components/hero.jsx:36
 msgid "We deliver powerful solutions tailored to your needs. From Salesforce components to intelligent AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution is designed to solve real problems and drive measurable results."
 msgstr "Entregamos soluções poderosas adaptadas às suas necessidades. Desde componentes Salesforce até Agentes IA inteligentes, plataformas SaaS escaláveis e integrações IA avançadas—cada solução é projetada para resolver problemas reais e gerar resultados mensuráveis."
 
@@ -1108,7 +1108,7 @@ msgstr "O Que Construímos para Salesforce"
 msgid "When you reach out, you're connecting directly with me—not a sales team or account manager. Here's what you can expect from our collaboration."
 msgstr "Quando você entra em contato, está se conectando diretamente comigo—não com uma equipe de vendas ou gerente de contas. Aqui está o que você pode esperar de nossa colaboração."
 
-#: src/components/cta.jsx:38
+#: src/components/cta.jsx:39
 msgid "Whether you need AI Agents, Salesforce solutions, SaaS platforms, or AI integration—we have the expertise to deliver. Let's explore which solution fits your needs best."
 msgstr "Seja você precisando de Agentes IA, soluções Salesforce, plataformas SaaS ou integração IA—temos a expertise para entregar. Vamos explorar qual solução se encaixa melhor nas suas necessidades."
 

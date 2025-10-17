@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de iniciar um projeto com a RiLiGar. Podemos conversar?')
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`

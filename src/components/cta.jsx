@@ -1,10 +1,11 @@
 import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function CTA() {
+    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        'Olá! Gostaria de conhecer mais sobre as soluções da RiLiGar. Podemos agendar uma conversa?'
+        _('Hello! I would like to know more about RiLiGar solutions. Can we schedule a conversation?')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

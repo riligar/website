@@ -1,10 +1,11 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function SalesforceCTA() {
+    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        "Hi! I'm interested in custom Salesforce development. I'd like to discuss Lightning Web Components, integrations, or automations for our Salesforce org."
+        _("Hi! I'm interested in custom Salesforce development. I'd like to discuss Lightning Web Components, integrations, or automations for our Salesforce org.")
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
