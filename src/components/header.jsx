@@ -96,7 +96,7 @@ export default function HeaderMegaMenu() {
     const links = mockdata.map(item => (
         <UnstyledButton
             className={classes.subLink}
-            key={item.title}
+            key={item.pathname}
             onClick={() => navigate(item.pathname)}
         >
             <Group

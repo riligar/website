@@ -39,9 +39,9 @@ msgstr ""
 #: src/components/solutions/ai-agents/results.jsx:119
 #: src/components/solutions/ai-agents/tech-stack.jsx:171
 #: src/components/solutions/ai-agents/tech-stack.jsx:181
-#: src/components/solutions/ai-agents/use-cases.jsx:133
-#: src/components/solutions/ai-agents/use-cases.jsx:140
-#: src/components/solutions/ai-agents/use-cases.jsx:147
+#: src/components/solutions/ai-agents/use-cases.jsx:136
+#: src/components/solutions/ai-agents/use-cases.jsx:143
+#: src/components/solutions/ai-agents/use-cases.jsx:150
 #: src/components/solutions/ai-integration/results.jsx:83
 #: src/components/solutions/ai-integration/results.jsx:89
 #: src/components/solutions/ai-integration/tech-stack.jsx:117
@@ -50,15 +50,15 @@ msgstr ""
 #: src/components/solutions/saas/results.jsx:89
 #: src/components/solutions/saas/tech-stack.jsx:121
 #: src/components/solutions/saas/tech-stack.jsx:129
-#: src/components/solutions/salesforce/capabilities.jsx:113
-#: src/components/solutions/salesforce/capabilities.jsx:119
+#: src/components/solutions/salesforce/capabilities.jsx:116
+#: src/components/solutions/salesforce/capabilities.jsx:122
 #: src/components/solutions/salesforce/results.jsx:108
 #: src/components/solutions/salesforce/results.jsx:114
 #: src/components/solutions/salesforce/tech-stack.jsx:174
 #: src/components/solutions/salesforce/tech-stack.jsx:184
-#: src/components/solutions/salesforce/use-cases.jsx:102
-#: src/components/solutions/salesforce/use-cases.jsx:109
-#: src/components/solutions/salesforce/use-cases.jsx:116
+#: src/components/solutions/salesforce/use-cases.jsx:105
+#: src/components/solutions/salesforce/use-cases.jsx:112
+#: src/components/solutions/salesforce/use-cases.jsx:119
 #: src/components/testimonials.jsx:131
 #: src/components/usecases.jsx:132
 #: src/components/usecases.jsx:140
@@ -70,8 +70,8 @@ msgstr ""
 msgid "{benefit}"
 msgstr ""
 
-#: src/components/solutions/ai-agents/use-cases.jsx:176
-#: src/components/solutions/salesforce/use-cases.jsx:145
+#: src/components/solutions/ai-agents/use-cases.jsx:180
+#: src/components/solutions/salesforce/use-cases.jsx:149
 msgid "{result}"
 msgstr ""
 
@@ -1025,8 +1025,8 @@ msgstr "Confiado por Equipos Que Construyen Cosas Increíbles"
 msgid "Typical Agencies"
 msgstr "Agencias Típicas"
 
-#: src/components/solutions/ai-agents/use-cases.jsx:155
-#: src/components/solutions/salesforce/use-cases.jsx:124
+#: src/components/solutions/ai-agents/use-cases.jsx:158
+#: src/components/solutions/salesforce/use-cases.jsx:127
 msgid "Typical Results:"
 msgstr "Resultados Típicos:"
 

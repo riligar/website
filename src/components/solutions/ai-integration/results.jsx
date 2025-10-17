@@ -3,10 +3,10 @@ import { IconBolt, IconClock, IconChartLine, IconShieldCheck } from '@tabler/ico
 import { Trans } from '@lingui/react/macro'
 
 const metrics = [
-    { icon: IconBolt, value: '90%', labelKey: 'Automation Rate', description: 'Tasks automated with AI integration' },
-    { icon: IconClock, value: '3-5 weeks', labelKey: 'Integration Time', description: 'From concept to production' },
-    { icon: IconChartLine, value: '5-10x', labelKey: 'Productivity Gain', description: 'Process efficiency improvement' },
-    { icon: IconShieldCheck, value: '100%', labelKey: 'Secure', description: 'Enterprise-grade security' },
+    { id: 'automation', icon: IconBolt, value: '90%', labelKey: 'Automation Rate', descriptionKey: 'Tasks automated with AI integration' },
+    { id: 'integration', icon: IconClock, value: '3-5 weeks', labelKey: 'Integration Time', descriptionKey: 'From concept to production' },
+    { id: 'productivity', icon: IconChartLine, value: '5-10x', labelKey: 'Productivity Gain', descriptionKey: 'Process efficiency improvement' },
+    { id: 'secure', icon: IconShieldCheck, value: '100%', labelKey: 'Secure', descriptionKey: 'Enterprise-grade security' },
 ]
 
 export default function AIIntegrationResults() {

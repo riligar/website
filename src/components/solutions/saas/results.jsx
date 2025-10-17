@@ -3,10 +3,10 @@ import { IconRocket, IconCoin, IconGauge, IconShield } from '@tabler/icons-react
 import { Trans } from '@lingui/react/macro'
 
 const metrics = [
-    { icon: IconRocket, value: '8-16 weeks', labelKey: 'MVP Delivery', description: 'Launch your SaaS product fast' },
-    { icon: IconGauge, value: '< 2 sec', labelKey: 'Load Time', description: 'Lightning-fast performance' },
-    { icon: IconCoin, value: '40-60%', labelKey: 'Lower Infra Cost', description: 'Optimized cloud resources' },
-    { icon: IconShield, value: '99.9%', labelKey: 'Uptime', description: 'Reliable, production-grade' },
+    { id: 'mvp', icon: IconRocket, value: '8-16 weeks', labelKey: 'MVP Delivery', descriptionKey: 'Launch your SaaS product fast' },
+    { id: 'load', icon: IconGauge, value: '< 2 sec', labelKey: 'Load Time', descriptionKey: 'Lightning-fast performance' },
+    { id: 'cost', icon: IconCoin, value: '40-60%', labelKey: 'Lower Infra Cost', descriptionKey: 'Optimized cloud resources' },
+    { id: 'uptime', icon: IconShield, value: '99.9%', labelKey: 'Uptime', descriptionKey: 'Reliable, production-grade' },
 ]
 
 export default function SaaSResults() {
