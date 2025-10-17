@@ -39,9 +39,9 @@ msgstr ""
 #: src/components/solutions/ai-agents/results.jsx:119
 #: src/components/solutions/ai-agents/tech-stack.jsx:171
 #: src/components/solutions/ai-agents/tech-stack.jsx:181
-#: src/components/solutions/ai-agents/use-cases.jsx:134
-#: src/components/solutions/ai-agents/use-cases.jsx:141
-#: src/components/solutions/ai-agents/use-cases.jsx:148
+#: src/components/solutions/ai-agents/use-cases.jsx:133
+#: src/components/solutions/ai-agents/use-cases.jsx:140
+#: src/components/solutions/ai-agents/use-cases.jsx:147
 #: src/components/solutions/ai-integration/results.jsx:83
 #: src/components/solutions/ai-integration/results.jsx:89
 #: src/components/solutions/ai-integration/tech-stack.jsx:117
@@ -50,13 +50,15 @@ msgstr ""
 #: src/components/solutions/saas/results.jsx:89
 #: src/components/solutions/saas/tech-stack.jsx:121
 #: src/components/solutions/saas/tech-stack.jsx:129
+#: src/components/solutions/salesforce/capabilities.jsx:113
+#: src/components/solutions/salesforce/capabilities.jsx:119
 #: src/components/solutions/salesforce/results.jsx:108
 #: src/components/solutions/salesforce/results.jsx:114
-#: src/components/solutions/salesforce/tech-stack.jsx:171
-#: src/components/solutions/salesforce/tech-stack.jsx:181
-#: src/components/solutions/salesforce/use-cases.jsx:103
-#: src/components/solutions/salesforce/use-cases.jsx:110
-#: src/components/solutions/salesforce/use-cases.jsx:117
+#: src/components/solutions/salesforce/tech-stack.jsx:174
+#: src/components/solutions/salesforce/tech-stack.jsx:184
+#: src/components/solutions/salesforce/use-cases.jsx:102
+#: src/components/solutions/salesforce/use-cases.jsx:109
+#: src/components/solutions/salesforce/use-cases.jsx:116
 #: src/components/testimonials.jsx:131
 #: src/components/usecases.jsx:132
 #: src/components/usecases.jsx:140
@@ -68,15 +70,15 @@ msgstr ""
 msgid "{benefit}"
 msgstr ""
 
-#: src/components/solutions/ai-agents/use-cases.jsx:177
-#: src/components/solutions/salesforce/use-cases.jsx:146
+#: src/components/solutions/ai-agents/use-cases.jsx:176
+#: src/components/solutions/salesforce/use-cases.jsx:145
 msgid "{result}"
 msgstr ""
 
 #: src/components/solutions/ai-agents/tech-stack.jsx:207
 #: src/components/solutions/ai-integration/tech-stack.jsx:150
 #: src/components/solutions/saas/tech-stack.jsx:154
-#: src/components/solutions/salesforce/tech-stack.jsx:207
+#: src/components/solutions/salesforce/tech-stack.jsx:210
 msgid "{tech}"
 msgstr ""
 
@@ -975,9 +977,17 @@ msgstr "El Equipo"
 msgid "The Technology Behind Our AI Agents"
 msgstr "La Tecnología Detrás de Nuestros Agentes de IA"
 
+#: src/components/solutions/salesforce/use-cases.jsx:82
+msgid "These are examples of Salesforce customizations we've built for clients—each delivering measurable business value."
+msgstr "Estos son ejemplos de personalizaciones de Salesforce que hemos construido para clientes—cada una entregando valor empresarial medible."
+
 #: src/components/usecases.jsx:105
 msgid "These are just a few examples. Every solution is customized to your specific needs and industry."
 msgstr "Estos son solo algunos ejemplos. Cada solución se personaliza según tus necesidades e industria específicas."
+
+#: src/components/solutions/ai-agents/use-cases.jsx:113
+msgid "These aren't theoretical—they're production systems we've built and deployed. Each use case shows measurable business impact."
+msgstr "Estos no son teóricos—son sistemas de producción que hemos construido y desplegado. Cada caso de uso muestra impacto empresarial medible."
 
 #: src/components/about/values.jsx:74
 msgid "These principles guide every decision we make and every solution we build."
@@ -1015,8 +1025,8 @@ msgstr "Confiado por Equipos Que Construyen Cosas Increíbles"
 msgid "Typical Agencies"
 msgstr "Agencias Típicas"
 
-#: src/components/solutions/ai-agents/use-cases.jsx:156
-#: src/components/solutions/salesforce/use-cases.jsx:125
+#: src/components/solutions/ai-agents/use-cases.jsx:155
+#: src/components/solutions/salesforce/use-cases.jsx:124
 msgid "Typical Results:"
 msgstr "Resultados Típicos:"
 
@@ -1080,7 +1090,7 @@ msgstr "No somos una agencia de IA que aprendió a programar. Somos ingenieros d
 msgid "We're not just another development agency. We're a focused team that delivers solutions—not just code. Here's what makes us different."
 msgstr "No somos solo otra agencia de desarrollo. Somos un equipo enfocado que entrega soluciones—no solo código. Esto es lo que nos hace diferentes."
 
-#: src/components/solutions/salesforce/tech-stack.jsx:238
+#: src/components/solutions/salesforce/tech-stack.jsx:241
 msgid "We're not just Salesforce developers—we're software engineers who happen to specialize in Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and all the best practices from enterprise software development. Your Salesforce org deserves better than quick hacks—it deserves engineering excellence."
 msgstr "No somos solo desarrolladores de Salesforce—somos ingenieros de software que se especializan en Salesforce. Eso significa código limpio y mantenible; pruebas adecuadas; control de versiones; CI/CD; y todas las mejores prácticas del desarrollo de software empresarial. Tu organización Salesforce merece más que hacks rápidos—merece excelencia en ingeniería."
 
@@ -1128,7 +1138,7 @@ msgstr "¿Por Qué Elegir RiLiGar?"
 msgid "Why Our SaaS Platforms Stand Out"
 msgstr "Por Qué Nuestras Plataformas SaaS Destacan"
 
-#: src/components/solutions/salesforce/tech-stack.jsx:230
+#: src/components/solutions/salesforce/tech-stack.jsx:233
 msgid "Why Our Salesforce Development Stands Out"
 msgstr "Por Qué Nuestro Desarrollo Salesforce Destaca"
 

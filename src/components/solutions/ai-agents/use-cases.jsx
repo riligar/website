@@ -110,8 +110,10 @@ export default function AIAgentsUseCases() {
                     mx="auto"
                     mb={60}
                 >
-                    These aren't theoretical—they're production systems we've built and deployed. Each use case shows
-                    measurable business impact.
+                    <Trans>
+                        These aren't theoretical—they're production systems we've built and deployed. Each use case
+                        shows measurable business impact.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
@@ -138,23 +140,23 @@ export default function AIAgentsUseCases() {
                                 size="h4"
                                 mb="xs"
                             >
-                    <Trans>{useCase.title}</Trans>
-                </Title>
+                                <Trans>{useCase.titleKey}</Trans>
+                            </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{useCase.description}</Trans>
-                </Text>
+                                <Trans>{useCase.descriptionKey}</Trans>
+                            </Text>
 
                             <Text
                                 size="sm"
                                 fw={600}
                                 mb="xs"
                             >
-                    <Trans>Typical Results:</Trans>
-                </Text>
+                                <Trans>Typical Results:</Trans>
+                            </Text>
                             <List
                                 size="sm"
                                 spacing="xs"
@@ -174,7 +176,9 @@ export default function AIAgentsUseCases() {
                             >
                                 {useCase.results.map((result, idx) => (
                                     <List.Item key={idx}>
-                                        <Text size="sm"><Trans>{result}</Trans></Text>
+                                        <Text size="sm">
+                                            <Trans>{result}</Trans>
+                                        </Text>
                                     </List.Item>
                                 ))}
                             </List>

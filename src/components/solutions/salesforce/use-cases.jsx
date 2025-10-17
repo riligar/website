@@ -79,8 +79,10 @@ export default function SalesforceUseCases() {
                     mx="auto"
                     mb={60}
                 >
-                    These are examples of Salesforce customizations we've built for clients—each delivering measurable
-                    business value.
+                    <Trans>
+                        These are examples of Salesforce customizations we've built for clients—each delivering
+                        measurable business value.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
@@ -107,23 +109,23 @@ export default function SalesforceUseCases() {
                                 size="h4"
                                 mb="xs"
                             >
-                    <Trans>{useCase.title}</Trans>
-                </Title>
+                                <Trans>{useCase.titleKey}</Trans>
+                            </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{useCase.description}</Trans>
-                </Text>
+                                <Trans>{useCase.descriptionKey}</Trans>
+                            </Text>
 
                             <Text
                                 size="sm"
                                 fw={600}
                                 mb="xs"
                             >
-                    <Trans>Typical Results:</Trans>
-                </Text>
+                                <Trans>Typical Results:</Trans>
+                            </Text>
                             <List
                                 size="sm"
                                 spacing="xs"
@@ -143,7 +145,9 @@ export default function SalesforceUseCases() {
                             >
                                 {useCase.results.map((result, idx) => (
                                     <List.Item key={idx}>
-                                        <Text size="sm"><Trans>{result}</Trans></Text>
+                                        <Text size="sm">
+                                            <Trans>{result}</Trans>
+                                        </Text>
                                     </List.Item>
                                 ))}
                             </List>

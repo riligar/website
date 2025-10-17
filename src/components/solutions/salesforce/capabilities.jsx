@@ -78,7 +78,10 @@ export default function SalesforceCapabilities() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>From custom components to complex integrations—we build Salesforce solutions that fit your exact business needs.</Trans>
+                    <Trans>
+                        From custom components to complex integrations—we build Salesforce solutions that fit your exact
+                        business needs.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
@@ -110,13 +113,13 @@ export default function SalesforceCapabilities() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {capability.title}
+                                <Trans>{capability.titleKey}</Trans>
                             </Text>
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                {capability.description}
+                                <Trans>{capability.descriptionKey}</Trans>
                             </Text>
                         </Card>
                     ))}
