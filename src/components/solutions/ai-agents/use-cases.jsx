@@ -131,7 +131,7 @@ export default function AIAgentsUseCases() {
                                 size="sm"
                                 mb="sm"
                             >
-                                {useCase.industry}
+                                <Trans>{useCase.industryKey}</Trans>
                             </Badge>
                             <Title
                                 order={3}
@@ -174,7 +174,7 @@ export default function AIAgentsUseCases() {
                             >
                                 {useCase.results.map((result, idx) => (
                                     <List.Item key={idx}>
-                                        <Text size="sm">{result}</Text>
+                                        <Text size="sm"><Trans>{result}</Trans></Text>
                                     </List.Item>
                                 ))}
                             </List>

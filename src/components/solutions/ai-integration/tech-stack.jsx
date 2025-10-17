@@ -147,7 +147,7 @@ export default function AIIntegrationTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            {tech}
+                                            <Trans>{tech}</Trans>
                                         </Text>
                                     </List.Item>
                                 ))}

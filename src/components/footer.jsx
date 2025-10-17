@@ -25,6 +25,7 @@ const data = [
             { id: 'about', labelKey: 'About Us', link: '/about' },
             { id: 'contact', labelKey: 'Contact', link: '/contact' },
             { id: 'blog', labelKey: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
+            { id: 'github', labelKey: 'GitHub', link: 'https://github.com/riligar', external: true },
         ],
     },
     {

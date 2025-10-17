@@ -26,7 +26,7 @@ msgstr ""
 #: src/components/contact/links.jsx:94
 #: src/components/contact/links.jsx:112
 #: src/components/contact/links.jsx:126
-#: src/components/faq.jsx:155
+#: src/components/faq.jsx:156
 #: src/components/features.jsx:89
 #: src/components/features.jsx:96
 #: src/components/footer.jsx:52
@@ -39,6 +39,7 @@ msgstr ""
 #: src/components/solutions/ai-agents/results.jsx:119
 #: src/components/solutions/ai-agents/tech-stack.jsx:171
 #: src/components/solutions/ai-agents/tech-stack.jsx:181
+#: src/components/solutions/ai-agents/use-cases.jsx:134
 #: src/components/solutions/ai-agents/use-cases.jsx:141
 #: src/components/solutions/ai-agents/use-cases.jsx:148
 #: src/components/solutions/ai-integration/results.jsx:83
@@ -53,6 +54,7 @@ msgstr ""
 #: src/components/solutions/salesforce/results.jsx:114
 #: src/components/solutions/salesforce/tech-stack.jsx:171
 #: src/components/solutions/salesforce/tech-stack.jsx:181
+#: src/components/solutions/salesforce/use-cases.jsx:103
 #: src/components/solutions/salesforce/use-cases.jsx:110
 #: src/components/solutions/salesforce/use-cases.jsx:117
 #: src/components/testimonials.jsx:131
@@ -64,6 +66,18 @@ msgstr ""
 
 #: src/components/usecases.jsx:177
 msgid "{benefit}"
+msgstr ""
+
+#: src/components/solutions/ai-agents/use-cases.jsx:177
+#: src/components/solutions/salesforce/use-cases.jsx:146
+msgid "{result}"
+msgstr ""
+
+#: src/components/solutions/ai-agents/tech-stack.jsx:207
+#: src/components/solutions/ai-integration/tech-stack.jsx:150
+#: src/components/solutions/saas/tech-stack.jsx:154
+#: src/components/solutions/salesforce/tech-stack.jsx:207
+msgid "{tech}"
 msgstr ""
 
 #. placeholder {0}: new Date().getFullYear()
@@ -181,7 +195,7 @@ msgid "Agreement & Kickoff"
 msgstr "Acordo e Início"
 
 #: src/components/header.jsx:43
-#: src/components/hero.jsx:66
+#: src/components/hero.jsx:64
 #: src/components/solutions/ai-agents/hero.jsx:23
 msgid "AI Agents"
 msgstr "Agentes IA"
@@ -320,7 +334,7 @@ msgstr "Contato"
 #~ msgid "Cost-effective hosting"
 #~ msgstr ""
 
-#: src/components/hero.jsx:91
+#: src/components/hero.jsx:89
 msgid "Custom components and integrations that supercharge your CRM and boost team productivity"
 msgstr "Componentes personalizados e integrações que turbina seu CRM e aumentam a produtividade da equipe"
 
@@ -434,7 +448,7 @@ msgid "Everything you need to know about working with RiLiGar"
 msgstr "Tudo que você precisa saber sobre trabalhar com a RiLiGar"
 
 #: src/components/cta.jsx:54
-#: src/components/hero.jsx:128
+#: src/components/hero.jsx:126
 msgid "Explore Solutions"
 msgstr "Explorar Soluções"
 
@@ -510,7 +524,7 @@ msgstr "Olá, sou <0>Ciro Cesar Maciel</0>, fundador da RiLiGar."
 #~ msgid "High accuracy"
 #~ msgstr ""
 
-#: src/components/hero.jsx:109
+#: src/components/hero.jsx:107
 msgid "High-performance platforms with AI capabilities that scale with your business growth"
 msgstr "Plataformas de alto desempenho com capacidades de IA que escalam com o crescimento do seu negócio"
 
@@ -583,7 +597,7 @@ msgstr "Integração Sem Interrupção"
 msgid "Intelligent autonomous agents that automate tasks and make decisions for your business"
 msgstr "Agentes autônomos inteligentes que automatizam tarefas e tomam decisões para o seu negócio"
 
-#: src/components/hero.jsx:73
+#: src/components/hero.jsx:71
 msgid "Intelligent autonomous agents that work 24/7, automating tasks, making decisions, and delivering insights"
 msgstr "Agentes autônomos inteligentes que trabalham 24/7, automatizando tarefas, tomando decisões e fornecendo insights"
 
@@ -791,7 +805,7 @@ msgstr "RiLiGar Hoje"
 msgid "RiLiGar was born from a simple belief: technology should solve real problems and improve lives. We're not chasing trends—we're building solutions that matter."
 msgstr ""
 
-#: src/components/hero.jsx:102
+#: src/components/hero.jsx:100
 msgid "SaaS & AI Integration"
 msgstr "SaaS e Integração IA"
 
@@ -821,7 +835,7 @@ msgstr "Plataformas SaaS"
 #~ msgstr ""
 
 #: src/components/header.jsx:51
-#: src/components/hero.jsx:84
+#: src/components/hero.jsx:82
 #: src/components/solutions/salesforce/hero.jsx:23
 msgid "Salesforce Solutions"
 msgstr "Soluções Salesforce"
@@ -876,8 +890,8 @@ msgid "Solutions That Deliver Results"
 msgstr "Soluções que Geram Resultados"
 
 #: src/components/hero.jsx:28
-msgid "Solutions That Transform <0/> Your Business"
-msgstr "Soluções Que Transformam <0/> Seu Negócio"
+msgid "Solutions That Transform Your Business"
+msgstr "Soluções Que Transformam Seu Negócio"
 
 #: src/components/comparison.jsx:12
 #~ msgid "Solutions-first approach (not just code)"
@@ -909,7 +923,7 @@ msgstr "Inicie Seu Projeto SaaS"
 msgid "Start Your Salesforce Project"
 msgstr "Inicie Seu Projeto Salesforce"
 
-#: src/components/hero.jsx:140
+#: src/components/hero.jsx:138
 msgid "Talk to Us"
 msgstr "Falar Conosco"
 
@@ -1018,7 +1032,7 @@ msgstr ""
 msgid "We build modern, high-performance SaaS applications with clean architecture. From MVP to enterprise scale—lightweight, fast, and cost-effective to run."
 msgstr ""
 
-#: src/components/hero.jsx:37
+#: src/components/hero.jsx:35
 msgid "We deliver powerful solutions tailored to your needs. From Salesforce components to intelligent AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution is designed to solve real problems and drive measurable results."
 msgstr "Entregamos soluções poderosas adaptadas às suas necessidades. Desde componentes Salesforce até Agentes IA inteligentes, plataformas SaaS escaláveis e integrações IA avançadas—cada solução é projetada para resolver problemas reais e gerar resultados mensuráveis."
 

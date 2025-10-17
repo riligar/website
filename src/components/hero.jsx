@@ -15,19 +15,17 @@ export default function Hero() {
             mt={80}
             mb={80}
         >
-            <Grid
-                gutter={{ base: 40, md: 60 }}
-                align="center"
-            >
-                <Grid.Col span={{ base: 12, md: 6 }}>
+            <Grid align="center">
+                <Grid.Col
+                    span={{ base: 12, sm: 6, md: 7 }}
+                    order={{ base: 2, sm: 2, md: 1 }}
+                >
                     <Title
                         order={1}
                         component="h1"
                         style={{ lineHeight: 1.2 }}
                     >
-                        <Trans>
-                            Solutions That Transform <br /> Your Business
-                        </Trans>
+                        <Trans>Solutions That Transform Your Business</Trans>
                     </Title>
                     <Text
                         size="lg"
@@ -142,7 +140,10 @@ export default function Hero() {
                     </Group>
                 </Grid.Col>
 
-                <Grid.Col span={{ base: 12, md: 6 }}>
+                <Grid.Col
+                    span={{ base: 12, sm: 6, md: 5 }}
+                    order={{ base: 1, sm: 1, md: 2 }}
+                >
                     <Box
                         style={{
                             display: 'flex',

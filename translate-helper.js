@@ -26,9 +26,9 @@ const translations = {
     'Consulting & Strategy': { es: 'Consultoría y Estrategia', pt: 'Consultoria e Estratégia' },
 
     // Hero Section
-    'Solutions That Transform <br /> Your Business': {
-        es: 'Soluciones que Transforman <br /> Tu Negocio',
-        pt: 'Soluções que Transformam <br /> Seu Negócio',
+    'Solutions That Transform Your Business': {
+        es: 'Soluciones que Transforman Tu Negocio',
+        pt: 'Soluções que Transformam Seu Negócio',
     },
     'We deliver powerful solutions tailored to your needs. From Salesforce components to intelligent AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution is designed to solve real problems and drive measurable results.':
         {

@@ -204,7 +204,7 @@ export default function AIAgentsTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            {tech}
+                                            <Trans>{tech}</Trans>
                                         </Text>
                                     </List.Item>
                                 ))}
