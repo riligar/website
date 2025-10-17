@@ -64,23 +64,23 @@ msgstr ""
 #: src/components/usecases.jsx:140
 #: src/components/usecases.jsx:148
 msgid "{0}"
-msgstr ""
+msgstr "{0}"
 
 #: src/components/usecases.jsx:177
 msgid "{benefit}"
-msgstr ""
+msgstr "{benefit}"
 
 #: src/components/solutions/ai-agents/use-cases.jsx:180
 #: src/components/solutions/salesforce/use-cases.jsx:149
 msgid "{result}"
-msgstr ""
+msgstr "{result}"
 
 #: src/components/solutions/ai-agents/tech-stack.jsx:207
 #: src/components/solutions/ai-integration/tech-stack.jsx:150
 #: src/components/solutions/saas/tech-stack.jsx:154
 #: src/components/solutions/salesforce/tech-stack.jsx:210
 msgid "{tech}"
-msgstr ""
+msgstr "{tech}"
 
 #. placeholder {0}: new Date().getFullYear()
 #: src/components/footer.jsx:102
@@ -152,12 +152,8 @@ msgid "<0>Production-Ready:</0> Reliable, monitored, and scalable AI services"
 msgstr "<0>Listo para Producción:</0> Servicios de IA confiables, monitoreados y escalables"
 
 #: src/components/solutions/ai-agents/results.jsx:159
-#~ msgid "✓ Production-ready code from day one  |  ✓ Proper error handling and monitoring  |  ✓ Security built in, not bolted on  |  ✓ Scalable architecture that grows with you  |  ✓ Clean, maintainable code you can actually understand  |  ✓ Real engineering, not demos"
-#~ msgstr "✓ Código listo para producción desde el día uno  |  ✓ Manejo adecuado de errores y monitoreo  |  ✓ Seguridad integrada, no añadida después  |  ✓ Arquitectura escalable que crece contigo  |  ✓ Código limpio y mantenible que realmente puedes entender  |  ✓ Ingeniería real, no demos"
-
-#: src/components/solutions/ai-agents/results.jsx:159
 msgid "✓ Production-ready code from day one  |  ✓ Proper error handling and monitoring  |  ✓ Security built in, not bolted on  |  ✓ Scalable architecture that grows with you  |  ✓ Clean, maintainable code you can actually understand  |  ✓ Real engineering, not demos"
-msgstr ""
+msgstr "✓ Código listo para producción desde el día uno  |  ✓ Manejo adecuado de errores y monitoreo  |  ✓ Seguridad integrada, no añadida después  |  ✓ Arquitectura escalable que crece contigo  |  ✓ Código limpio y mantenible que realmente puedes entender  |  ✓ Ingeniería real, no demos"
 
 #: src/components/about/team.jsx:79
 msgid "20+ years building enterprise systems, leading technical teams, and solving complex problems. Specialized in AI, Salesforce development, and scalable software architecture. Passionate about technology with purpose."
@@ -170,10 +166,6 @@ msgstr "20+ Años en Tecnología"
 #: src/components/solutions/saas/tech-stack.jsx:185
 msgid "20+ years of software engineering means we know how to build systems that last. Clean code, proper testing, scalable architecture, and cost-effective infrastructure. Your SaaS platform deserves engineering excellence, not tech debt."
 msgstr "20+ años de ingeniería de software significan que sabemos cómo construir sistemas que duran. Código limpio, pruebas adecuadas, arquitectura escalable e infraestructura rentable. Tu plataforma SaaS merece excelencia en ingeniería, no deuda técnica."
-
-#: src/components/usecases.jsx:37
-#~ msgid "24/7 availability"
-#~ msgstr ""
 
 #: src/components/about/hero.jsx:19
 msgid "About RiLiGar"
@@ -210,10 +202,6 @@ msgstr "Agentes IA"
 msgid "AI Agents deliver measurable ROI from day one. These aren't projections—these are real results from production deployments."
 msgstr "Los Agentes de IA entregan ROI medible desde el primer día. No son proyecciones—estos son resultados reales de implementaciones en producción."
 
-#: src/components/comparison.jsx:17
-#~ msgid "AI Agents deployment capability"
-#~ msgstr ""
-
 #: src/components/cta.jsx:117
 msgid "AI Agents Working"
 msgstr "Agentes IA Trabajando"
@@ -231,21 +219,9 @@ msgstr "Ingeniería de IA"
 msgid "AI Integration"
 msgstr "Integración IA"
 
-#: src/components/features.jsx:39
-#~ msgid "AI Integration Services"
-#~ msgstr "Servicios de Integración IA"
-
 #: src/components/solutions/ai-integration/tech-stack.jsx:76
 msgid "AI Integration Technology Stack"
 msgstr "Stack Tecnológico de Integración de IA"
-
-#: src/components/usecases.jsx:73
-#~ msgid "Automated extraction"
-#~ msgstr ""
-
-#: src/components/usecases.jsx:50
-#~ msgid "Automated workflows"
-#~ msgstr ""
 
 #: src/components/solutions/ai-agents/hero.jsx:34
 msgid "Autonomous AI Agents That Work <0/> While You Focus on Growth"
@@ -267,25 +243,9 @@ msgstr "Con sede en Brasil 🇧🇷 | Trabajando con Clientes en Todo el Mundo �
 msgid "Behind Every Solution"
 msgstr "Detrás de Cada Solución"
 
-#: src/components/features.jsx:51
-#~ msgid "Bespoke solutions designed around your unique business requirements. Clean, maintainable code that scales with your needs and stands the test of time."
-#~ msgstr "Soluciones personalizadas diseñadas en torno a tus requisitos empresariales únicos. Código limpio y mantenible que escala con tus necesidades y resiste el paso del tiempo."
-
-#: src/components/usecases.jsx:51
-#~ msgid "Better forecasting"
-#~ msgstr ""
-
 #: src/components/solutions/ai-agents/capabilities.jsx:81
 msgid "Beyond simple chatbots—these are intelligent systems that understand, reason, plan, and execute complex tasks autonomously."
 msgstr "Más allá de simples chatbots—estos son sistemas inteligentes que entienden, razonan, planifican y ejecutan tareas complejas de forma autónoma."
-
-#: src/components/footer.jsx:25
-#~ msgid "Blog"
-#~ msgstr "Blog"
-
-#: src/components/usecases.jsx:59
-#~ msgid "Build a complete SaaS platform tailored to your industry. From MVP to enterprise-scale, we handle everything: architecture, development, deployment, and scaling."
-#~ msgstr ""
 
 #: src/components/solutions/salesforce/hero.jsx:48
 msgid "Build Lightning Web Components, custom integrations, and automations that transform Salesforce into exactly what your business needs. Clean, maintainable code that scales with your organization."
@@ -307,38 +267,14 @@ msgstr "Pero en <0>2024</0>, algo cambió. Decidí que quería dirigir mi energ�
 msgid "Clean, maintainable code in every project"
 msgstr "Código limpio y mantenible en cada proyecto"
 
-#: src/components/comparison.jsx:27
-#~ msgid "Clean, maintainable code standard"
-#~ msgstr ""
-
 #: src/components/contact/faq.jsx:52
 msgid "Common Questions"
 msgstr "Preguntas Frecuentes"
-
-#: src/components/footer.jsx:21
-#~ msgid "Company"
-#~ msgstr "Empresa"
-
-#: src/components/footer.jsx:29
-#~ msgid "Connect"
-#~ msgstr "Conectar"
-
-#: src/components/usecases.jsx:39
-#~ msgid "Consistent quality"
-#~ msgstr ""
-
-#: src/components/features.jsx:59
-#~ msgid "Consulting & Strategy"
-#~ msgstr "Consultoría y Estrategia"
 
 #: src/components/header.jsx:252
 #: src/components/header.jsx:325
 msgid "Contact"
 msgstr "Contacto"
-
-#: src/components/usecases.jsx:63
-#~ msgid "Cost-effective hosting"
-#~ msgstr ""
 
 #: src/components/hero.jsx:90
 msgid "Custom components and integrations that supercharge your CRM and boost team productivity"
@@ -348,25 +284,9 @@ msgstr "Componentes personalizados e integraciones que potencian tu CRM y aument
 msgid "Custom components, integrations, and automations for your Salesforce platform"
 msgstr "Componentes personalizados, integraciones y automatizaciones para tu plataforma Salesforce"
 
-#: src/components/features.jsx:49
-#~ msgid "Custom Development"
-#~ msgstr "Desarrollo Personalizado"
-
-#: src/components/features.jsx:21
-#~ msgid "Custom Lightning Web Components, integrations, and automations for Salesforce. Component libraries that enhance your CRM capabilities and streamline your sales, service, and marketing workflows."
-#~ msgstr "Componentes Lightning Web personalizados, integraciones y automatizaciones para Salesforce. Bibliotecas de componentes que mejoran las capacidades de tu CRM y optimizan tus flujos de trabajo de ventas, servicio y marketing."
-
-#: src/components/usecases.jsx:47
-#~ msgid "Custom Salesforce components that provide real-time insights, automate data entry, and help your sales team focus on closing deals instead of administrative tasks."
-#~ msgstr ""
-
 #: src/components/solutions/salesforce/hero.jsx:34
 msgid "Custom Salesforce Development <0/> That Supercharges Your CRM"
 msgstr "Desarrollo Personalizado de Salesforce <0/> Que Potencia Tu CRM"
-
-#: src/components/usecases.jsx:34
-#~ msgid "Customer Service Automation"
-#~ msgstr ""
 
 #: src/components/about/story.jsx:135
 msgid "Decided to focus on projects with real purpose. Started developing tools that increase productivity and bring more balance to daily life—beginning with our own family's needs."
@@ -376,37 +296,17 @@ msgstr "Decidí enfocarme en proyectos con propósito real. Comencé a desarroll
 msgid "Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration services."
 msgstr "Ofreciendo soluciones poderosas: Agentes IA, Salesforce, plataformas SaaS y servicios de integración IA."
 
-#: src/components/process.jsx:29
-#~ msgid "Deploy & Scale"
-#~ msgstr ""
-
-#: src/components/usecases.jsx:35
-#~ msgid "Deploy AI agents that handle customer inquiries, provide instant responses, and escalate complex issues to your team—all while learning from every interaction."
-#~ msgstr ""
-
 #: src/components/solutions/ai-agents/hero.jsx:48
 msgid "Deploy intelligent agents that understand context, make decisions, learn from interactions, and execute tasks autonomously. Available 24/7, scalable instantly, improving continuously."
 msgstr "Despliega agentes inteligentes que entienden el contexto, toman decisiones, aprenden de las interacciones y ejecutan tareas de forma autónoma. Disponibles 24/7, escalables instantáneamente, mejorando continuamente."
-
-#: src/components/features.jsx:9
-#~ msgid "Deploy intelligent autonomous agents that work continuously for your business. From customer service to data analysis, our AI agents handle complex tasks, make informed decisions, and learn from interactions—all while you focus on growth."
-#~ msgstr "Despliega agentes autónomos inteligentes que trabajan continuamente para tu negocio. Desde servicio al cliente hasta análisis de datos, nuestros agentes IA manejan tareas complejas, toman decisiones informadas y aprenden de las interacciones, todo mientras te enfocas en el crecimiento."
 
 #: src/components/contact/process.jsx:120
 msgid "Development & Delivery"
 msgstr "Desarrollo y Entrega"
 
-#: src/components/comparison.jsx:7
-#~ msgid "Direct access to experienced engineers"
-#~ msgstr ""
-
 #: src/components/header.jsx:225
 msgid "Discover the perfect solution for your business"
 msgstr "Descubra la solución perfecta para su negocio"
-
-#: src/components/process.jsx:11
-#~ msgid "Discovery Call"
-#~ msgstr ""
 
 #: src/components/solutions/ai-integration/hero.jsx:111
 msgid "Discuss AI Integration"
@@ -425,10 +325,6 @@ msgstr "Discuta Su Proyecto Salesforce"
 msgid "Discuss Your Use Case"
 msgstr "Discute Tu Caso de Uso"
 
-#: src/components/usecases.jsx:70
-#~ msgid "Document Processing System"
-#~ msgstr ""
-
 #: src/components/testimonials.jsx:104
 msgid "Don't just take our word for it. Here's what companies say about working with RiLiGar."
 msgstr "No solo tomes nuestra palabra. Esto es lo que las empresas dicen sobre trabajar con RiLiGar."
@@ -440,14 +336,6 @@ msgstr "Cada solución está diseñada para abordar desafíos empresariales espe
 #: src/components/header.jsx:58
 msgid "End-to-end SaaS development with modern, scalable architecture"
 msgstr "Desarrollo SaaS de principio a fin con arquitectura moderna y escalable"
-
-#: src/components/features.jsx:31
-#~ msgid "End-to-end SaaS solutions built with modern architecture. From MVP to enterprise-scale, we deliver lightweight, high-performance applications that are easy to maintain and cost-effective to run."
-#~ msgstr "Soluciones SaaS de principio a fin construidas con arquitectura moderna. Desde MVP hasta escala empresarial, entregamos aplicaciones ligeras y de alto rendimiento que son fáciles de mantener y rentables de ejecutar."
-
-#: src/components/usecases.jsx:76
-#~ msgid "Error reduction"
-#~ msgstr ""
 
 #: src/components/faq.jsx:146
 msgid "Everything you need to know about working with RiLiGar"
@@ -466,17 +354,9 @@ msgstr "Innovación Impulsada por la Familia"
 msgid "Fast delivery, clean code, scalable architecture, and cost-effective infrastructure—all from experienced engineers."
 msgstr "Entrega rápida, código limpio, arquitectura escalable e infraestructura rentable—todo de ingenieros experimentados."
 
-#: src/components/comparison.jsx:22
-#~ msgid "Fast iterations (2-3 weeks to prototype)"
-#~ msgstr ""
-
 #: src/components/stats.jsx:18
 msgid "Fast iterations mean quick validation and faster ROI"
 msgstr "Iteraciones rápidas significan validación rápida y ROI más rápido"
-
-#: src/components/process.jsx:24
-#~ msgid "Fast iterations with regular demos. You see progress constantly and provide feedback at every step. Many clients see value in 2-3 weeks."
-#~ msgstr ""
 
 #: src/components/comparison.jsx:112
 msgid "Feature"
@@ -526,17 +406,9 @@ msgstr "Ponte en Contacto"
 msgid "Hi, I'm <0>Ciro Cesar Maciel</0>, founder of RiLiGar."
 msgstr "Hola, soy <0>Ciro Cesar Maciel</0>, fundador de RiLiGar."
 
-#: src/components/usecases.jsx:74
-#~ msgid "High accuracy"
-#~ msgstr ""
-
 #: src/components/hero.jsx:108
 msgid "High-performance platforms with AI capabilities that scale with your business growth"
 msgstr "Plataformas de alto rendimiento con capacidades de IA que escalan con el crecimiento de tu negocio"
-
-#: src/components/usecases.jsx:52
-#~ msgid "Higher productivity"
-#~ msgstr ""
 
 #: src/components/header.jsx:164
 #: src/components/header.jsx:295
@@ -567,29 +439,9 @@ msgstr "He sido apasionado por la tecnología durante más de dos décadas. Mi v
 msgid "If you believe in technology with purpose and want a partner who's personally invested in your success, let's talk."
 msgstr "Si crees en la tecnología con propósito y quieres un socio que esté personalmente invertido en tu éxito, hablemos."
 
-#: src/components/usecases.jsx:58
-#~ msgid "Industry-Specific SaaS"
-#~ msgstr ""
-
 #: src/components/contact/process.jsx:45
 msgid "Initial Conversation"
 msgstr "Conversación Inicial"
-
-#: src/components/footer.jsx:32
-#~ msgid "Instagram"
-#~ msgstr "Instagram"
-
-#: src/components/usecases.jsx:38
-#~ msgid "Instant responses"
-#~ msgstr ""
-
-#: src/components/usecases.jsx:71
-#~ msgid "Integrate AI to automatically extract, analyze, and process documents. Turn unstructured data into actionable insights without manual data entry."
-#~ msgstr ""
-
-#: src/components/features.jsx:41
-#~ msgid "Integrate cutting-edge AI capabilities into your existing systems. Natural language processing, machine learning models, predictive analytics, and intelligent automation—tailored to your specific use cases."
-#~ msgstr "Integra capacidades de IA de vanguardia en tus sistemas existentes. Procesamiento de lenguaje natural, modelos de machine learning, análisis predictivo y automatización inteligente, adaptados a tus casos de uso específicos."
 
 #: src/components/solutions/ai-integration/hero.jsx:48
 msgid "Integrate cutting-edge AI into your current applications and workflows. Natural language processing, document analysis, predictive analytics, and intelligent automation—tailored to your specific needs."
@@ -610,10 +462,6 @@ msgstr "Agentes autónomos inteligentes que trabajan 24/7, automatizando tareas,
 #: src/components/usecases.jsx:156
 msgid "Key Benefits:"
 msgstr "Beneficios Clave:"
-
-#: src/components/process.jsx:30
-#~ msgid "Launch your solution with confidence. We provide training, documentation, and ongoing support as you grow and scale."
-#~ msgstr ""
 
 #: src/components/about/team.jsx:109
 msgid "Leadership"
@@ -643,17 +491,9 @@ msgstr "Hablemos de tu caso de uso específico. Exploraremos cómo los Agentes d
 msgid "Let's explore how AI can enhance your existing applications. We'll identify opportunities, design the integration, and deliver measurable results."
 msgstr "Exploremos cómo la IA puede mejorar tus aplicaciones existentes. Identificaremos oportunidades, diseñaremos la integración y entregaremos resultados medibles."
 
-#: src/components/footer.jsx:31
-#~ msgid "LinkedIn"
-#~ msgstr "LinkedIn"
-
 #: src/components/contact/form.jsx:56
 msgid "Message on LinkedIn"
 msgstr "Mensaje en LinkedIn"
-
-#: src/components/usecases.jsx:64
-#~ msgid "Modern tech stack"
-#~ msgstr ""
 
 #: src/components/solutions/saas/tech-stack.jsx:90
 msgid "Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just solid engineering."
@@ -727,10 +567,6 @@ msgstr "Nuestro proceso optimizado te da resultados rápido. Sin burocracia, sin
 msgid "Our Values"
 msgstr "Nuestros Valores"
 
-#: src/components/comparison.jsx:42
-#~ msgid "Personal attention to every project"
-#~ msgstr ""
-
 #: src/components/contact/form.jsx:26
 msgid "Prefer Direct Contact?"
 msgstr "¿Prefieres Contacto Directo?"
@@ -742,14 +578,6 @@ msgstr "Propuesta y Planificación"
 #: src/components/contact/faq.jsx:62
 msgid "Quick answers to questions you might have before reaching out."
 msgstr "Respuestas rápidas a preguntas que puedas tener antes de comunicarte."
-
-#: src/components/process.jsx:23
-#~ msgid "Rapid Development"
-#~ msgstr ""
-
-#: src/components/usecases.jsx:61
-#~ msgid "Rapid MVP launch"
-#~ msgstr ""
 
 #: src/components/testimonials.jsx:188
 msgid "Read More Stories"
@@ -778,10 +606,6 @@ msgstr "¿Listo para Potenciar Tu Salesforce?"
 #: src/components/contact/hero.jsx:40
 msgid "Ready to transform your business with purpose-driven technology? Reach out through any of these channels—I'm always happy to discuss new projects and opportunities."
 msgstr "¿Listo para transformar tu negocio con tecnología con propósito? Contáctame a través de cualquiera de estos canales—siempre estoy feliz de discutir nuevos proyectos y oportunidades."
-
-#: src/components/usecases.jsx:49
-#~ msgid "Real-time dashboards"
-#~ msgstr ""
 
 #: src/components/solutions/ai-agents/use-cases.jsx:102
 msgid "Real-World AI Agent Applications"
@@ -819,26 +643,10 @@ msgstr "SaaS e Integración IA"
 msgid "SaaS Architecture"
 msgstr "Arquitectura SaaS"
 
-#: src/components/usecases.jsx:57
-#~ msgid "SaaS Platform"
-#~ msgstr ""
-
 #: src/components/header.jsx:57
 #: src/components/solutions/saas/hero.jsx:23
 msgid "SaaS Platforms"
 msgstr "Plataformas SaaS"
-
-#: src/components/usecases.jsx:46
-#~ msgid "Sales Pipeline Intelligence"
-#~ msgstr ""
-
-#: src/components/usecases.jsx:45
-#~ msgid "Salesforce"
-#~ msgstr ""
-
-#: src/components/comparison.jsx:37
-#~ msgid "Salesforce expertise + AI integration"
-#~ msgstr ""
 
 #: src/components/header.jsx:51
 #: src/components/hero.jsx:83
@@ -846,17 +654,9 @@ msgstr "Plataformas SaaS"
 msgid "Salesforce Solutions"
 msgstr "Soluciones Salesforce"
 
-#: src/components/usecases.jsx:62
-#~ msgid "Scalable architecture"
-#~ msgstr ""
-
 #: src/components/solutions/saas/hero.jsx:34
 msgid "Scalable SaaS Platforms <0/> Built Right From Day One"
 msgstr "Plataformas SaaS Escalables <0/> Construidas Correctamente Desde el Primer Día"
-
-#: src/components/usecases.jsx:40
-#~ msgid "Scales effortlessly"
-#~ msgstr ""
 
 #: src/components/cta.jsx:66
 msgid "Schedule a Call"
@@ -873,10 +673,6 @@ msgstr "Ver Cómo Trabajamos"
 #: src/components/process.jsx:62
 msgid "Simple Process"
 msgstr "Proceso Simple"
-
-#: src/components/process.jsx:17
-#~ msgid "Solution Design"
-#~ msgstr ""
 
 #: src/components/header.jsx:183
 #: src/components/header.jsx:306
@@ -898,10 +694,6 @@ msgstr "Soluciones que Generan Resultados"
 #: src/components/hero.jsx:29
 msgid "Solutions That Transform Your Business"
 msgstr "Soluciones Que Transforman Tu Negocio"
-
-#: src/components/comparison.jsx:12
-#~ msgid "Solutions-first approach (not just code)"
-#~ msgstr ""
 
 #: src/components/header.jsx:236
 #: src/components/header.jsx:264
@@ -936,10 +728,6 @@ msgstr "Hablar con Nosotros"
 #: src/components/stats.jsx:8
 msgid "Teams work faster when tools fit their workflows"
 msgstr "Los equipos trabajan más rápido cuando las herramientas se ajustan a sus flujos de trabajo"
-
-#: src/components/features.jsx:61
-#~ msgid "Technical guidance and strategic planning for your technology initiatives. We help you make informed decisions about architecture, tooling, and implementation approaches."
-#~ msgstr "Orientación técnica y planificación estratégica para tus iniciativas tecnológicas. Te ayudamos a tomar decisiones informadas sobre arquitectura, herramientas y enfoques de implementación."
 
 #: src/components/about/story.jsx:129
 msgid "The 2024 Decision"
@@ -993,10 +781,6 @@ msgstr "Estos no son teóricos—son sistemas de producción que hemos construid
 msgid "These principles guide every decision we make and every solution we build."
 msgstr "Estos principios guían cada decisión que tomamos y cada solución que construimos."
 
-#: src/components/usecases.jsx:75
-#~ msgid "Time savings"
-#~ msgstr ""
-
 #: src/components/cta.jsx:102
 msgid "To First Results"
 msgstr "Para Primeros Resultados"
@@ -1008,10 +792,6 @@ msgstr "Para primer prototipo funcional"
 #: src/components/about/story.jsx:72
 msgid "Today, RiLiGar combines my experience in enterprise software development with cutting-edge AI capabilities. We study, apply, and deploy <0>AI Agents</0>, build powerful<1> Salesforce solutions</1>, create <2>scalable SaaS platforms</2>, and integrate AI into existing systems—all with one goal: <3>helping businesses evolve with technology that works</3>."
 msgstr "Hoy, RiLiGar combina mi experiencia en desarrollo de software empresarial con capacidades de IA de vanguardia. Estudiamos, aplicamos y desplegamos <0>Agentes de IA</0>, construimos poderosas <1>soluciones Salesforce</1>, creamos <2>plataformas SaaS escalables</2> e integramos IA en sistemas existentes—todo con un objetivo: <3>ayudar a las empresas a evolucionar con tecnología que funciona</3>."
-
-#: src/components/comparison.jsx:32
-#~ msgid "Transparent pricing, no hidden fees"
-#~ msgstr ""
 
 #: src/components/clients.jsx:37
 msgid "Trusted by Forward-Thinking Companies"
@@ -1065,14 +845,6 @@ msgstr "Integramos capacidades de IA en tus sistemas existentes sin requerir ree
 #: src/components/solutions/ai-integration/tech-stack.jsx:86
 msgid "We integrate AI using proven frameworks and best practices. Reliable, secure, and built to scale."
 msgstr "Integramos IA usando frameworks probados y mejores prácticas. Confiable, seguro y construido para escalar."
-
-#: src/components/process.jsx:18
-#~ msgid "We recommend the best solution (or combination) for your situation. AI Agent? Salesforce component? SaaS platform? We map it out clearly."
-#~ msgstr ""
-
-#: src/components/process.jsx:12
-#~ msgid "We start with a conversation about your challenges and goals. No sales pitch—just experienced engineers understanding your needs."
-#~ msgstr ""
 
 #: src/components/solutions/salesforce/tech-stack.jsx:139
 msgid "We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and modern DevOps practices. 20+ years of software engineering applied to Salesforce development."
@@ -1161,10 +933,6 @@ msgstr "Con el apoyo de Andréa y Edgar, transformé código en soluciones impac
 #: src/components/about/story.jsx:61
 msgid "With the support of my wife, <0>Andréa</0>, and my son, <1>Edgar</1>, I transformed lines of code into solutions with direct impact on our routine. What started as tools for our family gradually became my purpose."
 msgstr "Con el apoyo de mi esposa, <0>Andréa</0>, y mi hijo, <1>Edgar</1>, transformé líneas de código en soluciones con impacto directo en nuestra rutina. Lo que comenzó como herramientas para nuestra familia gradualmente se convirtió en mi propósito."
-
-#: src/components/footer.jsx:33
-#~ msgid "YouTube"
-#~ msgstr "YouTube"
 
 #: src/components/about/cta.jsx:50
 msgid "YouTube Channel"
