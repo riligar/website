@@ -48,7 +48,7 @@ export default function CTA() {
                     <Button
                         component="a"
                         href="/contact"
-                        size="xl"
+                        size="lg"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
                         <Trans>Explore Solutions</Trans>
@@ -58,7 +58,7 @@ export default function CTA() {
                         href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        size="xl"
+                        size="lg"
                         variant="outline"
                         leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
                     >

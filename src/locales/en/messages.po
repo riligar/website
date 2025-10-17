@@ -29,8 +29,8 @@ msgstr ""
 #: src/components/faq.jsx:156
 #: src/components/features.jsx:89
 #: src/components/features.jsx:96
-#: src/components/footer.jsx:52
-#: src/components/footer.jsx:62
+#: src/components/footer.jsx:53
+#: src/components/footer.jsx:63
 #: src/components/process.jsx:129
 #: src/components/process.jsx:136
 #: src/components/solutions/ai-agents/capabilities.jsx:116
@@ -81,7 +81,7 @@ msgid "{tech}"
 msgstr "{tech}"
 
 #. placeholder {0}: new Date().getFullYear()
-#: src/components/footer.jsx:101
+#: src/components/footer.jsx:102
 msgid "© {0} RiLiGar. All rights reserved. Built with excellence."
 msgstr "© {0} RiLiGar. All rights reserved. Built with excellence."
 
@@ -366,7 +366,7 @@ msgstr "Custom Salesforce Development <0/> That Supercharges Your CRM"
 msgid "Decided to focus on projects with real purpose. Started developing tools that increase productivity and bring more balance to daily life—beginning with our own family's needs."
 msgstr "Decided to focus on projects with real purpose. Started developing tools that increase productivity and bring more balance to daily life—beginning with our own family's needs."
 
-#: src/components/footer.jsx:84
+#: src/components/footer.jsx:85
 msgid "Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration services."
 msgstr "Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration services."
 

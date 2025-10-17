@@ -109,7 +109,7 @@ export default function UseCases() {
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2 }}
-                    spacing="lg"
+                    // spacing="lg"
                 >
                     {useCases.map(useCase => (
                         <Card
