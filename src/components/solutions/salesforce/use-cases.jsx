@@ -4,9 +4,10 @@ import { Trans } from '@lingui/react/macro'
 
 const useCases = [
     {
-        title: 'Sales Pipeline Enhancement',
-        industry: 'Sales Teams',
-        description:
+        id: 'case1',
+        titleKey: 'Sales Pipeline Enhancement',
+        industryKey: 'Sales Teams',
+        descriptionKey:
             'Custom components for lead scoring, opportunity tracking, and forecasting. Automate lead routing, follow-ups, and reporting. Give sales reps the tools they need to close faster.',
         results: [
             '30% faster lead response time',
@@ -16,9 +17,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Service Console Customization',
-        industry: 'Customer Support',
-        description:
+        id: 'case2',
+        titleKey: 'Service Console Customization',
+        industryKey: 'Customer Support',
+        descriptionKey:
             'Build custom case management interfaces, knowledge base integrations, and omnichannel routing. Empower support teams with context-rich information and automated workflows.',
         results: [
             '40% faster case resolution',
@@ -28,9 +30,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Marketing Automation Integration',
-        industry: 'Marketing',
-        description:
+        id: 'case3',
+        titleKey: 'Marketing Automation Integration',
+        industryKey: 'Marketing',
+        descriptionKey:
             'Sync Salesforce with marketing platforms like HubSpot, Marketo, or Mailchimp. Track campaign performance, lead scoring, and attribution all within Salesforce.',
         results: [
             'Real-time lead scoring',
@@ -40,9 +43,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Custom Data Dashboards',
-        industry: 'Executive / Analytics',
-        description:
+        id: 'case4',
+        titleKey: 'Custom Data Dashboards',
+        industryKey: 'Executive / Analytics',
+        descriptionKey:
             'Build interactive Lightning dashboards with custom visualizations. Real-time KPIs, drill-down capabilities, and mobile-responsive design for executives on the go.',
         results: ['Real-time business metrics', 'Mobile-friendly', 'Custom visualizations', 'Export capabilities'],
     },
@@ -64,7 +68,7 @@ export default function SalesforceUseCases() {
                     ta="center"
                     mb="md"
                 >
-                    Real-World Salesforce Projects
+                    <Trans>Real-World Salesforce Projects</Trans>
                 </Title>
 
                 <Text
@@ -103,23 +107,23 @@ export default function SalesforceUseCases() {
                                 size="h4"
                                 mb="xs"
                             >
-                                {useCase.title}
-                            </Title>
+                    <Trans>{useCase.title}</Trans>
+                </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                {useCase.description}
-                            </Text>
+                    <Trans>{useCase.description}</Trans>
+                </Text>
 
                             <Text
                                 size="sm"
                                 fw={600}
                                 mb="xs"
                             >
-                                Typical Results:
-                            </Text>
+                    <Trans>Typical Results:</Trans>
+                </Text>
                             <List
                                 size="sm"
                                 spacing="xs"

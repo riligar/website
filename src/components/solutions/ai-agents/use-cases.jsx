@@ -4,9 +4,10 @@ import { Trans } from '@lingui/react/macro'
 
 const useCases = [
     {
-        title: 'Customer Support Agent',
-        industry: 'All Industries',
-        description:
+        id: 'case1',
+        titleKey: 'Customer Support Agent',
+        industryKey: 'All Industries',
+        descriptionKey:
             'Handle customer inquiries 24/7 with context-aware responses. Resolve common issues, escalate complex cases, update tickets, and provide consistent, high-quality support at scale.',
         results: [
             '70-85% of tier-1 queries fully resolved by agent',
@@ -16,9 +17,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Sales Intelligence Agent',
-        industry: 'B2B Sales',
-        description:
+        id: 'case2',
+        titleKey: 'Sales Intelligence Agent',
+        industryKey: 'B2B Sales',
+        descriptionKey:
             'Research prospects, qualify leads, update CRM, schedule meetings, and provide sales reps with context before every call. Never let a hot lead go cold again.',
         results: [
             '3x increase in qualified lead pipeline',
@@ -28,9 +30,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Document Processing Agent',
-        industry: 'Legal, Finance, Healthcare',
-        description:
+        id: 'case3',
+        titleKey: 'Document Processing Agent',
+        industryKey: 'Legal, Finance, Healthcare',
+        descriptionKey:
             'Extract, classify, and analyze information from contracts, invoices, medical records, and forms. Route documents, flag anomalies, and ensure compliance automatically.',
         results: [
             '95%+ extraction accuracy',
@@ -40,9 +43,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Internal Knowledge Agent',
-        industry: 'Enterprise',
-        description:
+        id: 'case4',
+        titleKey: 'Internal Knowledge Agent',
+        industryKey: 'Enterprise',
+        descriptionKey:
             'Answer employee questions by searching across wikis, docs, Slack, emails, and databases. Onboard new hires faster, reduce repetitive questions, and surface institutional knowledge.',
         results: [
             '40% reduction in "how do I..." questions',
@@ -52,9 +56,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Data Analysis Agent',
-        industry: 'All Industries',
-        description:
+        id: 'case5',
+        titleKey: 'Data Analysis Agent',
+        industryKey: 'All Industries',
+        descriptionKey:
             'Query databases, generate reports, create visualizations, and surface insights from data. Democratize data access—let anyone ask questions in natural language.',
         results: [
             'Non-technical users can query data',
@@ -64,9 +69,10 @@ const useCases = [
         ],
     },
     {
-        title: 'Workflow Orchestration Agent',
-        industry: 'Operations',
-        description:
+        id: 'case6',
+        titleKey: 'Workflow Orchestration Agent',
+        industryKey: 'Operations',
+        descriptionKey:
             'Coordinate multi-step business processes across systems. Monitor for triggers, execute actions, handle errors, and ensure workflows complete successfully.',
         results: [
             '80% reduction in manual handoffs',
@@ -93,7 +99,7 @@ export default function AIAgentsUseCases() {
                     ta="center"
                     mb="md"
                 >
-                    Real-World AI Agent Applications
+                    <Trans>Real-World AI Agent Applications</Trans>
                 </Title>
 
                 <Text
@@ -132,23 +138,23 @@ export default function AIAgentsUseCases() {
                                 size="h4"
                                 mb="xs"
                             >
-                                {useCase.title}
-                            </Title>
+                    <Trans>{useCase.title}</Trans>
+                </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                {useCase.description}
-                            </Text>
+                    <Trans>{useCase.description}</Trans>
+                </Text>
 
                             <Text
                                 size="sm"
                                 fw={600}
                                 mb="xs"
                             >
-                                Typical Results:
-                            </Text>
+                    <Trans>Typical Results:</Trans>
+                </Text>
                             <List
                                 size="sm"
                                 spacing="xs"

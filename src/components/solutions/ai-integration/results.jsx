@@ -3,10 +3,10 @@ import { IconBolt, IconClock, IconChartLine, IconShieldCheck } from '@tabler/ico
 import { Trans } from '@lingui/react/macro'
 
 const metrics = [
-    { icon: IconBolt, value: '90%', label: 'Automation Rate', description: 'Tasks automated with AI integration' },
-    { icon: IconClock, value: '3-5 weeks', label: 'Integration Time', description: 'From concept to production' },
-    { icon: IconChartLine, value: '5-10x', label: 'Productivity Gain', description: 'Process efficiency improvement' },
-    { icon: IconShieldCheck, value: '100%', label: 'Secure', description: 'Enterprise-grade security' },
+    { icon: IconBolt, value: '90%', labelKey: 'Automation Rate', description: 'Tasks automated with AI integration' },
+    { icon: IconClock, value: '3-5 weeks', labelKey: 'Integration Time', description: 'From concept to production' },
+    { icon: IconChartLine, value: '5-10x', labelKey: 'Productivity Gain', description: 'Process efficiency improvement' },
+    { icon: IconShieldCheck, value: '100%', labelKey: 'Secure', description: 'Enterprise-grade security' },
 ]
 
 export default function AIIntegrationResults() {
@@ -22,7 +22,7 @@ export default function AIIntegrationResults() {
                     ta="center"
                     mb="md"
                 >
-                    The Impact of AI Integration
+                    <Trans>The Impact of AI Integration</Trans>
                 </Title>
                 <Text
                     c="dimmed"
@@ -32,16 +32,16 @@ export default function AIIntegrationResults() {
                     mx="auto"
                     mb={60}
                 >
-                    Add AI capabilities to existing systems without disruption—delivering measurable improvements fast.
+                    <Trans>Add AI capabilities to existing systems without disruption—delivering measurable improvements fast.</Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, sm: 2, lg: 4 }}
                     spacing="lg"
                 >
-                    {metrics.map((metric, index) => (
+                    {metrics.map(metric => (
                         <Paper
-                            key={index}
+                            key={metric.id}
                             shadow="md"
                             radius="md"
                             p="xl"
@@ -80,13 +80,13 @@ export default function AIIntegrationResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {metric.label}
+                                <Trans>{metric.labelKey}</Trans>
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                {metric.description}
+                                <Trans>{metric.descriptionKey}</Trans>
                             </Text>
                         </Paper>
                     ))}

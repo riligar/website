@@ -3,12 +3,14 @@ import { Trans } from '@lingui/react/macro'
 
 const faq = [
     {
-        question: 'What solutions does RiLiGar offer?',
-        answer: `RiLiGar delivers four main solutions: AI Agents, Salesforce Solutions, SaaS Platforms, and AI Integration Services. Our AI Agents are intelligent autonomous systems that work 24/7 to automate tasks and make decisions. We build custom Salesforce components and Lightning Web Components that enhance your CRM. Our SaaS platforms are built with modern, scalable architecture. And our AI integration services bring cutting-edge AI capabilities to your existing systems.`,
+        id: 'solutions',
+        questionKey: 'What solutions does RiLiGar offer?',
+        answerKey: `RiLiGar delivers four main solutions: AI Agents, Salesforce Solutions, SaaS Platforms, and AI Integration Services. Our AI Agents are intelligent autonomous systems that work 24/7 to automate tasks and make decisions. We build custom Salesforce components and Lightning Web Components that enhance your CRM. Our SaaS platforms are built with modern, scalable architecture. And our AI integration services bring cutting-edge AI capabilities to your existing systems.`,
     },
     {
-        question: 'What are AI Agents and how can they help my business?',
-        answer: `AI Agents are intelligent, autonomous software systems that can perform tasks, make decisions, and learn from interactions without constant human supervision. Unlike traditional automation, AI Agents understand context, adapt to new situations, and handle complex workflows.
+        id: 'ai-agents',
+        questionKey: 'What are AI Agents and how can they help my business?',
+        answerKey: `AI Agents are intelligent, autonomous software systems that can perform tasks, make decisions, and learn from interactions without constant human supervision. Unlike traditional automation, AI Agents understand context, adapt to new situations, and handle complex workflows.
       <br/>
       <br/>
       Our AI Agents can handle customer service inquiries, analyze data to provide insights, monitor systems and respond to issues, process documents and extract information, manage scheduling and logistics, and much more. They work continuously, scale instantly, and improve over time—freeing your team to focus on strategic work while the agents handle routine tasks.
@@ -17,8 +19,9 @@ const faq = [
       The result is reduced operational costs, faster response times, 24/7 availability, consistent quality, and the ability to scale without adding headcount.`,
     },
     {
-        question: 'How do I know which solution is right for my business?',
-        answer: `
+        id: 'which-solution',
+        questionKey: 'How do I know which solution is right for my business?',
+        answerKey: `
       The best solution depends on your specific challenges and goals. AI Agents are ideal if you have repetitive tasks, need 24/7 operations, or want to scale without adding staff. Salesforce Solutions work best when you need to enhance your existing Salesforce platform or build custom CRM functionality. SaaS Platforms are perfect when you need a complete application built from scratch. AI Integration is right when you want to add intelligent capabilities to your existing systems.
       <br/>
       <br/>
@@ -26,8 +29,9 @@ const faq = [
       `,
     },
     {
-        question: 'Can AI Agents integrate with our existing tools and systems?',
-        answer: `
+        id: 'integration',
+        questionKey: 'Can AI Agents integrate with our existing tools and systems?',
+        answerKey: `
       Absolutely! Our AI Agents are designed to work with your existing technology stack. They can integrate with CRMs like Salesforce, communication platforms like Slack and Microsoft Teams, project management tools, databases, APIs, and virtually any system with an interface.
       <br/>
       <br/>
@@ -35,8 +39,9 @@ const faq = [
       `,
     },
     {
-        question: 'How quickly can you deploy a solution?',
-        answer: `
+        id: 'timeline',
+        questionKey: 'How quickly can you deploy a solution?',
+        answerKey: `
       Timeline varies based on complexity, but we're known for fast delivery without sacrificing quality. For AI Agents, we can often have a proof-of-concept running in 2-3 weeks, with production deployment in 4-8 weeks. Salesforce components typically take 2-6 weeks depending on complexity. SaaS platforms range from 8-16 weeks for MVPs.
       <br/>
       <br/>
@@ -44,8 +49,9 @@ const faq = [
       `,
     },
     {
-        question: 'What makes your approach different from other development firms?',
-        answer: `
+        id: 'difference',
+        questionKey: 'What makes your approach different from other development firms?',
+        answerKey: `
       We focus on solutions, not just code. Every project starts with understanding your business challenge, not just technical requirements. We're a focused team of experienced engineers who work directly with you—no layers of project managers or account executives. This means faster decisions, clearer communication, and better results.
       <br/>
       <br/>
@@ -53,8 +59,9 @@ const faq = [
       `,
     },
     {
-        question: 'What is your development process?',
-        answer: `
+        id: 'process',
+        questionKey: 'What is your development process?',
+        answerKey: `
       We follow an agile, iterative approach that keeps you involved throughout the development process. Projects typically start with a discovery phase where we deeply understand your requirements, goals, and constraints. Then we move into rapid prototyping to validate concepts early.
       <br/>
       <br/>
@@ -65,8 +72,9 @@ const faq = [
       `,
     },
     {
-        question: 'How do you ensure code quality and security?',
-        answer: `
+        id: 'quality',
+        questionKey: 'How do you ensure code quality and security?',
+        answerKey: `
       Quality and security are non-negotiable at RiLiGar. Every line of code goes through rigorous review processes. We follow industry best practices including secure coding standards, automated testing, and continuous integration/continuous deployment (CI/CD) pipelines.
       <br/>
       <br/>
@@ -77,8 +85,9 @@ const faq = [
       `,
     },
     {
-        question: 'What are your pricing and engagement models?',
-        answer: `
+        id: 'pricing',
+        questionKey: 'What are your pricing and engagement models?',
+        answerKey: `
       We offer flexible engagement models to fit different project needs and budgets. For well-defined projects, we can provide fixed-price quotes. For ongoing development or projects with evolving requirements, we offer time-and-materials arrangements with transparent hourly rates.
       <br/>
       <br/>
@@ -89,8 +98,9 @@ const faq = [
       `,
     },
     {
-        question: 'Do you provide ongoing support and maintenance?',
-        answer: `
+        id: 'support',
+        questionKey: 'Do you provide ongoing support and maintenance?',
+        answerKey: `
       Yes! We stand behind our work with comprehensive support options. After project delivery, we offer maintenance packages that include bug fixes, security updates, performance monitoring, and feature enhancements. We can also provide training for your team to help them get the most out of the solutions we build.
       <br/>
       <br/>
@@ -101,8 +111,9 @@ const faq = [
       `,
     },
     {
-        question: 'How do I get started with RiLiGar?',
-        answer: `
+        id: 'getting-started',
+        questionKey: 'How do I get started with RiLiGar?',
+        answerKey: `
       Getting started is simple! Reach out to us via email or through our contact form with a brief description of your project or challenge. We'll schedule a free consultation call to discuss your needs, timeline, and budget.
       <br/>
       <br/>
@@ -124,7 +135,7 @@ export default function Faq() {
                 ta="center"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                Frequently Asked Questions
+                <Trans>Frequently Asked Questions</Trans>
             </Title>
 
             <Text
@@ -132,18 +143,24 @@ export default function Faq() {
                 ta="center"
                 mt="md"
             >
-                Everything you need to know about working with RiLiGar
+                <Trans>Everything you need to know about working with RiLiGar</Trans>
             </Text>
             <Space h="lg" />
             <Accordion variant="separated">
                 {faq.map(item => (
                     <Accordion.Item
-                        key={item.question}
-                        value={item.question}
+                        key={item.id}
+                        value={item.id}
                     >
-                        <Accordion.Control>{item.question}</Accordion.Control>
+                        <Accordion.Control>
+                            <Trans>{item.questionKey}</Trans>
+                        </Accordion.Control>
                         <Accordion.Panel>
-                            <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+                            <Text
+                                size="sm"
+                                c="dimmed"
+                                dangerouslySetInnerHTML={{ __html: item.answerKey }}
+                            />
                         </Accordion.Panel>
                     </Accordion.Item>
                 ))}

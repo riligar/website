@@ -4,28 +4,32 @@ import { Trans } from '@lingui/react/macro'
 
 const metrics = [
     {
+        id: 'metric1',
         icon: IconSpeedboat,
         value: '40%',
-        label: 'Productivity Increase',
-        description: 'Teams work faster with custom components and automation',
+        labelKey: 'Productivity Increase',
+        descriptionKey: 'Teams work faster with custom components and automation',
     },
     {
+        id: 'metric2',
         icon: IconChartLine,
         value: '95%+',
-        label: 'Code Coverage',
-        description: 'All Apex code thoroughly tested and production-ready',
+        labelKey: 'Code Coverage',
+        descriptionKey: 'All Apex code thoroughly tested and production-ready',
     },
     {
+        id: 'metric3',
         icon: IconUsers,
         value: '100%',
-        label: 'User Adoption',
-        description: 'Intuitive UX ensures high adoption rates',
+        labelKey: 'User Adoption',
+        descriptionKey: 'Intuitive UX ensures high adoption rates',
     },
     {
+        id: 'metric4',
         icon: IconThumbUp,
         value: '2-6 weeks',
-        label: 'Typical Delivery',
-        description: 'Fast iterations with regular demos and feedback',
+        labelKey: 'Typical Delivery',
+        descriptionKey: 'Fast iterations with regular demos and feedback',
     },
 ]
 
@@ -42,7 +46,7 @@ export default function SalesforceResults() {
                     ta="center"
                     mb="md"
                 >
-                    The Impact of Custom Salesforce Development
+                    <Trans>The Impact of Custom Salesforce Development</Trans>
                 </Title>
 
                 <Text
@@ -53,17 +57,16 @@ export default function SalesforceResults() {
                     mx="auto"
                     mb={60}
                 >
-                    Well-built Salesforce customizations deliver measurable results—increased productivity, better data
-                    quality, and higher user satisfaction.
+                    <Trans>Well-built Salesforce customizations deliver measurable results—increased productivity, better data quality, and higher user satisfaction.</Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, sm: 2, lg: 4 }}
                     spacing="lg"
                 >
-                    {metrics.map((metric, index) => (
+                    {metrics.map(metric => (
                         <Paper
-                            key={index}
+                            key={metric.id}
                             shadow="md"
                             radius="md"
                             p="xl"
@@ -102,13 +105,13 @@ export default function SalesforceResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {metric.label}
+                                <Trans>{metric.labelKey}</Trans>
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                {metric.description}
+                                <Trans>{metric.descriptionKey}</Trans>
                             </Text>
                         </Paper>
                     ))}
@@ -128,18 +131,16 @@ export default function SalesforceResults() {
                         ta="center"
                         mb="md"
                     >
-                        Why RiLiGar for Salesforce?
-                    </Title>
+                    <Trans>Why RiLiGar for Salesforce?</Trans>
+                </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                        We bring 20+ years of software engineering expertise to Salesforce development. That means clean
-                        code, proper testing, version control, CI/CD, and maintainable solutions—not quick hacks that
-                        become tech debt. Your Salesforce org is too important for shortcuts.
-                    </Text>
+                    <Trans>We bring 20+ years of software engineering expertise to Salesforce development. That means clean code, proper testing, version control, CI/CD, and maintainable solutions—not quick hacks that become tech debt. Your Salesforce org is too important for shortcuts.</Trans>
+                </Text>
                 </Box>
             </Container>
         </Box>

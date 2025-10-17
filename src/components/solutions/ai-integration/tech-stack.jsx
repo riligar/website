@@ -11,7 +11,8 @@ import { Trans } from '@lingui/react/macro'
 
 const techStack = [
     {
-        category: 'AI Models & APIs',
+        id: 'tech1',
+        categoryKey: 'AI Models & APIs',
         icon: IconBrandOpenai,
         color: 'blue',
         technologies: [
@@ -24,29 +25,33 @@ const techStack = [
         description: 'We work with the best AI models and can fine-tune them for your specific use cases and data.',
     },
     {
-        category: 'NLP & Text Processing',
+        id: 'tech2',
+        categoryKey: 'NLP & Text Processing',
         icon: IconBrandPython,
         color: 'yellow',
         technologies: ['LangChain', 'LlamaIndex', 'spaCy', 'Sentence transformers', 'Custom embeddings'],
-        description:
+        descriptionKey:
             'Extract meaning from text, documents, and conversations. Semantic search, classification, and summarization.',
     },
     {
-        category: 'Integration Layer',
+        id: 'tech3',
+        categoryKey: 'Integration Layer',
         icon: IconApi,
         color: 'green',
         technologies: ['RESTful APIs', 'GraphQL', 'Webhooks', 'Message queues', 'Event-driven architecture'],
         description: 'Clean API design that integrates seamlessly with your existing systems and workflows.',
     },
     {
-        category: 'Data & Vector Storage',
+        id: 'tech4',
+        categoryKey: 'Data & Vector Storage',
         icon: IconDatabase,
         color: 'violet',
         technologies: ['Pinecone', 'Weaviate', 'PostgreSQL + pgvector', 'Redis', 'ETL pipelines'],
         description: 'Efficient storage and retrieval of embeddings, documents, and AI-generated content.',
     },
     {
-        category: 'Deployment',
+        id: 'tech5',
+        categoryKey: 'Deployment',
         icon: IconCloudComputing,
         color: 'orange',
         technologies: ['Docker containers', 'Kubernetes', 'AWS Lambda', 'FastAPI', 'Monitoring & logging'],
@@ -68,7 +73,7 @@ export default function AIIntegrationTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    AI Integration Technology Stack
+                    <Trans>AI Integration Technology Stack</Trans>
                 </Title>
                 <Text
                     c="dimmed"
@@ -78,7 +83,7 @@ export default function AIIntegrationTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    We integrate AI using proven frameworks and best practices. Reliable, secure, and built to scale.
+                    <Trans>We integrate AI using proven frameworks and best practices. Reliable, secure, and built to scale.</Trans>
                 </Text>
 
                 <SimpleGrid
@@ -87,7 +92,7 @@ export default function AIIntegrationTechStack() {
                 >
                     {techStack.map((stack, index) => (
                         <Card
-                            key={index}
+                            key={tech.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -109,16 +114,16 @@ export default function AIIntegrationTechStack() {
                                     fz="lg"
                                     fw={600}
                                 >
-                                    {stack.category}
-                                </Text>
+                    <Trans>{stack.category}</Trans>
+                </Text>
                             </Group>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                {stack.description}
-                            </Text>
+                    <Trans>{stack.description}</Trans>
+                </Text>
                             <List
                                 size="sm"
                                 spacing="xs"
@@ -165,18 +170,16 @@ export default function AIIntegrationTechStack() {
                         ta="center"
                         mb="md"
                     >
-                        Integration Without Disruption
-                    </Title>
+                    <Trans>Integration Without Disruption</Trans>
+                </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                        We integrate AI capabilities into your existing systems without requiring major rewrites.
-                        API-first design, proper authentication, and robust error handling ensure your systems stay
-                        reliable while gaining AI superpowers.
-                    </Text>
+                    <Trans>We integrate AI capabilities into your existing systems without requiring major rewrites. API-first design, proper authentication, and robust error handling ensure your systems stay reliable while gaining AI superpowers.</Trans>
+                </Text>
                 </Box>
             </Container>
         </Box>

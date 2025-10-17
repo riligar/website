@@ -12,7 +12,8 @@ import { Trans } from '@lingui/react/macro'
 
 const techStack = [
     {
-        category: 'AI & LLM Frameworks',
+        id: 'tech1',
+        categoryKey: 'AI & LLM Frameworks',
         icon: IconBrandOpenai,
         color: 'blue',
         technologies: [
@@ -23,11 +24,12 @@ const techStack = [
             'Semantic Kernel',
             'AutoGen (Multi-agent orchestration)',
         ],
-        description:
+        descriptionKey:
             'We leverage the most advanced LLMs and agent frameworks to build intelligent systems that understand natural language, reason through complex problems, and take autonomous actions.',
     },
     {
-        category: 'Agent Architecture & Tools',
+        id: 'tech2',
+        categoryKey: 'Agent Architecture & Tools',
         icon: IconBrandPython,
         color: 'green',
         technologies: [
@@ -38,11 +40,12 @@ const techStack = [
             'spaCy for NLP',
             'Custom tool development',
         ],
-        description:
+        descriptionKey:
             'Our agent architecture is built on robust Python frameworks that enable tool use, memory management, planning, and multi-agent collaboration for complex workflows.',
     },
     {
-        category: 'Vector Databases & Memory',
+        id: 'tech3',
+        categoryKey: 'Vector Databases & Memory',
         icon: IconDatabase,
         color: 'violet',
         technologies: [
@@ -53,11 +56,12 @@ const techStack = [
             'Redis for caching',
             'MongoDB for document storage',
         ],
-        description:
+        descriptionKey:
             'Agents need memory to learn and improve. We implement sophisticated vector storage and retrieval systems that give your agents long-term memory and contextual awareness.',
     },
     {
-        category: 'Infrastructure & Deployment',
+        id: 'tech4',
+        categoryKey: 'Infrastructure & Deployment',
         icon: IconBrandAws,
         color: 'orange',
         technologies: [
@@ -68,11 +72,12 @@ const techStack = [
             'Monitoring with Datadog',
             'CI/CD with GitHub Actions',
         ],
-        description:
+        descriptionKey:
             'Production-grade infrastructure ensures your agents run reliably, scale automatically, and maintain high availability with proper monitoring and failover mechanisms.',
     },
     {
-        category: 'Integration & APIs',
+        id: 'tech5',
+        categoryKey: 'Integration & APIs',
         icon: IconApi,
         color: 'cyan',
         technologies: [
@@ -83,11 +88,12 @@ const techStack = [
             'Salesforce API integration',
             'Custom connector development',
         ],
-        description:
+        descriptionKey:
             'Our agents seamlessly integrate with your existing tools and workflows through robust API connections, webhooks, and custom integrations.',
     },
     {
-        category: 'Observability & Optimization',
+        id: 'tech6',
+        categoryKey: 'Observability & Optimization',
         icon: IconCloud,
         color: 'pink',
         technologies: [
@@ -98,7 +104,7 @@ const techStack = [
             'A/B testing frameworks',
             'Cost optimization tools',
         ],
-        description:
+        descriptionKey:
             'We instrument every agent with comprehensive logging, monitoring, and analytics so you can measure performance, optimize costs, and continuously improve results.',
     },
 ]
@@ -119,7 +125,7 @@ export default function AIAgentsTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    The Technology Behind Our AI Agents
+                    <Trans>The Technology Behind Our AI Agents</Trans>
                 </Title>
 
                 <Text
@@ -130,8 +136,7 @@ export default function AIAgentsTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    We build AI Agents with cutting-edge technologies and battle-tested frameworks. Every technology
-                    choice is deliberate, proven in production, and optimized for reliability and performance.
+                    <Trans>We build AI Agents with cutting-edge technologies and battle-tested frameworks. Every technology choice is deliberate, proven in production, and optimized for reliability and performance.</Trans>
                 </Text>
 
                 <SimpleGrid
@@ -140,7 +145,7 @@ export default function AIAgentsTechStack() {
                 >
                     {techStack.map((stack, index) => (
                         <Card
-                            key={index}
+                            key={tech.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -163,8 +168,8 @@ export default function AIAgentsTechStack() {
                                         fz="lg"
                                         fw={600}
                                     >
-                                        {stack.category}
-                                    </Text>
+                    <Trans>{stack.category}</Trans>
+                </Text>
                                 </div>
                             </Group>
 
@@ -173,8 +178,8 @@ export default function AIAgentsTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                                {stack.description}
-                            </Text>
+                    <Trans>{stack.description}</Trans>
+                </Text>
 
                             <List
                                 size="sm"
@@ -222,19 +227,16 @@ export default function AIAgentsTechStack() {
                         ta="center"
                         mb="md"
                     >
-                        Why These Technologies Matter
-                    </Title>
+                    <Trans>Why These Technologies Matter</Trans>
+                </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                        We don't chase trends—we use proven technologies that deliver results. With 20+ years of
-                        software engineering experience, we know how to architect systems that are maintainable,
-                        scalable, and cost-effective. Every agent we build is production-ready from day one, with robust
-                        error handling, monitoring, and security built in.
-                    </Text>
+                    <Trans>We don't chase trends—we use proven technologies that deliver results. With 20+ years of software engineering experience, we know how to architect systems that are maintainable, scalable, and cost-effective. Every agent we build is production-ready from day one, with robust error handling, monitoring, and security built in.</Trans>
+                </Text>
                 </Box>
             </Container>
         </Box>

@@ -45,6 +45,7 @@ export default function AboutTeam() {
                                 size={120}
                                 radius="md"
                                 color="blue"
+                                src={'https://avatars.githubusercontent.com/u/349602?v=4'}
                             >
                                 CM
                             </Avatar>

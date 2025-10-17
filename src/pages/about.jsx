@@ -13,9 +13,7 @@ export default function AboutPage() {
         <Layout>
             <AboutHero />
             <AboutStory />
-            {/* <Space h="64" /> */}
             <AboutValues />
-            {/* <Space h="64" /> */}
             <AboutTeam />
             <Space h="64" />
             <AboutCTA />

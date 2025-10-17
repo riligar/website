@@ -3,10 +3,10 @@ import { IconRocket, IconCoin, IconGauge, IconShield } from '@tabler/icons-react
 import { Trans } from '@lingui/react/macro'
 
 const metrics = [
-    { icon: IconRocket, value: '8-16 weeks', label: 'MVP Delivery', description: 'Launch your SaaS product fast' },
-    { icon: IconGauge, value: '< 2 sec', label: 'Load Time', description: 'Lightning-fast performance' },
-    { icon: IconCoin, value: '40-60%', label: 'Lower Infra Cost', description: 'Optimized cloud resources' },
-    { icon: IconShield, value: '99.9%', label: 'Uptime', description: 'Reliable, production-grade' },
+    { icon: IconRocket, value: '8-16 weeks', labelKey: 'MVP Delivery', description: 'Launch your SaaS product fast' },
+    { icon: IconGauge, value: '< 2 sec', labelKey: 'Load Time', description: 'Lightning-fast performance' },
+    { icon: IconCoin, value: '40-60%', labelKey: 'Lower Infra Cost', description: 'Optimized cloud resources' },
+    { icon: IconShield, value: '99.9%', labelKey: 'Uptime', description: 'Reliable, production-grade' },
 ]
 
 export default function SaaSResults() {
@@ -22,7 +22,7 @@ export default function SaaSResults() {
                     ta="center"
                     mb="md"
                 >
-                    Why Choose RiLiGar for SaaS?
+                    <Trans>Why Choose RiLiGar for SaaS?</Trans>
                 </Title>
                 <Text
                     c="dimmed"
@@ -32,17 +32,16 @@ export default function SaaSResults() {
                     mx="auto"
                     mb={60}
                 >
-                    Fast delivery, clean code, scalable architecture, and cost-effective infrastructure—all from
-                    experienced engineers.
+                    <Trans>Fast delivery, clean code, scalable architecture, and cost-effective infrastructure—all from experienced engineers.</Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, sm: 2, lg: 4 }}
                     spacing="lg"
                 >
-                    {metrics.map((metric, index) => (
+                    {metrics.map(metric => (
                         <Paper
-                            key={index}
+                            key={metric.id}
                             shadow="md"
                             radius="md"
                             p="xl"
@@ -81,13 +80,13 @@ export default function SaaSResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                {metric.label}
+                                <Trans>{metric.labelKey}</Trans>
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                {metric.description}
+                                <Trans>{metric.descriptionKey}</Trans>
                             </Text>
                         </Paper>
                     ))}

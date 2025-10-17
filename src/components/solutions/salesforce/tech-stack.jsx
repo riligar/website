@@ -12,7 +12,8 @@ import { Trans } from '@lingui/react/macro'
 
 const techStack = [
     {
-        category: 'Frontend Development',
+        id: 'tech1',
+        categoryKey: 'Frontend Development',
         icon: IconBrandJavascript,
         color: 'yellow',
         technologies: [
@@ -23,11 +24,12 @@ const techStack = [
             'Salesforce Lightning Design System (SLDS)',
             'lwc-test-suite for unit testing',
         ],
-        description:
+        descriptionKey:
             'We build modern, performant Lightning Web Components using JavaScript best practices. Components are reusable, well-documented, and follow Salesforce standards.',
     },
     {
-        category: 'Backend & Logic',
+        id: 'tech2',
+        categoryKey: 'Backend & Logic',
         icon: IconCode,
         color: 'blue',
         technologies: [
@@ -42,7 +44,8 @@ const techStack = [
             "Apex code that's efficient, testable, and maintainable. We write bulkified code that respects governor limits and scales with data volume.",
     },
     {
-        category: 'Automation & Flow',
+        id: 'tech3',
+        categoryKey: 'Automation & Flow',
         icon: IconCloudComputing,
         color: 'green',
         technologies: [
@@ -53,11 +56,12 @@ const techStack = [
             'Platform Events for integration',
             'Change Data Capture (CDC)',
         ],
-        description:
+        descriptionKey:
             'Declarative automation with Flow Builder, enhanced with custom Apex actions when needed. We migrate legacy automation to modern Flow patterns.',
     },
     {
-        category: 'Data & Integration',
+        id: 'tech4',
+        categoryKey: 'Data & Integration',
         icon: IconDatabase,
         color: 'violet',
         technologies: [
@@ -68,11 +72,12 @@ const techStack = [
             'External Objects & OData',
             'Heroku Connect for external data',
         ],
-        description:
+        descriptionKey:
             'Seamless data integration between Salesforce and external systems. Efficient queries, proper indexing, and scalable integration patterns.',
     },
     {
-        category: 'Testing & Quality',
+        id: 'tech5',
+        categoryKey: 'Testing & Quality',
         icon: IconTestPipe,
         color: 'red',
         technologies: [
@@ -83,11 +88,12 @@ const techStack = [
             'Salesforce Code Analyzer',
             'Continuous Integration (CI/CD)',
         ],
-        description:
+        descriptionKey:
             'Comprehensive testing ensures reliability. We write tests first, maintain high coverage, and catch issues before they reach production.',
     },
     {
-        category: 'DevOps & Deployment',
+        id: 'tech6',
+        categoryKey: 'DevOps & Deployment',
         icon: IconBrandGit,
         color: 'orange',
         technologies: [
@@ -98,7 +104,7 @@ const techStack = [
             'GitHub Actions / Jenkins for CI/CD',
             'Change sets & Metadata API',
         ],
-        description:
+        descriptionKey:
             'Modern DevOps practices for Salesforce development. Source-driven development, automated deployments, and proper version control.',
     },
 ]
@@ -119,7 +125,7 @@ export default function SalesforceTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    Our Salesforce Technology Stack
+                    <Trans>Our Salesforce Technology Stack</Trans>
                 </Title>
 
                 <Text
@@ -130,8 +136,7 @@ export default function SalesforceTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and modern
-                    DevOps practices. 20+ years of software engineering applied to Salesforce development.
+                    <Trans>We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and modern DevOps practices. 20+ years of software engineering applied to Salesforce development.</Trans>
                 </Text>
 
                 <SimpleGrid
@@ -140,7 +145,7 @@ export default function SalesforceTechStack() {
                 >
                     {techStack.map((stack, index) => (
                         <Card
-                            key={index}
+                            key={tech.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -163,8 +168,8 @@ export default function SalesforceTechStack() {
                                         fz="lg"
                                         fw={600}
                                     >
-                                        {stack.category}
-                                    </Text>
+                    <Trans>{stack.category}</Trans>
+                </Text>
                                 </div>
                             </Group>
 
@@ -173,8 +178,8 @@ export default function SalesforceTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                                {stack.description}
-                            </Text>
+                    <Trans>{stack.description}</Trans>
+                </Text>
 
                             <List
                                 size="sm"
@@ -222,19 +227,16 @@ export default function SalesforceTechStack() {
                         ta="center"
                         mb="md"
                     >
-                        Why Our Salesforce Development Stands Out
-                    </Title>
+                    <Trans>Why Our Salesforce Development Stands Out</Trans>
+                </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                        We're not just Salesforce developers—we're software engineers who happen to specialize in
-                        Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and all
-                        the best practices from enterprise software development. Your Salesforce org deserves better
-                        than quick hacks—it deserves engineering excellence.
-                    </Text>
+                    <Trans>We're not just Salesforce developers—we're software engineers who happen to specialize in Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and all the best practices from enterprise software development. Your Salesforce org deserves better than quick hacks—it deserves engineering excellence.</Trans>
+                </Text>
                 </Box>
             </Container>
         </Box>

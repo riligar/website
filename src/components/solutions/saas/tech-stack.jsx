@@ -11,39 +11,44 @@ import { Trans } from '@lingui/react/macro'
 
 const techStack = [
     {
-        category: 'Frontend',
+        id: 'tech1',
+        categoryKey: 'Frontend',
         icon: IconBrandReact,
         color: 'cyan',
         technologies: ['React / Next.js', 'TypeScript', 'Tailwind CSS / Mantine', 'React Query', 'Zustand / Redux'],
-        description:
+        descriptionKey:
             'Modern, performant frontend with excellent UX. Fast load times, responsive design, and accessible interfaces.',
     },
     {
-        category: 'Backend',
+        id: 'tech2',
+        categoryKey: 'Backend',
         icon: IconBrandNodejs,
         color: 'green',
         technologies: ['Node.js / Bun', 'Express / Fastify', 'TypeScript', 'GraphQL / REST', 'WebSockets'],
-        description:
+        descriptionKey:
             'Scalable backend APIs built for performance. Clean code, proper error handling, and comprehensive logging.',
     },
     {
-        category: 'Database',
+        id: 'tech3',
+        categoryKey: 'Database',
         icon: IconDatabase,
         color: 'violet',
         technologies: ['PostgreSQL', 'Redis (caching)', 'MongoDB (NoSQL)', 'Prisma ORM', 'Database migrations'],
-        description:
+        descriptionKey:
             'Robust data layer with proper indexing, caching, and backup strategies. Optimized queries and data integrity.',
     },
     {
-        category: 'Infrastructure',
+        id: 'tech4',
+        categoryKey: 'Infrastructure',
         icon: IconBrandAws,
         color: 'orange',
         technologies: ['AWS / GCP / Azure', 'Docker & Kubernetes', 'CI/CD pipelines', 'Load balancing', 'Auto-scaling'],
-        description:
+        descriptionKey:
             'Cloud-native infrastructure that scales automatically. High availability, disaster recovery, and cost optimization.',
     },
     {
-        category: 'DevOps',
+        id: 'tech5',
+        categoryKey: 'DevOps',
         icon: IconBrandDocker,
         color: 'blue',
         technologies: [
@@ -53,7 +58,7 @@ const techStack = [
             'Logging (ELK stack)',
             'Security scanning',
         ],
-        description:
+        descriptionKey:
             'Automated deployment pipelines ensure quality and speed. Monitoring and alerts keep systems healthy.',
     },
 ]
@@ -72,7 +77,7 @@ export default function SaaSTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    Our SaaS Technology Stack
+                    <Trans>Our SaaS Technology Stack</Trans>
                 </Title>
                 <Text
                     c="dimmed"
@@ -82,8 +87,7 @@ export default function SaaSTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just
-                    solid engineering.
+                    <Trans>Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just solid engineering.</Trans>
                 </Text>
 
                 <SimpleGrid
@@ -92,7 +96,7 @@ export default function SaaSTechStack() {
                 >
                     {techStack.map((stack, index) => (
                         <Card
-                            key={index}
+                            key={tech.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -114,16 +118,16 @@ export default function SaaSTechStack() {
                                     fz="lg"
                                     fw={600}
                                 >
-                                    {stack.category}
-                                </Text>
+                    <Trans>{stack.category}</Trans>
+                </Text>
                             </Group>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                {stack.description}
-                            </Text>
+                    <Trans>{stack.description}</Trans>
+                </Text>
                             <List
                                 size="sm"
                                 spacing="xs"
@@ -170,18 +174,16 @@ export default function SaaSTechStack() {
                         ta="center"
                         mb="md"
                     >
-                        Why Our SaaS Platforms Stand Out
-                    </Title>
+                    <Trans>Why Our SaaS Platforms Stand Out</Trans>
+                </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                        20+ years of software engineering means we know how to build systems that last. Clean code,
-                        proper testing, scalable architecture, and cost-effective infrastructure. Your SaaS platform
-                        deserves engineering excellence, not tech debt.
-                    </Text>
+                    <Trans>20+ years of software engineering means we know how to build systems that last. Clean code, proper testing, scalable architecture, and cost-effective infrastructure. Your SaaS platform deserves engineering excellence, not tech debt.</Trans>
+                </Text>
                 </Box>
             </Container>
         </Box>
