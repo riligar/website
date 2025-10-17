@@ -177,8 +177,8 @@ msgstr "20+ años de ingeniería de software significan que sabemos cómo constr
 msgid "About RiLiGar"
 msgstr "Acerca de RiLiGar"
 
-#: src/components/header.jsx:244
-#: src/components/header.jsx:317
+#: src/components/header.jsx:246
+#: src/components/header.jsx:319
 msgid "About Us"
 msgstr "Sobre Nosotros"
 
@@ -329,8 +329,8 @@ msgstr "Preguntas Frecuentes"
 #~ msgid "Consulting & Strategy"
 #~ msgstr "Consultoría y Estrategia"
 
-#: src/components/header.jsx:250
-#: src/components/header.jsx:323
+#: src/components/header.jsx:252
+#: src/components/header.jsx:325
 msgid "Contact"
 msgstr "Contacto"
 
@@ -398,7 +398,7 @@ msgstr "Desarrollo y Entrega"
 #~ msgid "Direct access to experienced engineers"
 #~ msgstr ""
 
-#: src/components/header.jsx:223
+#: src/components/header.jsx:225
 msgid "Discover the perfect solution for your business"
 msgstr "Descubra la solución perfecta para su negocio"
 
@@ -536,8 +536,8 @@ msgstr "Plataformas de alto rendimiento con capacidades de IA que escalan con el
 #~ msgid "Higher productivity"
 #~ msgstr ""
 
-#: src/components/header.jsx:162
-#: src/components/header.jsx:293
+#: src/components/header.jsx:164
+#: src/components/header.jsx:295
 msgid "Home"
 msgstr "Inicio"
 
@@ -673,7 +673,7 @@ msgstr "La mayoría de los proyectos SaaS comienzan con una fase de descubrimien
 msgid "Most Salesforce projects deliver first results in 2-4 weeks with our agile development process."
 msgstr "La mayoría de los proyectos Salesforce entregan primeros resultados en 2-4 semanas con nuestro proceso de desarrollo ágil."
 
-#: src/components/header.jsx:279
+#: src/components/header.jsx:281
 msgid "Navigation"
 msgstr "Navegación"
 
@@ -705,7 +705,7 @@ msgstr "Nuestro Stack Tecnológico SaaS"
 msgid "Our Salesforce Technology Stack"
 msgstr "Nuestro Stack Tecnológico Salesforce"
 
-#: src/components/header.jsx:197
+#: src/components/header.jsx:199
 msgid "Our Services"
 msgstr "Nuestros Servicios"
 
@@ -765,7 +765,7 @@ msgstr "¿Listo para Construir Tu SaaS?"
 msgid "Ready to Deploy AI Agents?"
 msgstr "¿Listo para Desplegar Agentes de IA?"
 
-#: src/components/header.jsx:217
+#: src/components/header.jsx:219
 msgid "Ready to get started?"
 msgstr "¿Listo para comenzar?"
 
@@ -876,8 +876,8 @@ msgstr "Proceso Simple"
 #~ msgid "Solution Design"
 #~ msgstr ""
 
-#: src/components/header.jsx:181
-#: src/components/header.jsx:304
+#: src/components/header.jsx:183
+#: src/components/header.jsx:306
 msgid "Solutions"
 msgstr "Soluciones"
 
@@ -901,9 +901,9 @@ msgstr "Soluciones Que Transforman Tu Negocio"
 #~ msgid "Solutions-first approach (not just code)"
 #~ msgstr ""
 
-#: src/components/header.jsx:234
-#: src/components/header.jsx:262
-#: src/components/header.jsx:340
+#: src/components/header.jsx:236
+#: src/components/header.jsx:264
+#: src/components/header.jsx:342
 msgid "Start a Project"
 msgstr "Iniciar un Proyecto"
 

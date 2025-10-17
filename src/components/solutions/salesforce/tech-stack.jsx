@@ -136,16 +136,19 @@ export default function SalesforceTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and modern DevOps practices. 20+ years of software engineering applied to Salesforce development.</Trans>
+                    <Trans>
+                        We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and
+                        modern DevOps practices. 20+ years of software engineering applied to Salesforce development.
+                    </Trans>
                 </Text>
 
                 <SimpleGrid
                     cols={{ base: 1, md: 2 }}
                     spacing="xl"
                 >
-                    {techStack.map((stack, index) => (
+                    {techStack.map(stack => (
                         <Card
-                            key={tech.id}
+                            key={stack.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
@@ -168,8 +171,8 @@ export default function SalesforceTechStack() {
                                         fz="lg"
                                         fw={600}
                                     >
-                    <Trans>{stack.category}</Trans>
-                </Text>
+                                        <Trans>{stack.category}</Trans>
+                                    </Text>
                                 </div>
                             </Group>
 
@@ -178,8 +181,8 @@ export default function SalesforceTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{stack.description}</Trans>
-                </Text>
+                                <Trans>{stack.description}</Trans>
+                            </Text>
 
                             <List
                                 size="sm"
@@ -227,16 +230,21 @@ export default function SalesforceTechStack() {
                         ta="center"
                         mb="md"
                     >
-                    <Trans>Why Our Salesforce Development Stands Out</Trans>
-                </Title>
+                        <Trans>Why Our Salesforce Development Stands Out</Trans>
+                    </Title>
                     <Text
                         ta="center"
                         size="lg"
                         maw={900}
                         mx="auto"
                     >
-                    <Trans>We're not just Salesforce developers—we're software engineers who happen to specialize in Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and all the best practices from enterprise software development. Your Salesforce org deserves better than quick hacks—it deserves engineering excellence.</Trans>
-                </Text>
+                        <Trans>
+                            We're not just Salesforce developers—we're software engineers who happen to specialize in
+                            Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and
+                            all the best practices from enterprise software development. Your Salesforce org deserves
+                            better than quick hacks—it deserves engineering excellence.
+                        </Trans>
+                    </Text>
                 </Box>
             </Container>
         </Box>

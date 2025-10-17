@@ -143,9 +143,9 @@ export default function AIAgentsTechStack() {
                     cols={{ base: 1, md: 2 }}
                     spacing="xl"
                 >
-                    {techStack.map((stack, index) => (
+                    {techStack.map(stack => (
                         <Card
-                            key={tech.id}
+                            key={stack.id}
                             shadow="md"
                             radius="md"
                             padding="xl"

@@ -90,9 +90,9 @@ export default function AIIntegrationTechStack() {
                     cols={{ base: 1, md: 2, lg: 3 }}
                     spacing="xl"
                 >
-                    {techStack.map((stack, index) => (
+                    {techStack.map(stack => (
                         <Card
-                            key={tech.id}
+                            key={stack.id}
                             shadow="md"
                             radius="md"
                             padding="xl"
