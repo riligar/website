@@ -1,7 +1,7 @@
 import logo from '/image/riligar-logo.webp'
 
 import { Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core'
-import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react'
+import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react'
 import { Trans } from '@lingui/react/macro'
 
 import LanguageSelector from './LanguageSelector'
@@ -25,7 +25,6 @@ const data = [
             { id: 'about', labelKey: 'About Us', link: '/about' },
             { id: 'contact', labelKey: 'Contact', link: '/contact' },
             { id: 'blog', labelKey: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
-            { id: 'github', labelKey: 'GitHub', link: 'https://github.com/riligar', external: true },
         ],
     },
     {
@@ -129,30 +128,45 @@ export default function FooterLinks() {
                     </ActionIcon>
                     <ActionIcon
                         component="a"
-                        href="https://www.youtube.com/@ciro-maciel"
+                        href="https://github.com/riligar"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="xl"
-                        color="gray"
+                        color="green"
                         variant="subtle"
                         style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
-                        <IconBrandYoutube
+                        <IconBrandGithub
                             style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
                     </ActionIcon>
                     <ActionIcon
                         component="a"
-                        href="https://www.instagram.com/ciro.maciel/"
+                        href="https://github.com/ciro-maciel"
                         target="_blank"
                         rel="noopener noreferrer"
                         size="xl"
-                        color="gray"
+                        color="yellow"
                         variant="subtle"
                         style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
-                        <IconBrandInstagram
+                        <IconBrandGithub
+                            style={{ width: rem(24), height: rem(24) }}
+                            stroke={1.5}
+                        />
+                    </ActionIcon>
+                    <ActionIcon
+                        component="a"
+                        href="https://github.com/riligar-salesforce"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="xl"
+                        color="blue"
+                        variant="subtle"
+                        style={{ minWidth: rem(44), minHeight: rem(44) }}
+                    >
+                        <IconBrandGithub
                             style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
