@@ -90,7 +90,7 @@ export default function CTA() {
                             fw={700}
                             c="blue"
                         >
-                            2-3 Weeks
+                            2-3 Semanas
                         </Text>
                         <Text
                             size="sm"

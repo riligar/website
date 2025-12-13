@@ -4,10 +4,12 @@ import Layout from '@/layout'
 
 import Hero from '@/components/hero'
 import Clients from '@/components/clients'
-import Stats from '@/components/stats'
+import ImpactLevels from '@/components/impactLevels'
 import Features from '@/components/features'
 import Process from '@/components/process'
 import UseCases from '@/components/usecases'
+import CaseStudy from '@/components/caseStudy'
+import PricingModel from '@/components/pricingModel'
 import Comparison from '@/components/comparison'
 import Testimonials from '@/components/testimonials'
 import CTA from '@/components/cta'
@@ -19,11 +21,13 @@ export default function Page() {
             <Hero />
             <Clients />
             <Space h="64" />
-            <Stats />
+            <ImpactLevels />
             <Features />
             <Process />
             <Space h="64" />
             <UseCases />
+            <CaseStudy />
+            <PricingModel />
             <Comparison />
             <Space h="64" />
             <Testimonials />
