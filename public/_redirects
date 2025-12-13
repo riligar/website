@@ -1,7 +1,7 @@
 # Static files must be listed BEFORE the wildcard
 # Cloudflare Pages processes redirects top-to-bottom
-/llms.txt /llms.txt 200
-/llms-ctx.txt /llms-ctx.txt 200
+/llms.txt https://riligar.click/llms.txt 200
+/llms-ctx.txt https://riligar.click/llms-ctx.txt 200
 /robots.txt /robots.txt 200
 /sitemap.xml /sitemap.xml 200
 /favicon.ico /favicon.ico 200
