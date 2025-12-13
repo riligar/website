@@ -1,26 +1,25 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
 
 const stats = [
     {
         value: '30min',
-        label: <Trans>Conversa de diagnóstico para entender seu negócio</Trans>,
-        description: <Trans>Sem compromisso, sem pressão de vendas</Trans>,
+        label: 'Conversa de diagnóstico para entender seu negócio',
+        description: 'Sem compromisso, sem pressão de vendas',
     },
     {
         value: '2-3 Sem',
-        label: <Trans>Para primeiros resultados visíveis</Trans>,
-        description: <Trans>Iteração rápida significa validação rápida</Trans>,
+        label: 'Para primeiros resultados visíveis',
+        description: 'Iteração rápida significa validação rápida',
     },
     {
         value: 'ROI',
-        label: <Trans>Foco em retorno sobre investimento</Trans>,
-        description: <Trans>Medimos sucesso por impacto de negócio</Trans>,
+        label: 'Foco em retorno sobre investimento',
+        description: 'Medimos sucesso por impacto de negócio',
     },
     {
         value: '20+',
-        label: <Trans>Anos de experiência em transformação</Trans>,
-        description: <Trans>Soluções que realmente funcionam</Trans>,
+        label: 'Anos de experiência em transformação',
+        description: 'Soluções que realmente funcionam',
     },
 ]
 
@@ -38,7 +37,7 @@ export default function Stats() {
                     mb={60}
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Resultados Mensuráveis, Não Promessas Vazias</Trans>
+                    Resultados Mensuráveis, Não Promessas Vazias
                 </Title>
 
                 <SimpleGrid

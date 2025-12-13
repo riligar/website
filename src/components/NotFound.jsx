@@ -1,7 +1,6 @@
 import { Container, Title, Text, Button, Group, rem } from '@mantine/core'
 import { useNavigate } from 'react-router-dom'
 import { IconHome } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 export default function NotFound() {
     const navigate = useNavigate()
@@ -39,7 +38,7 @@ export default function NotFound() {
                             textAlign: 'center',
                         }}
                     >
-                        <Trans>Oops! Nothing Here</Trans>
+                        Ops! Nada Por Aqui
                     </Title>
                     <Text
                         c="dimmed"
@@ -52,10 +51,8 @@ export default function NotFound() {
                             marginBottom: `calc(var(--mantine-spacing-xl) * 1.5)`,
                         }}
                     >
-                        <Trans>
-                            The page you're looking for doesn't exist. You may have mistyped the address, or the page
-                            has been moved. Let's get you back on track.
-                        </Trans>
+                        A página que você está procurando não existe. Você pode ter digitado o endereço errado, ou a
+                        página foi movida. Vamos te colocar de volta no caminho certo.
                     </Text>
                     <Group justify="center">
                         <Button
@@ -65,7 +62,7 @@ export default function NotFound() {
                                 navigate('/')
                             }}
                         >
-                            <Trans>Back to Home</Trans>
+                            Voltar ao Início
                         </Button>
                     </Group>
                 </div>

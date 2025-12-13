@@ -1,5 +1,4 @@
 import { Box, Title, Text, Container, Card, SimpleGrid, Avatar, Group, Badge } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
 
 export default function AboutTeam() {
     return (
@@ -10,7 +9,7 @@ export default function AboutTeam() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>O Time</Trans>
+                    O Time
                 </Title>
 
                 <Text
@@ -20,10 +19,8 @@ export default function AboutTeam() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        A Riligar é uma empresa familiar. Somos pequenos por design — focados, dedicados e pessoalmente
-                        investidos em cada projeto que assumimos.
-                    </Trans>
+                    A Riligar é uma empresa familiar. Somos pequenos por design — focados, dedicados e pessoalmente
+                    investidos em cada projeto que assumimos.
                 </Text>
 
                 <SimpleGrid
@@ -66,7 +63,7 @@ export default function AboutTeam() {
                                         variant="light"
                                         size="sm"
                                     >
-                                        <Trans>Fundador e Líder Técnico</Trans>
+                                        Fundador e Líder Técnico
                                     </Badge>
                                 </Group>
 
@@ -76,12 +73,9 @@ export default function AboutTeam() {
                                     mb="md"
                                     style={{ lineHeight: 1.6 }}
                                 >
-                                    <Trans>
-                                        20+ anos construindo sistemas corporativos, liderando equipes técnicas e
-                                        resolvendo problemas complexos. Especializado em diagnóstico de negócios,
-                                        redesenho de processos e tecnologia como enabler. Apaixonado por tecnologia com
-                                        propósito.
-                                    </Trans>
+                                    20+ anos construindo sistemas corporativos, liderando equipes técnicas e resolvendo
+                                    problemas complexos. Especializado em diagnóstico de negócios, redesenho de
+                                    processos e tecnologia como enabler. Apaixonado por tecnologia com propósito.
                                 </Text>
 
                                 <Group gap="xs">
@@ -89,7 +83,7 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>Diagnóstico de Negócios</Trans>
+                                        Diagnóstico de Negócios
                                     </Badge>
                                     <Badge
                                         size="sm"
@@ -101,13 +95,13 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>Arquitetura SaaS</Trans>
+                                        Arquitetura SaaS
                                     </Badge>
                                     <Badge
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>Liderança</Trans>
+                                        Liderança
                                     </Badge>
                                 </Group>
                             </Box>
@@ -130,7 +124,7 @@ export default function AboutTeam() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Por Trás de Cada Solução</Trans>
+                        Por Trás de Cada Solução
                     </Title>
 
                     <Text
@@ -140,12 +134,10 @@ export default function AboutTeam() {
                         mx="auto"
                         style={{ lineHeight: 1.8 }}
                     >
-                        <Trans>
-                            Enquanto lidero o trabalho técnico, nada disso seria possível sem o apoio da minha família.
-                            <strong>Andréa</strong> e <strong>Edgar</strong> me inspiram diariamente a construir
-                            tecnologia que cria mais tempo para o que realmente importa. Essa motivação pessoal nos
-                            impulsiona a entregar soluções que genuinamente melhoram vidas — não apenas resultados.
-                        </Trans>
+                        Enquanto lidero o trabalho técnico, nada disso seria possível sem o apoio da minha família.
+                        <strong>Andréa</strong> e <strong>Edgar</strong> me inspiram diariamente a construir tecnologia
+                        que cria mais tempo para o que realmente importa. Essa motivação pessoal nos impulsiona a
+                        entregar soluções que genuinamente melhoram vidas — não apenas resultados.
                     </Text>
                 </Box>
             </Container>

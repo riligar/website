@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, Card, SimpleGrid, Badge, List, ThemeIcon, rem } from '@mantine/core'
 import { IconCheck } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const useCases = [
     {
@@ -68,7 +68,7 @@ export default function SalesforceUseCases() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Real-World Salesforce Projects</Trans>
+                    Real-World Salesforce Projects
                 </Title>
 
                 <Text
@@ -79,10 +79,10 @@ export default function SalesforceUseCases() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         These are examples of Salesforce customizations we've built for clients—each delivering
                         measurable business value.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -102,21 +102,21 @@ export default function SalesforceUseCases() {
                                 size="sm"
                                 mb="sm"
                             >
-                                <Trans>{useCase.industryKey}</Trans>
+                                {useCase.industryKey}
                             </Badge>
                             <Title
                                 order={3}
                                 size="h4"
                                 mb="xs"
                             >
-                                <Trans>{useCase.titleKey}</Trans>
+                                {useCase.titleKey}
                             </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                <Trans>{useCase.descriptionKey}</Trans>
+                                {useCase.descriptionKey}
                             </Text>
 
                             <Text
@@ -124,7 +124,7 @@ export default function SalesforceUseCases() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>Typical Results:</Trans>
+                                Typical Results:
                             </Text>
                             <List
                                 size="sm"
@@ -146,7 +146,7 @@ export default function SalesforceUseCases() {
                                 {useCase.results.map((result, idx) => (
                                     <List.Item key={idx}>
                                         <Text size="sm">
-                                            <Trans>{result}</Trans>
+                                            {result}
                                         </Text>
                                     </List.Item>
                                 ))}

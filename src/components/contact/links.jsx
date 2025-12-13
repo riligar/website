@@ -1,6 +1,6 @@
 import { Box, Container, SimpleGrid, Card, Group, Text, ThemeIcon, rem, Button } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandInstagram, IconBrandYoutube, IconWorld, IconArrowRight } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const socialLinks = [
     {
@@ -91,7 +91,7 @@ export default function ContactLinks() {
                                         fw={700}
                                         mb={4}
                                     >
-                                        <Trans>{link.nameKey}</Trans>
+                                        {link.nameKey}
                                     </Text>
                                     <Text
                                         size="sm"
@@ -109,7 +109,7 @@ export default function ContactLinks() {
                                 mb="lg"
                                 style={{ lineHeight: 1.6 }}
                             >
-                                <Trans>{link.descriptionKey}</Trans>
+                                {link.descriptionKey}
                             </Text>
 
                             <Button
@@ -123,7 +123,7 @@ export default function ContactLinks() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Trans>{link.buttonTextKey}</Trans>
+                                {link.buttonTextKey}
                             </Button>
                         </Card>
                     ))}

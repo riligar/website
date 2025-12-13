@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Card, ThemeIcon, rem } from '@mantine/core'
 import { IconClock, IconWorld, IconMessageCheck, IconCalendar } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const availabilityInfo = [
     {
@@ -43,7 +43,7 @@ export default function ContactAvailability() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>What to Expect</Trans>
+                    What to Expect
                 </Title>
 
                 <Text
@@ -53,10 +53,10 @@ export default function ContactAvailability() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
+                    
                         When you reach out, you're connecting directly with me—not a sales team or account manager.
                         Here's what you can expect from our collaboration.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -85,14 +85,14 @@ export default function ContactAvailability() {
                                 size="lg"
                                 mb="xs"
                             >
-                                <Trans>{info.titleKey}</Trans>
+                                {info.titleKey}
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                <Trans>{info.descriptionKey}</Trans>
+                                {info.descriptionKey}
                             </Text>
                         </Card>
                     ))}

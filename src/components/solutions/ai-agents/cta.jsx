@@ -1,11 +1,9 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function AIAgentsCTA() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _("Hi! I'm interested in deploying AI Agents for my business. I'd like to discuss specific use cases and see how autonomous agents could help us scale.")
+        'Olá! Tenho interesse em implementar AI Agents no meu negócio. Gostaria de discutir casos de uso específicos e como agentes autônomos podem nos ajudar a escalar.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -25,7 +23,7 @@ export default function AIAgentsCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Ready to Deploy AI Agents?</Trans>
+                    Ready to Deploy AI Agents?
                 </Title>
 
                 <Text
@@ -36,10 +34,8 @@ export default function AIAgentsCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Let's discuss your specific use case. We'll explore how AI Agents can automate tasks, reduce
-                        costs, and scale your operations—with measurable ROI.
-                    </Trans>
+                    Let's discuss your specific use case. We'll explore how AI Agents can automate tasks, reduce costs,
+                    and scale your operations—with measurable ROI.
                 </Text>
 
                 <Group
@@ -54,7 +50,7 @@ export default function AIAgentsCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Start Your AI Agent Project</Trans>
+                        Start Your AI Agent Project
                     </Button>
                 </Group>
 
@@ -64,10 +60,7 @@ export default function AIAgentsCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    <Trans>
-                        Most projects start with a 2-week proof-of-concept to validate the approach before full
-                        deployment.
-                    </Trans>
+                    Most projects start with a 2-week proof-of-concept to validate the approach before full deployment.
                 </Text>
             </Container>
         </Box>

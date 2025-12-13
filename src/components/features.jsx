@@ -1,48 +1,47 @@
 import { Badge, Group, Title, Text, Card, SimpleGrid, Box, rem, useMantineTheme } from '@mantine/core'
 import { IconCloudComputing, IconChartBar, IconBrain, IconRobot, IconSparkles, IconShield } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 const mockdata = [
     {
         id: 'leads-perdidos',
-        titleKey: 'Leads Caindo Entre as Frestas?',
-        descriptionKey:
+        title: 'Leads Caindo Entre as Frestas?',
+        description:
             'Quando leads passam despercebidos ou não recebem follow-up adequado, você perde receita. Garantimos que cada lead de alto valor receba atenção imediata, enquanto consultas rotineiras são tratadas automaticamente.',
         icon: IconRobot,
         highlight: true,
     },
     {
         id: 'pipeline-cego',
-        titleKey: 'Pipeline de Vendas Sem Visibilidade?',
-        descriptionKey:
+        title: 'Pipeline de Vendas Sem Visibilidade?',
+        description:
             'Decisões baseadas em achismo custam caro. Criamos visibilidade completa do seu funil de vendas com dashboards que mostram exatamente onde estão os gargalos e oportunidades.',
         icon: IconChartBar,
     },
     {
         id: 'produto-nao-escala',
-        titleKey: 'Produto Que Não Escala com Seu Crescimento?',
-        descriptionKey:
+        title: 'Produto Que Não Escala com Seu Crescimento?',
+        description:
             'Seu sistema atual está travando seu crescimento? Desenvolvemos plataformas que escalam conforme seu negócio cresce, sem surpresas de custo ou performance.',
         icon: IconCloudComputing,
     },
     {
         id: 'dados-manual',
-        titleKey: 'Horas Perdidas em Trabalho Manual?',
-        descriptionKey:
+        title: 'Horas Perdidas em Trabalho Manual?',
+        description:
             'Dados não estruturados e processos manuais consomem tempo da sua equipe. Automatizamos a extração, análise e processamento para liberar seu time para trabalho estratégico.',
         icon: IconSparkles,
     },
     {
         id: 'software-generico',
-        titleKey: 'Software Genérico Que Não Resolve Seu Problema?',
-        descriptionKey:
+        title: 'Software Genérico Que Não Resolve Seu Problema?',
+        description:
             'Quando soluções de prateleira não atendem seus processos únicos, desenvolvemos ferramentas sob medida que realmente se encaixam no seu workflow.',
         icon: IconBrain,
     },
     {
         id: 'incerteza-tecnologia',
-        titleKey: 'Incerteza Sobre Onde Investir em Tecnologia?',
-        descriptionKey:
+        title: 'Incerteza Sobre Onde Investir em Tecnologia?',
+        description:
             'Com tantas opções disponíveis, é difícil saber qual caminho seguir. Diagnosticamos seu negócio e criamos um roadmap claro de onde a tecnologia pode gerar mais valor.',
         icon: IconShield,
     },
@@ -73,7 +72,7 @@ export default function Features() {
                     size="sm"
                     mb="sm"
                 >
-                    <Trans>Solução Destaque</Trans>
+                    Solução Destaque
                 </Badge>
             )}
             <feature.icon
@@ -86,14 +85,14 @@ export default function Features() {
                 fw={500}
                 mt="md"
             >
-                <Trans>{feature.titleKey}</Trans>
+                {feature.title}
             </Text>
             <Text
                 fz="sm"
                 c="dimmed"
                 mt="sm"
             >
-                <Trans>{feature.descriptionKey}</Trans>
+                {feature.description}
             </Text>
         </Card>
     ))
@@ -109,7 +108,7 @@ export default function Features() {
                     variant="filled"
                     size="lg"
                 >
-                    <Trans>Problemas Que Resolvemos</Trans>
+                    Problemas Que Resolvemos
                 </Badge>
             </Group>
 
@@ -119,7 +118,7 @@ export default function Features() {
                 mt="sm"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                <Trans>Esses Problemas São Familiares?</Trans>
+                Esses Problemas São Familiares?
             </Title>
 
             <Text
@@ -129,11 +128,9 @@ export default function Features() {
                 maw={800}
                 mx="auto"
             >
-                <Trans>
-                    Identificamos esses padrões repetidamente nos negócios. O primeiro passo é reconhecer o problema — o
-                    segundo é resolvê-lo de forma que gere impacto real e mensurável. Clique em qualquer card para saber
-                    como podemos ajudar.
-                </Trans>
+                Identificamos esses padrões repetidamente nos negócios. O primeiro passo é reconhecer o problema — o
+                segundo é resolvê-lo de forma que gere impacto real e mensurável. Clique em qualquer card para saber
+                como podemos ajudar.
             </Text>
 
             <SimpleGrid

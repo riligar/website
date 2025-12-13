@@ -1,48 +1,47 @@
 import { Box, Title, Text, Container, SimpleGrid, Card, ThemeIcon, rem } from '@mantine/core'
 import { IconTarget, IconCode, IconUsers, IconHeart, IconBrain, IconTrendingUp } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 const values = [
     {
         id: 'diagnostico',
         icon: IconTarget,
-        titleKey: 'Diagnóstico Primeiro',
-        descriptionKey:
+        title: 'Diagnóstico Primeiro',
+        description:
             'Antes de propor qualquer solução, entendemos profundamente o problema. Identificamos causas raiz, não sintomas. A tecnologia vem depois.',
     },
     {
         id: 'resultados',
         icon: IconCode,
-        titleKey: 'Resultados Mensuráveis',
-        descriptionKey:
+        title: 'Resultados Mensuráveis',
+        description:
             'Medimos sucesso por impacto de negócio: aumento de receita, redução de custos, vantagem competitiva. Não por linhas de código ou funcionalidades.',
     },
     {
         id: 'parceria',
         icon: IconUsers,
-        titleKey: 'Parceria, Não Fornecimento',
-        descriptionKey:
+        title: 'Parceria, Não Fornecimento',
+        description:
             'Não somos fornecedores técnicos. Somos parceiros na transformação do seu negócio. Trabalhamos lado a lado para garantir que a solução realmente funcione.',
     },
     {
         id: 'transparencia',
         icon: IconHeart,
-        titleKey: 'Transparência Total',
-        descriptionKey:
+        title: 'Transparência Total',
+        description:
             'Comunicação honesta sobre prazos, limitações e expectativas. Se algo não fizer sentido para seu negócio, vamos dizer — mesmo que signifique menos trabalho para nós.',
     },
     {
         id: 'simplicidade',
         icon: IconBrain,
-        titleKey: 'Simplicidade Intencional',
-        descriptionKey:
+        title: 'Simplicidade Intencional',
+        description:
             'A solução mais elegante é geralmente a mais simples. Evitamos complexidade desnecessária que aumenta custos e dificulta manutenção.',
     },
     {
         id: 'evolucao',
         icon: IconTrendingUp,
-        titleKey: 'Evolução Contínua',
-        descriptionKey:
+        title: 'Evolução Contínua',
+        description:
             'Seu negócio muda, suas soluções devem acompanhar. Projetamos para evolução, não para obsolescência. Acompanhamos resultados e ajustamos conforme necessário.',
     },
 ]
@@ -61,7 +60,7 @@ export default function AboutValues() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Nossos Valores</Trans>
+                    Nossos Valores
                 </Title>
 
                 <Text
@@ -71,7 +70,7 @@ export default function AboutValues() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>Esses princípios guiam cada diagnóstico e cada solução que criamos.</Trans>
+                    Esses princípios guiam cada diagnóstico e cada solução que criamos.
                 </Text>
 
                 <SimpleGrid
@@ -100,14 +99,14 @@ export default function AboutValues() {
                                 size="lg"
                                 mb="xs"
                             >
-                                <Trans>{value.titleKey}</Trans>
+                                {value.title}
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                <Trans>{value.descriptionKey}</Trans>
+                                {value.description}
                             </Text>
                         </Card>
                     ))}

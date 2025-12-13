@@ -1,6 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconChartBar, IconCheck, IconMessageCircle } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 export default function SalesforceHero() {
     return (
@@ -20,7 +20,7 @@ export default function SalesforceHero() {
                         size="xl"
                         leftSection={<IconChartBar style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        <Trans>Salesforce Solutions</Trans>
+                        Salesforce Solutions
                     </Badge>
                 </Group>
 
@@ -31,9 +31,9 @@ export default function SalesforceHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>
+                    
                         Custom Salesforce Development <br /> That Supercharges Your CRM
-                    </Trans>
+                    
                 </Title>
 
                 <Text
@@ -45,11 +45,11 @@ export default function SalesforceHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    <Trans>
+                    
                         Build Lightning Web Components, custom integrations, and automations that transform Salesforce
                         into exactly what your business needs. Clean, maintainable code that scales with your
                         organization.
-                    </Trans>
+                    
                 </Text>
 
                 <List
@@ -71,34 +71,34 @@ export default function SalesforceHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Lightning Web Components:</strong> Modern, performant custom components for any
                                 use case
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Custom Integrations:</strong> Connect Salesforce with any system—APIs,
                                 databases, external apps
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Process Automation:</strong> Flows, Apex triggers, and custom logic that
                                 eliminate manual work
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Component Libraries:</strong> Reusable, documented components that boost
                                 productivity across teams
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                 </List>
@@ -111,7 +111,7 @@ export default function SalesforceHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Discuss Your Salesforce Project</Trans>
+                        Discuss Your Salesforce Project
                     </Button>
                 </Group>
             </Container>

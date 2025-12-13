@@ -1,6 +1,5 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconMessageCircle, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 export default function AboutCTA() {
     return (
@@ -17,7 +16,7 @@ export default function AboutCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Vamos Construir Algo Significativo Juntos</Trans>
+                    Vamos Construir Algo Significativo Juntos
                 </Title>
 
                 <Text
@@ -28,10 +27,8 @@ export default function AboutCTA() {
                     maw={600}
                     mx="auto"
                 >
-                    <Trans>
-                        Se você acredita em tecnologia com propósito e quer um parceiro pessoalmente investido no seu
-                        sucesso, vamos conversar.
-                    </Trans>
+                    Se você acredita em tecnologia com propósito e quer um parceiro pessoalmente investido no seu
+                    sucesso, vamos conversar.
                 </Text>
 
                 <Group
@@ -47,7 +44,7 @@ export default function AboutCTA() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Trans>Canal do YouTube</Trans>
+                        Canal do YouTube
                     </Button>
                 </Group>
 
@@ -85,21 +82,19 @@ export default function AboutCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    <Trans>
-                        Quer saber mais sobre minha jornada? Visite meu{' '}
-                        <Text
-                            component="a"
-                            href="https://blog.ciromaciel.click/sobre-mim"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            c="blue"
-                            fw={600}
-                            style={{ textDecoration: 'underline', cursor: 'pointer' }}
-                        >
-                            blog pessoal
-                        </Text>{' '}
-                        para conhecer mais sobre minha história e filosofia.
-                    </Trans>
+                    Quer saber mais sobre minha jornada? Visite meu{' '}
+                    <Text
+                        component="a"
+                        href="https://blog.ciromaciel.click/sobre-mim"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        c="blue"
+                        fw={600}
+                        style={{ textDecoration: 'underline', cursor: 'pointer' }}
+                    >
+                        blog pessoal
+                    </Text>{' '}
+                    para conhecer mais sobre minha história e filosofia.
                 </Text>
             </Container>
         </Box>

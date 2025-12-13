@@ -1,5 +1,5 @@
 import { Box, Title, Text, Container, Accordion } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
+
 
 const contactFaq = [
     {
@@ -49,7 +49,7 @@ export default function ContactFAQ() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Perguntas Comuns</Trans>
+                    Perguntas Comuns
                 </Title>
 
                 <Text
@@ -59,7 +59,7 @@ export default function ContactFAQ() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>Respostas rápidas para dúvidas antes de entrar em contato.</Trans>
+                    Respostas rápidas para dúvidas antes de entrar em contato.
                 </Text>
 
                 <Accordion variant="separated">
@@ -69,14 +69,14 @@ export default function ContactFAQ() {
                             value={item.questionKey}
                         >
                             <Accordion.Control>
-                                <Trans>{item.questionKey}</Trans>
+                                {item.questionKey}
                             </Accordion.Control>
                             <Accordion.Panel>
                                 <Text
                                     size="sm"
                                     c="dimmed"
                                 >
-                                    <Trans>{item.answerKey}</Trans>
+                                    {item.answerKey}
                                 </Text>
                             </Accordion.Panel>
                         </Accordion.Item>

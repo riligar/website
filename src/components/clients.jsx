@@ -1,5 +1,4 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
 
 const clients = [
     { name: 'Escritório Advocacia', industry: 'Jurídico' },
@@ -34,7 +33,7 @@ export default function Clients() {
                     tt="uppercase"
                     style={{ letterSpacing: 2 }}
                 >
-                    <Trans>Empresas Que Confiaram no Diagnóstico</Trans>
+                    Empresas Que Confiaram no Diagnóstico
                 </Text>
 
                 <SimpleGrid
@@ -92,9 +91,7 @@ export default function Clients() {
                     c="dimmed"
                     mt="xl"
                 >
-                    <Trans>
-                        De startups a empresas estabelecidas, entregamos transformações que geram crescimento real
-                    </Trans>
+                    De startups a empresas estabelecidas, entregamos transformações que geram crescimento real
                 </Text>
             </Container>
         </Box>

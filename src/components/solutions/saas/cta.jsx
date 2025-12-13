@@ -1,11 +1,9 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function SaaSCTA() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _("Hi! I'm interested in building a SaaS platform. I'd like to discuss architecture, tech stack, and delivery timeline for a new SaaS product.")
+        'Olá! Tenho interesse em construir uma plataforma SaaS. Gostaria de discutir arquitetura, stack tecnológico e cronograma de entrega.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -23,7 +21,7 @@ export default function SaaSCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Ready to Build Your SaaS?</Trans>
+                    Ready to Build Your SaaS?
                 </Title>
                 <Text
                     size="lg"
@@ -33,10 +31,8 @@ export default function SaaSCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Let's discuss your SaaS idea. We'll design the architecture, choose the right tech stack, and
-                        deliver an MVP in 8-16 weeks.
-                    </Trans>
+                    Let's discuss your SaaS idea. We'll design the architecture, choose the right tech stack, and
+                    deliver an MVP in 8-16 weeks.
                 </Text>
                 <Group
                     justify="center"
@@ -50,7 +46,7 @@ export default function SaaSCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Start Your SaaS Project</Trans>
+                        Start Your SaaS Project
                     </Button>
                 </Group>
                 <Text
@@ -59,10 +55,8 @@ export default function SaaSCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    <Trans>
-                        Most SaaS projects start with a technical discovery phase to validate architecture before full
-                        development.
-                    </Trans>
+                    Most SaaS projects start with a technical discovery phase to validate architecture before full
+                    development.
                 </Text>
             </Container>
         </Box>

@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconClock, IconCoin, IconUsers, IconTrendingUp } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const metrics = [
     {
@@ -46,7 +46,7 @@ export default function AIAgentsResults() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>The Business Impact of AI Agents</Trans>
+                    The Business Impact of AI Agents
                 </Title>
 
                 <Text
@@ -57,10 +57,10 @@ export default function AIAgentsResults() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         AI Agents deliver measurable ROI from day one. These aren't projections—these are real results
                         from production deployments.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -109,14 +109,14 @@ export default function AIAgentsResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{metric.labelKey}</Trans>
+                                {metric.labelKey}
                             </Text>
 
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                <Trans>{metric.descriptionKey}</Trans>
+                                {metric.descriptionKey}
                             </Text>
                         </Paper>
                     ))}
@@ -136,7 +136,7 @@ export default function AIAgentsResults() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Why RiLiGar for AI Agents?</Trans>
+                        Why RiLiGar for AI Agents?
                     </Title>
                     <Text
                         ta="center"
@@ -145,10 +145,10 @@ export default function AIAgentsResults() {
                         mx="auto"
                         mb="md"
                     >
-                        <Trans>
+                        
                             We're not an AI agency that learned to code. We're experienced software engineers (20+
                             years) who now specialize in AI. That means:
-                        </Trans>
+                        
                     </Text>
                     <Text
                         ta="center"
@@ -156,12 +156,12 @@ export default function AIAgentsResults() {
                         maw={900}
                         mx="auto"
                     >
-                        <Trans>
+                        
                             ✓ Production-ready code from day one &nbsp;|&nbsp; ✓ Proper error handling and monitoring
                             &nbsp;|&nbsp; ✓ Security built in, not bolted on &nbsp;|&nbsp; ✓ Scalable architecture that
                             grows with you &nbsp;|&nbsp; ✓ Clean, maintainable code you can actually understand
                             &nbsp;|&nbsp; ✓ Real engineering, not demos
-                        </Trans>
+                        
                     </Text>
                 </Box>
             </Container>

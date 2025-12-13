@@ -1,6 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconSparkles, IconCheck, IconMessageCircle } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 export default function AIIntegrationHero() {
     return (
@@ -20,7 +20,7 @@ export default function AIIntegrationHero() {
                         size="xl"
                         leftSection={<IconSparkles style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        <Trans>AI Integration</Trans>
+                        AI Integration
                     </Badge>
                 </Group>
 
@@ -31,9 +31,9 @@ export default function AIIntegrationHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>
+                    
                         Add AI Capabilities <br /> To Your Existing Systems
-                    </Trans>
+                    
                 </Title>
 
                 <Text
@@ -45,11 +45,11 @@ export default function AIIntegrationHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    <Trans>
+                    
                         Integrate cutting-edge AI into your current applications and workflows. Natural language
                         processing, document analysis, predictive analytics, and intelligent automation—tailored to your
                         specific needs.
-                    </Trans>
+                    
                 </Text>
 
                 <List
@@ -71,31 +71,31 @@ export default function AIIntegrationHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>No Rip-and-Replace:</strong> AI enhances your existing systems, doesn't replace
                                 them
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Custom AI Models:</strong> Fine-tuned for your data and use cases
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>API-First:</strong> Easy integration with any application or platform
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Production-Ready:</strong> Reliable, monitored, and scalable AI services
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                 </List>
@@ -108,7 +108,7 @@ export default function AIIntegrationHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Discuss AI Integration</Trans>
+                        Discuss AI Integration
                     </Button>
                 </Group>
             </Container>

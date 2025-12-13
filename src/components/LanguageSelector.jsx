@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { Select, Group, Text } from '@mantine/core'
-import { useLingui } from '@lingui/react/macro'
-import { locales, dynamicActivate } from '../i18n'
-import { saveLocale } from '../utils/detectLocale'
+
+const locales = {
+    en: 'English',
+    es: 'Español',
+    pt: 'Português',
+}
 
 const flagEmojis = {
     en: '🇺🇸',
@@ -9,13 +13,19 @@ const flagEmojis = {
     pt: '🇧🇷',
 }
 
-export default function LanguageSelector() {
-    const { i18n } = useLingui()
+const STORAGE_KEY = 'language'
 
-    const handleChange = async value => {
+function getStoredLocale() {
+    return localStorage.getItem(STORAGE_KEY) || 'pt'
+}
+
+export default function LanguageSelector() {
+    const [currentLocale, setCurrentLocale] = useState(getStoredLocale)
+
+    const handleChange = value => {
         if (value) {
-            await dynamicActivate(value)
-            saveLocale(value)
+            localStorage.setItem(STORAGE_KEY, value)
+            setCurrentLocale(value)
         }
     }
 
@@ -35,7 +45,7 @@ export default function LanguageSelector() {
 
     return (
         <Select
-            value={i18n.locale}
+            value={currentLocale}
             onChange={handleChange}
             data={options}
             size="xs"

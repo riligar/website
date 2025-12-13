@@ -1,5 +1,4 @@
 import { Title, Text, Container, Box, Badge, Group } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
 
 export default function AboutHero() {
     return (
@@ -16,7 +15,7 @@ export default function AboutHero() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Sobre a RiLiGar</Trans>
+                        Sobre a RiLiGar
                     </Badge>
                 </Group>
 
@@ -26,10 +25,8 @@ export default function AboutHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>
-                        Entendemos Negócios <br />
-                        Antes de Propor Soluções
-                    </Trans>
+                    Entendemos Negócios <br />
+                    Antes de Propor Soluções
                 </Title>
 
                 <Text
@@ -40,10 +37,8 @@ export default function AboutHero() {
                     mx="auto"
                     style={{ lineHeight: 1.6 }}
                 >
-                    <Trans>
-                        A RiLiGar nasceu de uma crença simples: tecnologia só tem valor quando resolve problemas reais
-                        de negócio. Não vendemos automação — diagnosticamos, redesenhamos e transformamos.
-                    </Trans>
+                    A RiLiGar nasceu de uma crença simples: tecnologia só tem valor quando resolve problemas reais de
+                    negócio. Não vendemos automação — diagnosticamos, redesenhamos e transformamos.
                 </Text>
             </Container>
         </Box>

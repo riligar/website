@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, Card, SimpleGrid, Badge, List, ThemeIcon, rem } from '@mantine/core'
 import { IconCheck } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const useCases = [
     {
@@ -99,7 +99,7 @@ export default function AIAgentsUseCases() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Real-World AI Agent Applications</Trans>
+                    Real-World AI Agent Applications
                 </Title>
 
                 <Text
@@ -110,10 +110,10 @@ export default function AIAgentsUseCases() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         These aren't theoretical—they're production systems we've built and deployed. Each use case
                         shows measurable business impact.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -133,21 +133,21 @@ export default function AIAgentsUseCases() {
                                 size="sm"
                                 mb="sm"
                             >
-                                <Trans>{useCase.industryKey}</Trans>
+                                {useCase.industryKey}
                             </Badge>
                             <Title
                                 order={3}
                                 size="h4"
                                 mb="xs"
                             >
-                                <Trans>{useCase.titleKey}</Trans>
+                                {useCase.titleKey}
                             </Title>
                             <Text
                                 size="sm"
                                 c="dimmed"
                                 mb="md"
                             >
-                                <Trans>{useCase.descriptionKey}</Trans>
+                                {useCase.descriptionKey}
                             </Text>
 
                             <Text
@@ -155,7 +155,7 @@ export default function AIAgentsUseCases() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>Typical Results:</Trans>
+                                Typical Results:
                             </Text>
                             <List
                                 size="sm"
@@ -177,7 +177,7 @@ export default function AIAgentsUseCases() {
                                 {useCase.results.map((result, idx) => (
                                     <List.Item key={idx}>
                                         <Text size="sm">
-                                            <Trans>{result}</Trans>
+                                            {result}
                                         </Text>
                                     </List.Item>
                                 ))}

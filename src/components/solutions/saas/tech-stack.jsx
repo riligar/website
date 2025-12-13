@@ -7,7 +7,7 @@ import {
     IconBrandDocker,
     IconCheck,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const techStack = [
     {
@@ -77,7 +77,7 @@ export default function SaaSTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Our SaaS Technology Stack</Trans>
+                    Our SaaS Technology Stack
                 </Title>
                 <Text
                     c="dimmed"
@@ -87,7 +87,7 @@ export default function SaaSTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just solid engineering.</Trans>
+                    Modern, proven technologies that deliver performance, reliability, and maintainability. No hype—just solid engineering.
                 </Text>
 
                 <SimpleGrid
@@ -118,7 +118,7 @@ export default function SaaSTechStack() {
                                     fz="lg"
                                     fw={600}
                                 >
-                    <Trans>{stack.category}</Trans>
+                    {stack.category}
                 </Text>
                             </Group>
                             <Text
@@ -126,7 +126,7 @@ export default function SaaSTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{stack.description}</Trans>
+                    {stack.description}
                 </Text>
                             <List
                                 size="sm"
@@ -151,7 +151,7 @@ export default function SaaSTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            <Trans>{tech}</Trans>
+                                            {tech}
                                         </Text>
                                     </List.Item>
                                 ))}
@@ -174,7 +174,7 @@ export default function SaaSTechStack() {
                         ta="center"
                         mb="md"
                     >
-                    <Trans>Why Our SaaS Platforms Stand Out</Trans>
+                    Why Our SaaS Platforms Stand Out
                 </Title>
                     <Text
                         ta="center"
@@ -182,7 +182,7 @@ export default function SaaSTechStack() {
                         maw={900}
                         mx="auto"
                     >
-                    <Trans>20+ years of software engineering means we know how to build systems that last. Clean code, proper testing, scalable architecture, and cost-effective infrastructure. Your SaaS platform deserves engineering excellence, not tech debt.</Trans>
+                    20+ years of software engineering means we know how to build systems that last. Clean code, proper testing, scalable architecture, and cost-effective infrastructure. Your SaaS platform deserves engineering excellence, not tech debt.
                 </Text>
                 </Box>
             </Container>

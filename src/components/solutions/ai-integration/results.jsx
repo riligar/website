@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconBolt, IconClock, IconChartLine, IconShieldCheck } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const metrics = [
     { id: 'automation', icon: IconBolt, value: '90%', labelKey: 'Automation Rate', descriptionKey: 'Tasks automated with AI integration' },
@@ -22,7 +22,7 @@ export default function AIIntegrationResults() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>The Impact of AI Integration</Trans>
+                    The Impact of AI Integration
                 </Title>
                 <Text
                     c="dimmed"
@@ -32,7 +32,7 @@ export default function AIIntegrationResults() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>Add AI capabilities to existing systems without disruption—delivering measurable improvements fast.</Trans>
+                    Add AI capabilities to existing systems without disruption—delivering measurable improvements fast.
                 </Text>
 
                 <SimpleGrid
@@ -80,13 +80,13 @@ export default function AIIntegrationResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{metric.labelKey}</Trans>
+                                {metric.labelKey}
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                <Trans>{metric.descriptionKey}</Trans>
+                                {metric.descriptionKey}
                             </Text>
                         </Paper>
                     ))}

@@ -2,7 +2,6 @@ import logo from '/image/riligar-logo.webp'
 
 import { Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 import LanguageSelector from './LanguageSelector'
 import classes from './footer.module.css'
@@ -10,30 +9,30 @@ import classes from './footer.module.css'
 const data = [
     {
         id: 'value',
-        titleKey: 'Entregamos',
+        title: 'Entregamos',
         links: [
-            { id: 'diagnostico', labelKey: 'Diagnóstico', link: '/about' },
-            { id: 'redesenho', labelKey: 'Redesenho', link: '/about' },
-            { id: 'resultados', labelKey: 'Resultados', link: '/about' },
-            { id: 'parceria', labelKey: 'Parceria', link: '/contact' },
+            { id: 'diagnostico', label: 'Diagnóstico', link: '/about' },
+            { id: 'redesenho', label: 'Redesenho', link: '/about' },
+            { id: 'resultados', label: 'Resultados', link: '/about' },
+            { id: 'parceria', label: 'Parceria', link: '/contact' },
         ],
     },
     {
         id: 'company',
-        titleKey: 'Empresa',
+        title: 'Empresa',
         links: [
-            { id: 'about', labelKey: 'Sobre Nós', link: '/about' },
-            { id: 'contact', labelKey: 'Contato', link: '/contact' },
-            { id: 'blog', labelKey: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
+            { id: 'about', label: 'Sobre Nós', link: '/about' },
+            { id: 'contact', label: 'Contato', link: '/contact' },
+            { id: 'blog', label: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
         ],
     },
     {
         id: 'connect',
-        titleKey: 'Conecte-se',
+        title: 'Conecte-se',
         links: [
-            { id: 'linkedin', labelKey: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
-            { id: 'instagram', labelKey: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
-            { id: 'youtube', labelKey: 'YouTube', link: 'https://www.youtube.com/@ciro-maciel', external: true },
+            { id: 'linkedin', label: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
+            { id: 'instagram', label: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
+            { id: 'youtube', label: 'YouTube', link: 'https://www.youtube.com/@ciro-maciel', external: true },
         ],
     },
 ]
@@ -49,7 +48,7 @@ export default function FooterLinks() {
                 target={link.external ? '_blank' : undefined}
                 rel={link.external ? 'noopener noreferrer' : undefined}
             >
-                <Trans>{link.labelKey}</Trans>
+                {link.label}
             </Text>
         ))
 
@@ -58,9 +57,7 @@ export default function FooterLinks() {
                 className={classes.wrapper}
                 key={group.id}
             >
-                <Text className={classes.title}>
-                    <Trans>{group.titleKey}</Trans>
-                </Text>
+                <Text className={classes.title}>{group.title}</Text>
                 {links}
             </div>
         )
@@ -81,10 +78,8 @@ export default function FooterLinks() {
                         c="dimmed"
                         className={classes.description}
                     >
-                        <Trans>
-                            Parceiros em transformação de negócios: diagnóstico profundo, redesenho de processos e
-                            resultados mensuráveis.
-                        </Trans>
+                        Parceiros em transformação de negócios: diagnóstico profundo, redesenho de processos e
+                        resultados mensuráveis.
                     </Text>
                 </div>
                 <div className={classes.groups}>{groups}</div>
@@ -98,7 +93,7 @@ export default function FooterLinks() {
                         c="dimmed"
                         size="sm"
                     >
-                        <Trans>© {new Date().getFullYear()} RiLiGar. Todos os direitos reservados.</Trans>
+                        © {new Date().getFullYear()} RiLiGar. Todos os direitos reservados.
                     </Text>
                     <LanguageSelector />
                 </Group>

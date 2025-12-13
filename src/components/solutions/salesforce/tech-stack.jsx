@@ -8,7 +8,7 @@ import {
     IconCloudComputing,
     IconCheck,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const techStack = [
     {
@@ -125,7 +125,7 @@ export default function SalesforceTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Our Salesforce Technology Stack</Trans>
+                    Our Salesforce Technology Stack
                 </Title>
 
                 <Text
@@ -136,10 +136,10 @@ export default function SalesforceTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and
                         modern DevOps practices. 20+ years of software engineering applied to Salesforce development.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -171,7 +171,7 @@ export default function SalesforceTechStack() {
                                         fz="lg"
                                         fw={600}
                                     >
-                                        <Trans>{stack.category}</Trans>
+                                        {stack.category}
                                     </Text>
                                 </div>
                             </Group>
@@ -181,7 +181,7 @@ export default function SalesforceTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                                <Trans>{stack.description}</Trans>
+                                {stack.description}
                             </Text>
 
                             <List
@@ -207,7 +207,7 @@ export default function SalesforceTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            <Trans>{tech}</Trans>
+                                            {tech}
                                         </Text>
                                     </List.Item>
                                 ))}
@@ -230,7 +230,7 @@ export default function SalesforceTechStack() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Why Our Salesforce Development Stands Out</Trans>
+                        Why Our Salesforce Development Stands Out
                     </Title>
                     <Text
                         ta="center"
@@ -238,12 +238,12 @@ export default function SalesforceTechStack() {
                         maw={900}
                         mx="auto"
                     >
-                        <Trans>
+                        
                             We're not just Salesforce developers—we're software engineers who happen to specialize in
                             Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and
                             all the best practices from enterprise software development. Your Salesforce org deserves
                             better than quick hacks—it deserves engineering excellence.
-                        </Trans>
+                        
                     </Text>
                 </Box>
             </Container>

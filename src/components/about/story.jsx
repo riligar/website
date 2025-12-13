@@ -1,6 +1,5 @@
 import { Box, Title, Text, Container, Paper, Timeline, rem, ThemeIcon } from '@mantine/core'
 import { IconRocket, IconBulb, IconHeart, IconTrendingUp } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 export default function AboutStory() {
     return (
@@ -11,7 +10,7 @@ export default function AboutStory() {
                     ta="center"
                     mb="xl"
                 >
-                    <Trans>Nossa História</Trans>
+                    Nossa História
                 </Title>
 
                 <Paper
@@ -24,9 +23,7 @@ export default function AboutStory() {
                         size="lg"
                         mb="md"
                     >
-                        <Trans>
-                            Olá, sou <strong>Ciro Cesar Maciel</strong>, fundador da Riligar.
-                        </Trans>
+                        Olá, sou <strong>Ciro Cesar Maciel</strong>, fundador da Riligar.
                     </Text>
 
                     <Text
@@ -34,11 +31,9 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        <Trans>
-                            Sou apaixonado por tecnologia há mais de duas décadas. Minha jornada começou
-                            cedo—construindo sistemas para grandes corporações, resolvendo problemas complexos e
-                            liderando equipes técnicas em momentos críticos.
-                        </Trans>
+                        Sou apaixonado por tecnologia há mais de duas décadas. Minha jornada começou cedo—construindo
+                        sistemas para grandes corporações, resolvendo problemas complexos e liderando equipes técnicas
+                        em momentos críticos.
                     </Text>
 
                     <Text
@@ -46,11 +41,9 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        <Trans>
-                            Mas em <strong>2024</strong>, algo mudou. Decidi direcionar minha energia para projetos que
-                            realmente façam sentido — não apenas tecnicamente impressionantes, mas significativos.
-                            Projetos que diagnosticam problemas reais e entregam impacto mensurável.
-                        </Trans>
+                        Mas em <strong>2024</strong>, algo mudou. Decidi direcionar minha energia para projetos que
+                        realmente façam sentido — não apenas tecnicamente impressionantes, mas significativos. Projetos
+                        que diagnosticam problemas reais e entregam impacto mensurável.
                     </Text>
 
                     <Text
@@ -58,26 +51,22 @@ export default function AboutStory() {
                         mb="md"
                         style={{ lineHeight: 1.8 }}
                     >
-                        <Trans>
-                            Com o apoio da minha esposa, <strong>Andréa</strong>, e do meu filho, <strong>Edgar</strong>
-                            , transformei linhas de código em soluções com impacto direto em nossa rotina. O que começou
-                            como ferramentas para nossa família gradualmente se tornou meu propósito.
-                        </Trans>
+                        Com o apoio da minha esposa, <strong>Andréa</strong>, e do meu filho, <strong>Edgar</strong>,
+                        transformei linhas de código em soluções com impacto direto em nossa rotina. O que começou como
+                        ferramentas para nossa família gradualmente se tornou meu propósito.
                     </Text>
 
                     <Text
                         c="dimmed"
                         style={{ lineHeight: 1.8 }}
                     >
-                        <Trans>
-                            Hoje, a Riligar combina minha experiência em desenvolvimento de software corporativo com uma
-                            abordagem diferente:{' '}
-                            <em>
-                                primeiro diagnosticamos o problema real, depois redesenhamos processos, e só então
-                                escolhemos a tecnologia certa
-                            </em>
-                            . AI Agents, Salesforce, SaaS — são ferramentas, não objetivos.
-                        </Trans>
+                        Hoje, a Riligar combina minha experiência em desenvolvimento de software corporativo com uma
+                        abordagem diferente:{' '}
+                        <em>
+                            primeiro diagnosticamos o problema real, depois redesenhamos processos, e só então
+                            escolhemos a tecnologia certa
+                        </em>
+                        . AI Agents, Salesforce, SaaS — são ferramentas, não objetivos.
                     </Text>
                 </Paper>
 
@@ -86,7 +75,7 @@ export default function AboutStory() {
                     ta="center"
                     mb={40}
                 >
-                    <Trans>A Jornada</Trans>
+                    A Jornada
                 </Title>
 
                 <Timeline
@@ -104,17 +93,15 @@ export default function AboutStory() {
                                 <IconRocket style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>20+ Anos em Tecnologia</Trans>}
+                        title="20+ Anos em Tecnologia"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            <Trans>
-                                Construí sistemas para grandes corporações, liderei equipes técnicas e resolvi problemas
-                                complexos em escala. Ganhei expertise profunda em arquitetura de software, processos de
-                                desenvolvimento e liderança de equipes.
-                            </Trans>
+                            Construí sistemas para grandes corporações, liderei equipes técnicas e resolvi problemas
+                            complexos em escala. Ganhei expertise profunda em arquitetura de software, processos de
+                            desenvolvimento e liderança de equipes.
                         </Text>
                     </Timeline.Item>
 
@@ -128,16 +115,14 @@ export default function AboutStory() {
                                 <IconBulb style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>A Decisão de 2024</Trans>}
+                        title="A Decisão de 2024"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            <Trans>
-                                Decidi focar em projetos com propósito real. Comecei a desenvolver uma abordagem que
-                                diagnóstica problemas primeiro — em vez de apenas entregar tecnologia.
-                            </Trans>
+                            Decidi focar em projetos com propósito real. Comecei a desenvolver uma abordagem que
+                            diagnóstica problemas primeiro — em vez de apenas entregar tecnologia.
                         </Text>
                     </Timeline.Item>
 
@@ -151,16 +136,14 @@ export default function AboutStory() {
                                 <IconHeart style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Inovação Familiar</Trans>}
+                        title="Inovação Familiar"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            <Trans>
-                                Com o apoio de Andréa e Edgar, transformei código em soluções impactantes. O que
-                                construímos para nós mesmos se tornou ferramentas que ajudam outros.
-                            </Trans>
+                            Com o apoio de Andréa e Edgar, transformei código em soluções impactantes. O que construímos
+                            para nós mesmos se tornou ferramentas que ajudam outros.
                         </Text>
                     </Timeline.Item>
 
@@ -174,17 +157,15 @@ export default function AboutStory() {
                                 <IconTrendingUp style={{ width: rem(20), height: rem(20) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Riligar Hoje</Trans>}
+                        title="Riligar Hoje"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                         >
-                            <Trans>
-                                Agora entregando transformações de negócio: diagnóstico profundo, redesenho de
-                                processos, e tecnologia como enabler. Ajudando empresas a evoluir com menos ruído, mais
-                                clareza e resultados consistentes.
-                            </Trans>
+                            Agora entregando transformações de negócio: diagnóstico profundo, redesenho de processos, e
+                            tecnologia como enabler. Ajudando empresas a evoluir com menos ruído, mais clareza e
+                            resultados consistentes.
                         </Text>
                     </Timeline.Item>
                 </Timeline>

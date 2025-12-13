@@ -1,6 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconCloudComputing, IconCheck, IconMessageCircle } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 export default function SaaSHero() {
     return (
@@ -20,7 +20,7 @@ export default function SaaSHero() {
                         size="xl"
                         leftSection={<IconCloudComputing style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        <Trans>SaaS Platforms</Trans>
+                        SaaS Platforms
                     </Badge>
                 </Group>
 
@@ -31,9 +31,9 @@ export default function SaaSHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>
+                    
                         Scalable SaaS Platforms <br /> Built Right From Day One
-                    </Trans>
+                    
                 </Title>
 
                 <Text
@@ -45,10 +45,10 @@ export default function SaaSHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    <Trans>
+                    
                         We build modern, high-performance SaaS applications with clean architecture. From MVP to
                         enterprise scale—lightweight, fast, and cost-effective to run.
-                    </Trans>
+                    
                 </Text>
 
                 <List
@@ -70,32 +70,32 @@ export default function SaaSHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Modern Tech Stack:</strong> React, Node.js, PostgreSQL, Redis—proven
                                 technologies
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Cloud-Native:</strong> Built for AWS, GCP, or Azure with auto-scaling and high
                                 availability
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Clean Architecture:</strong> Maintainable, testable, and ready to scale
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Cost-Effective:</strong> Optimized infrastructure that doesn't waste resources
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                 </List>
@@ -108,7 +108,7 @@ export default function SaaSHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Discuss Your SaaS Idea</Trans>
+                        Discuss Your SaaS Idea
                     </Button>
                 </Group>
             </Container>

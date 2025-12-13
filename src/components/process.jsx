@@ -1,6 +1,5 @@
 import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de agendar um diagnóstico com a RiLiGar. Podemos conversar?')
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
@@ -9,32 +8,32 @@ const steps = [
     {
         id: 'diagnostico',
         icon: IconMessageCircle,
-        titleKey: 'Diagnóstico Profundo',
-        descriptionKey:
+        title: 'Diagnóstico Profundo',
+        description:
             'Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?" Analisamos processos e quantificamos gargalos.',
         number: '01',
     },
     {
         id: 'redesenho',
         icon: IconBulb,
-        titleKey: 'Redesenho de Processos',
-        descriptionKey:
+        title: 'Redesenho de Processos',
+        description:
             'Antes de escolher qualquer tecnologia, redesenhamos como o processo DEVERIA funcionar. Um processo ruim automatizado ainda é um processo ruim — só mais rápido.',
         number: '02',
     },
     {
         id: 'implementacao',
         icon: IconRocket,
-        titleKey: 'Implementação Focada em Resultados',
-        descriptionKey:
+        title: 'Implementação Focada em Resultados',
+        description:
             'Construímos a solução que habilita o processo redesenhado. A tecnologia é um meio, não o objetivo. Medimos sucesso por impacto de negócio, não por funcionalidades.',
         number: '03',
     },
     {
         id: 'parceria',
         icon: IconTrendingUp,
-        titleKey: 'Parceria de Transformação',
-        descriptionKey:
+        title: 'Parceria de Transformação',
+        description:
             'Não somos fornecedores de serviços técnicos — somos parceiros na transformação do seu negócio. Acompanhamos resultados e evoluímos as soluções conforme você cresce.',
         number: '04',
     },
@@ -59,7 +58,7 @@ export default function Process() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Nosso Processo</Trans>
+                        Nosso Processo
                     </Badge>
                 </Group>
 
@@ -69,7 +68,7 @@ export default function Process() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>De Problema Invisível a Resultado Mensurável</Trans>
+                    De Problema Invisível a Resultado Mensurável
                 </Title>
 
                 <Text
@@ -79,10 +78,8 @@ export default function Process() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Primeiro entendemos, depois redesenhamos, e só então implementamos. A tecnologia é sempre o
-                        último passo, nunca o primeiro.
-                    </Trans>
+                    Primeiro entendemos, depois redesenhamos, e só então implementamos. A tecnologia é sempre o último
+                    passo, nunca o primeiro.
                 </Text>
 
                 <SimpleGrid
@@ -126,14 +123,14 @@ export default function Process() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{step.titleKey}</Trans>
+                                {step.title}
                             </Text>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                <Trans>{step.descriptionKey}</Trans>
+                                {step.description}
                             </Text>
                         </Box>
                     ))}
@@ -151,7 +148,7 @@ export default function Process() {
                         size="lg"
                         leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
                     >
-                        <Trans>Iniciar Diagnóstico</Trans>
+                        Iniciar Diagnóstico
                     </Button>
                 </Group>
             </Container>

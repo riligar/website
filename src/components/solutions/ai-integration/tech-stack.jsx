@@ -7,7 +7,7 @@ import {
     IconCloudComputing,
     IconCheck,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const techStack = [
     {
@@ -73,7 +73,7 @@ export default function AIIntegrationTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>AI Integration Technology Stack</Trans>
+                    AI Integration Technology Stack
                 </Title>
                 <Text
                     c="dimmed"
@@ -83,7 +83,7 @@ export default function AIIntegrationTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>We integrate AI using proven frameworks and best practices. Reliable, secure, and built to scale.</Trans>
+                    We integrate AI using proven frameworks and best practices. Reliable, secure, and built to scale.
                 </Text>
 
                 <SimpleGrid
@@ -114,7 +114,7 @@ export default function AIIntegrationTechStack() {
                                     fz="lg"
                                     fw={600}
                                 >
-                    <Trans>{stack.category}</Trans>
+                    {stack.category}
                 </Text>
                             </Group>
                             <Text
@@ -122,7 +122,7 @@ export default function AIIntegrationTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{stack.description}</Trans>
+                    {stack.description}
                 </Text>
                             <List
                                 size="sm"
@@ -147,7 +147,7 @@ export default function AIIntegrationTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            <Trans>{tech}</Trans>
+                                            {tech}
                                         </Text>
                                     </List.Item>
                                 ))}
@@ -170,7 +170,7 @@ export default function AIIntegrationTechStack() {
                         ta="center"
                         mb="md"
                     >
-                    <Trans>Integration Without Disruption</Trans>
+                    Integration Without Disruption
                 </Title>
                     <Text
                         ta="center"
@@ -178,7 +178,7 @@ export default function AIIntegrationTechStack() {
                         maw={900}
                         mx="auto"
                     >
-                    <Trans>We integrate AI capabilities into your existing systems without requiring major rewrites. API-first design, proper authentication, and robust error handling ensure your systems stay reliable while gaining AI superpowers.</Trans>
+                    We integrate AI capabilities into your existing systems without requiring major rewrites. API-first design, proper authentication, and robust error handling ensure your systems stay reliable while gaining AI superpowers.
                 </Text>
                 </Box>
             </Container>

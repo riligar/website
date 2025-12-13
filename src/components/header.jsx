@@ -29,7 +29,6 @@ import {
     IconRocket,
 } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 import classes from './header.module.css'
 
@@ -40,35 +39,32 @@ import logo from '/image/riligar-logotipo.png'
 const mockdata = [
     {
         icon: IconRobot,
-        title: <Trans>AI Agents</Trans>,
-        description: (
-            <Trans>Intelligent autonomous agents that automate tasks and make decisions for your business</Trans>
-        ),
+        title: 'AI Agents',
+        description: 'Agentes autônomos inteligentes que automatizam tarefas e tomam decisões para seu negócio',
         pathname: '/ai-agents',
     },
     {
         icon: IconChartBar,
-        title: <Trans>Salesforce Solutions</Trans>,
-        description: <Trans>Custom components, integrations, and automations for your Salesforce platform</Trans>,
+        title: 'Soluções Salesforce',
+        description: 'Componentes personalizados, integrações e automações para sua plataforma Salesforce',
         pathname: '/salesforce',
     },
     {
         icon: IconCloudComputing,
-        title: <Trans>SaaS Platforms</Trans>,
-        description: <Trans>End-to-end SaaS development with modern, scalable architecture</Trans>,
+        title: 'Plataformas SaaS',
+        description: 'Desenvolvimento completo de SaaS com arquitetura moderna e escalável',
         pathname: '/saas',
     },
     {
         icon: IconSparkles,
-        title: <Trans>AI Integration</Trans>,
-        description: <Trans>Add AI capabilities to your existing systems and workflows</Trans>,
+        title: 'Integração de IA',
+        description: 'Adicione capacidades de IA aos seus sistemas e fluxos de trabalho existentes',
         pathname: '/ai-integration',
     },
 ]
 
 export default function HeaderMegaMenu() {
     const navigate = useNavigate()
-    const { _ } = useLingui()
 
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false)
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
@@ -77,7 +73,7 @@ export default function HeaderMegaMenu() {
 
     // WhatsApp link with pre-filled message
     const whatsappMessage = encodeURIComponent(
-        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.')
+        'Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -149,7 +145,6 @@ export default function HeaderMegaMenu() {
                                 />
                             </Group>
                         </UnstyledButton>
-                        {/* <IconAlignBoxRightStretch size={30} /> */}
                         <Group
                             h="100%"
                             gap={0}
@@ -159,7 +154,7 @@ export default function HeaderMegaMenu() {
                                 href="/"
                                 className={classes.link}
                             >
-                                <Trans>Início</Trans>
+                                Início
                             </a>
                             <HoverCard
                                 width={600}
@@ -168,34 +163,12 @@ export default function HeaderMegaMenu() {
                                 shadow="md"
                                 withinPortal
                             >
-                                {/* <HoverCard.Target>
-                                    <a
-                                        href="#"
-                                        className={classes.link}
-                                    >
-                                        <Center inline>
-                                            <Box
-                                                component="span"
-                                                mr={5}
-                                            >
-                                                <Trans>Solutions</Trans>
-                                            </Box>
-                                            <IconChevronDown
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                color={theme.colors.blue[6]}
-                                            />
-                                        </Center>
-                                    </a>
-                                </HoverCard.Target> */}
-
                                 <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                                     <Group
                                         justify="space-between"
                                         px="md"
                                     >
-                                        <Text fw={500}>
-                                            <Trans>Nossas Soluções</Trans>
-                                        </Text>
+                                        <Text fw={500}>Nossas Soluções</Text>
                                     </Group>
 
                                     <Divider my="sm" />
@@ -214,13 +187,13 @@ export default function HeaderMegaMenu() {
                                                     fw={500}
                                                     fz="sm"
                                                 >
-                                                    <Trans>Pronto para começar?</Trans>
+                                                    Pronto para começar?
                                                 </Text>
                                                 <Text
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    <Trans>Descubra a solução ideal para seu negócio</Trans>
+                                                    Descubra a solução ideal para seu negócio
                                                 </Text>
                                             </div>
                                             <Button
@@ -231,7 +204,7 @@ export default function HeaderMegaMenu() {
                                                 variant="default"
                                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                                             >
-                                                <Trans>Agendar Diagnóstico</Trans>
+                                                Agendar Diagnóstico
                                             </Button>
                                         </Group>
                                     </div>
@@ -241,13 +214,13 @@ export default function HeaderMegaMenu() {
                                 href="/about"
                                 className={classes.link}
                             >
-                                <Trans>Sobre</Trans>
+                                Sobre
                             </a>
                             <a
                                 href="/contact"
                                 className={classes.link}
                             >
-                                <Trans>Contato</Trans>
+                                Contato
                             </a>
                         </Group>
                         <Group visibleFrom="sm">
@@ -259,7 +232,7 @@ export default function HeaderMegaMenu() {
                                 size="md"
                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                             >
-                                <Trans>Agendar Diagnóstico</Trans>
+                                Agendar Diagnóstico
                             </Button>
                         </Group>
                         <Burger
@@ -276,7 +249,7 @@ export default function HeaderMegaMenu() {
                 onClose={closeDrawer}
                 size="100%"
                 padding="md"
-                title={<Trans>Navegação</Trans>}
+                title="Navegação"
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
@@ -290,7 +263,7 @@ export default function HeaderMegaMenu() {
                         href="/"
                         className={classes.link}
                     >
-                        <Trans>Início</Trans>
+                        Início
                     </a>
                     <UnstyledButton
                         className={classes.link}
@@ -301,7 +274,7 @@ export default function HeaderMegaMenu() {
                                 component="span"
                                 mr={5}
                             >
-                                <Trans>Soluções</Trans>
+                                Soluções
                             </Box>
                             <IconChevronDown
                                 style={{ width: rem(16), height: rem(16) }}
@@ -314,13 +287,13 @@ export default function HeaderMegaMenu() {
                         href="/about"
                         className={classes.link}
                     >
-                        <Trans>Sobre</Trans>
+                        Sobre
                     </a>
                     <a
                         href="/contact"
                         className={classes.link}
                     >
-                        <Trans>Contato</Trans>
+                        Contato
                     </a>
 
                     <Group
@@ -337,7 +310,7 @@ export default function HeaderMegaMenu() {
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            <Trans>Agendar Diagnóstico</Trans>
+                            Agendar Diagnóstico
                         </Button>
                     </Group>
                 </ScrollArea>

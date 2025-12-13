@@ -1,53 +1,52 @@
 import { Box, Title, Text, Container, Table, Badge, Group, ThemeIcon, rem, Button } from '@mantine/core'
 import { IconCheck, IconX, IconArrowRight } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 const comparisons = [
     {
         id: 'diagnosis',
-        featureKey: 'Diagnóstico profundo antes de propor soluções',
+        feature: 'Diagnóstico profundo antes de propor soluções',
         riligar: true,
         others: false,
     },
     {
         id: 'process',
-        featureKey: 'Redesenho de processos antes da automação',
+        feature: 'Redesenho de processos antes da automação',
         riligar: true,
         others: false,
     },
     {
         id: 'results',
-        featureKey: 'Foco em resultados de negócio mensuráveis',
+        feature: 'Foco em resultados de negócio mensuráveis',
         riligar: true,
         others: false,
     },
     {
         id: 'partnership',
-        featureKey: 'Parceria de transformação (não apenas fornecimento)',
+        feature: 'Parceria de transformação (não apenas fornecimento)',
         riligar: true,
         others: false,
     },
     {
         id: 'speed',
-        featureKey: 'Iterações rápidas (2-3 semanas para primeiros resultados)',
+        feature: 'Iterações rápidas (2-3 semanas para primeiros resultados)',
         riligar: true,
         others: false,
     },
     {
         id: 'transparency',
-        featureKey: 'Transparência total (sem taxas escondidas)',
+        feature: 'Transparência total (sem taxas escondidas)',
         riligar: true,
         others: false,
     },
     {
         id: 'tech-as-tool',
-        featureKey: 'Tecnologia como ferramenta (não como objetivo)',
+        feature: 'Tecnologia como ferramenta (não como objetivo)',
         riligar: true,
         others: false,
     },
     {
         id: 'personal',
-        featureKey: 'Atenção pessoal dedicada a cada projeto',
+        feature: 'Atenção pessoal dedicada a cada projeto',
         riligar: true,
         others: false,
     },
@@ -72,7 +71,7 @@ export default function Comparison() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>O Diferencial Riligar</Trans>
+                        O Diferencial Riligar
                     </Badge>
                 </Group>
 
@@ -82,7 +81,7 @@ export default function Comparison() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Por Que Escolher a Riligar?</Trans>
+                    Por Que Escolher a Riligar?
                 </Title>
 
                 <Text
@@ -92,10 +91,8 @@ export default function Comparison() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Não somos apenas mais uma agência de desenvolvimento. Somos um time focado que entrega
-                        transformações — não apenas código. Veja o que nos diferencia.
-                    </Trans>
+                    Não somos apenas mais uma agência de desenvolvimento. Somos um time focado que entrega
+                    transformações — não apenas código. Veja o que nos diferencia.
                 </Text>
 
                 <Box
@@ -108,9 +105,7 @@ export default function Comparison() {
                     <Table highlightOnHover>
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th style={{ width: '50%' }}>
-                                    <Trans>Diferencial</Trans>
-                                </Table.Th>
+                                <Table.Th style={{ width: '50%' }}>Diferencial</Table.Th>
                                 <Table.Th style={{ textAlign: 'center', width: '25%' }}>
                                     <Text
                                         fw={700}
@@ -125,7 +120,7 @@ export default function Comparison() {
                                         fw={600}
                                         c="dimmed"
                                     >
-                                        <Trans>Agências Típicas</Trans>
+                                        Agências Típicas
                                     </Text>
                                 </Table.Th>
                             </Table.Tr>
@@ -134,9 +129,7 @@ export default function Comparison() {
                             {comparisons.map(item => (
                                 <Table.Tr key={item.id}>
                                     <Table.Td>
-                                        <Text size="sm">
-                                            <Trans>{item.featureKey}</Trans>
-                                        </Text>
+                                        <Text size="sm">{item.feature}</Text>
                                     </Table.Td>
                                     <Table.Td style={{ textAlign: 'center' }}>
                                         {item.riligar ? (
@@ -205,11 +198,9 @@ export default function Comparison() {
                     mt="xl"
                     mb="lg"
                 >
-                    <Trans>
-                        Focamos no que importa: resolver seus problemas eficientemente com soluções que funcionam. Sem
-                        burocracia, sem equipes inchadas, sem maximizar horas faturáveis — apenas trabalho honesto e
-                        especializado.
-                    </Trans>
+                    Focamos no que importa: resolver seus problemas eficientemente com soluções que funcionam. Sem
+                    burocracia, sem equipes inchadas, sem maximizar horas faturáveis — apenas trabalho honesto e
+                    especializado.
                 </Text>
 
                 <Group
@@ -223,7 +214,7 @@ export default function Comparison() {
                         variant="light"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                     >
-                        <Trans>Veja Como Trabalhamos</Trans>
+                        Veja Como Trabalhamos
                     </Button>
                 </Group>
             </Container>

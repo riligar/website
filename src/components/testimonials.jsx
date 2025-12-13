@@ -1,6 +1,5 @@
 import { Box, Title, Text, Card, SimpleGrid, Avatar, Group, Rating, Container, Badge, Button, rem } from '@mantine/core'
 import { IconQuote, IconArrowRight } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 const testimonials = [
     {
@@ -9,8 +8,7 @@ const testimonials = [
         role: 'Sócia-Diretora',
         company: 'Escritório de Advocacia',
         rating: 5,
-        textKey:
-            'Achávamos que precisávamos automatizar a entrada de leads. O diagnóstico revelou que nosso problema real era o processo de qualificação. Depois do redesenho, economizamos horas por dia e os leads certos chegam direto ao advogado certo.',
+        text: 'Achávamos que precisávamos automatizar a entrada de leads. O diagnóstico revelou que nosso problema real era o processo de qualificação. Depois do redesenho, economizamos horas por dia e os leads certos chegam direto ao advogado certo.',
         avatar: 'AS',
     },
     {
@@ -19,8 +17,7 @@ const testimonials = [
         role: 'Diretor de Operações',
         company: 'Rede de Casas de Repouso',
         rating: 5,
-        textKey:
-            'Queríamos automatizar planilhas de inventário. Eles descobriram que não tínhamos protocolos de recompra e vendas prometia entregas sem checar estoque. Resultado depois do redesenho: $100K economizados por ano.',
+        text: 'Queríamos automatizar planilhas de inventário. Eles descobriram que não tínhamos protocolos de recompra e vendas prometia entregas sem checar estoque. Resultado depois do redesenho: $100K economizados por ano.',
         avatar: 'CM',
     },
     {
@@ -29,8 +26,7 @@ const testimonials = [
         role: 'CEO',
         company: 'E-commerce',
         rating: 5,
-        textKey:
-            'Tomávamos decisões baseadas em planilhas desatualizadas. Criaram visibilidade completa do pipeline de vendas — não automatizando o existente, mas redesenhando como a informação deveria fluir. Agora temos previsibilidade de receita.',
+        text: 'Tomávamos decisões baseadas em planilhas desatualizadas. Criaram visibilidade completa do pipeline de vendas — não automatizando o existente, mas redesenhando como a informação deveria fluir. Agora temos previsibilidade de receita.',
         avatar: 'FC',
     },
     {
@@ -39,8 +35,7 @@ const testimonials = [
         role: 'Sócio-Fundador',
         company: 'Escritório de Contabilidade',
         rating: 5,
-        textKey:
-            'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Redesenharam nossa comunicação inteira. A automação foi mínima; o impacto foi enorme. Agora clientes elogiam proativamente.',
+        text: 'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Redesenharam nossa comunicação inteira. A automação foi mínima; o impacto foi enorme. Agora clientes elogiam proativamente.',
         avatar: 'RA',
     },
     {
@@ -49,8 +44,7 @@ const testimonials = [
         role: 'Diretora Administrativa',
         company: 'Indústria Têxtil',
         rating: 5,
-        textKey:
-            'Pensávamos que nosso problema era tecnologia ultrapassada. O diagnóstico mostrou que eram processos manuais desnecessários. Com redesenho + automação inteligente, reduzimos tempo de produção em 35%.',
+        text: 'Pensávamos que nosso problema era tecnologia ultrapassada. O diagnóstico mostrou que eram processos manuais desnecessários. Com redesenho + automação inteligente, reduzimos tempo de produção em 35%.',
         avatar: 'PS',
     },
     {
@@ -59,8 +53,7 @@ const testimonials = [
         role: 'Fundador',
         company: 'Startup Tech',
         rating: 5,
-        textKey:
-            'Como startup, precisávamos de um parceiro que movesse rápido sem quebrar nada. Entregaram exatamente isso. Em 3 semanas já víamos resultado. A abordagem de diagnóstico primeiro fez toda a diferença.',
+        text: 'Como startup, precisávamos de um parceiro que movesse rápido sem quebrar nada. Entregaram exatamente isso. Em 3 semanas já víamos resultado. A abordagem de diagnóstico primeiro fez toda a diferença.',
         avatar: 'ML',
     },
 ]
@@ -81,7 +74,7 @@ export default function Testimonials() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>O Que Nossos Clientes Dizem</Trans>
+                        O Que Nossos Clientes Dizem
                     </Badge>
                 </Group>
 
@@ -91,7 +84,7 @@ export default function Testimonials() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Empresas Que Transformamos</Trans>
+                    Empresas Que Transformamos
                 </Title>
 
                 <Text
@@ -101,10 +94,7 @@ export default function Testimonials() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e
-                        transformação.
-                    </Trans>
+                    Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e transformação.
                 </Text>
 
                 <SimpleGrid
@@ -129,7 +119,7 @@ export default function Testimonials() {
                                 c="dimmed"
                                 style={{ flex: 1 }}
                             >
-                                <Trans>{testimonial.textKey}</Trans>
+                                {testimonial.text}
                             </Text>
 
                             <Box mt="md">
@@ -186,7 +176,7 @@ export default function Testimonials() {
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                     >
-                        <Trans>Ler Mais Histórias</Trans>
+                        Ler Mais Histórias
                     </Button>
                 </Group>
             </Container>

@@ -1,11 +1,9 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function AIIntegrationCTA() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _("Hi! I'm interested in integrating AI capabilities into our existing systems. I'd like to discuss NLP, document processing, or intelligent automation.")
+        'Olá! Tenho interesse em integrar capacidades de IA nos nossos sistemas existentes. Gostaria de discutir NLP, processamento de documentos ou automação inteligente.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -23,7 +21,7 @@ export default function AIIntegrationCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Ready to Add AI to Your Systems?</Trans>
+                    Ready to Add AI to Your Systems?
                 </Title>
                 <Text
                     size="lg"
@@ -33,10 +31,8 @@ export default function AIIntegrationCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Let's explore how AI can enhance your existing applications. We'll identify opportunities,
-                        design the integration, and deliver measurable results.
-                    </Trans>
+                    Let's explore how AI can enhance your existing applications. We'll identify opportunities, design
+                    the integration, and deliver measurable results.
                 </Text>
                 <Group
                     justify="center"
@@ -50,7 +46,7 @@ export default function AIIntegrationCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Start AI Integration Project</Trans>
+                        Start AI Integration Project
                     </Button>
                 </Group>
                 <Text
@@ -59,10 +55,8 @@ export default function AIIntegrationCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    <Trans>
-                        Most AI integration projects start with a proof-of-concept to validate the approach before full
-                        deployment.
-                    </Trans>
+                    Most AI integration projects start with a proof-of-concept to validate the approach before full
+                    deployment.
                 </Text>
             </Container>
         </Box>

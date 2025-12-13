@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconSpeedboat, IconUsers, IconChartLine, IconThumbUp } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const metrics = [
     {
@@ -46,7 +46,7 @@ export default function SalesforceResults() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>The Impact of Custom Salesforce Development</Trans>
+                    The Impact of Custom Salesforce Development
                 </Title>
 
                 <Text
@@ -57,7 +57,7 @@ export default function SalesforceResults() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>Well-built Salesforce customizations deliver measurable results—increased productivity, better data quality, and higher user satisfaction.</Trans>
+                    Well-built Salesforce customizations deliver measurable results—increased productivity, better data quality, and higher user satisfaction.
                 </Text>
 
                 <SimpleGrid
@@ -105,13 +105,13 @@ export default function SalesforceResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{metric.labelKey}</Trans>
+                                {metric.labelKey}
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                <Trans>{metric.descriptionKey}</Trans>
+                                {metric.descriptionKey}
                             </Text>
                         </Paper>
                     ))}
@@ -131,7 +131,7 @@ export default function SalesforceResults() {
                         ta="center"
                         mb="md"
                     >
-                    <Trans>Why RiLiGar for Salesforce?</Trans>
+                    Why RiLiGar for Salesforce?
                 </Title>
                     <Text
                         ta="center"
@@ -139,7 +139,7 @@ export default function SalesforceResults() {
                         maw={900}
                         mx="auto"
                     >
-                    <Trans>We bring 20+ years of software engineering expertise to Salesforce development. That means clean code, proper testing, version control, CI/CD, and maintainable solutions—not quick hacks that become tech debt. Your Salesforce org is too important for shortcuts.</Trans>
+                    We bring 20+ years of software engineering expertise to Salesforce development. That means clean code, proper testing, version control, CI/CD, and maintainable solutions—not quick hacks that become tech debt. Your Salesforce org is too important for shortcuts.
                 </Text>
                 </Box>
             </Container>

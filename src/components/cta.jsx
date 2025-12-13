@@ -1,11 +1,9 @@
 import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function CTA() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _('Olá! Gostaria de agendar uma conversa para diagnóstico do meu negócio. Podemos conversar?')
+        'Olá! Gostaria de agendar uma conversa para diagnóstico do meu negócio. Podemos conversar?'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -25,7 +23,7 @@ export default function CTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Qual Problema Está Custando Mais do Que Deveria?</Trans>
+                    Qual Problema Está Custando Mais do Que Deveria?
                 </Title>
 
                 <Text
@@ -36,11 +34,9 @@ export default function CTA() {
                     maw={600}
                     mx="auto"
                 >
-                    <Trans>
-                        A maioria dos empresários sabe que algo poderia funcionar melhor — mas não consegue identificar
-                        exatamente o quê. Em uma conversa de 30 minutos, vamos diagnosticar seus maiores gargalos e
-                        mostrar onde está o valor escondido no seu negócio.
-                    </Trans>
+                    A maioria dos empresários sabe que algo poderia funcionar melhor — mas não consegue identificar
+                    exatamente o quê. Em uma conversa de 30 minutos, vamos diagnosticar seus maiores gargalos e mostrar
+                    onde está o valor escondido no seu negócio.
                 </Text>
 
                 <Group
@@ -53,7 +49,7 @@ export default function CTA() {
                         size="lg"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Agendar Diagnóstico</Trans>
+                        Agendar Diagnóstico
                     </Button>
                     <Button
                         component="a"
@@ -64,7 +60,7 @@ export default function CTA() {
                         variant="outline"
                         leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Agendar Conversa</Trans>
+                        Agendar Conversa
                     </Button>
                 </Group>
 
@@ -85,7 +81,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>Diagnósticos Realizados</Trans>
+                            Diagnósticos Realizados
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -100,7 +96,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>Para Primeiros Resultados</Trans>
+                            Para Primeiros Resultados
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -115,7 +111,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>Sem Interrupção no Seu Negócio</Trans>
+                            Sem Interrupção no Seu Negócio
                         </Text>
                     </Box>
                 </SimpleGrid>

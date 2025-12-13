@@ -1,11 +1,10 @@
 import { Box, Title, Text, Accordion, Space } from '@mantine/core'
-import { Trans } from '@lingui/react/macro'
 
 const faq = [
     {
         id: 'diferenca',
-        questionKey: 'Qual a diferença entre a RiLiGar e uma agência de automação tradicional?',
-        answerKey: `A maioria das agências começa perguntando "o que você quer automatizar?" — nós perguntamos "o que está impedindo seu negócio de atingir seus objetivos?". Essa diferença é fundamental.
+        question: 'Qual a diferença entre a RiLiGar e uma agência de automação tradicional?',
+        answer: `A maioria das agências começa perguntando "o que você quer automatizar?" — nós perguntamos "o que está impedindo seu negócio de atingir seus objetivos?". Essa diferença é fundamental.
       <br/>
       <br/>
       Não vendemos ferramentas ou tecnologias. Diagnosticamos problemas de negócio, redesenhamos processos para serem mais eficazes, e só então escolhemos a tecnologia certa para habilitar a solução. Muitas vezes, um processo ruim automatizado ainda é um processo ruim — só mais rápido.
@@ -15,8 +14,8 @@ const faq = [
     },
     {
         id: 'diagnostico',
-        questionKey: 'Como funciona o diagnóstico profundo?',
-        answerKey: `Começamos com uma conversa de 30 minutos para entender seu negócio — não uma reunião de vendas, mas uma sessão de diagnóstico. Fazemos perguntas que vão além do óbvio: onde o tempo está sendo gasto? Quais decisões são tomadas com base em achismo? O que acontece quando algo dá errado?
+        question: 'Como funciona o diagnóstico profundo?',
+        answer: `Começamos com uma conversa de 30 minutos para entender seu negócio — não uma reunião de vendas, mas uma sessão de diagnóstico. Fazemos perguntas que vão além do óbvio: onde o tempo está sendo gasto? Quais decisões são tomadas com base em achismo? O que acontece quando algo dá errado?
       <br/>
       <br/>
       A partir daí, mapeamos seus processos, identificamos gargalos que você talvez não saiba que existem, e quantificamos o impacto financeiro de cada problema. Só depois de entender profundamente a situação é que propomos soluções.
@@ -26,8 +25,8 @@ const faq = [
     },
     {
         id: 'redesenho',
-        questionKey: 'Por que redesenhar processos antes de automatizar?',
-        answerKey: `Imagine automatizar um processo de inventário que está fundamentalmente quebrado — você vai fazer besteira mais rápido. Vimos isso acontecer: uma rede de casas de repouso queria automatizar planilhas de estoque, mas descobrimos que não tinham protocolos de recompra, decisões eram ad-hoc, e vendas prometiam entregas sem checar estoque.
+        question: 'Por que redesenhar processos antes de automatizar?',
+        answer: `Imagine automatizar um processo de inventário que está fundamentalmente quebrado — você vai fazer besteira mais rápido. Vimos isso acontecer: uma rede de casas de repouso queria automatizar planilhas de estoque, mas descobrimos que não tinham protocolos de recompra, decisões eram ad-hoc, e vendas prometiam entregas sem checar estoque.
       <br/>
       <br/>
       A automação seria inútil sem primeiro redesenhar o processo. Depois de estabelecer pontos de recompra claros, níveis de aprovação, e visibilidade completa — aí sim a automação fez sentido. O resultado: $100K economizados por ano.
@@ -37,8 +36,8 @@ const faq = [
     },
     {
         id: 'impacto',
-        questionKey: 'Como vocês medem o sucesso de um projeto?',
-        answerKey: `Não medimos sucesso por linhas de código, funcionalidades entregues ou horas trabalhadas. Medimos por impacto de negócio: aumento de receita, redução de custos, vantagens competitivas criadas.
+        question: 'Como vocês medem o sucesso de um projeto?',
+        answer: `Não medimos sucesso por linhas de código, funcionalidades entregues ou horas trabalhadas. Medimos por impacto de negócio: aumento de receita, redução de custos, vantagens competitivas criadas.
       <br/>
       <br/>
       Antes de começar qualquer projeto, definimos métricas claras de sucesso junto com você. Pode ser: "reduzir tempo de processamento de leads de 4 horas para 4 minutos", "eliminar $50K em desperdício de inventário", ou "aumentar conversão de leads em 25%".
@@ -48,8 +47,8 @@ const faq = [
     },
     {
         id: 'prazo',
-        questionKey: 'Quanto tempo leva para ver resultados?',
-        answerKey: `Depende da complexidade, mas nossa abordagem é mostrar valor rapidamente. Muitos clientes começam a ver resultados em 2-3 semanas, mesmo que a solução completa leve mais tempo.
+        question: 'Quanto tempo leva para ver resultados?',
+        answer: `Depende da complexidade, mas nossa abordagem é mostrar valor rapidamente. Muitos clientes começam a ver resultados em 2-3 semanas, mesmo que a solução completa leve mais tempo.
       <br/>
       <br/>
       Trabalhamos em ciclos iterativos: diagnosticamos, implementamos uma parte, medimos resultados, ajustamos, e repetimos. Isso significa que você não precisa esperar meses para saber se a abordagem está funcionando.
@@ -59,8 +58,8 @@ const faq = [
     },
     {
         id: 'investimento',
-        questionKey: 'Qual o investimento típico?',
-        answerKey: `O investimento varia conforme a complexidade do problema e o tamanho da transformação. Mas a pergunta certa não é "quanto custa?" — é "qual o retorno esperado?"
+        question: 'Qual o investimento típico?',
+        answer: `O investimento varia conforme a complexidade do problema e o tamanho da transformação. Mas a pergunta certa não é "quanto custa?" — é "qual o retorno esperado?"
       <br/>
       <br/>
       Se uma solução de $30K gera $100K em economia ou receita adicional por ano, o payback é de 4 meses. Trabalhamos para que cada projeto tenha um ROI claro e mensurável.
@@ -70,8 +69,8 @@ const faq = [
     },
     {
         id: 'parceria',
-        questionKey: 'O que significa "parceria de transformação"?',
-        answerKey: `Não somos fornecedores que entregam um projeto e desaparecem. Somos parceiros no sucesso do seu negócio. Isso significa:
+        question: 'O que significa "parceria de transformação"?',
+        answer: `Não somos fornecedores que entregam um projeto e desaparecem. Somos parceiros no sucesso do seu negócio. Isso significa:
       <br/>
       <br/>
       → Acompanhamos resultados depois da implementação<br/>
@@ -84,8 +83,8 @@ const faq = [
     },
     {
         id: 'ai',
-        questionKey: 'Vocês usam IA? Como?',
-        answerKey: `Sim, usamos IA quando faz sentido — mas IA é um meio, não um fim. Não vendemos "IA" como produto; usamos tecnologias de IA (incluindo agentes autônomos, processamento de linguagem natural, e automação inteligente) como ferramentas para resolver problemas de negócio.
+        question: 'Vocês usam IA? Como?',
+        answer: `Sim, usamos IA quando faz sentido — mas IA é um meio, não um fim. Não vendemos "IA" como produto; usamos tecnologias de IA (incluindo agentes autônomos, processamento de linguagem natural, e automação inteligente) como ferramentas para resolver problemas de negócio.
       <br/>
       <br/>
       Por exemplo: para um escritório de contabilidade, usamos IA para analisar comunicações com clientes e identificar padrões de insatisfação. Mas a solução não era "implementar IA" — era melhorar a comunicação com clientes. A IA foi só o enabler.
@@ -95,8 +94,8 @@ const faq = [
     },
     {
         id: 'seguranca',
-        questionKey: 'Como garantem a segurança e qualidade?',
-        answerKey: `Segurança e qualidade são inegociáveis. Todo código passa por revisão rigorosa, testes automatizados, e segue melhores práticas de desenvolvimento.
+        question: 'Como garantem a segurança e qualidade?',
+        answer: `Segurança e qualidade são inegociáveis. Todo código passa por revisão rigorosa, testes automatizados, e segue melhores práticas de desenvolvimento.
       <br/>
       <br/>
       Para segurança: criptografia de dados sensíveis, controles de acesso granulares, auditorias regulares, e conformidade com padrões do setor. Seus dados ficam protegidos.
@@ -106,8 +105,8 @@ const faq = [
     },
     {
         id: 'comecar',
-        questionKey: 'Como começo?',
-        answerKey: `Simples: agende uma conversa de diagnóstico. Em 30 minutos, vamos:
+        question: 'Como começo?',
+        answer: `Simples: agende uma conversa de diagnóstico. Em 30 minutos, vamos:
       <br/>
       <br/>
       → Entender seus principais desafios<br/>
@@ -130,7 +129,7 @@ export default function Faq() {
                 ta="center"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                <Trans>Perguntas Frequentes</Trans>
+                Perguntas Frequentes
             </Title>
 
             <Text
@@ -138,7 +137,7 @@ export default function Faq() {
                 ta="center"
                 mt="md"
             >
-                <Trans>Tudo o que você precisa saber sobre trabalhar com a RiLiGar</Trans>
+                Tudo o que você precisa saber sobre trabalhar com a RiLiGar
             </Text>
             <Space h="lg" />
             <Accordion variant="separated">
@@ -147,14 +146,12 @@ export default function Faq() {
                         key={item.id}
                         value={item.id}
                     >
-                        <Accordion.Control>
-                            <Trans>{item.questionKey}</Trans>
-                        </Accordion.Control>
+                        <Accordion.Control>{item.question}</Accordion.Control>
                         <Accordion.Panel>
                             <Text
                                 size="sm"
                                 c="dimmed"
-                                dangerouslySetInnerHTML={{ __html: item.answerKey }}
+                                dangerouslySetInnerHTML={{ __html: item.answer }}
                             />
                         </Accordion.Panel>
                     </Accordion.Item>

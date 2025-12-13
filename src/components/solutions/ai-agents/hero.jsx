@@ -1,6 +1,6 @@
 import { Title, Text, Container, Box, Badge, Group, Button, rem, List, ThemeIcon } from '@mantine/core'
 import { IconRobot, IconCheck, IconMessageCircle } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 export default function AIAgentsHero() {
     return (
@@ -20,7 +20,7 @@ export default function AIAgentsHero() {
                         size="xl"
                         leftSection={<IconRobot style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        <Trans>AI Agents</Trans>
+                        AI Agents
                     </Badge>
                 </Group>
 
@@ -31,9 +31,9 @@ export default function AIAgentsHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>
+                    
                         Autonomous AI Agents That Work <br /> While You Focus on Growth
-                    </Trans>
+                    
                 </Title>
 
                 <Text
@@ -45,10 +45,10 @@ export default function AIAgentsHero() {
                     mb="xl"
                     style={{ lineHeight: 1.6 }}
                 >
-                    <Trans>
+                    
                         Deploy intelligent agents that understand context, make decisions, learn from interactions, and
                         execute tasks autonomously. Available 24/7, scalable instantly, improving continuously.
-                    </Trans>
+                    
                 </Text>
 
                 <List
@@ -70,33 +70,33 @@ export default function AIAgentsHero() {
                 >
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Autonomous Decision-Making:</strong> Agents that understand context and act
                                 independently
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>24/7 Operation:</strong> Never sleep, never take breaks, always consistent
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Continuous Learning:</strong> Get smarter with every interaction and feedback
                                 loop
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                     <List.Item>
                         <Text component="span">
-                            <Trans>
+                            
                                 <strong>Instant Scalability:</strong> Handle 10 or 10,000 tasks simultaneously without
                                 adding headcount
-                            </Trans>
+                            
                         </Text>
                     </List.Item>
                 </List>
@@ -109,7 +109,7 @@ export default function AIAgentsHero() {
                         size="xl"
                         leftSection={<IconMessageCircle style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Discuss Your Use Case</Trans>
+                        Discuss Your Use Case
                     </Button>
                 </Group>
             </Container>

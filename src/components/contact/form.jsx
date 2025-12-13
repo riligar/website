@@ -1,11 +1,9 @@
 import { Box, Title, Text, Container, Paper, Group, Button, rem } from '@mantine/core'
 import { IconBrandWhatsapp, IconBrandLinkedin } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function ContactForm() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.')
+        'Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -29,7 +27,7 @@ export default function ContactForm() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Agende Seu Diagnóstico</Trans>
+                        Agende Seu Diagnóstico
                     </Title>
 
                     <Text
@@ -40,10 +38,8 @@ export default function ContactForm() {
                         maw={600}
                         mx="auto"
                     >
-                        <Trans>
-                            Em 30 minutos, vamos entender seus principais desafios, identificar onde pode haver valor
-                            escondido, e discutir se faz sentido trabalharmos juntos. Sem compromisso.
-                        </Trans>
+                        Em 30 minutos, vamos entender seus principais desafios, identificar onde pode haver valor
+                        escondido, e discutir se faz sentido trabalharmos juntos. Sem compromisso.
                     </Text>
 
                     <Group
@@ -59,7 +55,7 @@ export default function ContactForm() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Trans>Agendar pelo WhatsApp</Trans>
+                            Agendar pelo WhatsApp
                         </Button>
                         {/* <Button
                             size="lg"
@@ -70,7 +66,7 @@ export default function ContactForm() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Trans>Mensagem no LinkedIn</Trans>
+                            Mensagem no LinkedIn
                         </Button> */}
                     </Group>
 
@@ -80,7 +76,7 @@ export default function ContactForm() {
                         ta="center"
                         mt="xl"
                     >
-                        <Trans>Normalmente respondo em até 24 horas. Ansioso para conhecer seu negócio!</Trans>
+                        Normalmente respondo em até 24 horas. Ansioso para conhecer seu negócio!
                     </Text>
                 </Paper>
 
@@ -98,13 +94,13 @@ export default function ContactForm() {
                         fw={600}
                         mb="xs"
                     >
-                        <Trans>Baseado no Brasil 🇧🇷 | Atendendo Clientes no Mundo Todo 🌎</Trans>
+                        Baseado no Brasil 🇧🇷 | Atendendo Clientes no Mundo Todo 🌎
                     </Text>
                     <Text
                         size="sm"
                         c="dimmed"
                     >
-                        <Trans>Trabalho remoto • Flexibilidade de horários • Comunicação clara</Trans>
+                        Trabalho remoto • Flexibilidade de horários • Comunicação clara
                     </Text>
                 </Box>
             </Container>

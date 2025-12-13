@@ -7,7 +7,7 @@ import {
     IconRobot,
     IconAutomation,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const capabilities = [
     {
@@ -67,7 +67,7 @@ export default function AIAgentsCapabilities() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>What Our AI Agents Can Do</Trans>
+                    What Our AI Agents Can Do
                 </Title>
 
                 <Text
@@ -78,10 +78,10 @@ export default function AIAgentsCapabilities() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         Beyond simple chatbots—these are intelligent systems that understand, reason, plan, and execute
                         complex tasks autonomously.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -113,13 +113,13 @@ export default function AIAgentsCapabilities() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{capability.titleKey}</Trans>
+                                {capability.titleKey}
                             </Text>
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                <Trans>{capability.descriptionKey}</Trans>
+                                {capability.descriptionKey}
                             </Text>
                         </Card>
                     ))}

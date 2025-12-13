@@ -1,6 +1,5 @@
 import { Box, Title, Text, Container, Timeline, ThemeIcon, rem } from '@mantine/core'
 import { IconMessageCircle, IconClipboardCheck, IconChecklist, IconRocket } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
 
 export default function ContactProcess() {
     return (
@@ -11,7 +10,7 @@ export default function ContactProcess() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>How We'll Work Together</Trans>
+                    Como Vamos Trabalhar Juntos
                 </Title>
 
                 <Text
@@ -21,10 +20,8 @@ export default function ContactProcess() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        From first contact to project launch, here's the simple process we follow to ensure your
-                        success.
-                    </Trans>
+                    Do primeiro contato ao lançamento do projeto, esse é o processo simples que seguimos para garantir
+                    seu sucesso.
                 </Text>
 
                 <Timeline
@@ -42,18 +39,16 @@ export default function ContactProcess() {
                                 <IconMessageCircle style={{ width: rem(24), height: rem(24) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Initial Conversation</Trans>}
+                        title="Conversa Inicial"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                             mt={4}
                         >
-                            <Trans>
-                                We'll have a free consultation call to discuss your challenges, goals, and vision. I'll
-                                ask questions to understand your needs and share initial thoughts on potential
-                                solutions.
-                            </Trans>
+                            Teremos uma consulta gratuita para discutir seus desafios, objetivos e visão. Farei
+                            perguntas para entender suas necessidades e compartilhar pensamentos iniciais sobre
+                            possíveis soluções.
                         </Text>
                     </Timeline.Item>
 
@@ -67,18 +62,16 @@ export default function ContactProcess() {
                                 <IconClipboardCheck style={{ width: rem(24), height: rem(24) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Proposal & Planning</Trans>}
+                        title="Proposta e Planejamento"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                             mt={4}
                         >
-                            <Trans>
-                                I'll provide a detailed proposal outlining the recommended solution, timeline, and
-                                investment. We'll refine the plan together until it perfectly fits your needs and
-                                budget.
-                            </Trans>
+                            Fornecerei uma proposta detalhada descrevendo a solução recomendada, cronograma e
+                            investimento. Refinamos o plano juntos até que se encaixe perfeitamente nas suas
+                            necessidades e orçamento.
                         </Text>
                     </Timeline.Item>
 
@@ -92,18 +85,16 @@ export default function ContactProcess() {
                                 <IconChecklist style={{ width: rem(24), height: rem(24) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Agreement & Kickoff</Trans>}
+                        title="Acordo e Kickoff"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                             mt={4}
                         >
-                            <Trans>
-                                Once we agree on the approach, we'll formalize the partnership and schedule a detailed
-                                kickoff meeting. This is where we dive deep into requirements and set clear
-                                expectations.
-                            </Trans>
+                            Uma vez que concordarmos com a abordagem, formalizaremos a parceria e agendaremos uma
+                            reunião detalhada de kickoff. É onde mergulhamos nos requisitos e definimos expectativas
+                            claras.
                         </Text>
                     </Timeline.Item>
 
@@ -117,17 +108,15 @@ export default function ContactProcess() {
                                 <IconRocket style={{ width: rem(24), height: rem(24) }} />
                             </ThemeIcon>
                         }
-                        title={<Trans>Development & Delivery</Trans>}
+                        title="Desenvolvimento e Entrega"
                     >
                         <Text
                             c="dimmed"
                             size="sm"
                             mt={4}
                         >
-                            <Trans>
-                                I'll start building your solution with regular check-ins and demos. You'll see progress
-                                constantly and have opportunities to provide feedback at every stage until launch.
-                            </Trans>
+                            Começarei a construir sua solução com check-ins regulares e demos. Você verá o progresso
+                            constantemente e terá oportunidades para fornecer feedback em cada etapa até o lançamento.
                         </Text>
                     </Timeline.Item>
                 </Timeline>

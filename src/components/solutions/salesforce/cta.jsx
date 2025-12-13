@@ -1,11 +1,9 @@
 import { Box, Title, Text, Button, Group, Container, rem } from '@mantine/core'
 import { IconRocket } from '@tabler/icons-react'
-import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function SalesforceCTA() {
-    const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _("Hi! I'm interested in custom Salesforce development. I'd like to discuss Lightning Web Components, integrations, or automations for our Salesforce org.")
+        'Olá! Tenho interesse em desenvolvimento Salesforce personalizado. Gostaria de discutir componentes Lightning, integrações ou automações para nossa org Salesforce.'
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -25,7 +23,7 @@ export default function SalesforceCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Ready to Supercharge Your Salesforce?</Trans>
+                    Ready to Supercharge Your Salesforce?
                 </Title>
 
                 <Text
@@ -36,10 +34,8 @@ export default function SalesforceCTA() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>
-                        Let's discuss how custom development can transform your Salesforce org. Whether it's Lightning
-                        Web Components, integrations, or automation—we'll build exactly what your business needs.
-                    </Trans>
+                    Let's discuss how custom development can transform your Salesforce org. Whether it's Lightning Web
+                    Components, integrations, or automation—we'll build exactly what your business needs.
                 </Text>
 
                 <Group
@@ -54,7 +50,7 @@ export default function SalesforceCTA() {
                         size="xl"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Start Your Salesforce Project</Trans>
+                        Start Your Salesforce Project
                     </Button>
                 </Group>
 
@@ -64,9 +60,7 @@ export default function SalesforceCTA() {
                     ta="center"
                     mt="xl"
                 >
-                    <Trans>
-                        Most Salesforce projects deliver first results in 2-4 weeks with our agile development process.
-                    </Trans>
+                    Most Salesforce projects deliver first results in 2-4 weeks with our agile development process.
                 </Text>
             </Container>
         </Box>

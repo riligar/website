@@ -7,7 +7,7 @@ import {
     IconSettings,
     IconShield,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const capabilities = [
     {
@@ -67,7 +67,7 @@ export default function SalesforceCapabilities() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>What We Build for Salesforce</Trans>
+                    What We Build for Salesforce
                 </Title>
 
                 <Text
@@ -78,10 +78,10 @@ export default function SalesforceCapabilities() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>
+                    
                         From custom components to complex integrations—we build Salesforce solutions that fit your exact
                         business needs.
-                    </Trans>
+                    
                 </Text>
 
                 <SimpleGrid
@@ -113,13 +113,13 @@ export default function SalesforceCapabilities() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{capability.titleKey}</Trans>
+                                {capability.titleKey}
                             </Text>
                             <Text
                                 size="sm"
                                 c="dimmed"
                             >
-                                <Trans>{capability.descriptionKey}</Trans>
+                                {capability.descriptionKey}
                             </Text>
                         </Card>
                     ))}

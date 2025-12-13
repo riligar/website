@@ -8,7 +8,7 @@ import {
     IconApi,
     IconCheck,
 } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const techStack = [
     {
@@ -125,7 +125,7 @@ export default function AIAgentsTechStack() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>The Technology Behind Our AI Agents</Trans>
+                    The Technology Behind Our AI Agents
                 </Title>
 
                 <Text
@@ -136,7 +136,7 @@ export default function AIAgentsTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>We build AI Agents with cutting-edge technologies and battle-tested frameworks. Every technology choice is deliberate, proven in production, and optimized for reliability and performance.</Trans>
+                    We build AI Agents with cutting-edge technologies and battle-tested frameworks. Every technology choice is deliberate, proven in production, and optimized for reliability and performance.
                 </Text>
 
                 <SimpleGrid
@@ -168,7 +168,7 @@ export default function AIAgentsTechStack() {
                                         fz="lg"
                                         fw={600}
                                     >
-                    <Trans>{stack.category}</Trans>
+                    {stack.category}
                 </Text>
                                 </div>
                             </Group>
@@ -178,7 +178,7 @@ export default function AIAgentsTechStack() {
                                 c="dimmed"
                                 mb="md"
                             >
-                    <Trans>{stack.description}</Trans>
+                    {stack.description}
                 </Text>
 
                             <List
@@ -204,7 +204,7 @@ export default function AIAgentsTechStack() {
                                             size="sm"
                                             fw={500}
                                         >
-                                            <Trans>{tech}</Trans>
+                                            {tech}
                                         </Text>
                                     </List.Item>
                                 ))}
@@ -227,7 +227,7 @@ export default function AIAgentsTechStack() {
                         ta="center"
                         mb="md"
                     >
-                    <Trans>Why These Technologies Matter</Trans>
+                    Why These Technologies Matter
                 </Title>
                     <Text
                         ta="center"
@@ -235,7 +235,7 @@ export default function AIAgentsTechStack() {
                         maw={900}
                         mx="auto"
                     >
-                    <Trans>We don't chase trends—we use proven technologies that deliver results. With 20+ years of software engineering experience, we know how to architect systems that are maintainable, scalable, and cost-effective. Every agent we build is production-ready from day one, with robust error handling, monitoring, and security built in.</Trans>
+                    We don't chase trends—we use proven technologies that deliver results. With 20+ years of software engineering experience, we know how to architect systems that are maintainable, scalable, and cost-effective. Every agent we build is production-ready from day one, with robust error handling, monitoring, and security built in.
                 </Text>
                 </Box>
             </Container>

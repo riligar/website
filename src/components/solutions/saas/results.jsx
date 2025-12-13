@@ -1,6 +1,6 @@
 import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
 import { IconRocket, IconCoin, IconGauge, IconShield } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+
 
 const metrics = [
     { id: 'mvp', icon: IconRocket, value: '8-16 weeks', labelKey: 'MVP Delivery', descriptionKey: 'Launch your SaaS product fast' },
@@ -22,7 +22,7 @@ export default function SaaSResults() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Why Choose RiLiGar for SaaS?</Trans>
+                    Why Choose RiLiGar for SaaS?
                 </Title>
                 <Text
                     c="dimmed"
@@ -32,7 +32,7 @@ export default function SaaSResults() {
                     mx="auto"
                     mb={60}
                 >
-                    <Trans>Fast delivery, clean code, scalable architecture, and cost-effective infrastructure—all from experienced engineers.</Trans>
+                    Fast delivery, clean code, scalable architecture, and cost-effective infrastructure—all from experienced engineers.
                 </Text>
 
                 <SimpleGrid
@@ -80,13 +80,13 @@ export default function SaaSResults() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>{metric.labelKey}</Trans>
+                                {metric.labelKey}
                             </Text>
                             <Text
                                 size="xs"
                                 c="dimmed"
                             >
-                                <Trans>{metric.descriptionKey}</Trans>
+                                {metric.descriptionKey}
                             </Text>
                         </Paper>
                     ))}
