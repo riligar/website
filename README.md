@@ -1,7 +1,7 @@
-## RiLiGar - Password Management Solutions
+## RiLiGar - Website
 
 ### Usage
 
 - https://storyset.com/technology
 - https://tabler.io/icons
-- https://lingui.dev/ref/conf
+- https://llmstxt.org/
