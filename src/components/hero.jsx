@@ -24,7 +24,22 @@ export default function Hero() {
                         component="h1"
                         style={{ lineHeight: 1.2 }}
                     >
-                        Entendemos Seu Negócio Antes de Propor Soluções
+                        <Text
+                            component="span"
+                            inherit
+                            c="red"
+                        >
+                            Entendemos
+                        </Text>{' '}
+                        Seu Negócio{' '}
+                        <Text
+                            component="span"
+                            inherit
+                            c="red"
+                        >
+                            Antes
+                        </Text>{' '}
+                        de Propor Soluções
                     </Title>
                     <Text
                         size="lg"
@@ -143,7 +158,7 @@ export default function Hero() {
                         }}
                     >
                         <Image
-                            src="/image/home-001.svg"
+                            src="/image/home-hero.svg"
                             alt="RiLiGar Solutions"
                             style={{
                                 width: '100%',

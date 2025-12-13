@@ -1,171 +1,136 @@
-import {
-    Badge,
-    Group,
-    Title,
-    Text,
-    Box,
-    Stack,
-    Container,
-    SimpleGrid,
-    ThemeIcon,
-    Button,
-    rem,
-    Paper,
-} from '@mantine/core'
-import {
-    IconRocket,
-    IconBrain,
-    IconChartBar,
-    IconRefresh,
-    IconClock,
-    IconTrendingUp,
-    IconAlertTriangle,
-    IconCheck,
-    IconArrowRight,
-} from '@tabler/icons-react'
+import { Badge, Group, Title, Text, Box, Image, Stack, Flex, Grid, List, ThemeIcon, Button, rem } from '@mantine/core'
+import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
+import { useNavigate } from 'react-router-dom'
 
 const solutions = [
     {
-        id: 'diagnostico',
-        icon: IconBrain,
-        title: 'Diagnóstico de Processos',
-        problemStatement: 'Você não sabe exatamente onde está perdendo dinheiro.',
+        id: 'text-to-speech',
+        title: 'Text to Speech',
         description:
-            'Mapeamos seus processos atuais, identificamos gargalos invisíveis e quantificamos o impacto real no seu faturamento. Antes de automatizar qualquer coisa, entendemos onde está o problema.',
-        results: ['Mapeamento completo em 2 semanas', 'Relatório com ROI potencial', 'Priorização de ações'],
-        color: 'blue',
+            'Aplicação de texto para fala com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'IA', 'Áudio'],
     },
     {
-        id: 'automacao',
-        icon: IconRefresh,
-        title: 'Automação Inteligente',
-        problemStatement: 'Sua equipe gasta horas em tarefas que uma máquina faria em minutos.',
+        id: 'automation-hub',
+        title: 'Automation Hub',
         description:
-            'Criamos automações que eliminam trabalho manual, reduzem erros e liberam sua equipe para o que realmente importa: vender mais, atender melhor, inovar.',
-        results: ['Redução de 60-80% em tarefas manuais', 'Zero erros de digitação', 'Operação 24/7'],
-        color: 'green',
+            'Central de automações inteligentes para otimizar processos repetitivos. Elimine tarefas manuais e libere sua equipe para o que realmente importa.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'Integração'],
     },
     {
-        id: 'integracao',
-        icon: IconChartBar,
-        title: 'Integração de Sistemas',
-        problemStatement: 'Seus sistemas não conversam entre si. Dados duplicados, retrabalho constante.',
+        id: 'analytics-dashboard',
+        title: 'Analytics Dashboard',
         description:
-            'Conectamos suas ferramentas — CRM, ERP, WhatsApp, planilhas, e-commerce — para que informações fluam automaticamente, sem intervenção manual.',
-        results: ['Dados sincronizados em tempo real', 'Fim do "copia e cola"', 'Visão unificada do negócio'],
-        color: 'violet',
+            'Dashboards em tempo real para visualização de métricas críticas e tomada de decisão baseada em dados. Tenha visibilidade total do seu negócio.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'BI'],
     },
     {
-        id: 'ia',
-        icon: IconTrendingUp,
-        title: 'IA Aplicada ao Negócio',
-        problemStatement: 'Você ouve falar de IA todo dia, mas não sabe como aplicar no seu negócio.',
+        id: 'chatbot-ai',
+        title: 'Chatbot AI',
         description:
-            'Implementamos soluções práticas de IA: chatbots inteligentes, análise preditiva, processamento de documentos, assistentes virtuais que realmente funcionam.',
-        results: ['Atendimento automatizado 24/7', 'Análises que preveem tendências', 'Decisões baseadas em dados'],
-        color: 'orange',
+            'Assistentes virtuais inteligentes para atendimento e qualificação de leads 24/7. Nunca mais perca uma oportunidade por falta de resposta.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'WhatsApp'],
+    },
+    {
+        id: 'data-pipeline',
+        title: 'Data Pipeline',
+        description:
+            'Pipelines de dados automatizados para extração, transformação e carregamento de informações. Seus dados sempre atualizados e sincronizados.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['API', 'Dados'],
+    },
+    {
+        id: 'custom-platform',
+        title: 'Plataforma Sob Medida',
+        description:
+            'Desenvolvimento de plataformas personalizadas que se adaptam perfeitamente ao seu workflow. Tecnologia que trabalha do jeito que você precisa.',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'Mobile'],
     },
 ]
 
-function SolutionCard({ solution }) {
-    const Icon = solution.icon
+function SolutionCard({ solution, reversed }) {
+    const content = (
+        <Stack
+            gap="sm"
+            style={{ flex: 1 }}
+        >
+            <Text
+                fz="xl"
+                fw={700}
+            >
+                {solution.title}
+            </Text>
+            <Text
+                fz="sm"
+                c="dimmed"
+            >
+                {solution.description}
+            </Text>
+            <Group
+                gap="xs"
+                mt="xs"
+            >
+                {solution.tags.map(tag => (
+                    <Badge
+                        key={tag}
+                        variant="light"
+                        color="blue"
+                        size="sm"
+                        radius="sm"
+                    >
+                        {tag}
+                    </Badge>
+                ))}
+            </Group>
+        </Stack>
+    )
+
+    const image = (
+        <Box style={{ flex: 1 }}>
+            <Image
+                src={solution.image}
+                alt={solution.title}
+                radius="md"
+                style={{
+                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                }}
+                fallbackSrc="https://placehold.co/400x300?text=Solução"
+            />
+        </Box>
+    )
 
     return (
-        <Paper
-            p="xl"
-            radius="lg"
-            shadow="sm"
+        <Box
+            p={{ base: 'md', md: 'xl' }}
             style={{
+                background: 'var(--mantine-color-gray-0)',
+                borderRadius: 'var(--mantine-radius-lg)',
                 border: '1px solid var(--mantine-color-gray-2)',
-                transition: 'all 0.3s ease',
-                height: '100%',
             }}
-            className="solution-card"
         >
-            <Stack gap="md">
-                {/* Problem Statement - Ataca a dor */}
-                <Box
-                    p="md"
-                    style={{
-                        background: 'rgba(255, 107, 107, 0.08)',
-                        borderRadius: 'var(--mantine-radius-md)',
-                        borderLeft: '4px solid var(--mantine-color-red-6)',
-                    }}
-                >
-                    <Group gap="xs">
-                        <IconAlertTriangle
-                            style={{ width: rem(18), height: rem(18), color: 'var(--mantine-color-red-6)' }}
-                        />
-                        <Text
-                            size="sm"
-                            fw={600}
-                            c="red.7"
-                        >
-                            O Problema:
-                        </Text>
-                    </Group>
-                    <Text
-                        size="sm"
-                        mt="xs"
-                        style={{ fontStyle: 'italic' }}
-                    >
-                        "{solution.problemStatement}"
-                    </Text>
-                </Box>
-
-                {/* Icon and Title */}
-                <Group gap="md">
-                    <ThemeIcon
-                        size={48}
-                        radius="lg"
-                        variant="light"
-                        color={solution.color}
-                    >
-                        <Icon style={{ width: rem(28), height: rem(28) }} />
-                    </ThemeIcon>
-                    <Title order={3}>{solution.title}</Title>
-                </Group>
-
-                {/* Description */}
-                <Text
-                    c="dimmed"
-                    size="sm"
-                    style={{ lineHeight: 1.6 }}
-                >
-                    {solution.description}
-                </Text>
-
-                {/* Results */}
-                <Box
-                    p="md"
-                    style={{
-                        background: 'rgba(64, 192, 87, 0.08)',
-                        borderRadius: 'var(--mantine-radius-md)',
-                        borderLeft: '4px solid var(--mantine-color-green-6)',
-                    }}
-                >
-                    <Text
-                        size="sm"
-                        fw={600}
-                        c="green.7"
-                        mb="xs"
-                    >
-                        Resultados:
-                    </Text>
-                    <Stack gap={6}>
-                        {solution.results.map((result, index) => (
-                            <Group
-                                key={index}
-                                gap="xs"
-                            >
-                                <IconCheck style={{ width: rem(14), height: rem(14), color: 'green' }} />
-                                <Text size="sm">{result}</Text>
-                            </Group>
-                        ))}
-                    </Stack>
-                </Box>
-            </Stack>
-        </Paper>
+            <Flex
+                direction={{ base: 'column', md: reversed ? 'row-reverse' : 'row' }}
+                gap={{ base: 'lg', md: 'xl' }}
+                align="center"
+            >
+                {reversed ? (
+                    <>
+                        {image}
+                        {content}
+                    </>
+                ) : (
+                    <>
+                        {content}
+                        {image}
+                    </>
+                )}
+            </Flex>
+        </Box>
     )
 }
 
@@ -180,162 +145,166 @@ function SolutionsHero() {
             component="section"
             aria-label="Soluções Hero"
             mt={80}
-            mb={60}
+            mb={80}
         >
-            <Container size="lg">
-                {/* Badge */}
-                <Group
-                    justify="center"
-                    mb="md"
+            <Grid align="center">
+                <Grid.Col
+                    span={{ base: 12, sm: 6, md: 7 }}
+                    order={{ base: 2, sm: 2, md: 1 }}
                 >
-                    <Badge
-                        variant="filled"
-                        size="xl"
-                        leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
+                    <Title
+                        order={1}
+                        component="h1"
+                        style={{ lineHeight: 1.2 }}
                     >
-                        Soluções que Transformam
-                    </Badge>
-                </Group>
-
-                {/* Main Headline - Viral */}
-                <Title
-                    order={1}
-                    ta="center"
-                    size={{ base: 32, sm: 42, md: 52 }}
-                    style={{ lineHeight: 1.1 }}
-                    mb="xl"
-                >
-                    Seu Negócio Está{' '}
-                    <Text
-                        component="span"
-                        inherit
-                        c="red"
-                    >
-                        Sangrando Dinheiro
-                    </Text>{' '}
-                    Todos os Dias.
-                    <br />
-                    <Text
-                        component="span"
-                        inherit
-                        c="blue"
-                    >
-                        Você Só Não Sabe Onde.
-                    </Text>
-                </Title>
-
-                {/* Sub-headline */}
-                <Text
-                    size="xl"
-                    c="dimmed"
-                    ta="center"
-                    maw={800}
-                    mx="auto"
-                    style={{ lineHeight: 1.6 }}
-                    mb="xl"
-                >
-                    Processos manuais, sistemas desconectados, retrabalho constante, oportunidades perdidas — tudo isso
-                    custa caro. A maioria dos empresários não percebe porque está ocupado demais "apagando incêndios".
-                </Text>
-
-                {/* Pain Points - Quick hits */}
-                <SimpleGrid
-                    cols={{ base: 2, sm: 4 }}
-                    spacing="lg"
-                    mb={40}
-                >
-                    {[
-                        { icon: IconClock, text: 'Horas perdidas em planilhas' },
-                        { icon: IconRefresh, text: 'Mesma tarefa feita 10 vezes' },
-                        { icon: IconAlertTriangle, text: 'Erros que custam clientes' },
-                        { icon: IconChartBar, text: 'Decisões sem dados reais' },
-                    ].map((pain, index) => (
-                        <Box
-                            key={index}
-                            ta="center"
-                        >
-                            <ThemeIcon
-                                size={48}
-                                radius="xl"
-                                variant="light"
-                                color="red"
-                                mb="xs"
-                                mx="auto"
-                            >
-                                <pain.icon style={{ width: rem(24), height: rem(24) }} />
-                            </ThemeIcon>
-                            <Text
-                                size="sm"
-                                fw={500}
-                            >
-                                {pain.text}
-                            </Text>
-                        </Box>
-                    ))}
-                </SimpleGrid>
-
-                {/* Promise Statement */}
-                <Paper
-                    p="xl"
-                    radius="lg"
-                    mb={40}
-                    style={{
-                        background:
-                            'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%)',
-                        border: '1px solid var(--mantine-color-blue-2)',
-                    }}
-                >
-                    <Text
-                        size="lg"
-                        ta="center"
-                        fw={600}
-                    >
-                        🎯 Nós não vendemos tecnologia.{' '}
+                        Seu Negócio Está{' '}
                         <Text
                             component="span"
-                            c="blue"
                             inherit
+                            c="red"
                         >
-                            Vendemos resultados.
-                        </Text>
-                    </Text>
+                            Sangrando Dinheiro
+                        </Text>{' '}
+                        Todos os Dias
+                    </Title>
                     <Text
-                        size="md"
+                        size="lg"
                         c="dimmed"
-                        ta="center"
-                        mt="xs"
+                        mt="xl"
                     >
-                        Primeiro diagnosticamos, depois propomos. Se não encontrarmos oportunidades reais de melhoria,
-                        você não paga nada.
+                        Processos manuais, sistemas desconectados, retrabalho constante, oportunidades perdidas — tudo
+                        isso custa caro. A maioria dos empresários não percebe porque está ocupado demais "apagando
+                        incêndios".
                     </Text>
-                </Paper>
 
-                {/* CTA */}
-                <Group
-                    justify="center"
-                    gap="md"
+                    <List
+                        mt={40}
+                        spacing="lg"
+                        size="md"
+                        icon={
+                            <ThemeIcon
+                                size={24}
+                                radius="xl"
+                                variant="light"
+                            >
+                                <IconCheck
+                                    style={{ width: rem(14), height: rem(14) }}
+                                    stroke={2}
+                                />
+                            </ThemeIcon>
+                        }
+                    >
+                        <List.Item>
+                            <Text
+                                fw={600}
+                                component="span"
+                            >
+                                Diagnóstico Antes de Tudo
+                            </Text>
+                            <Text
+                                c="dimmed"
+                                size="sm"
+                                mt={4}
+                            >
+                                Identificamos onde está o problema antes de propor qualquer solução
+                            </Text>
+                        </List.Item>
+                        <List.Item>
+                            <Text
+                                fw={600}
+                                component="span"
+                            >
+                                Resultados Mensuráveis
+                            </Text>
+                            <Text
+                                c="dimmed"
+                                size="sm"
+                                mt={4}
+                            >
+                                Não vendemos tecnologia — vendemos ROI comprovado e impacto real
+                            </Text>
+                        </List.Item>
+                        <List.Item>
+                            <Text
+                                fw={600}
+                                component="span"
+                            >
+                                Soluções Sob Medida
+                            </Text>
+                            <Text
+                                c="dimmed"
+                                size="sm"
+                                mt={4}
+                            >
+                                Cada negócio é único — e a solução também precisa ser
+                            </Text>
+                        </List.Item>
+                    </List>
+
+                    <Group
+                        mt={40}
+                        gap="md"
+                        style={{ flexWrap: 'wrap' }}
+                    >
+                        <Button
+                            onClick={() => {
+                                // Se já está na home, faz scroll direto
+                                if (window.location.pathname === '/') {
+                                    const element = document.getElementById('contato')
+                                    if (element) {
+                                        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                                    }
+                                } else {
+                                    // Navega para home com hash
+                                    window.location.href = '/#contato'
+                                }
+                            }}
+                            size="lg"
+                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
+                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                        >
+                            Quero um Diagnóstico
+                        </Button>
+                        <Button
+                            component="a"
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            size="lg"
+                            variant="outline"
+                            leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
+                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                        >
+                            Falar no WhatsApp
+                        </Button>
+                    </Group>
+                </Grid.Col>
+
+                <Grid.Col
+                    span={{ base: 12, sm: 6, md: 5 }}
+                    order={{ base: 1, sm: 1, md: 2 }}
                 >
-                    <Button
-                        component="a"
-                        href="/contact"
-                        size="xl"
-                        leftSection={<IconRocket style={{ width: rem(22), height: rem(22) }} />}
+                    <Box
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            height: '100%',
+                        }}
                     >
-                        Quero um Diagnóstico Grátis
-                    </Button>
-                    <Button
-                        component="a"
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        size="xl"
-                        variant="outline"
-                        rightSection={<IconArrowRight style={{ width: rem(20), height: rem(20) }} />}
-                    >
-                        Falar no WhatsApp
-                    </Button>
-                </Group>
-            </Container>
+                        <Image
+                            src="/image/solutions-hero.svg"
+                            alt="Soluções RiLiGar"
+                            style={{
+                                width: '100%',
+                                maxWidth: '500px',
+                                height: 'auto',
+                            }}
+                            fallbackSrc="https://placehold.co/500x400?text=Soluções"
+                        />
+                    </Box>
+                </Grid.Col>
+            </Grid>
         </Box>
     )
 }
@@ -343,98 +312,60 @@ function SolutionsHero() {
 export default function Solutions() {
     return (
         <>
-            {/* Hero Section */}
+            {/* Hero Section - Similar ao da Home */}
             <SolutionsHero />
 
-            {/* Solutions Grid */}
+            {/* Solutions Cards - Layout Original */}
             <Box
                 component="section"
                 id="solucoes"
                 aria-label="Nossas Soluções"
                 py="xl"
             >
-                <Container size="xl">
-                    <Group
-                        justify="center"
-                        mb="md"
+                <Group justify="center">
+                    <Badge
+                        variant="filled"
+                        size="lg"
                     >
-                        <Badge
-                            variant="filled"
-                            size="lg"
-                        >
-                            O Que Fazemos
-                        </Badge>
-                    </Group>
+                        Nossas Soluções
+                    </Badge>
+                </Group>
 
-                    <Title
-                        order={2}
-                        ta="center"
-                        size={{ base: 28, sm: 32, md: 36 }}
-                        mb="md"
-                    >
-                        Soluções Sob Medida Para Cada Problema
-                    </Title>
+                <Title
+                    order={2}
+                    ta="center"
+                    mt="sm"
+                    size={{ base: 28, sm: 32, md: 36 }}
+                >
+                    Transformação Real Para Seu Negócio
+                </Title>
 
-                    <Text
-                        c="dimmed"
-                        ta="center"
-                        maw={700}
-                        mx="auto"
-                        mb={50}
-                    >
-                        Não aplicamos fórmulas prontas. Cada negócio é único — e sua solução também precisa ser.
-                    </Text>
+                <Text
+                    c="dimmed"
+                    ta="center"
+                    mt="md"
+                    maw={800}
+                    mx="auto"
+                    mb={50}
+                >
+                    Não aplicamos fórmulas prontas. Primeiro diagnosticamos, depois criamos soluções que geram impacto
+                    mensurável — não apenas economia de tempo, mas aumento de receita e vantagens competitivas.
+                </Text>
 
-                    <SimpleGrid
-                        cols={{ base: 1, sm: 2 }}
-                        spacing="xl"
-                    >
-                        {solutions.map(solution => (
-                            <SolutionCard
-                                key={solution.id}
-                                solution={solution}
-                            />
-                        ))}
-                    </SimpleGrid>
-
-                    {/* Final CTA */}
-                    <Box
-                        ta="center"
-                        mt={60}
-                    >
-                        <Text
-                            size="xl"
-                            fw={600}
-                            mb="md"
-                        >
-                            Não sabe qual solução precisa?{' '}
-                            <Text
-                                component="span"
-                                c="blue"
-                                inherit
-                            >
-                                Normal.
-                            </Text>
-                        </Text>
-                        <Text
-                            c="dimmed"
-                            mb="xl"
-                            maw={600}
-                            mx="auto"
-                        >
-                            É exatamente por isso que começamos com um diagnóstico. Em 30 minutos de conversa,
-                            identificamos onde estão as maiores oportunidades do seu negócio.
-                        </Text>
-                        <Button
-                            component="a"
-                            href="/contact"
-                            size="lg"
-                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
-                        >
-                            Agendar Diagnóstico Gratuito
-                        </Button>
-                    </Box>
-                </Container>
+                <Stack
+                    gap="lg"
+                    maw={900}
+                    mx="auto"
+                    px="md"
+                >
+                    {solutions.map((solution, index) => (
+                        <SolutionCard
+                            key={solution.id}
+                            solution={solution}
+                            reversed={index % 2 === 1}
+                        />
+                    ))}
+                </Stack>
             </Box>
         </>
     )
