@@ -10,12 +10,12 @@ import classes from './footer.module.css'
 const data = [
     {
         id: 'value',
-        titleKey: 'O Que Entregamos',
+        titleKey: 'Entregamos',
         links: [
-            { id: 'diagnostico', labelKey: 'Diagnóstico Profundo', link: '/about' },
-            { id: 'redesenho', labelKey: 'Redesenho de Processos', link: '/about' },
-            { id: 'resultados', labelKey: 'Resultados Mensuráveis', link: '/about' },
-            { id: 'parceria', labelKey: 'Parceria de Transformação', link: '/contact' },
+            { id: 'diagnostico', labelKey: 'Diagnóstico', link: '/about' },
+            { id: 'redesenho', labelKey: 'Redesenho', link: '/about' },
+            { id: 'resultados', labelKey: 'Resultados', link: '/about' },
+            { id: 'parceria', labelKey: 'Parceria', link: '/contact' },
         ],
     },
     {

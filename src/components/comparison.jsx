@@ -4,50 +4,50 @@ import { Trans } from '@lingui/react/macro'
 
 const comparisons = [
     {
-        id: 'engineers',
-        featureKey: 'Direct access to experienced engineers',
+        id: 'diagnosis',
+        featureKey: 'Diagnóstico profundo antes de propor soluções',
         riligar: true,
         others: false,
     },
     {
-        id: 'solutions',
-        featureKey: 'Solutions-first approach (not just code)',
+        id: 'process',
+        featureKey: 'Redesenho de processos antes da automação',
         riligar: true,
         others: false,
     },
     {
-        id: 'ai-agents',
-        featureKey: 'AI Agents deployment capability',
+        id: 'results',
+        featureKey: 'Foco em resultados de negócio mensuráveis',
         riligar: true,
         others: false,
     },
     {
-        id: 'iterations',
-        featureKey: 'Fast iterations (2-3 weeks to prototype)',
+        id: 'partnership',
+        featureKey: 'Parceria de transformação (não apenas fornecimento)',
         riligar: true,
         others: false,
     },
     {
-        id: 'code-quality',
-        featureKey: 'Clean, maintainable code standard',
+        id: 'speed',
+        featureKey: 'Iterações rápidas (2-3 semanas para primeiros resultados)',
         riligar: true,
         others: false,
     },
     {
-        id: 'pricing',
-        featureKey: 'Transparent pricing, no hidden fees',
+        id: 'transparency',
+        featureKey: 'Transparência total (sem taxas escondidas)',
         riligar: true,
         others: false,
     },
     {
-        id: 'expertise',
-        featureKey: 'Salesforce expertise + AI integration',
+        id: 'tech-as-tool',
+        featureKey: 'Tecnologia como ferramenta (não como objetivo)',
         riligar: true,
         others: false,
     },
     {
-        id: 'attention',
-        featureKey: 'Personal attention to every project',
+        id: 'personal',
+        featureKey: 'Atenção pessoal dedicada a cada projeto',
         riligar: true,
         others: false,
     },
@@ -57,7 +57,7 @@ export default function Comparison() {
     return (
         <Box
             component="section"
-            aria-label="Comparison with other agencies"
+            aria-label="Comparação com outras agências"
             py={80}
             style={{
                 background: 'linear-gradient(180deg, rgba(249, 250, 251, 1) 0%, rgba(255, 255, 255, 0) 100%)',
@@ -72,7 +72,7 @@ export default function Comparison() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>The RiLiGar Difference</Trans>
+                        <Trans>O Diferencial Riligar</Trans>
                     </Badge>
                 </Group>
 
@@ -82,7 +82,7 @@ export default function Comparison() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Why Choose RiLiGar?</Trans>
+                    <Trans>Por Que Escolher a Riligar?</Trans>
                 </Title>
 
                 <Text
@@ -93,8 +93,8 @@ export default function Comparison() {
                     mx="auto"
                 >
                     <Trans>
-                        We're not just another development agency. We're a focused team that delivers solutions—not just
-                        code. Here's what makes us different.
+                        Não somos apenas mais uma agência de desenvolvimento. Somos um time focado que entrega
+                        transformações — não apenas código. Veja o que nos diferencia.
                     </Trans>
                 </Text>
 
@@ -109,7 +109,7 @@ export default function Comparison() {
                         <Table.Thead>
                             <Table.Tr>
                                 <Table.Th style={{ width: '50%' }}>
-                                    <Trans>Feature</Trans>
+                                    <Trans>Diferencial</Trans>
                                 </Table.Th>
                                 <Table.Th style={{ textAlign: 'center', width: '25%' }}>
                                     <Text
@@ -125,7 +125,7 @@ export default function Comparison() {
                                         fw={600}
                                         c="dimmed"
                                     >
-                                        <Trans>Typical Agencies</Trans>
+                                        <Trans>Agências Típicas</Trans>
                                     </Text>
                                 </Table.Th>
                             </Table.Tr>
@@ -206,8 +206,9 @@ export default function Comparison() {
                     mb="lg"
                 >
                     <Trans>
-                        We focus on what matters: solving your problems efficiently with solutions that work. No
-                        bureaucracy, no bloated teams, no maximizing billable hours—just honest, expert work.
+                        Focamos no que importa: resolver seus problemas eficientemente com soluções que funcionam. Sem
+                        burocracia, sem equipes inchadas, sem maximizar horas faturáveis — apenas trabalho honesto e
+                        especializado.
                     </Trans>
                 </Text>
 
@@ -222,7 +223,7 @@ export default function Comparison() {
                         variant="light"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                     >
-                        <Trans>See How We Work</Trans>
+                        <Trans>Veja Como Trabalhamos</Trans>
                     </Button>
                 </Group>
             </Container>
