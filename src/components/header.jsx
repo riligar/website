@@ -211,14 +211,26 @@ export default function HeaderMegaMenu() {
                                 </HoverCard.Dropdown>
                             </HoverCard>
                             <a
-                                href="/about"
+                                href="/#quem-somos"
                                 className={classes.link}
+                                onClick={e => {
+                                    if (window.location.pathname === '/') {
+                                        e.preventDefault()
+                                        document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
+                                    }
+                                }}
                             >
                                 Sobre
                             </a>
                             <a
-                                href="/contact"
+                                href="/#contato"
                                 className={classes.link}
+                                onClick={e => {
+                                    if (window.location.pathname === '/') {
+                                        e.preventDefault()
+                                        document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
+                                    }
+                                }}
                             >
                                 Contato
                             </a>
@@ -284,14 +296,28 @@ export default function HeaderMegaMenu() {
                     </UnstyledButton>
                     <Collapse in={linksOpened}>{links}</Collapse>
                     <a
-                        href="/about"
+                        href="/#quem-somos"
                         className={classes.link}
+                        onClick={e => {
+                            if (window.location.pathname === '/') {
+                                e.preventDefault()
+                                document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
+                                closeDrawer()
+                            }
+                        }}
                     >
                         Sobre
                     </a>
                     <a
-                        href="/contact"
+                        href="/#contato"
                         className={classes.link}
+                        onClick={e => {
+                            if (window.location.pathname === '/') {
+                                e.preventDefault()
+                                document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
+                                closeDrawer()
+                            }
+                        }}
                     >
                         Contato
                     </a>

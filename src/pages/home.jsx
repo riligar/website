@@ -12,8 +12,10 @@ import CaseStudy from '@/components/caseStudy'
 import PricingModel from '@/components/pricingModel'
 import Comparison from '@/components/comparison'
 import Testimonials from '@/components/testimonials'
+import AboutSection from '@/components/aboutSection'
 import CTA from '@/components/cta'
 import Faq from '@/components/faq'
+import ContactSection from '@/components/contactSection'
 
 export default function Page() {
     return (
@@ -32,10 +34,13 @@ export default function Page() {
             <Space h="64" />
             <Testimonials />
             <Space h="64" />
+            <AboutSection />
             <CTA />
+            <Space h="64" />
             <Space h="64" />
             <Faq />
             <Space h="64" />
+            <ContactSection />
         </Layout>
     )
 }
