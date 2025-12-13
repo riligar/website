@@ -265,6 +265,13 @@ export default function HeaderMegaMenu() {
                             >
                                 Contato
                             </a>
+                            <a
+                                href="/llms.txt"
+                                className={classes.link}
+                                style={{ fontSize: rem(12), opacity: 0.7 }}
+                            >
+                                LLMs.txt
+                            </a>
                         </Group>
                         <Group visibleFrom="sm">
                             <Button

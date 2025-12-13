@@ -11,19 +11,20 @@ const data = [
         id: 'value',
         title: 'Entregamos',
         links: [
-            { id: 'diagnostico', label: 'Diagnóstico', link: '/about' },
-            { id: 'redesenho', label: 'Redesenho', link: '/about' },
-            { id: 'resultados', label: 'Resultados', link: '/about' },
-            { id: 'parceria', label: 'Parceria', link: '/contact' },
+            { id: 'diagnostico', label: 'Diagnóstico', link: '/#quem-somos' },
+            { id: 'redesenho', label: 'Redesenho', link: '/#quem-somos' },
+            { id: 'resultados', label: 'Resultados', link: '/#casos-impacto' },
+            { id: 'parceria', label: 'Parceria', link: '/#contato' },
         ],
     },
     {
         id: 'company',
         title: 'Empresa',
         links: [
-            { id: 'about', label: 'Sobre Nós', link: '/about' },
-            { id: 'contact', label: 'Contato', link: '/contact' },
-            { id: 'blog', label: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
+            { id: 'about', label: 'Sobre Nós', link: '/#quem-somos' },
+            { id: 'contact', label: 'Contato', link: '/#contato' },
+            { id: 'llms', label: 'LLMs.txt', link: '/llms.txt' },
+            { id: 'llms', label: 'LLMs Contexto.txt', link: '/llms-ctx.txt' },
         ],
     },
     {
