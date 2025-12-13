@@ -17,14 +17,14 @@ A RiLiGar foi fundada por Ciro Cesar Maciel, com mais de 20 anos de experiência
 
 ### Valores
 
-- **Diagnóstico Primeiro**: Identificamos a raiz do problema antes de gastar recursos
-- **Resultados Mensuráveis**: Cada projeto tem KPIs claros desde o dia 1
-- **Parceria de Verdade**: Crescemos junto com o cliente
-- **Transparência Total**: Comunicação honesta, mesmo quando as notícias não são ideais
+- **Diagnóstico Primeiro**: Sem achismos. Identificamos a raiz do problema antes de gastar um centavo.
+- **Resultados Mensuráveis**: Se não podemos medir, não fazemos. Cada projeto tem KPIs claros desde o dia 1.
+- **Parceria de Verdade**: Não somos fornecedores que somem. Crescemos junto com você.
+- **Transparência Total**: Você sempre saberá o que está acontecendo — mesmo quando as notícias não são ideais.
 
 ### Processo de Trabalho
 
-1. **Diagnóstico Profundo**: Análise de processos e quantificação de gargalos. Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?"
+1. **Diagnóstico Profundo**: Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?" Analisamos processos e quantificamos gargalos.
 2. **Redesenho de Processos**: Antes de escolher qualquer tecnologia, redesenhamos como o processo DEVERIA funcionar. Um processo ruim automatizado ainda é um processo ruim — só mais rápido.
 3. **Implementação Focada em Resultados**: Construímos a solução que habilita o processo redesenhado. A tecnologia é um meio, não o objetivo. Medimos sucesso por impacto de negócio, não por funcionalidades.
 4. **Parceria de Transformação**: Não somos fornecedores de serviços técnicos — somos parceiros na transformação do negócio. Acompanhamos resultados e evoluímos as soluções conforme o cliente cresce.
@@ -33,11 +33,11 @@ A RiLiGar foi fundada por Ciro Cesar Maciel, com mais de 20 anos de experiência
 
 ## Níveis de Impacto
 
-Trabalhamos em 4 níveis progressivos de impacto:
+Trabalhamos em 4 níveis progressivos de impacto — cada um mais valioso que o anterior:
 
 ### Nível 1: Eficiência Operacional
 Eliminamos tarefas repetitivas e manuais.
-**Resultado**: A equipe ganha horas produtivas de volta.
+**Resultado**: Sua equipe ganha horas produtivas de volta.
 
 ### Nível 2: Redução de Custos
 Substituímos processos caros por fluxos inteligentes e enxutos.
@@ -49,7 +49,7 @@ Garantimos que nenhum lead seja perdido e que clientes atuais comprem mais.
 
 ### Nível 4: Diferenciação de Mercado
 Criamos experiências que concorrentes não conseguem copiar.
-**Resultado**: A empresa se torna referência no setor.
+**Resultado**: Você se torna a referência no seu setor.
 
 ---
 
@@ -72,26 +72,6 @@ Quando soluções de prateleira não atendem processos únicos, desenvolvemos fe
 
 ### Incerteza Sobre Onde Investir em Tecnologia
 Com tantas opções disponíveis, é difícil saber qual caminho seguir. Diagnosticamos o negócio e criamos um roadmap claro de onde a tecnologia pode gerar mais valor.
-
----
-
-## Soluções
-
-### Agentes de IA
-URL: https://riligar.click/ai-agents
-Automação inteligente com agentes que entendem contexto e tomam decisões.
-
-### Integração de IA
-URL: https://riligar.click/ai-integration
-Integração de inteligência artificial em sistemas existentes para potencializar operações.
-
-### Consultoria Salesforce
-URL: https://riligar.click/salesforce
-Otimização e implementação de Salesforce para maximizar ROI da plataforma.
-
-### Desenvolvimento SaaS
-URL: https://riligar.click/saas
-Criação de plataformas escaláveis sob medida para necessidades específicas.
 
 ---
 
@@ -197,15 +177,15 @@ Agende uma conversa de diagnóstico. Em 30 minutos: entendemos os principais des
 
 ## Contato
 
-- **Página de Contato**: https://riligar.click/contact
 - **WhatsApp**: +55 11 98616-6966
-- **Email**: ciro@riligar.click
+- **Email**: ciro.maciel@riligar.click
+- **Site**: https://riligar.click/
 
-### Páginas do Site
-- Home: https://riligar.click/
-- Sobre: https://riligar.click/about
-- Contato: https://riligar.click/contact
-- Agentes de IA: https://riligar.click/ai-agents
-- Integração de IA: https://riligar.click/ai-integration
-- Salesforce: https://riligar.click/salesforce
-- SaaS: https://riligar.click/saas
+### Seções da Home
+- Níveis de Impacto: https://riligar.click/#niveis-impacto
+- Quem Somos: https://riligar.click/#quem-somos
+- Contato: https://riligar.click/#contato
+- Depoimentos: https://riligar.click/#testimonials
+- FAQ: https://riligar.click/#faq
+- Modelo de Investimento: https://riligar.click/#pricing
+- Estudo de Caso: https://riligar.click/#casos-impacto
