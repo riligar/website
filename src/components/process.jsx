@@ -2,7 +2,7 @@ import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, 
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
 import { Trans, useLingui } from '@lingui/react/macro'
 
-const whatsappMessage = encodeURIComponent('Olá! Gostaria de agendar um diagnóstico com a Riligar. Podemos conversar?')
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de agendar um diagnóstico com a RiLiGar. Podemos conversar?')
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
 const steps = [

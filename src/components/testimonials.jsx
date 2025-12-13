@@ -4,64 +4,64 @@ import { Trans } from '@lingui/react/macro'
 
 const testimonials = [
     {
-        id: 'sarah-johnson',
-        name: 'Sarah Johnson',
-        role: 'CTO, TechFlow Solutions',
-        company: 'SaaS Company',
+        id: 'ana-silva',
+        name: 'Ana Silva',
+        role: 'Sócia-Diretora',
+        company: 'Escritório de Advocacia',
         rating: 5,
         textKey:
-            'RiLiGar transformed our vision into reality. Their expertise in SaaS development is unmatched. The team delivered a lightweight, blazing-fast application that our customers love. What impressed us most was their clean code approach—everything is maintainable and scalable.',
-        avatar: 'SJ',
+            'Achávamos que precisávamos automatizar a entrada de leads. O diagnóstico revelou que nosso problema real era o processo de qualificação. Depois do redesenho, economizamos horas por dia e os leads certos chegam direto ao advogado certo.',
+        avatar: 'AS',
     },
     {
-        id: 'michael-chen',
-        name: 'Michael Chen',
-        role: 'Salesforce Admin',
-        company: 'Enterprise Corp',
+        id: 'carlos-mendes',
+        name: 'Carlos Mendes',
+        role: 'Diretor de Operações',
+        company: 'Rede de Casas de Repouso',
         rating: 5,
         textKey:
-            "The custom Lightning Web Components that RiLiGar built for us have completely revolutionized our Salesforce workflows. They took the time to understand our business processes and created tools that genuinely solve our problems. Our team's productivity has increased by 40%.",
-        avatar: 'MC',
+            'Queríamos automatizar planilhas de inventário. Eles descobriram que não tínhamos protocolos de recompra e vendas prometia entregas sem checar estoque. Resultado depois do redesenho: $100K economizados por ano.',
+        avatar: 'CM',
     },
     {
-        id: 'emily-rodriguez',
-        name: 'Emily Rodriguez',
-        role: 'Product Manager',
-        company: 'InnovateLabs',
+        id: 'fernanda-costa',
+        name: 'Fernanda Costa',
+        role: 'CEO',
+        company: 'E-commerce',
         rating: 5,
         textKey:
-            'Working with RiLiGar felt like having a dedicated technical co-founder. They brought AI capabilities to our platform that we thought would take years to develop. The integration was seamless, and their communication throughout the project was exceptional.',
-        avatar: 'ER',
+            'Tomávamos decisões baseadas em planilhas desatualizadas. Criaram visibilidade completa do pipeline de vendas — não automatizando o existente, mas redesenhando como a informação deveria fluir. Agora temos previsibilidade de receita.',
+        avatar: 'FC',
     },
     {
-        id: 'david-park',
-        name: 'David Park',
-        role: 'Founder & CEO',
-        company: 'StartupHub',
+        id: 'roberto-almeida',
+        name: 'Roberto Almeida',
+        role: 'Sócio-Fundador',
+        company: 'Escritório de Contabilidade',
         rating: 5,
         textKey:
-            'As a startup, we needed a development partner who could move fast without breaking things. RiLiGar delivered exactly that. Their agile approach and commitment to quality gave us the confidence to launch quickly and iterate based on user feedback.',
-        avatar: 'DP',
+            'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Redesenharam nossa comunicação inteira. A automação foi mínima; o impacto foi enorme. Agora clientes elogiam proativamente.',
+        avatar: 'RA',
     },
     {
-        id: 'lisa-williams',
-        name: 'Lisa Williams',
-        role: 'Operations Director',
-        company: 'GrowthCo',
+        id: 'patricia-santos',
+        name: 'Patrícia Santos',
+        role: 'Diretora Administrativa',
+        company: 'Indústria Têxtil',
         rating: 5,
         textKey:
-            "The AI automation solutions that RiLiGar implemented saved our team hundreds of hours every month. They didn't just implement technology—they took the time to understand our workflows and design solutions that actually work for our team.",
-        avatar: 'LW',
+            'Pensávamos que nosso problema era tecnologia ultrapassada. O diagnóstico mostrou que eram processos manuais desnecessários. Com redesenho + automação inteligente, reduzimos tempo de produção em 35%.',
+        avatar: 'PS',
     },
     {
-        id: 'james-thompson',
-        name: 'James Thompson',
-        role: 'VP of Engineering',
-        company: 'DataSystems Inc',
+        id: 'marcos-lima',
+        name: 'Marcos Lima',
+        role: 'Fundador',
+        company: 'Startup Tech',
         rating: 5,
         textKey:
-            "I've worked with many development agencies over my career, and RiLiGar stands out. Their technical depth is impressive—from Salesforce architecture to modern JavaScript frameworks to AI integration. Plus, they're genuinely great people to work with.",
-        avatar: 'JT',
+            'Como startup, precisávamos de um parceiro que movesse rápido sem quebrar nada. Entregaram exatamente isso. Em 3 semanas já víamos resultado. A abordagem de diagnóstico primeiro fez toda a diferença.',
+        avatar: 'ML',
     },
 ]
 
@@ -81,7 +81,7 @@ export default function Testimonials() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>What Our Clients Say</Trans>
+                        <Trans>O Que Nossos Clientes Dizem</Trans>
                     </Badge>
                 </Group>
 
@@ -91,7 +91,7 @@ export default function Testimonials() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Trusted by Teams That Build Amazing Things</Trans>
+                    <Trans>Empresas Que Transformamos</Trans>
                 </Title>
 
                 <Text
@@ -102,7 +102,8 @@ export default function Testimonials() {
                     mx="auto"
                 >
                     <Trans>
-                        Don't just take our word for it. Here's what companies say about working with RiLiGar.
+                        Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e
+                        transformação.
                     </Trans>
                 </Text>
 
@@ -185,7 +186,7 @@ export default function Testimonials() {
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                     >
-                        <Trans>Read More Stories</Trans>
+                        <Trans>Ler Mais Histórias</Trans>
                     </Button>
                 </Group>
             </Container>

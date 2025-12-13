@@ -3,24 +3,24 @@ import { Trans } from '@lingui/react/macro'
 
 const stats = [
     {
-        value: '40%',
-        label: <Trans>Average productivity increase with our Salesforce components</Trans>,
-        description: <Trans>Teams work faster when tools fit their workflows</Trans>,
+        value: '30min',
+        label: <Trans>Conversa de diagnóstico para entender seu negócio</Trans>,
+        description: <Trans>Sem compromisso, sem pressão de vendas</Trans>,
     },
     {
-        value: '24/7',
-        label: <Trans>AI Agents working continuously for your business</Trans>,
-        description: <Trans>Never miss an opportunity or customer inquiry</Trans>,
+        value: '2-3 Sem',
+        label: <Trans>Para primeiros resultados visíveis</Trans>,
+        description: <Trans>Iteração rápida significa validação rápida</Trans>,
     },
     {
-        value: '2-3 Weeks',
-        label: <Trans>To first working prototype</Trans>,
-        description: <Trans>Fast iterations mean quick validation and faster ROI</Trans>,
+        value: 'ROI',
+        label: <Trans>Foco em retorno sobre investimento</Trans>,
+        description: <Trans>Medimos sucesso por impacto de negócio</Trans>,
     },
     {
-        value: '100%',
-        label: <Trans>Clean, maintainable code in every project</Trans>,
-        description: <Trans>No technical debt, no messy shortcuts</Trans>,
+        value: '20+',
+        label: <Trans>Anos de experiência em transformação</Trans>,
+        description: <Trans>Soluções que realmente funcionam</Trans>,
     },
 ]
 
@@ -28,7 +28,7 @@ export default function Stats() {
     return (
         <Box
             component="section"
-            aria-label="Statistics and impact numbers"
+            aria-label="Estatísticas e números de impacto"
             py={80}
         >
             <Container size="xl">
@@ -38,7 +38,7 @@ export default function Stats() {
                     mb={60}
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>Solutions That Deliver Measurable Results</Trans>
+                    <Trans>Resultados Mensuráveis, Não Promessas Vazias</Trans>
                 </Title>
 
                 <SimpleGrid

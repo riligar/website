@@ -1,8 +1,14 @@
 import { Box, Title, Text, Container, Paper, Group, Button, rem } from '@mantine/core'
-import { IconMail, IconMessageCircle } from '@tabler/icons-react'
-import { Trans } from '@lingui/react/macro'
+import { IconBrandWhatsapp, IconBrandLinkedin } from '@tabler/icons-react'
+import { Trans, useLingui } from '@lingui/react/macro'
 
 export default function ContactForm() {
+    const { _ } = useLingui()
+    const whatsappMessage = encodeURIComponent(
+        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.')
+    )
+    const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
+
     return (
         <Box
             py={80}
@@ -23,7 +29,7 @@ export default function ContactForm() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Prefer Direct Contact?</Trans>
+                        <Trans>Agende Seu Diagnóstico</Trans>
                     </Title>
 
                     <Text
@@ -35,8 +41,8 @@ export default function ContactForm() {
                         mx="auto"
                     >
                         <Trans>
-                            For business inquiries, project discussions, or partnership opportunities, feel free to
-                            reach out directly via email or LinkedIn message.
+                            Em 30 minutos, vamos entender seus principais desafios, identificar onde pode haver valor
+                            escondido, e discutir se faz sentido trabalharmos juntos. Sem compromisso.
                         </Trans>
                     </Text>
 
@@ -46,15 +52,26 @@ export default function ContactForm() {
                     >
                         <Button
                             size="lg"
+                            color="green"
+                            leftSection={<IconBrandWhatsapp style={{ width: rem(24), height: rem(24) }} />}
+                            component="a"
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Trans>Agendar pelo WhatsApp</Trans>
+                        </Button>
+                        {/* <Button
+                            size="lg"
                             variant="outline"
-                            leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
+                            leftSection={<IconBrandLinkedin style={{ width: rem(20), height: rem(20) }} />}
                             component="a"
                             href="https://www.linkedin.com/in/ciromaciel/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Trans>Message on LinkedIn</Trans>
-                        </Button>
+                            <Trans>Mensagem no LinkedIn</Trans>
+                        </Button> */}
                     </Group>
 
                     <Text
@@ -63,7 +80,7 @@ export default function ContactForm() {
                         ta="center"
                         mt="xl"
                     >
-                        <Trans>I typically respond within 24 hours. Looking forward to hearing from you!</Trans>
+                        <Trans>Normalmente respondo em até 24 horas. Ansioso para conhecer seu negócio!</Trans>
                     </Text>
                 </Paper>
 
@@ -81,13 +98,13 @@ export default function ContactForm() {
                         fw={600}
                         mb="xs"
                     >
-                        <Trans>Based in Brazil 🇧🇷 | Working with Clients Worldwide 🌎</Trans>
+                        <Trans>Baseado no Brasil 🇧🇷 | Atendendo Clientes no Mundo Todo 🌎</Trans>
                     </Text>
                     <Text
                         size="sm"
                         c="dimmed"
                     >
-                        <Trans>Remote-first approach • Flexible time zones • Clear communication</Trans>
+                        <Trans>Trabalho remoto • Flexibilidade de horários • Comunicação clara</Trans>
                     </Text>
                 </Box>
             </Container>

@@ -10,7 +10,7 @@ export default function AboutTeam() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>The Team</Trans>
+                    <Trans>O Time</Trans>
                 </Title>
 
                 <Text
@@ -21,8 +21,8 @@ export default function AboutTeam() {
                     mx="auto"
                 >
                     <Trans>
-                        RiLiGar is a family-driven company. We're small by design—focused, dedicated, and personally
-                        invested in every project we take on.
+                        A Riligar é uma empresa familiar. Somos pequenos por design — focados, dedicados e pessoalmente
+                        investidos em cada projeto que assumimos.
                     </Trans>
                 </Text>
 
@@ -66,7 +66,7 @@ export default function AboutTeam() {
                                         variant="light"
                                         size="sm"
                                     >
-                                        <Trans>Founder & Lead Engineer</Trans>
+                                        <Trans>Fundador e Líder Técnico</Trans>
                                     </Badge>
                                 </Group>
 
@@ -77,9 +77,10 @@ export default function AboutTeam() {
                                     style={{ lineHeight: 1.6 }}
                                 >
                                     <Trans>
-                                        20+ years building enterprise systems, leading technical teams, and solving
-                                        complex problems. Specialized in AI, Salesforce development, and scalable
-                                        software architecture. Passionate about technology with purpose.
+                                        20+ anos construindo sistemas corporativos, liderando equipes técnicas e
+                                        resolvendo problemas complexos. Especializado em diagnóstico de negócios,
+                                        redesenho de processos e tecnologia como enabler. Apaixonado por tecnologia com
+                                        propósito.
                                     </Trans>
                                 </Text>
 
@@ -88,7 +89,7 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>AI Engineering</Trans>
+                                        <Trans>Diagnóstico de Negócios</Trans>
                                     </Badge>
                                     <Badge
                                         size="sm"
@@ -100,13 +101,13 @@ export default function AboutTeam() {
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>SaaS Architecture</Trans>
+                                        <Trans>Arquitetura SaaS</Trans>
                                     </Badge>
                                     <Badge
                                         size="sm"
                                         variant="outline"
                                     >
-                                        <Trans>Leadership</Trans>
+                                        <Trans>Liderança</Trans>
                                     </Badge>
                                 </Group>
                             </Box>
@@ -129,7 +130,7 @@ export default function AboutTeam() {
                         ta="center"
                         mb="md"
                     >
-                        <Trans>Behind Every Solution</Trans>
+                        <Trans>Por Trás de Cada Solução</Trans>
                     </Title>
 
                     <Text
@@ -140,10 +141,10 @@ export default function AboutTeam() {
                         style={{ lineHeight: 1.8 }}
                     >
                         <Trans>
-                            While I lead the technical work, none of this would be possible without the support of my
-                            family. <strong>Andréa</strong> and <strong>Edgar</strong> inspire me daily to build
-                            technology that creates more time for what matters most. This personal motivation drives us
-                            to deliver solutions that genuinely improve lives—not just bottom lines.
+                            Enquanto lidero o trabalho técnico, nada disso seria possível sem o apoio da minha família.
+                            <strong>Andréa</strong> e <strong>Edgar</strong> me inspiram diariamente a construir
+                            tecnologia que cria mais tempo para o que realmente importa. Essa motivação pessoal nos
+                            impulsiona a entregar soluções que genuinamente melhoram vidas — não apenas resultados.
                         </Trans>
                     </Text>
                 </Box>

@@ -4,7 +4,7 @@ import { Trans } from '@lingui/react/macro'
 const faq = [
     {
         id: 'diferenca',
-        questionKey: 'Qual a diferença entre a Riligar e uma agência de automação tradicional?',
+        questionKey: 'Qual a diferença entre a RiLiGar e uma agência de automação tradicional?',
         answerKey: `A maioria das agências começa perguntando "o que você quer automatizar?" — nós perguntamos "o que está impedindo seu negócio de atingir seus objetivos?". Essa diferença é fundamental.
       <br/>
       <br/>
@@ -138,7 +138,7 @@ export default function Faq() {
                 ta="center"
                 mt="md"
             >
-                <Trans>Tudo o que você precisa saber sobre trabalhar com a Riligar</Trans>
+                <Trans>Tudo o que você precisa saber sobre trabalhar com a RiLiGar</Trans>
             </Text>
             <Space h="lg" />
             <Accordion variant="separated">

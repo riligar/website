@@ -1,4 +1,4 @@
-## Riligar - Password Management Solutions
+## RiLiGar - Password Management Solutions
 
 ### Usage
 

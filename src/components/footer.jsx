@@ -9,27 +9,27 @@ import classes from './footer.module.css'
 
 const data = [
     {
-        id: 'solutions',
-        titleKey: 'Solutions',
+        id: 'value',
+        titleKey: 'O Que Entregamos',
         links: [
-            { id: 'ai-agents', labelKey: 'AI Agents', link: '/ai-agents' },
-            { id: 'salesforce', labelKey: 'Salesforce Solutions', link: '/salesforce' },
-            { id: 'saas', labelKey: 'SaaS Platforms', link: '/saas' },
-            { id: 'ai-integration', labelKey: 'AI Integration', link: '/ai-integration' },
+            { id: 'diagnostico', labelKey: 'Diagnóstico Profundo', link: '/about' },
+            { id: 'redesenho', labelKey: 'Redesenho de Processos', link: '/about' },
+            { id: 'resultados', labelKey: 'Resultados Mensuráveis', link: '/about' },
+            { id: 'parceria', labelKey: 'Parceria de Transformação', link: '/contact' },
         ],
     },
     {
         id: 'company',
-        titleKey: 'Company',
+        titleKey: 'Empresa',
         links: [
-            { id: 'about', labelKey: 'About Us', link: '/about' },
-            { id: 'contact', labelKey: 'Contact', link: '/contact' },
+            { id: 'about', labelKey: 'Sobre Nós', link: '/about' },
+            { id: 'contact', labelKey: 'Contato', link: '/contact' },
             { id: 'blog', labelKey: 'Blog', link: 'https://blog.ciromaciel.click', external: true },
         ],
     },
     {
         id: 'connect',
-        titleKey: 'Connect',
+        titleKey: 'Conecte-se',
         links: [
             { id: 'linkedin', labelKey: 'LinkedIn', link: 'https://www.linkedin.com/in/ciromaciel/', external: true },
             { id: 'instagram', labelKey: 'Instagram', link: 'https://www.instagram.com/ciro.maciel/', external: true },
@@ -74,7 +74,7 @@ export default function FooterLinks() {
                         src={logo}
                         h={30}
                         w={30}
-                        alt="Riligar"
+                        alt="RiLiGar"
                     />
                     <Text
                         size="xs"
@@ -82,8 +82,8 @@ export default function FooterLinks() {
                         className={classes.description}
                     >
                         <Trans>
-                            Delivering powerful solutions: AI Agents, Salesforce, SaaS platforms, and AI integration
-                            services.
+                            Parceiros em transformação de negócios: diagnóstico profundo, redesenho de processos e
+                            resultados mensuráveis.
                         </Trans>
                     </Text>
                 </div>
@@ -98,9 +98,7 @@ export default function FooterLinks() {
                         c="dimmed"
                         size="sm"
                     >
-                        <Trans>
-                            © {new Date().getFullYear()} RiLiGar. All rights reserved. Built with excellence.
-                        </Trans>
+                        <Trans>© {new Date().getFullYear()} RiLiGar. Todos os direitos reservados.</Trans>
                     </Text>
                     <LanguageSelector />
                 </Group>

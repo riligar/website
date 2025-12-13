@@ -2,21 +2,21 @@ import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/co
 import { Trans } from '@lingui/react/macro'
 
 const clients = [
-    { name: 'TechFlow Solutions', industry: 'SaaS' },
-    { name: 'Enterprise Corp', industry: 'Enterprise' },
-    { name: 'InnovateLabs', industry: 'Technology' },
-    { name: 'StartupHub', industry: 'Startup Platform' },
-    { name: 'GrowthCo', industry: 'Operations' },
-    { name: 'DataSystems Inc', industry: 'Data Analytics' },
-    { name: 'CloudScale', industry: 'Cloud Services' },
-    { name: 'FinTech Pro', industry: 'Financial Tech' },
+    { name: 'Escritório Advocacia', industry: 'Jurídico' },
+    { name: 'Rede de Casas de Repouso', industry: 'Saúde' },
+    { name: 'E-commerce', industry: 'Varejo Digital' },
+    { name: 'Contabilidade', industry: 'Serviços Contábeis' },
+    { name: 'Indústria Têxtil', industry: 'Manufatura' },
+    { name: 'Agência Marketing', industry: 'Comunicação' },
+    { name: 'Clínica Médica', industry: 'Saúde' },
+    { name: 'Startup Tech', industry: 'Tecnologia' },
 ]
 
 export default function Clients() {
     return (
         <Box
             component="section"
-            aria-label="Our clients"
+            aria-label="Nossos clientes"
             py={60}
             style={{
                 borderTop: '1px solid #e9ecef',
@@ -34,7 +34,7 @@ export default function Clients() {
                     tt="uppercase"
                     style={{ letterSpacing: 2 }}
                 >
-                    <Trans>Trusted by Forward-Thinking Companies</Trans>
+                    <Trans>Empresas Que Confiaram no Diagnóstico</Trans>
                 </Text>
 
                 <SimpleGrid
@@ -93,7 +93,7 @@ export default function Clients() {
                     mt="xl"
                 >
                     <Trans>
-                        From startups to enterprises, we deliver solutions that drive growth across industries
+                        De startups a empresas estabelecidas, entregamos transformações que geram crescimento real
                     </Trans>
                 </Text>
             </Container>

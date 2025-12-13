@@ -17,7 +17,7 @@ export default function AboutCTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Let's Build Something Meaningful Together</Trans>
+                    <Trans>Vamos Construir Algo Significativo Juntos</Trans>
                 </Title>
 
                 <Text
@@ -29,8 +29,8 @@ export default function AboutCTA() {
                     mx="auto"
                 >
                     <Trans>
-                        If you believe in technology with purpose and want a partner who's personally invested in your
-                        success, let's talk.
+                        Se você acredita em tecnologia com propósito e quer um parceiro pessoalmente investido no seu
+                        sucesso, vamos conversar.
                     </Trans>
                 </Text>
 
@@ -47,7 +47,7 @@ export default function AboutCTA() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Trans>YouTube Channel</Trans>
+                        <Trans>Canal do YouTube</Trans>
                     </Button>
                 </Group>
 
@@ -86,7 +86,7 @@ export default function AboutCTA() {
                     mt="xl"
                 >
                     <Trans>
-                        Want to know more about my journey? Visit my{' '}
+                        Quer saber mais sobre minha jornada? Visite meu{' '}
                         <Text
                             component="a"
                             href="https://blog.ciromaciel.click/sobre-mim"
@@ -96,9 +96,9 @@ export default function AboutCTA() {
                             fw={600}
                             style={{ textDecoration: 'underline', cursor: 'pointer' }}
                         >
-                            personal blog
+                            blog pessoal
                         </Text>{' '}
-                        to learn more about my story and philosophy.
+                        para conhecer mais sobre minha história e filosofia.
                     </Trans>
                 </Text>
             </Container>

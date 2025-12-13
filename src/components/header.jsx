@@ -77,7 +77,7 @@ export default function HeaderMegaMenu() {
 
     // WhatsApp link with pre-filled message
     const whatsappMessage = encodeURIComponent(
-        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a Riligar pode ajudar meu negócio.')
+        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a RiLiGar pode ajudar meu negócio.')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

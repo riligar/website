@@ -23,7 +23,7 @@ import {
 import { Trans, useLingui } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent(
-    'Olá! Gostaria de discutir como a Riligar pode resolver desafios semelhantes no meu negócio. Podemos conversar?'
+    'Olá! Gostaria de discutir como a RiLiGar pode resolver desafios semelhantes no meu negócio. Podemos conversar?'
 )
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

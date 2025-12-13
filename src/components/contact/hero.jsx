@@ -16,7 +16,7 @@ export default function ContactHero() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Get in Touch</Trans>
+                        <Trans>Entre em Contato</Trans>
                     </Badge>
                 </Group>
 
@@ -26,7 +26,7 @@ export default function ContactHero() {
                     mb="xl"
                     style={{ lineHeight: 1.2 }}
                 >
-                    <Trans>Let's Connect</Trans>
+                    <Trans>Vamos Conversar</Trans>
                 </Title>
 
                 <Text
@@ -38,8 +38,8 @@ export default function ContactHero() {
                     style={{ lineHeight: 1.6 }}
                 >
                     <Trans>
-                        Ready to transform your business with purpose-driven technology? Reach out through any of these
-                        channels—I'm always happy to discuss new projects and opportunities.
+                        Pronto para descobrir onde está o valor escondido no seu negócio? Agende uma conversa de
+                        diagnóstico — 30 minutos para entender seus desafios e identificar oportunidades.
                     </Trans>
                 </Text>
             </Container>

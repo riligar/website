@@ -5,7 +5,7 @@ import { Trans, useLingui } from '@lingui/react/macro'
 export default function Hero() {
     const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _('Olá! Gostaria de conversar sobre como a Riligar pode ajudar meu negócio. Podemos agendar?')
+        _('Olá! Gostaria de conversar sobre como a RiLiGar pode ajudar meu negócio. Podemos agendar?')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 

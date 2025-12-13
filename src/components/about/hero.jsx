@@ -16,7 +16,7 @@ export default function AboutHero() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Sobre a Riligar</Trans>
+                        <Trans>Sobre a RiLiGar</Trans>
                     </Badge>
                 </Group>
 
@@ -41,7 +41,7 @@ export default function AboutHero() {
                     style={{ lineHeight: 1.6 }}
                 >
                     <Trans>
-                        A Riligar nasceu de uma crença simples: tecnologia só tem valor quando resolve problemas reais
+                        A RiLiGar nasceu de uma crença simples: tecnologia só tem valor quando resolve problemas reais
                         de negócio. Não vendemos automação — diagnosticamos, redesenhamos e transformamos.
                     </Trans>
                 </Text>
