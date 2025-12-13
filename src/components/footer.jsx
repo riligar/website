@@ -150,7 +150,7 @@ export default function FooterLinks() {
                             stroke={1.5}
                         />
                     </ActionIcon>
-                    <ActionIcon
+                    {/* <ActionIcon
                         component="a"
                         href="https://github.com/riligar-salesforce"
                         target="_blank"
@@ -164,7 +164,7 @@ export default function FooterLinks() {
                             style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
-                    </ActionIcon>
+                    </ActionIcon> */}
                 </Group>
             </Container>
         </footer>
