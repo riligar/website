@@ -24,17 +24,23 @@ export default function Page() {
             <Clients />
             <Space h="64" />
             <ImpactLevels />
+            <Space h="64" />
             <Features />
+            <Space h="64" />
             <Process />
             <Space h="64" />
             <UseCases />
+            {/* <Space h="64" /> */}
             <CaseStudy />
+            <Space h="64" />
             <PricingModel />
+            <Space h="64" />
             <Comparison />
             <Space h="64" />
             <Testimonials />
             <Space h="64" />
             <AboutSection />
+            <Space h="64" />
             <CTA />
             <Space h="64" />
             <Space h="64" />

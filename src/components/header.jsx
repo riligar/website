@@ -36,29 +36,29 @@ import { useNavigate } from 'react-router-dom'
 
 import logo from '/image/riligar-logotipo.png'
 
-const mockdata = [
+const transformacoes = [
     {
         icon: IconRobot,
-        title: 'AI Agents',
-        description: 'Agentes autônomos inteligentes que automatizam tarefas e tomam decisões para seu negócio',
+        title: 'Eliminar Gargalos',
+        description: 'Identifique e automatize o que está travando sua operação',
         pathname: '/ai-agents',
     },
     {
         icon: IconChartBar,
-        title: 'Soluções Salesforce',
-        description: 'Componentes personalizados, integrações e automações para sua plataforma Salesforce',
+        title: 'Acelerar Vendas',
+        description: 'Otimize seu CRM para fechar mais negócios em menos tempo',
         pathname: '/salesforce',
     },
     {
         icon: IconCloudComputing,
-        title: 'Plataformas SaaS',
-        description: 'Desenvolvimento completo de SaaS com arquitetura moderna e escalável',
+        title: 'Criar Nova Receita',
+        description: 'Lance produtos digitais que geram receita recorrente',
         pathname: '/saas',
     },
     {
         icon: IconSparkles,
-        title: 'Integração de IA',
-        description: 'Adicione capacidades de IA aos seus sistemas e fluxos de trabalho existentes',
+        title: 'Decisões Mais Inteligentes',
+        description: 'Use IA para tomar decisões baseadas em dados reais',
         pathname: '/ai-integration',
     },
 ]
@@ -87,7 +87,7 @@ export default function HeaderMegaMenu() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    const links = mockdata.map(item => (
+    const links = transformacoes.map(item => (
         <UnstyledButton
             className={classes.subLink}
             key={item.pathname}
@@ -151,24 +151,43 @@ export default function HeaderMegaMenu() {
                             visibleFrom="sm"
                         >
                             <a
-                                href="/"
+                                href="/#"
                                 className={classes.link}
                             >
                                 Início
                             </a>
-                            <HoverCard
+                            {/* <HoverCard
                                 width={600}
                                 position="bottom"
                                 radius="md"
                                 shadow="md"
                                 withinPortal
                             >
+                                <HoverCard.Target>
+                                    <a
+                                        href="#"
+                                        className={classes.link}
+                                    >
+                                        <Center inline>
+                                            <Box
+                                                component="span"
+                                                mr={5}
+                                            >
+                                                Transformações
+                                            </Box>
+                                            <IconChevronDown
+                                                style={{ width: rem(16), height: rem(16) }}
+                                                color={theme.colors.blue[6]}
+                                            />
+                                        </Center>
+                                    </a>
+                                </HoverCard.Target>
                                 <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                                     <Group
                                         justify="space-between"
                                         px="md"
                                     >
-                                        <Text fw={500}>Nossas Soluções</Text>
+                                        <Text fw={500}>Como Podemos Ajudar</Text>
                                     </Group>
 
                                     <Divider my="sm" />
@@ -187,13 +206,13 @@ export default function HeaderMegaMenu() {
                                                     fw={500}
                                                     fz="sm"
                                                 >
-                                                    Pronto para começar?
+                                                    Não sabe por onde começar?
                                                 </Text>
                                                 <Text
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    Descubra a solução ideal para seu negócio
+                                                    Em 15 minutos identificamos seu próximo passo
                                                 </Text>
                                             </div>
                                             <Button
@@ -209,7 +228,19 @@ export default function HeaderMegaMenu() {
                                         </Group>
                                     </div>
                                 </HoverCard.Dropdown>
-                            </HoverCard>
+                            </HoverCard> */}
+                            <a
+                                href="/#casos-impacto"
+                                className={classes.link}
+                                onClick={e => {
+                                    if (window.location.pathname === '/') {
+                                        e.preventDefault()
+                                        document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
+                                    }
+                                }}
+                            >
+                                Casos de Sucesso
+                            </a>
                             <a
                                 href="/#quem-somos"
                                 className={classes.link}
@@ -220,7 +251,7 @@ export default function HeaderMegaMenu() {
                                     }
                                 }}
                             >
-                                Sobre
+                                Por Que Nós
                             </a>
                             <a
                                 href="/#contato"
@@ -244,7 +275,7 @@ export default function HeaderMegaMenu() {
                                 size="md"
                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                             >
-                                Agendar Diagnóstico
+                                Diagnóstico Grátis
                             </Button>
                         </Group>
                         <Burger
@@ -277,7 +308,7 @@ export default function HeaderMegaMenu() {
                     >
                         Início
                     </a>
-                    <UnstyledButton
+                    {/* <UnstyledButton
                         className={classes.link}
                         onClick={toggleLinks}
                     >
@@ -286,7 +317,7 @@ export default function HeaderMegaMenu() {
                                 component="span"
                                 mr={5}
                             >
-                                Soluções
+                                Transformações
                             </Box>
                             <IconChevronDown
                                 style={{ width: rem(16), height: rem(16) }}
@@ -294,7 +325,20 @@ export default function HeaderMegaMenu() {
                             />
                         </Center>
                     </UnstyledButton>
-                    <Collapse in={linksOpened}>{links}</Collapse>
+                    <Collapse in={linksOpened}>{links}</Collapse> */}
+                    <a
+                        href="/#casos-impacto"
+                        className={classes.link}
+                        onClick={e => {
+                            if (window.location.pathname === '/') {
+                                e.preventDefault()
+                                document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
+                                closeDrawer()
+                            }
+                        }}
+                    >
+                        Casos de Sucesso
+                    </a>
                     <a
                         href="/#quem-somos"
                         className={classes.link}
@@ -306,7 +350,7 @@ export default function HeaderMegaMenu() {
                             }
                         }}
                     >
-                        Sobre
+                        Por Que Nós
                     </a>
                     <a
                         href="/#contato"
@@ -336,7 +380,7 @@ export default function HeaderMegaMenu() {
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            Agendar Diagnóstico
+                            Diagnóstico Grátis
                         </Button>
                     </Group>
                 </ScrollArea>

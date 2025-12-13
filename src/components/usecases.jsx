@@ -82,126 +82,126 @@ export default function UseCases() {
             aria-label="Real-world use cases"
             py={80}
         >
-            <Container size="xl">
-                <Group
-                    justify="center"
-                    mb="md"
+            {/* <Container size="xl"> */}
+            <Group
+                justify="center"
+                mb="md"
+            >
+                <Badge
+                    variant="filled"
+                    size="lg"
                 >
-                    <Badge
-                        variant="filled"
-                        size="lg"
+                    Casos Reais de Transformação
+                </Badge>
+            </Group>
+
+            <Title
+                order={2}
+                ta="center"
+                mb="md"
+                size={{ base: 28, sm: 32, md: 36 }}
+            >
+                Como Resolvemos Problemas de Verdade
+            </Title>
+
+            <Text
+                c="dimmed"
+                ta="center"
+                mb={60}
+                maw={700}
+                mx="auto"
+            >
+                Estes são exemplos reais de como o diagnóstico profundo revela problemas que ninguém sabia que existiam
+                — e como a solução é sempre muito mais do que automação.
+            </Text>
+
+            <SimpleGrid cols={{ base: 1, md: 2 }}>
+                {useCases.map(useCase => (
+                    <Card
+                        key={useCase.id}
+                        shadow="md"
+                        radius="md"
+                        padding="xl"
+                        withBorder
                     >
-                        Casos Reais de Transformação
-                    </Badge>
-                </Group>
+                        <Group mb="md">
+                            <useCase.icon
+                                style={{ width: rem(40), height: rem(40) }}
+                                stroke={2}
+                                color="#228be6"
+                            />
+                            <Badge
+                                size="sm"
+                                variant="light"
+                            >
+                                {useCase.badge}
+                            </Badge>
+                        </Group>
 
-                <Title
-                    order={2}
-                    ta="center"
-                    mb="md"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                >
-                    Como Resolvemos Problemas de Verdade
-                </Title>
-
-                <Text
-                    c="dimmed"
-                    ta="center"
-                    mb={60}
-                    maw={700}
-                    mx="auto"
-                >
-                    Estes são exemplos reais de como o diagnóstico profundo revela problemas que ninguém sabia que
-                    existiam — e como a solução é sempre muito mais do que automação.
-                </Text>
-
-                <SimpleGrid cols={{ base: 1, md: 2 }}>
-                    {useCases.map(useCase => (
-                        <Card
-                            key={useCase.id}
-                            shadow="md"
-                            radius="md"
-                            padding="xl"
-                            withBorder
+                        <Title
+                            order={4}
+                            mb="xs"
                         >
-                            <Group mb="md">
-                                <useCase.icon
-                                    style={{ width: rem(40), height: rem(40) }}
-                                    stroke={2}
-                                    color="#228be6"
-                                />
-                                <Badge
-                                    size="sm"
+                            {useCase.title}
+                        </Title>
+
+                        <Text
+                            size="sm"
+                            c="dimmed"
+                            mb="md"
+                        >
+                            {useCase.description}
+                        </Text>
+
+                        <Text
+                            size="sm"
+                            fw={600}
+                            mb="xs"
+                        >
+                            Resultados:
+                        </Text>
+
+                        <List
+                            spacing="xs"
+                            size="sm"
+                            icon={
+                                <ThemeIcon
+                                    size={20}
+                                    radius="xl"
                                     variant="light"
                                 >
-                                    {useCase.badge}
-                                </Badge>
-                            </Group>
+                                    <IconCheck
+                                        style={{ width: rem(12), height: rem(12) }}
+                                        stroke={3}
+                                    />
+                                </ThemeIcon>
+                            }
+                        >
+                            {useCase.benefits.map((benefit, idx) => (
+                                <List.Item key={idx}>{benefit}</List.Item>
+                            ))}
+                        </List>
+                    </Card>
+                ))}
+            </SimpleGrid>
 
-                            <Title
-                                order={4}
-                                mb="xs"
-                            >
-                                {useCase.title}
-                            </Title>
-
-                            <Text
-                                size="sm"
-                                c="dimmed"
-                                mb="md"
-                            >
-                                {useCase.description}
-                            </Text>
-
-                            <Text
-                                size="sm"
-                                fw={600}
-                                mb="xs"
-                            >
-                                Resultados:
-                            </Text>
-
-                            <List
-                                spacing="xs"
-                                size="sm"
-                                icon={
-                                    <ThemeIcon
-                                        size={20}
-                                        radius="xl"
-                                        variant="light"
-                                    >
-                                        <IconCheck
-                                            style={{ width: rem(12), height: rem(12) }}
-                                            stroke={3}
-                                        />
-                                    </ThemeIcon>
-                                }
-                            >
-                                {useCase.benefits.map((benefit, idx) => (
-                                    <List.Item key={idx}>{benefit}</List.Item>
-                                ))}
-                            </List>
-                        </Card>
-                    ))}
-                </SimpleGrid>
-
-                <Group
-                    justify="center"
-                    mt={50}
+            <Group
+                justify="center"
+                mt={50}
+            >
+                <Button
+                    component="a"
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="lg"
+                    variant="outline"
+                    rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
                 >
-                    <Button
-                        component="a"
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        size="lg"
-                        variant="outline"
-                        rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
-                    >
-                        Discutir Meu Caso
-                    </Button>
-                </Group>
-            </Container>
+                    Discutir Meu Caso
+                </Button>
+            </Group>
+            {/* </Container> */}
         </Box>
     )
 }

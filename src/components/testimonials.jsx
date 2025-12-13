@@ -65,121 +65,121 @@ export default function Testimonials() {
             aria-label="Client testimonials"
             py="xl"
         >
-            <Container size="xl">
-                <Group
-                    justify="center"
-                    mb="md"
+            {/* <Container size="xl"> */}
+            <Group
+                justify="center"
+                mb="md"
+            >
+                <Badge
+                    variant="filled"
+                    size="lg"
                 >
-                    <Badge
-                        variant="filled"
-                        size="lg"
+                    O Que Nossos Clientes Dizem
+                </Badge>
+            </Group>
+
+            <Title
+                order={2}
+                ta="center"
+                mb="md"
+                size={{ base: 28, sm: 32, md: 36 }}
+            >
+                Empresas Que Transformamos
+            </Title>
+
+            <Text
+                c="dimmed"
+                ta="center"
+                mb={50}
+                maw={700}
+                mx="auto"
+            >
+                Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e transformação.
+            </Text>
+
+            <SimpleGrid
+                cols={{ base: 1, md: 2, lg: 3 }}
+                spacing="lg"
+            >
+                {testimonials.map(testimonial => (
+                    <Card
+                        key={testimonial.id}
+                        shadow="md"
+                        radius="md"
+                        padding="lg"
+                        style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                     >
-                        O Que Nossos Clientes Dizem
-                    </Badge>
-                </Group>
+                        <IconQuote
+                            size={32}
+                            style={{ opacity: 0.3, marginBottom: '1rem' }}
+                        />
 
-                <Title
-                    order={2}
-                    ta="center"
-                    mb="md"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                >
-                    Empresas Que Transformamos
-                </Title>
-
-                <Text
-                    c="dimmed"
-                    ta="center"
-                    mb={50}
-                    maw={700}
-                    mx="auto"
-                >
-                    Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e transformação.
-                </Text>
-
-                <SimpleGrid
-                    cols={{ base: 1, md: 2, lg: 3 }}
-                    spacing="lg"
-                >
-                    {testimonials.map(testimonial => (
-                        <Card
-                            key={testimonial.id}
-                            shadow="md"
-                            radius="md"
-                            padding="lg"
-                            style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                        <Text
+                            size="sm"
+                            c="dimmed"
+                            style={{ flex: 1 }}
                         >
-                            <IconQuote
-                                size={32}
-                                style={{ opacity: 0.3, marginBottom: '1rem' }}
+                            {testimonial.text}
+                        </Text>
+
+                        <Box mt="md">
+                            <Rating
+                                value={testimonial.rating}
+                                readOnly
+                                size="sm"
+                                mb="md"
                             />
 
-                            <Text
-                                size="sm"
-                                c="dimmed"
-                                style={{ flex: 1 }}
-                            >
-                                {testimonial.text}
-                            </Text>
-
-                            <Box mt="md">
-                                <Rating
-                                    value={testimonial.rating}
-                                    readOnly
-                                    size="sm"
-                                    mb="md"
-                                />
-
-                                <Group>
-                                    <Avatar
-                                        color="blue"
-                                        radius="xl"
+                            <Group>
+                                <Avatar
+                                    color="blue"
+                                    radius="xl"
+                                >
+                                    {testimonial.avatar}
+                                </Avatar>
+                                <div>
+                                    <Text
+                                        size="sm"
+                                        fw={600}
                                     >
-                                        {testimonial.avatar}
-                                    </Avatar>
-                                    <div>
-                                        <Text
-                                            size="sm"
-                                            fw={600}
-                                        >
-                                            {testimonial.name}
-                                        </Text>
-                                        <Text
-                                            size="xs"
-                                            c="dimmed"
-                                        >
-                                            {testimonial.role}
-                                        </Text>
-                                        <Text
-                                            size="xs"
-                                            c="dimmed"
-                                        >
-                                            {testimonial.company}
-                                        </Text>
-                                    </div>
-                                </Group>
-                            </Box>
-                        </Card>
-                    ))}
-                </SimpleGrid>
+                                        {testimonial.name}
+                                    </Text>
+                                    <Text
+                                        size="xs"
+                                        c="dimmed"
+                                    >
+                                        {testimonial.role}
+                                    </Text>
+                                    <Text
+                                        size="xs"
+                                        c="dimmed"
+                                    >
+                                        {testimonial.company}
+                                    </Text>
+                                </div>
+                            </Group>
+                        </Box>
+                    </Card>
+                ))}
+            </SimpleGrid>
 
-                <Group
-                    justify="center"
-                    mt={50}
+            <Group
+                justify="center"
+                mt={50}
+            >
+                <Button
+                    component="a"
+                    href="https://blog.ciromaciel.click"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="md"
+                    variant="outline"
+                    rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
                 >
-                    <Button
-                        component="a"
-                        href="https://blog.ciromaciel.click"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        size="md"
-                        variant="outline"
-                        rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
-                    >
-                        Ler Mais Histórias
-                    </Button>
-                </Group>
-            </Container>
+                    Ler Mais Histórias
+                </Button>
+            </Group>
+            {/* </Container> */}
         </Box>
     )
 }

@@ -47,124 +47,124 @@ export default function ImpactLevels() {
             aria-label="Níveis de impacto que entregamos"
             py={80}
         >
-            <Container size="xl">
-                <Group
-                    justify="center"
-                    mb="md"
+            {/* <Container size="xl"> */}
+            <Group
+                justify="center"
+                mb="md"
+            >
+                <Badge
+                    variant="filled"
+                    size="lg"
                 >
-                    <Badge
-                        variant="filled"
-                        size="lg"
+                    Do Operacional ao Estratégico
+                </Badge>
+            </Group>
+
+            <Title
+                order={2}
+                ta="center"
+                mb="md"
+                size={{ base: 28, sm: 32, md: 36 }}
+            >
+                Onde Atuamos na Sua Empresa
+            </Title>
+
+            <Text
+                c="dimmed"
+                ta="center"
+                mb={60}
+                maw={700}
+                mx="auto"
+            >
+                O valor não está na ferramenta, está no impacto. Trabalhamos em 4 níveis progressivos — cada um mais
+                valioso que o anterior.
+            </Text>
+
+            <SimpleGrid
+                cols={{ base: 1, sm: 2, lg: 4 }}
+                spacing="lg"
+            >
+                {levels.map((item, index) => (
+                    <Paper
+                        key={item.id}
+                        p="xl"
+                        radius="md"
+                        style={{
+                            border: '1px solid #e9ecef',
+                            position: 'relative',
+                            overflow: 'hidden',
+                        }}
                     >
-                        Do Operacional ao Estratégico
-                    </Badge>
-                </Group>
-
-                <Title
-                    order={2}
-                    ta="center"
-                    mb="md"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                >
-                    Onde Atuamos na Sua Empresa
-                </Title>
-
-                <Text
-                    c="dimmed"
-                    ta="center"
-                    mb={60}
-                    maw={700}
-                    mx="auto"
-                >
-                    O valor não está na ferramenta, está no impacto. Trabalhamos em 4 níveis progressivos — cada um mais
-                    valioso que o anterior.
-                </Text>
-
-                <SimpleGrid
-                    cols={{ base: 1, sm: 2, lg: 4 }}
-                    spacing="lg"
-                >
-                    {levels.map((item, index) => (
-                        <Paper
-                            key={item.id}
-                            p="xl"
-                            radius="md"
-                            style={{
-                                border: '1px solid #e9ecef',
-                                position: 'relative',
-                                overflow: 'hidden',
-                            }}
+                        <Text
+                            size="xs"
+                            fw={700}
+                            c={item.color}
+                            tt="uppercase"
+                            mb="xs"
                         >
-                            <Text
-                                size="xs"
-                                fw={700}
-                                c={item.color}
-                                tt="uppercase"
-                                mb="xs"
-                            >
-                                {item.level}
-                            </Text>
+                            {item.level}
+                        </Text>
 
-                            <ThemeIcon
-                                size={48}
-                                radius="md"
-                                variant="light"
-                                color={item.color}
-                                mb="md"
-                            >
-                                <item.icon
-                                    style={{ width: rem(24), height: rem(24) }}
-                                    stroke={2}
-                                />
-                            </ThemeIcon>
+                        <ThemeIcon
+                            size={48}
+                            radius="md"
+                            variant="light"
+                            color={item.color}
+                            mb="md"
+                        >
+                            <item.icon
+                                style={{ width: rem(24), height: rem(24) }}
+                                stroke={2}
+                            />
+                        </ThemeIcon>
 
-                            <Text
-                                size="lg"
-                                fw={600}
-                                mb="xs"
-                            >
-                                {item.title}
-                            </Text>
+                        <Text
+                            size="lg"
+                            fw={600}
+                            mb="xs"
+                        >
+                            {item.title}
+                        </Text>
 
-                            <Text
-                                size="sm"
-                                c="dimmed"
-                                mb="md"
-                            >
-                                {item.description}
-                            </Text>
+                        <Text
+                            size="sm"
+                            c="dimmed"
+                            mb="md"
+                        >
+                            {item.description}
+                        </Text>
 
-                            <Text
-                                size="sm"
-                                fw={500}
-                                c={item.color}
-                            >
-                                → {item.result}
-                            </Text>
+                        <Text
+                            size="sm"
+                            fw={500}
+                            c={item.color}
+                        >
+                            → {item.result}
+                        </Text>
 
-                            {index < levels.length - 1 && (
-                                <Box
-                                    style={{
-                                        position: 'absolute',
-                                        right: -12,
-                                        top: '50%',
-                                        transform: 'translateY(-50%)',
-                                        display: 'none',
-                                    }}
-                                    visibleFrom="lg"
+                        {index < levels.length - 1 && (
+                            <Box
+                                style={{
+                                    position: 'absolute',
+                                    right: -12,
+                                    top: '50%',
+                                    transform: 'translateY(-50%)',
+                                    display: 'none',
+                                }}
+                                visibleFrom="lg"
+                            >
+                                <Text
+                                    size="24px"
+                                    c="dimmed"
                                 >
-                                    <Text
-                                        size="24px"
-                                        c="dimmed"
-                                    >
-                                        →
-                                    </Text>
-                                </Box>
-                            )}
-                        </Paper>
-                    ))}
-                </SimpleGrid>
-            </Container>
+                                    →
+                                </Text>
+                            </Box>
+                        )}
+                    </Paper>
+                ))}
+            </SimpleGrid>
+            {/* </Container> */}
         </Box>
     )
 }
