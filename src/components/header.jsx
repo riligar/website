@@ -325,7 +325,7 @@ export default function HeaderMegaMenu() {
                         href="/solutions"
                         className={classes.link}
                     >
-                        Portfólio
+                        Soluções
                     </a>
                     {/* <UnstyledButton
                         className={classes.link}
