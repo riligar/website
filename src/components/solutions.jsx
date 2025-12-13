@@ -1,55 +1,39 @@
 import { Badge, Group, Title, Text, Box, Image, Stack, Flex, Grid, List, ThemeIcon, Button, rem } from '@mantine/core'
-import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
+import { IconCheck, IconRocket, IconMessageCircle, IconExternalLink } from '@tabler/icons-react'
 import { useNavigate } from 'react-router-dom'
 
 const solutions = [
     {
-        id: 'text-to-speech',
+        id: 'https://text-to-speech.ciromaciel.click/',
         title: 'Text to Speech',
         description:
             'Aplicação de texto para fala com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
         image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'IA', 'Áudio'],
+        tags: ['Web', 'IA', 'Áudio', 'LLM', 'API', 'vozes'],
     },
     {
-        id: 'automation-hub',
-        title: 'Automation Hub',
+        id: 'https://passwords.ciromaciel.click/',
+        title: 'Password Manager',
         description:
-            'Central de automações inteligentes para otimizar processos repetitivos. Elimine tarefas manuais e libere sua equipe para o que realmente importa.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'Integração'],
+            'Gerenciador de senhas com criptografia avançada e sincronização em tempo real. Proteja suas credenciais com segurança e facilidade.',
+        image: 'https://passwords.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'criptografia', 'sincronização', 'senhas', 'segurança'],
     },
     {
-        id: 'analytics-dashboard',
-        title: 'Analytics Dashboard',
+        id: 'https://s3-explorer.ciromaciel.click/',
+        title: 'S3 Explorer',
         description:
-            'Dashboards em tempo real para visualização de métricas críticas e tomada de decisão baseada em dados. Tenha visibilidade total do seu negócio.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'BI'],
+            'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
+        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'BI', 'S3', 'AWS'],
     },
     {
-        id: 'chatbot-ai',
-        title: 'Chatbot AI',
+        id: 'https://web-to-ai.ciromaciel.click/',
+        title: 'Web to AI',
         description:
-            'Assistentes virtuais inteligentes para atendimento e qualificação de leads 24/7. Nunca mais perca uma oportunidade por falta de resposta.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'WhatsApp'],
-    },
-    {
-        id: 'data-pipeline',
-        title: 'Data Pipeline',
-        description:
-            'Pipelines de dados automatizados para extração, transformação e carregamento de informações. Seus dados sempre atualizados e sincronizados.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['API', 'Dados'],
-    },
-    {
-        id: 'custom-platform',
-        title: 'Plataforma Sob Medida',
-        description:
-            'Desenvolvimento de plataformas personalizadas que se adaptam perfeitamente ao seu workflow. Tecnologia que trabalha do jeito que você precisa.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'Mobile'],
+            'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
+        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
+        tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
     },
 ]
 
@@ -87,6 +71,18 @@ function SolutionCard({ solution, reversed }) {
                     </Badge>
                 ))}
             </Group>
+            <Button
+                component="a"
+                href={solution.id}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="light"
+                size="sm"
+                mt="md"
+                rightSection={<IconExternalLink style={{ width: rem(16), height: rem(16) }} />}
+            >
+                Conhecer Solução
+            </Button>
         </Stack>
     )
 
@@ -157,15 +153,15 @@ function SolutionsHero() {
                         component="h1"
                         style={{ lineHeight: 1.2 }}
                     >
-                        Seu Negócio Está{' '}
+                        Seu Negócio Precisa de{' '}
                         <Text
                             component="span"
                             inherit
                             c="red"
                         >
-                            Sangrando Dinheiro
+                            um Novo Ponto de Vista
                         </Text>{' '}
-                        Todos os Dias
+                        para Alavancar
                     </Title>
                     <Text
                         size="lg"
@@ -321,6 +317,7 @@ export default function Solutions() {
                 id="solucoes"
                 aria-label="Nossas Soluções"
                 py="xl"
+                mb={80}
             >
                 <Group justify="center">
                     <Badge
@@ -356,7 +353,7 @@ export default function Solutions() {
                     gap="lg"
                     maw={900}
                     mx="auto"
-                    px="md"
+                    // px="md"
                 >
                     {solutions.map((solution, index) => (
                         <SolutionCard
