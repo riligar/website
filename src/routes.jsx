@@ -36,30 +36,30 @@ export default function AppRoutes() {
                         path="/"
                         element={<Home />}
                     />
-                    <Route
+                    {/* <Route
                         path="/about"
                         element={<About />}
-                    />
-                    <Route
+                    /> */}
+                    {/* <Route
                         path="/contact"
                         element={<Contact />}
-                    />
-                    <Route
+                    /> */}
+                    {/* <Route
                         path="/ai-agents"
                         element={<AIAgentsPage />}
-                    />
-                    <Route
+                    /> */}
+                    {/* <Route
                         path="/salesforce"
                         element={<SalesforcePage />}
-                    />
-                    <Route
+                    /> */}
+                    {/* <Route
                         path="/saas"
                         element={<SaaSPage />}
-                    />
-                    <Route
+                    /> */}
+                    {/* <Route
                         path="/ai-integration"
                         element={<AIIntegrationPage />}
-                    />
+                    /> */}
                     <Route
                         path="/solutions"
                         element={<SolutionsPage />}
