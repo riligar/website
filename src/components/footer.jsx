@@ -11,6 +11,7 @@ const data = [
         id: 'value',
         title: 'Entregamos',
         links: [
+            { id: 'solutions', label: 'Soluções', link: '/solutions' },
             { id: 'diagnostico', label: 'Diagnóstico', link: '/#quem-somos' },
             { id: 'redesenho', label: 'Redesenho', link: '/#quem-somos' },
             { id: 'resultados', label: 'Resultados', link: '/#casos-impacto' },

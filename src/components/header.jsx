@@ -156,6 +156,12 @@ export default function HeaderMegaMenu() {
                             >
                                 Início
                             </a>
+                            <a
+                                href="/solutions"
+                                className={classes.link}
+                            >
+                                Soluções
+                            </a>
                             {/* <HoverCard
                                 width={600}
                                 position="bottom"
@@ -314,6 +320,12 @@ export default function HeaderMegaMenu() {
                         className={classes.link}
                     >
                         Início
+                    </a>
+                    <a
+                        href="/solutions"
+                        className={classes.link}
+                    >
+                        Portfólio
                     </a>
                     {/* <UnstyledButton
                         className={classes.link}
