@@ -1,8 +1,13 @@
-# Serve static files directly
+# Static files must be listed BEFORE the wildcard
+# Cloudflare Pages processes redirects top-to-bottom
 /llms.txt /llms.txt 200
 /llms-ctx.txt /llms-ctx.txt 200
 /robots.txt /robots.txt 200
 /sitemap.xml /sitemap.xml 200
+/favicon.ico /favicon.ico 200
+/manifest.webmanifest /manifest.webmanifest 200
+/sw.js /sw.js 200
+/registerSW.js /registerSW.js 200
 
-# SPA fallback - all other routes go to index.html
+# SPA fallback - all other routes go to index.html  
 /* /index.html 200
