@@ -123,7 +123,7 @@ export default function Hero() {
                     >
                         <Button
                             component="a"
-                            href="/contact"
+                            href="/#contato"
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}

@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Space } from '@mantine/core'
 
 import Layout from '@/layout'
@@ -18,6 +20,21 @@ import Faq from '@/components/faq'
 import ContactSection from '@/components/contactSection'
 
 export default function Page() {
+    const location = useLocation()
+
+    // Escuta mudanças no hash da URL e faz scroll suave
+    useEffect(() => {
+        if (location.hash) {
+            const elementId = location.hash.replace('#', '')
+            // Timeout para garantir que o DOM esteja pronto
+            setTimeout(() => {
+                const element = document.getElementById(elementId)
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+            }, 100)
+        }
+    }, [location.hash])
     return (
         <Layout>
             <Hero />
