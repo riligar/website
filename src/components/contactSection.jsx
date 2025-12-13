@@ -1,6 +1,15 @@
-import { Box, Title, Text, Container, Badge, Group } from '@mantine/core'
+import { Box, Title, Text, Badge, Group, Button, Stack } from '@mantine/core'
+import { IconBrandWhatsapp } from '@tabler/icons-react'
+
+// Configuração do WhatsApp - altere esses valores conforme necessário
+const WHATSAPP_CONFIG = {
+    phoneNumber: '5511986166966', // Número de telefone no formato internacional (sem + ou espaços)
+    defaultMessage: 'Olá! Gostaria de agendar uma conversa de diagnóstico para meu negócio.',
+}
 
 export default function ContactSection() {
+    const whatsappUrl = `https://wa.me/${WHATSAPP_CONFIG.phoneNumber}?text=${encodeURIComponent(WHATSAPP_CONFIG.defaultMessage)}`
+
     return (
         <Box
             component="section"
@@ -32,13 +41,40 @@ export default function ContactSection() {
             <Text
                 c="dimmed"
                 ta="center"
-                mb={50}
+                mb="lg"
                 maw={600}
                 mx="auto"
             >
                 Em 30 minutos, vamos entender seus principais desafios e identificar onde pode haver valor escondido no
                 seu negócio. Sem compromisso.
             </Text>
+
+            {/* WhatsApp CTA */}
+            <Stack
+                align="center"
+                mb={50}
+            >
+                <Button
+                    component="a"
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="lg"
+                    color="green"
+                    leftSection={<IconBrandWhatsapp size={24} />}
+                    // style={{
+                    //     background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+                    // }}
+                >
+                    Fale Conosco pelo WhatsApp
+                </Button>
+                <Text
+                    size="sm"
+                    c="dimmed"
+                >
+                    Ou agende abaixo no horário que preferir
+                </Text>
+            </Stack>
 
             {/* Google Calendar Embed */}
             <Box
