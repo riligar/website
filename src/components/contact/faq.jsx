@@ -4,39 +4,39 @@ import { Trans } from '@lingui/react/macro'
 const contactFaq = [
     {
         id: 'info',
-        questionKey: 'What information should I include when reaching out?',
+        questionKey: 'O que devo compartilhar no primeiro contato?',
         answerKey:
-            'Share your business challenge, project goals, timeline, and budget range if possible. The more context you provide, the better I can tailor my response to your specific needs.',
+            'Compartilhe seu principal desafio de negócio, o que você já tentou, e qual seria o impacto de resolver esse problema. Quanto mais contexto, melhor posso preparar nosso diagnóstico.',
     },
     {
         id: 'consultation',
-        questionKey: 'Do you offer free consultations?',
+        questionKey: 'A conversa de diagnóstico é gratuita?',
         answerKey:
-            "Yes! The initial consultation is always free. We'll discuss your project, explore potential solutions, and see if we're a good fit—no obligation, no sales pressure.",
+            'Sim! A primeira conversa de diagnóstico (30 minutos) é sempre gratuita. Vamos entender seu desafio, explorar possíveis soluções, e ver se faz sentido trabalharmos juntos — sem obrigação e sem pressão.',
     },
     {
         id: 'projects',
-        questionKey: 'What types of projects do you take on?',
+        questionKey: 'Que tipos de problemas vocês resolvem?',
         answerKey:
-            'I focus on AI Agents, Salesforce solutions, SaaS platforms, and AI integration projects. If it involves intelligent automation, Salesforce development, or scalable web applications, I can likely help.',
+            'Problemas onde processos ineficientes estão custando dinheiro, tempo ou oportunidades. Pode ser leads caindo entre as frestas, decisões baseadas em achismo, trabalho manual repetitivo, ou falta de visibilidade operacional.',
     },
     {
         id: 'size',
-        questionKey: 'What is your typical project size?',
+        questionKey: 'Qual o tamanho típico de projeto?',
         answerKey:
-            'I work with projects ranging from small Salesforce components (2-4 weeks) to complete SaaS platforms (3-6 months). Both startups and established businesses are welcome.',
+            'Trabalhamos desde transformações pontuais (2-4 semanas) até parcerias de transformação contínua (meses/anos). Tanto startups quanto empresas estabelecidas são bem-vindos.',
     },
     {
         id: 'international',
-        questionKey: 'Do you work with international clients?',
+        questionKey: 'Vocês trabalham com clientes fora do Brasil?',
         answerKey:
-            'Absolutely! I work with clients worldwide and am comfortable with different time zones. Communication happens via video calls, email, and project management tools.',
+            'Sim! Trabalhamos com clientes em qualquer lugar do mundo. A comunicação acontece via videochamadas, WhatsApp, email, e ferramentas de gestão de projetos.',
     },
     {
         id: 'unsure',
-        questionKey: "What if I'm not sure what solution I need?",
+        questionKey: 'E se eu não souber exatamente qual é meu problema?',
         answerKey:
-            "That's perfectly fine! Many clients reach out with a challenge but aren't sure about the best solution. That's where my expertise comes in—I'll recommend the approach that makes the most sense for your situation.",
+            'Isso é perfeitamente normal! A maioria dos clientes sabe que algo poderia funcionar melhor, mas não consegue pinpoint o quê. É exatamente para isso que serve nosso diagnóstico — identificar o problema real antes de propor soluções.',
     },
 ]
 
@@ -49,7 +49,7 @@ export default function ContactFAQ() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Common Questions</Trans>
+                    <Trans>Perguntas Comuns</Trans>
                 </Title>
 
                 <Text
@@ -59,7 +59,7 @@ export default function ContactFAQ() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>Quick answers to questions you might have before reaching out.</Trans>
+                    <Trans>Respostas rápidas para dúvidas antes de entrar em contato.</Trans>
                 </Text>
 
                 <Accordion variant="separated">

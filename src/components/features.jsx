@@ -4,46 +4,46 @@ import { Trans } from '@lingui/react/macro'
 
 const mockdata = [
     {
-        id: 'ai-agents',
-        titleKey: 'AI Agents',
+        id: 'leads-perdidos',
+        titleKey: 'Leads Caindo Entre as Frestas?',
         descriptionKey:
-            'Deploy intelligent autonomous agents that work continuously for your business. From customer service to data analysis, our AI agents handle complex tasks, make informed decisions, and learn from interactions—all while you focus on growth.',
+            'Quando leads passam despercebidos ou não recebem follow-up adequado, você perde receita. Garantimos que cada lead de alto valor receba atenção imediata, enquanto consultas rotineiras são tratadas automaticamente.',
         icon: IconRobot,
         highlight: true,
     },
     {
-        id: 'salesforce',
-        titleKey: 'Salesforce Solutions',
+        id: 'pipeline-cego',
+        titleKey: 'Pipeline de Vendas Sem Visibilidade?',
         descriptionKey:
-            'Custom Lightning Web Components, integrations, and automations for Salesforce. Component libraries that enhance your CRM capabilities and streamline your sales, service, and marketing workflows.',
+            'Decisões baseadas em achismo custam caro. Criamos visibilidade completa do seu funil de vendas com dashboards que mostram exatamente onde estão os gargalos e oportunidades.',
         icon: IconChartBar,
     },
     {
-        id: 'saas',
-        titleKey: 'SaaS Platforms',
+        id: 'produto-nao-escala',
+        titleKey: 'Produto Que Não Escala com Seu Crescimento?',
         descriptionKey:
-            'End-to-end SaaS solutions built with modern architecture. From MVP to enterprise-scale, we deliver lightweight, high-performance applications that are easy to maintain and cost-effective to run.',
+            'Seu sistema atual está travando seu crescimento? Desenvolvemos plataformas que escalam conforme seu negócio cresce, sem surpresas de custo ou performance.',
         icon: IconCloudComputing,
     },
     {
-        id: 'ai-integration',
-        titleKey: 'AI Integration Services',
+        id: 'dados-manual',
+        titleKey: 'Horas Perdidas em Trabalho Manual?',
         descriptionKey:
-            'Integrate cutting-edge AI capabilities into your existing systems. Natural language processing, machine learning models, predictive analytics, and intelligent automation—tailored to your specific use cases.',
+            'Dados não estruturados e processos manuais consomem tempo da sua equipe. Automatizamos a extração, análise e processamento para liberar seu time para trabalho estratégico.',
         icon: IconSparkles,
     },
     {
-        id: 'custom-dev',
-        titleKey: 'Custom Development',
+        id: 'software-generico',
+        titleKey: 'Software Genérico Que Não Resolve Seu Problema?',
         descriptionKey:
-            'Bespoke solutions designed around your unique business requirements. Clean, maintainable code that scales with your needs and stands the test of time.',
+            'Quando soluções de prateleira não atendem seus processos únicos, desenvolvemos ferramentas sob medida que realmente se encaixam no seu workflow.',
         icon: IconBrain,
     },
     {
-        id: 'consulting',
-        titleKey: 'Consulting & Strategy',
+        id: 'incerteza-tecnologia',
+        titleKey: 'Incerteza Sobre Onde Investir em Tecnologia?',
         descriptionKey:
-            'Technical guidance and strategic planning for your technology initiatives. We help you make informed decisions about architecture, tooling, and implementation approaches.',
+            'Com tantas opções disponíveis, é difícil saber qual caminho seguir. Diagnosticamos seu negócio e criamos um roadmap claro de onde a tecnologia pode gerar mais valor.',
         icon: IconShield,
     },
 ]
@@ -73,7 +73,7 @@ export default function Features() {
                     size="sm"
                     mb="sm"
                 >
-                    <Trans>Featured Solution</Trans>
+                    <Trans>Solução Destaque</Trans>
                 </Badge>
             )}
             <feature.icon
@@ -109,7 +109,7 @@ export default function Features() {
                     variant="filled"
                     size="lg"
                 >
-                    <Trans>Solutions That Deliver Results</Trans>
+                    <Trans>Problemas Que Resolvemos</Trans>
                 </Badge>
             </Group>
 
@@ -119,7 +119,7 @@ export default function Features() {
                 mt="sm"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                <Trans>Our Solutions Portfolio</Trans>
+                <Trans>Esses Problemas São Familiares?</Trans>
             </Title>
 
             <Text
@@ -130,10 +130,9 @@ export default function Features() {
                 mx="auto"
             >
                 <Trans>
-                    Each solution is crafted to address specific business challenges. We combine cutting-edge technology
-                    with clean, maintainable code to deliver tools that are powerful, reliable, and built to last. From
-                    AI Agents that work autonomously to Salesforce components that boost productivity—we have the
-                    solutions you need to thrive.
+                    Identificamos esses padrões repetidamente nos negócios. O primeiro passo é reconhecer o problema — o
+                    segundo é resolvê-lo de forma que gere impacto real e mensurável. Clique em qualquer card para saber
+                    como podemos ajudar.
                 </Trans>
             </Text>
 

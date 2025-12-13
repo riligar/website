@@ -77,9 +77,7 @@ export default function HeaderMegaMenu() {
 
     // WhatsApp link with pre-filled message
     const whatsappMessage = encodeURIComponent(
-        _(
-            "Hi! I'm interested in learning more about RiLiGar's solutions. I'd like to discuss how AI Agents, Salesforce solutions, or SaaS platforms could help my business."
-        )
+        _('Olá! Gostaria de agendar uma conversa de diagnóstico para entender como a Riligar pode ajudar meu negócio.')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -161,7 +159,7 @@ export default function HeaderMegaMenu() {
                                 href="/"
                                 className={classes.link}
                             >
-                                <Trans>Home</Trans>
+                                <Trans>Início</Trans>
                             </a>
                             <HoverCard
                                 width={600}
@@ -170,7 +168,7 @@ export default function HeaderMegaMenu() {
                                 shadow="md"
                                 withinPortal
                             >
-                                <HoverCard.Target>
+                                {/* <HoverCard.Target>
                                     <a
                                         href="#"
                                         className={classes.link}
@@ -188,7 +186,7 @@ export default function HeaderMegaMenu() {
                                             />
                                         </Center>
                                     </a>
-                                </HoverCard.Target>
+                                </HoverCard.Target> */}
 
                                 <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                                     <Group
@@ -196,7 +194,7 @@ export default function HeaderMegaMenu() {
                                         px="md"
                                     >
                                         <Text fw={500}>
-                                            <Trans>Our Services</Trans>
+                                            <Trans>Nossas Soluções</Trans>
                                         </Text>
                                     </Group>
 
@@ -216,13 +214,13 @@ export default function HeaderMegaMenu() {
                                                     fw={500}
                                                     fz="sm"
                                                 >
-                                                    <Trans>Ready to get started?</Trans>
+                                                    <Trans>Pronto para começar?</Trans>
                                                 </Text>
                                                 <Text
                                                     size="xs"
                                                     c="dimmed"
                                                 >
-                                                    <Trans>Discover the perfect solution for your business</Trans>
+                                                    <Trans>Descubra a solução ideal para seu negócio</Trans>
                                                 </Text>
                                             </div>
                                             <Button
@@ -233,7 +231,7 @@ export default function HeaderMegaMenu() {
                                                 variant="default"
                                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                                             >
-                                                <Trans>Start a Project</Trans>
+                                                <Trans>Agendar Diagnóstico</Trans>
                                             </Button>
                                         </Group>
                                     </div>
@@ -243,13 +241,13 @@ export default function HeaderMegaMenu() {
                                 href="/about"
                                 className={classes.link}
                             >
-                                <Trans>About Us</Trans>
+                                <Trans>Sobre</Trans>
                             </a>
                             <a
                                 href="/contact"
                                 className={classes.link}
                             >
-                                <Trans>Contact</Trans>
+                                <Trans>Contato</Trans>
                             </a>
                         </Group>
                         <Group visibleFrom="sm">
@@ -261,7 +259,7 @@ export default function HeaderMegaMenu() {
                                 size="md"
                                 leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
                             >
-                                <Trans>Start a Project</Trans>
+                                <Trans>Agendar Diagnóstico</Trans>
                             </Button>
                         </Group>
                         <Burger
@@ -278,7 +276,7 @@ export default function HeaderMegaMenu() {
                 onClose={closeDrawer}
                 size="100%"
                 padding="md"
-                title={<Trans>Navigation</Trans>}
+                title={<Trans>Navegação</Trans>}
                 hiddenFrom="sm"
                 zIndex={1000000}
             >
@@ -292,7 +290,7 @@ export default function HeaderMegaMenu() {
                         href="/"
                         className={classes.link}
                     >
-                        <Trans>Home</Trans>
+                        <Trans>Início</Trans>
                     </a>
                     <UnstyledButton
                         className={classes.link}
@@ -303,7 +301,7 @@ export default function HeaderMegaMenu() {
                                 component="span"
                                 mr={5}
                             >
-                                <Trans>Solutions</Trans>
+                                <Trans>Soluções</Trans>
                             </Box>
                             <IconChevronDown
                                 style={{ width: rem(16), height: rem(16) }}
@@ -316,13 +314,13 @@ export default function HeaderMegaMenu() {
                         href="/about"
                         className={classes.link}
                     >
-                        <Trans>About Us</Trans>
+                        <Trans>Sobre</Trans>
                     </a>
                     <a
                         href="/contact"
                         className={classes.link}
                     >
-                        <Trans>Contact</Trans>
+                        <Trans>Contato</Trans>
                     </a>
 
                     <Group
@@ -339,7 +337,7 @@ export default function HeaderMegaMenu() {
                             size="lg"
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                         >
-                            <Trans>Start a Project</Trans>
+                            <Trans>Agendar Diagnóstico</Trans>
                         </Button>
                     </Group>
                 </ScrollArea>

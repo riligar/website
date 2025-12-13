@@ -5,7 +5,7 @@ import { Trans, useLingui } from '@lingui/react/macro'
 export default function Hero() {
     const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _('Hello! I would like to know more about RiLiGar solutions. Can we talk?')
+        _('Olá! Gostaria de conversar sobre como a Riligar pode ajudar meu negócio. Podemos agendar?')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -26,7 +26,7 @@ export default function Hero() {
                         component="h1"
                         style={{ lineHeight: 1.2 }}
                     >
-                        <Trans>Solutions That Transform Your Business</Trans>
+                        <Trans>Entendemos Seu Negócio Antes de Propor Soluções</Trans>
                     </Title>
                     <Text
                         size="lg"
@@ -34,9 +34,9 @@ export default function Hero() {
                         mt="xl"
                     >
                         <Trans>
-                            We deliver powerful solutions tailored to your needs. From Salesforce components to
-                            intelligent AI Agents, scalable SaaS platforms, and advanced AI integrations—every solution
-                            is designed to solve real problems and drive measurable results.
+                            Antes de automatizar qualquer coisa, diagnosticamos o que realmente está impedindo seu
+                            negócio de crescer. Depois, criamos soluções que geram impacto mensurável — não apenas
+                            economia de tempo, mas aumento de receita, redução de custos e vantagens competitivas.
                         </Trans>
                     </Text>
 
@@ -62,7 +62,7 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                <Trans>AI Agents</Trans>
+                                <Trans>Diagnóstico de Processos</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
@@ -70,8 +70,8 @@ export default function Hero() {
                                 mt={4}
                             >
                                 <Trans>
-                                    Intelligent autonomous agents that work 24/7, automating tasks, making decisions,
-                                    and delivering insights
+                                    Identificamos gargalos que você não sabia que existiam e quantificamos o impacto
+                                    real no seu faturamento
                                 </Trans>
                             </Text>
                         </List.Item>
@@ -80,7 +80,7 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                <Trans>Salesforce Solutions</Trans>
+                                <Trans>Redesenho de Operações</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
@@ -88,8 +88,7 @@ export default function Hero() {
                                 mt={4}
                             >
                                 <Trans>
-                                    Custom components and integrations that supercharge your CRM and boost team
-                                    productivity
+                                    Reestruturamos processos para serem mais eficazes, não apenas mais rápidos
                                 </Trans>
                             </Text>
                         </List.Item>
@@ -98,7 +97,7 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                <Trans>SaaS & AI Integration</Trans>
+                                <Trans>Vantagem Competitiva</Trans>
                             </Text>
                             <Text
                                 c="dimmed"
@@ -106,7 +105,7 @@ export default function Hero() {
                                 mt={4}
                             >
                                 <Trans>
-                                    High-performance platforms with AI capabilities that scale with your business growth
+                                    Criamos capacidades que seus concorrentes não conseguem replicar facilmente
                                 </Trans>
                             </Text>
                         </List.Item>
@@ -124,7 +123,7 @@ export default function Hero() {
                             leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
-                            <Trans>Explore Solutions</Trans>
+                            <Trans>Agendar Diagnóstico</Trans>
                         </Button>
                         <Button
                             component="a"
@@ -136,7 +135,7 @@ export default function Hero() {
                             leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
                             style={{ flex: '1 1 auto', minWidth: '200px' }}
                         >
-                            <Trans>Talk to Us</Trans>
+                            <Trans>Fale Conosco</Trans>
                         </Button>
                     </Group>
                 </Grid.Col>

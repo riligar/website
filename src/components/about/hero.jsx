@@ -16,7 +16,7 @@ export default function AboutHero() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>About RiLiGar</Trans>
+                        <Trans>Sobre a Riligar</Trans>
                     </Badge>
                 </Group>
 
@@ -27,7 +27,8 @@ export default function AboutHero() {
                     style={{ lineHeight: 1.2 }}
                 >
                     <Trans>
-                        Building Technology <br /> with Purpose
+                        Entendemos Negócios <br />
+                        Antes de Propor Soluções
                     </Trans>
                 </Title>
 
@@ -40,8 +41,8 @@ export default function AboutHero() {
                     style={{ lineHeight: 1.6 }}
                 >
                     <Trans>
-                        RiLiGar was born from a simple belief: technology should solve real problems and improve lives.
-                        We're not chasing trends—we're building solutions that matter.
+                        A Riligar nasceu de uma crença simples: tecnologia só tem valor quando resolve problemas reais
+                        de negócio. Não vendemos automação — diagnosticamos, redesenhamos e transformamos.
                     </Trans>
                 </Text>
             </Container>

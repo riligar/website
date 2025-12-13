@@ -4,46 +4,46 @@ import { Trans } from '@lingui/react/macro'
 
 const values = [
     {
-        id: 'purpose',
+        id: 'diagnostico',
         icon: IconTarget,
-        titleKey: 'Purpose-Driven',
+        titleKey: 'Diagnóstico Primeiro',
         descriptionKey:
-            'Every solution we build serves a real purpose. We focus on projects that solve actual problems and deliver measurable value—not just technical complexity for its own sake.',
+            'Antes de propor qualquer solução, entendemos profundamente o problema. Identificamos causas raiz, não sintomas. A tecnologia vem depois.',
     },
     {
-        id: 'code',
+        id: 'resultados',
         icon: IconCode,
-        titleKey: 'Clean Code Philosophy',
+        titleKey: 'Resultados Mensuráveis',
         descriptionKey:
-            "We believe in code that's maintainable, scalable, and built to last. No shortcuts, no technical debt—just quality software that stands the test of time.",
+            'Medimos sucesso por impacto de negócio: aumento de receita, redução de custos, vantagem competitiva. Não por linhas de código ou funcionalidades.',
     },
     {
-        id: 'collaboration',
+        id: 'parceria',
         icon: IconUsers,
-        titleKey: 'Direct Collaboration',
+        titleKey: 'Parceria, Não Fornecimento',
         descriptionKey:
-            'You work directly with experienced engineers who care about your success. No layers of project managers—just honest, expert collaboration between technical professionals.',
+            'Não somos fornecedores técnicos. Somos parceiros na transformação do seu negócio. Trabalhamos lado a lado para garantir que a solução realmente funcione.',
     },
     {
-        id: 'family',
+        id: 'transparencia',
         icon: IconHeart,
-        titleKey: 'Family Values',
+        titleKey: 'Transparência Total',
         descriptionKey:
-            'We understand work-life balance because we live it. Our solutions are designed by people who value family time and know that better tools mean more time for what matters.',
+            'Comunicação honesta sobre prazos, limitações e expectativas. Se algo não fizer sentido para seu negócio, vamos dizer — mesmo que signifique menos trabalho para nós.',
     },
     {
-        id: 'ai',
+        id: 'simplicidade',
         icon: IconBrain,
-        titleKey: 'AI Expertise',
+        titleKey: 'Simplicidade Intencional',
         descriptionKey:
-            'We study and apply AI to create real business value. From autonomous agents to intelligent integrations, we leverage cutting-edge technology with practical wisdom.',
+            'A solução mais elegante é geralmente a mais simples. Evitamos complexidade desnecessária que aumenta custos e dificulta manutenção.',
     },
     {
-        id: 'evolution',
+        id: 'evolucao',
         icon: IconTrendingUp,
-        titleKey: 'Constant Evolution',
+        titleKey: 'Evolução Contínua',
         descriptionKey:
-            "We're always learning, improving, and raising our own standards. This commitment to growth means you get solutions that reflect the latest best practices and innovations.",
+            'Seu negócio muda, suas soluções devem acompanhar. Projetamos para evolução, não para obsolescência. Acompanhamos resultados e ajustamos conforme necessário.',
     },
 ]
 
@@ -61,7 +61,7 @@ export default function AboutValues() {
                     ta="center"
                     mb="md"
                 >
-                    <Trans>Our Values</Trans>
+                    <Trans>Nossos Valores</Trans>
                 </Title>
 
                 <Text
@@ -71,7 +71,7 @@ export default function AboutValues() {
                     maw={700}
                     mx="auto"
                 >
-                    <Trans>These principles guide every decision we make and every solution we build.</Trans>
+                    <Trans>Esses princípios guiam cada diagnóstico e cada solução que criamos.</Trans>
                 </Text>
 
                 <SimpleGrid

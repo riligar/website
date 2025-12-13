@@ -5,7 +5,7 @@ import { Trans, useLingui } from '@lingui/react/macro'
 export default function CTA() {
     const { _ } = useLingui()
     const whatsappMessage = encodeURIComponent(
-        _('Hello! I would like to know more about RiLiGar solutions. Can we schedule a conversation?')
+        _('Olá! Gostaria de agendar uma conversa para diagnóstico do meu negócio. Podemos conversar?')
     )
     const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
@@ -25,7 +25,7 @@ export default function CTA() {
                     size={{ base: 28, sm: 36, md: 42 }}
                     mb="md"
                 >
-                    <Trans>Find the Perfect Solution for Your Business</Trans>
+                    <Trans>Qual Problema Está Custando Mais do Que Deveria?</Trans>
                 </Title>
 
                 <Text
@@ -37,8 +37,9 @@ export default function CTA() {
                     mx="auto"
                 >
                     <Trans>
-                        Whether you need AI Agents, Salesforce solutions, SaaS platforms, or AI integration—we have the
-                        expertise to deliver. Let's explore which solution fits your needs best.
+                        A maioria dos empresários sabe que algo poderia funcionar melhor — mas não consegue identificar
+                        exatamente o quê. Em uma conversa de 30 minutos, vamos diagnosticar seus maiores gargalos e
+                        mostrar onde está o valor escondido no seu negócio.
                     </Trans>
                 </Text>
 
@@ -52,7 +53,7 @@ export default function CTA() {
                         size="lg"
                         leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Explore Solutions</Trans>
+                        <Trans>Agendar Diagnóstico</Trans>
                     </Button>
                     <Button
                         component="a"
@@ -63,7 +64,7 @@ export default function CTA() {
                         variant="outline"
                         leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
                     >
-                        <Trans>Schedule a Call</Trans>
+                        <Trans>Agendar Conversa</Trans>
                     </Button>
                 </Group>
 
@@ -84,7 +85,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>Solutions Available</Trans>
+                            <Trans>Diagnósticos Realizados</Trans>
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -99,7 +100,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>To First Results</Trans>
+                            <Trans>Para Primeiros Resultados</Trans>
                         </Text>
                     </Box>
                     <Box ta="center">
@@ -114,7 +115,7 @@ export default function CTA() {
                             size="sm"
                             c="dimmed"
                         >
-                            <Trans>AI Agents Working</Trans>
+                            <Trans>Sem Interrupção no Seu Negócio</Trans>
                         </Text>
                     </Box>
                 </SimpleGrid>

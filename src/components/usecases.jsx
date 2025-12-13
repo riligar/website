@@ -23,46 +23,56 @@ import {
 import { Trans, useLingui } from '@lingui/react/macro'
 
 const whatsappMessage = encodeURIComponent(
-    'Olá! Gostaria de discutir meu caso de uso com a RiLiGar. Podemos conversar?'
+    'Olá! Gostaria de discutir como a Riligar pode resolver desafios semelhantes no meu negócio. Podemos conversar?'
 )
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
 const useCases = [
     {
-        id: 'customer-service',
+        id: 'escritorio-advocacia',
         icon: IconRobot,
-        badgeKey: 'AI Agents',
-        titleKey: 'Customer Service Automation',
+        badgeKey: 'Escritório de Advocacia',
+        titleKey: 'De Horas Manuais a Leads Qualificados em Segundos',
         descriptionKey:
-            'Deploy AI agents that handle customer inquiries, provide instant responses, and escalate complex issues to your team—all while learning from every interaction.',
-        benefits: ['24/7 availability', 'Instant responses', 'Consistent quality', 'Scales effortlessly'],
+            'Um escritório com 10 funcionários perdia horas processando leads manualmente. O problema real? Não sabiam quando enviar email, SMS ou passar para um advogado. Redesenhamos o fluxo de qualificação inteiro — a automação foi só o enabler.',
+        benefits: [
+            'Horas economizadas/semana',
+            'Leads processados 24/7',
+            'Menos erros humanos',
+            'Equipe focada em casos',
+        ],
     },
     {
-        id: 'sales-pipeline',
+        id: 'ecommerce',
         icon: IconChartBar,
-        badgeKey: 'Salesforce',
-        titleKey: 'Sales Pipeline Intelligence',
+        badgeKey: 'E-commerce',
+        titleKey: 'De Decisões por Achismo a Dashboard Estratégico',
         descriptionKey:
-            'Custom Salesforce components that provide real-time insights, automate data entry, and help your sales team focus on closing deals instead of administrative tasks.',
-        benefits: ['Real-time dashboards', 'Automated workflows', 'Better forecasting', 'Higher productivity'],
+            'Uma operação de $50M/ano tomava decisões baseadas em planilhas desatualizadas. Criamos visibilidade completa do pipeline de vendas — não por automatizar o existente, mas por redesenhar como a informação deveria fluir.',
+        benefits: [
+            'Visibilidade em tempo real',
+            'Decisões baseadas em dados',
+            'Previsibilidade de receita',
+            'Equipe alinhada',
+        ],
     },
     {
-        id: 'industry-saas',
+        id: 'care-homes',
         icon: IconCloudComputing,
-        badgeKey: 'SaaS Platform',
-        titleKey: 'Industry-Specific SaaS',
+        badgeKey: 'Rede de Casas de Repouso',
+        titleKey: 'De $100K Perdidos a Inventário Inteligente',
         descriptionKey:
-            'Build a complete SaaS platform tailored to your industry. From MVP to enterprise-scale, we handle everything: architecture, development, deployment, and scaling.',
-        benefits: ['Rapid MVP launch', 'Scalable architecture', 'Cost-effective hosting', 'Modern tech stack'],
+            'Queriam automatizar planilhas de inventário. Descobrimos: sem protocolos de recompra, decisões ad-hoc, e vendas prometendo entregas sem checar estoque. O problema real não era tracking — era processo. Resultado: $100K economizados ao ano.',
+        benefits: ['$100K impacto anual', 'Recompra automática', 'Fluxo de aprovação', 'Dashboards de visibilidade'],
     },
     {
-        id: 'document-processing',
+        id: 'contabilidade',
         icon: IconSparkles,
-        badgeKey: 'AI Integration',
-        titleKey: 'Document Processing System',
+        badgeKey: 'Escritório de Contabilidade',
+        titleKey: 'De Comunicação Genérica a Clientes Satisfeitos',
         descriptionKey:
-            'Integrate AI to automatically extract, analyze, and process documents. Turn unstructured data into actionable insights without manual data entry.',
-        benefits: ['Automated extraction', 'High accuracy', 'Time savings', 'Error reduction'],
+            'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Relatórios genéricos não respondiam o que queriam saber. Redesenhamos a comunicação inteira. A automação foi mínima; o impacto foi enorme.',
+        benefits: ['Satisfação disparou', 'Comunicação clara', 'Menos reclamações', 'Clientes elogiam proativamente'],
     },
 ]
 
@@ -82,7 +92,7 @@ export default function UseCases() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Real-World Applications</Trans>
+                        <Trans>Casos Reais de Transformação</Trans>
                     </Badge>
                 </Group>
 
@@ -92,7 +102,7 @@ export default function UseCases() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>See How Our Solutions Work in Practice</Trans>
+                    <Trans>Como Resolvemos Problemas de Verdade</Trans>
                 </Title>
 
                 <Text
@@ -103,7 +113,8 @@ export default function UseCases() {
                     mx="auto"
                 >
                     <Trans>
-                        These are just a few examples. Every solution is customized to your specific needs and industry.
+                        Estes são exemplos reais de como o diagnóstico profundo revela problemas que ninguém sabia que
+                        existiam — e como a solução é sempre muito mais do que automação.
                     </Trans>
                 </Text>
 
@@ -153,7 +164,7 @@ export default function UseCases() {
                                 fw={600}
                                 mb="xs"
                             >
-                                <Trans>Key Benefits:</Trans>
+                                <Trans>Resultados:</Trans>
                             </Text>
 
                             <List
@@ -195,7 +206,7 @@ export default function UseCases() {
                         variant="outline"
                         rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
                     >
-                        <Trans>Discuss Your Use Case</Trans>
+                        <Trans>Discutir Meu Caso</Trans>
                     </Button>
                 </Group>
             </Container>

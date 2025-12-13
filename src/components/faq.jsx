@@ -3,125 +3,120 @@ import { Trans } from '@lingui/react/macro'
 
 const faq = [
     {
-        id: 'solutions',
-        questionKey: 'What solutions does RiLiGar offer?',
-        answerKey: `RiLiGar delivers four main solutions: AI Agents, Salesforce Solutions, SaaS Platforms, and AI Integration Services. Our AI Agents are intelligent autonomous systems that work 24/7 to automate tasks and make decisions. We build custom Salesforce components and Lightning Web Components that enhance your CRM. Our SaaS platforms are built with modern, scalable architecture. And our AI integration services bring cutting-edge AI capabilities to your existing systems.`,
+        id: 'diferenca',
+        questionKey: 'Qual a diferença entre a Riligar e uma agência de automação tradicional?',
+        answerKey: `A maioria das agências começa perguntando "o que você quer automatizar?" — nós perguntamos "o que está impedindo seu negócio de atingir seus objetivos?". Essa diferença é fundamental.
+      <br/>
+      <br/>
+      Não vendemos ferramentas ou tecnologias. Diagnosticamos problemas de negócio, redesenhamos processos para serem mais eficazes, e só então escolhemos a tecnologia certa para habilitar a solução. Muitas vezes, um processo ruim automatizado ainda é um processo ruim — só mais rápido.
+      <br/>
+      <br/>
+      O resultado é impacto real: aumento de receita, redução de custos, vantagens competitivas que seus concorrentes não conseguem replicar facilmente.`,
     },
     {
-        id: 'ai-agents',
-        questionKey: 'What are AI Agents and how can they help my business?',
-        answerKey: `AI Agents are intelligent, autonomous software systems that can perform tasks, make decisions, and learn from interactions without constant human supervision. Unlike traditional automation, AI Agents understand context, adapt to new situations, and handle complex workflows.
+        id: 'diagnostico',
+        questionKey: 'Como funciona o diagnóstico profundo?',
+        answerKey: `Começamos com uma conversa de 30 minutos para entender seu negócio — não uma reunião de vendas, mas uma sessão de diagnóstico. Fazemos perguntas que vão além do óbvio: onde o tempo está sendo gasto? Quais decisões são tomadas com base em achismo? O que acontece quando algo dá errado?
       <br/>
       <br/>
-      Our AI Agents can handle customer service inquiries, analyze data to provide insights, monitor systems and respond to issues, process documents and extract information, manage scheduling and logistics, and much more. They work continuously, scale instantly, and improve over time—freeing your team to focus on strategic work while the agents handle routine tasks.
+      A partir daí, mapeamos seus processos, identificamos gargalos que você talvez não saiba que existem, e quantificamos o impacto financeiro de cada problema. Só depois de entender profundamente a situação é que propomos soluções.
       <br/>
       <br/>
-      The result is reduced operational costs, faster response times, 24/7 availability, consistent quality, and the ability to scale without adding headcount.`,
+      Muitas vezes, o problema real é diferente do que o cliente inicialmente imagina. Um escritório de advocacia achava que precisava automatizar entrada de leads — descobrimos que o problema era o processo de qualificação inteiro.`,
     },
     {
-        id: 'which-solution',
-        questionKey: 'How do I know which solution is right for my business?',
-        answerKey: `
-      The best solution depends on your specific challenges and goals. AI Agents are ideal if you have repetitive tasks, need 24/7 operations, or want to scale without adding staff. Salesforce Solutions work best when you need to enhance your existing Salesforce platform or build custom CRM functionality. SaaS Platforms are perfect when you need a complete application built from scratch. AI Integration is right when you want to add intelligent capabilities to your existing systems.
+        id: 'redesenho',
+        questionKey: 'Por que redesenhar processos antes de automatizar?',
+        answerKey: `Imagine automatizar um processo de inventário que está fundamentalmente quebrado — você vai fazer besteira mais rápido. Vimos isso acontecer: uma rede de casas de repouso queria automatizar planilhas de estoque, mas descobrimos que não tinham protocolos de recompra, decisões eram ad-hoc, e vendas prometiam entregas sem checar estoque.
       <br/>
       <br/>
-      We start every engagement with a discovery conversation to understand your needs. We'll recommend the solution (or combination of solutions) that makes the most sense for your situation. No pressure, no upselling—just honest guidance from experienced engineers who want to see you succeed.
-      `,
+      A automação seria inútil sem primeiro redesenhar o processo. Depois de estabelecer pontos de recompra claros, níveis de aprovação, e visibilidade completa — aí sim a automação fez sentido. O resultado: $100K economizados por ano.
+      <br/>
+      <br/>
+      A tecnologia é sempre o último passo, nunca o primeiro.`,
     },
     {
-        id: 'integration',
-        questionKey: 'Can AI Agents integrate with our existing tools and systems?',
-        answerKey: `
-      Absolutely! Our AI Agents are designed to work with your existing technology stack. They can integrate with CRMs like Salesforce, communication platforms like Slack and Microsoft Teams, project management tools, databases, APIs, and virtually any system with an interface.
+        id: 'impacto',
+        questionKey: 'Como vocês medem o sucesso de um projeto?',
+        answerKey: `Não medimos sucesso por linhas de código, funcionalidades entregues ou horas trabalhadas. Medimos por impacto de negócio: aumento de receita, redução de custos, vantagens competitivas criadas.
       <br/>
       <br/>
-      We don't believe in rip-and-replace. Instead, we build agents that complement and enhance your current workflows. The agents can pull data from multiple sources, make decisions based on your business rules, and take actions across different platforms—all while maintaining security and compliance standards.
-      `,
+      Antes de começar qualquer projeto, definimos métricas claras de sucesso junto com você. Pode ser: "reduzir tempo de processamento de leads de 4 horas para 4 minutos", "eliminar $50K em desperdício de inventário", ou "aumentar conversão de leads em 25%".
+      <br/>
+      <br/>
+      Acompanhamos essas métricas durante e depois da implementação. Se a solução não está gerando o impacto esperado, ajustamos até funcionar.`,
     },
     {
-        id: 'timeline',
-        questionKey: 'How quickly can you deploy a solution?',
-        answerKey: `
-      Timeline varies based on complexity, but we're known for fast delivery without sacrificing quality. For AI Agents, we can often have a proof-of-concept running in 2-3 weeks, with production deployment in 4-8 weeks. Salesforce components typically take 2-6 weeks depending on complexity. SaaS platforms range from 8-16 weeks for MVPs.
+        id: 'prazo',
+        questionKey: 'Quanto tempo leva para ver resultados?',
+        answerKey: `Depende da complexidade, mas nossa abordagem é mostrar valor rapidamente. Muitos clientes começam a ver resultados em 2-3 semanas, mesmo que a solução completa leve mais tempo.
       <br/>
       <br/>
-      We follow an agile approach with regular check-ins and demos, so you see progress constantly. Many clients start realizing value even before full deployment, as we can often roll out features incrementally rather than waiting for everything to be complete.
-      `,
+      Trabalhamos em ciclos iterativos: diagnosticamos, implementamos uma parte, medimos resultados, ajustamos, e repetimos. Isso significa que você não precisa esperar meses para saber se a abordagem está funcionando.
+      <br/>
+      <br/>
+      Para projetos maiores, priorizamos os "quick wins" — mudanças que geram impacto imediato enquanto trabalhamos nas transformações mais profundas.`,
     },
     {
-        id: 'difference',
-        questionKey: 'What makes your approach different from other development firms?',
-        answerKey: `
-      We focus on solutions, not just code. Every project starts with understanding your business challenge, not just technical requirements. We're a focused team of experienced engineers who work directly with you—no layers of project managers or account executives. This means faster decisions, clearer communication, and better results.
+        id: 'investimento',
+        questionKey: 'Qual o investimento típico?',
+        answerKey: `O investimento varia conforme a complexidade do problema e o tamanho da transformação. Mas a pergunta certa não é "quanto custa?" — é "qual o retorno esperado?"
       <br/>
       <br/>
-      Our solutions-first approach means we might recommend an AI Agent when others would propose custom development, or suggest a Salesforce component when others want to build from scratch. We care about solving your problem efficiently, not maximizing billable hours. Plus, our code is clean, well-documented, and built to last—you're getting a quality asset, not technical debt.
-      `,
+      Se uma solução de $30K gera $100K em economia ou receita adicional por ano, o payback é de 4 meses. Trabalhamos para que cada projeto tenha um ROI claro e mensurável.
+      <br/>
+      <br/>
+      Oferecemos modelos flexíveis: projetos com escopo fixo, engajamentos contínuos, ou parcerias de transformação de longo prazo. Na conversa inicial, discutimos seu orçamento e encontramos a melhor abordagem.`,
     },
     {
-        id: 'process',
-        questionKey: 'What is your development process?',
-        answerKey: `
-      We follow an agile, iterative approach that keeps you involved throughout the development process. Projects typically start with a discovery phase where we deeply understand your requirements, goals, and constraints. Then we move into rapid prototyping to validate concepts early.
+        id: 'parceria',
+        questionKey: 'O que significa "parceria de transformação"?',
+        answerKey: `Não somos fornecedores que entregam um projeto e desaparecem. Somos parceiros no sucesso do seu negócio. Isso significa:
       <br/>
       <br/>
-      Development happens in sprints with regular check-ins and demos. You'll see progress constantly and have opportunities to provide feedback at every stage. We prioritize delivering working software early and often, so you can start realizing value quickly. Testing and quality assurance are built into every sprint—not tacked on at the end.
+      → Acompanhamos resultados depois da implementação<br/>
+      → Ajustamos soluções conforme seu negócio evolui<br/>
+      → Identificamos novas oportunidades de melhoria<br/>
+      → Estamos disponíveis quando você precisa de orientação
       <br/>
       <br/>
-      Communication is paramount. You'll have direct access to the engineers working on your project, and we're responsive via email, chat, or video calls. No bureaucracy, no layers of project managers—just direct, honest communication between technical experts.
-      `,
+      Muitos clientes trabalham conosco continuamente por anos, não porque são obrigados, mas porque veem valor constante na parceria.`,
     },
     {
-        id: 'quality',
-        questionKey: 'How do you ensure code quality and security?',
-        answerKey: `
-      Quality and security are non-negotiable at RiLiGar. Every line of code goes through rigorous review processes. We follow industry best practices including secure coding standards, automated testing, and continuous integration/continuous deployment (CI/CD) pipelines.
+        id: 'ai',
+        questionKey: 'Vocês usam IA? Como?',
+        answerKey: `Sim, usamos IA quando faz sentido — mas IA é um meio, não um fim. Não vendemos "IA" como produto; usamos tecnologias de IA (incluindo agentes autônomos, processamento de linguagem natural, e automação inteligente) como ferramentas para resolver problemas de negócio.
       <br/>
       <br/>
-      For security, we implement a defense-in-depth strategy with multiple layers of protection. This includes input validation, authentication and authorization controls, encryption of sensitive data, and regular security audits. We stay current with the latest security vulnerabilities and best practices, ensuring your applications are protected against emerging threats.
+      Por exemplo: para um escritório de contabilidade, usamos IA para analisar comunicações com clientes e identificar padrões de insatisfação. Mas a solução não era "implementar IA" — era melhorar a comunicação com clientes. A IA foi só o enabler.
       <br/>
       <br/>
-      We also believe in clean, readable code that's easy to maintain. Our codebase includes comprehensive documentation, follows consistent coding standards, and is architected for long-term maintainability. You're not just getting a working application—you're getting a quality software asset.
-      `,
+      Não recomendamos IA se uma planilha bem-feita resolve o problema. A tecnologia certa é aquela que resolve seu problema de forma sustentável.`,
     },
     {
-        id: 'pricing',
-        questionKey: 'What are your pricing and engagement models?',
-        answerKey: `
-      We offer flexible engagement models to fit different project needs and budgets. For well-defined projects, we can provide fixed-price quotes. For ongoing development or projects with evolving requirements, we offer time-and-materials arrangements with transparent hourly rates.
+        id: 'seguranca',
+        questionKey: 'Como garantem a segurança e qualidade?',
+        answerKey: `Segurança e qualidade são inegociáveis. Todo código passa por revisão rigorosa, testes automatizados, e segue melhores práticas de desenvolvimento.
       <br/>
       <br/>
-      We also provide retainer-based partnerships for clients who need continuous development support or want to ensure priority access to our team. This model works great for companies building SaaS products or maintaining Salesforce implementations.
+      Para segurança: criptografia de dados sensíveis, controles de acesso granulares, auditorias regulares, e conformidade com padrões do setor. Seus dados ficam protegidos.
       <br/>
       <br/>
-      Our pricing is competitive and transparent—no hidden fees, no surprises. We'll work with you to find an engagement model that aligns with your budget and project goals. Contact us for a detailed quote tailored to your specific needs.
-      `,
+      Para qualidade: código limpo, documentado, e construído para durar. Você não está comprando uma solução que vai precisar ser refeita em 2 anos — está investindo em um ativo de qualidade que evolui com seu negócio.`,
     },
     {
-        id: 'support',
-        questionKey: 'Do you provide ongoing support and maintenance?',
-        answerKey: `
-      Yes! We stand behind our work with comprehensive support options. After project delivery, we offer maintenance packages that include bug fixes, security updates, performance monitoring, and feature enhancements. We can also provide training for your team to help them get the most out of the solutions we build.
+        id: 'comecar',
+        questionKey: 'Como começo?',
+        answerKey: `Simples: agende uma conversa de diagnóstico. Em 30 minutos, vamos:
       <br/>
       <br/>
-      Our support is proactive, not reactive. We monitor applications for potential issues and address them before they impact your users. For Salesforce projects, we stay current with Salesforce releases and ensure your custom components remain compatible with platform updates.
+      → Entender seus principais desafios<br/>
+      → Identificar onde pode haver valor escondido<br/>
+      → Discutir possíveis abordagens<br/>
+      → Definir próximos passos (se fizer sentido)
       <br/>
       <br/>
-      We believe in building long-term partnerships, not just completing projects. Many of our clients work with us continuously as their trusted technology partner, and we're proud to grow alongside their businesses.
-      `,
-    },
-    {
-        id: 'getting-started',
-        questionKey: 'How do I get started with RiLiGar?',
-        answerKey: `
-      Getting started is simple! Reach out to us via email or through our contact form with a brief description of your project or challenge. We'll schedule a free consultation call to discuss your needs, timeline, and budget.
-      <br/>
-      <br/>
-      During that initial conversation, we'll explore whether we're a good fit for your project. If so, we'll provide a detailed proposal outlining our approach, timeline, and investment. Once you approve, we can typically start work within a week.
-      <br/>
-      <br/>
-      No pressure, no hard sell—just honest conversation between technical experts. We're excited to learn about your business and explore how we can help you succeed. Let's build something great together!
-      `,
+      Sem compromisso, sem pressão de vendas. Se não formos o fit certo, vamos dizer — e talvez possamos indicar quem seja. Clique em "Agendar Diagnóstico" ou mande uma mensagem pelo WhatsApp.`,
     },
 ]
 
@@ -135,7 +130,7 @@ export default function Faq() {
                 ta="center"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                <Trans>Frequently Asked Questions</Trans>
+                <Trans>Perguntas Frequentes</Trans>
             </Title>
 
             <Text
@@ -143,7 +138,7 @@ export default function Faq() {
                 ta="center"
                 mt="md"
             >
-                <Trans>Everything you need to know about working with RiLiGar</Trans>
+                <Trans>Tudo o que você precisa saber sobre trabalhar com a Riligar</Trans>
             </Text>
             <Space h="lg" />
             <Accordion variant="separated">

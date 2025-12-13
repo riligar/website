@@ -2,40 +2,40 @@ import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, 
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
 import { Trans, useLingui } from '@lingui/react/macro'
 
-const whatsappMessage = encodeURIComponent('Olá! Gostaria de iniciar um projeto com a RiLiGar. Podemos conversar?')
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de agendar um diagnóstico com a Riligar. Podemos conversar?')
 const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
 
 const steps = [
     {
-        id: 'discovery',
+        id: 'diagnostico',
         icon: IconMessageCircle,
-        titleKey: 'Discovery Call',
+        titleKey: 'Diagnóstico Profundo',
         descriptionKey:
-            'We start with a conversation about your challenges and goals. No sales pitch—just experienced engineers understanding your needs.',
+            'Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?" Analisamos processos e quantificamos gargalos.',
         number: '01',
     },
     {
-        id: 'design',
+        id: 'redesenho',
         icon: IconBulb,
-        titleKey: 'Solution Design',
+        titleKey: 'Redesenho de Processos',
         descriptionKey:
-            'We recommend the best solution (or combination) for your situation. AI Agent? Salesforce component? SaaS platform? We map it out clearly.',
+            'Antes de escolher qualquer tecnologia, redesenhamos como o processo DEVERIA funcionar. Um processo ruim automatizado ainda é um processo ruim — só mais rápido.',
         number: '02',
     },
     {
-        id: 'development',
+        id: 'implementacao',
         icon: IconRocket,
-        titleKey: 'Rapid Development',
+        titleKey: 'Implementação Focada em Resultados',
         descriptionKey:
-            'Fast iterations with regular demos. You see progress constantly and provide feedback at every step. Many clients see value in 2-3 weeks.',
+            'Construímos a solução que habilita o processo redesenhado. A tecnologia é um meio, não o objetivo. Medimos sucesso por impacto de negócio, não por funcionalidades.',
         number: '03',
     },
     {
-        id: 'deploy',
+        id: 'parceria',
         icon: IconTrendingUp,
-        titleKey: 'Deploy & Scale',
+        titleKey: 'Parceria de Transformação',
         descriptionKey:
-            'Launch your solution with confidence. We provide training, documentation, and ongoing support as you grow and scale.',
+            'Não somos fornecedores de serviços técnicos — somos parceiros na transformação do seu negócio. Acompanhamos resultados e evoluímos as soluções conforme você cresce.',
         number: '04',
     },
 ]
@@ -59,7 +59,7 @@ export default function Process() {
                         variant="filled"
                         size="lg"
                     >
-                        <Trans>Simple Process</Trans>
+                        <Trans>Nosso Processo</Trans>
                     </Badge>
                 </Group>
 
@@ -69,7 +69,7 @@ export default function Process() {
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
                 >
-                    <Trans>From Idea to Impact in Weeks, Not Months</Trans>
+                    <Trans>De Problema Invisível a Resultado Mensurável</Trans>
                 </Title>
 
                 <Text
@@ -80,8 +80,8 @@ export default function Process() {
                     mx="auto"
                 >
                     <Trans>
-                        Our streamlined process gets you results fast. No bureaucracy, no endless meetings—just focused
-                        collaboration between technical experts.
+                        Primeiro entendemos, depois redesenhamos, e só então implementamos. A tecnologia é sempre o
+                        último passo, nunca o primeiro.
                     </Trans>
                 </Text>
 
@@ -151,7 +151,7 @@ export default function Process() {
                         size="lg"
                         leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
                     >
-                        <Trans>Start Your Project Today</Trans>
+                        <Trans>Iniciar Diagnóstico</Trans>
                     </Button>
                 </Group>
             </Container>
