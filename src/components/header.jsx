@@ -265,13 +265,13 @@ export default function HeaderMegaMenu() {
                             >
                                 Contato
                             </a>
-                            <a
+                            {/* <a
                                 href="https://www.riligar.click/llms.txt"
                                 className={classes.link}
                                 style={{ fontSize: rem(12), opacity: 0.7 }}
                             >
                                 LLMs.txt
-                            </a>
+                            </a> */}
                         </Group>
                         <Group visibleFrom="sm">
                             <Button
