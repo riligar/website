@@ -266,7 +266,7 @@ export default function HeaderMegaMenu() {
                                 Contato
                             </a>
                             <a
-                                href="/llms.txt"
+                                href="https://www.riligar.click/llms.txt"
                                 className={classes.link}
                                 style={{ fontSize: rem(12), opacity: 0.7 }}
                             >
