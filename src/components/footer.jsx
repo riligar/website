@@ -107,21 +107,6 @@ export default function FooterLinks() {
                 >
                     <ActionIcon
                         component="a"
-                        href="https://www.linkedin.com/in/ciromaciel/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        size="xl"
-                        color="gray"
-                        variant="subtle"
-                        style={{ minWidth: rem(44), minHeight: rem(44) }}
-                    >
-                        <IconBrandLinkedin
-                            style={{ width: rem(24), height: rem(24) }}
-                            stroke={1.5}
-                        />
-                    </ActionIcon>
-                    <ActionIcon
-                        component="a"
                         href="https://github.com/riligar"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -131,6 +116,21 @@ export default function FooterLinks() {
                         style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandGithub
+                            style={{ width: rem(24), height: rem(24) }}
+                            stroke={1.5}
+                        />
+                    </ActionIcon>
+                    <ActionIcon
+                        component="a"
+                        href="https://www.linkedin.com/in/ciromaciel/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="xl"
+                        color="gray"
+                        variant="subtle"
+                        style={{ minWidth: rem(44), minHeight: rem(44) }}
+                    >
+                        <IconBrandLinkedin
                             style={{ width: rem(24), height: rem(24) }}
                             stroke={1.5}
                         />
