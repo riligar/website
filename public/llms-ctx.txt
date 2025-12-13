@@ -1,0 +1,211 @@
+# RiLiGar
+
+> RiLiGar é uma empresa de transformação digital que ajuda negócios a identificar gargalos operacionais, redesenhar processos e implementar soluções tecnológicas que geram resultados mensuráveis — aumento de receita, redução de custos e vantagens competitivas.
+
+Notas importantes:
+
+- A RiLiGar não é uma empresa de automação tradicional — primeiro diagnosticamos o problema de negócio antes de propor qualquer solução técnica
+- O foco está em impacto de negócio mensurável, não em funcionalidades técnicas
+- Trabalhamos em 4 níveis de impacto: Eficiência Operacional, Redução de Custos, Aumento de Receita e Diferenciação de Mercado
+- Atuamos como parceiros de transformação, não como fornecedores de serviços técnicos
+
+---
+
+## Sobre a Empresa
+
+A RiLiGar foi fundada por Ciro Cesar Maciel, com mais de 20 anos de experiência e 15+ projetos entregues. A missão é garantir que a tecnologia trabalhe para o negócio do cliente, não contra ele.
+
+### Valores
+
+- **Diagnóstico Primeiro**: Identificamos a raiz do problema antes de gastar recursos
+- **Resultados Mensuráveis**: Cada projeto tem KPIs claros desde o dia 1
+- **Parceria de Verdade**: Crescemos junto com o cliente
+- **Transparência Total**: Comunicação honesta, mesmo quando as notícias não são ideais
+
+### Processo de Trabalho
+
+1. **Diagnóstico Profundo**: Análise de processos e quantificação de gargalos. Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?"
+2. **Redesenho de Processos**: Antes de escolher qualquer tecnologia, redesenhamos como o processo DEVERIA funcionar. Um processo ruim automatizado ainda é um processo ruim — só mais rápido.
+3. **Implementação Focada em Resultados**: Construímos a solução que habilita o processo redesenhado. A tecnologia é um meio, não o objetivo. Medimos sucesso por impacto de negócio, não por funcionalidades.
+4. **Parceria de Transformação**: Não somos fornecedores de serviços técnicos — somos parceiros na transformação do negócio. Acompanhamos resultados e evoluímos as soluções conforme o cliente cresce.
+
+---
+
+## Níveis de Impacto
+
+Trabalhamos em 4 níveis progressivos de impacto:
+
+### Nível 1: Eficiência Operacional
+Eliminamos tarefas repetitivas e manuais.
+**Resultado**: A equipe ganha horas produtivas de volta.
+
+### Nível 2: Redução de Custos
+Substituímos processos caros por fluxos inteligentes e enxutos.
+**Resultado**: Margem de lucro maior imediata.
+
+### Nível 3: Aumento de Receita
+Garantimos que nenhum lead seja perdido e que clientes atuais comprem mais.
+**Resultado**: O sistema se paga e gera lucro.
+
+### Nível 4: Diferenciação de Mercado
+Criamos experiências que concorrentes não conseguem copiar.
+**Resultado**: A empresa se torna referência no setor.
+
+---
+
+## Problemas Que Resolvemos
+
+### Leads Caindo Entre as Frestas
+Quando leads passam despercebidos ou não recebem follow-up adequado, você perde receita. Garantimos que cada lead de alto valor receba atenção imediata, enquanto consultas rotineiras são tratadas automaticamente.
+
+### Pipeline de Vendas Sem Visibilidade
+Decisões baseadas em achismo custam caro. Criamos visibilidade completa do funil de vendas com dashboards que mostram exatamente onde estão os gargalos e oportunidades.
+
+### Produto Que Não Escala com Seu Crescimento
+Seu sistema atual está travando seu crescimento? Desenvolvemos plataformas que escalam conforme seu negócio cresce, sem surpresas de custo ou performance.
+
+### Horas Perdidas em Trabalho Manual
+Dados não estruturados e processos manuais consomem tempo da equipe. Automatizamos a extração, análise e processamento para liberar o time para trabalho estratégico.
+
+### Software Genérico Que Não Resolve Seu Problema
+Quando soluções de prateleira não atendem processos únicos, desenvolvemos ferramentas sob medida que realmente se encaixam no workflow.
+
+### Incerteza Sobre Onde Investir em Tecnologia
+Com tantas opções disponíveis, é difícil saber qual caminho seguir. Diagnosticamos o negócio e criamos um roadmap claro de onde a tecnologia pode gerar mais valor.
+
+---
+
+## Soluções
+
+### Agentes de IA
+URL: https://riligar.click/ai-agents
+Automação inteligente com agentes que entendem contexto e tomam decisões.
+
+### Integração de IA
+URL: https://riligar.click/ai-integration
+Integração de inteligência artificial em sistemas existentes para potencializar operações.
+
+### Consultoria Salesforce
+URL: https://riligar.click/salesforce
+Otimização e implementação de Salesforce para maximizar ROI da plataforma.
+
+### Desenvolvimento SaaS
+URL: https://riligar.click/saas
+Criação de plataformas escaláveis sob medida para necessidades específicas.
+
+---
+
+## Modelo de Investimento
+
+Não cobramos por hora nem por funcionalidade. O modelo é transparente:
+
+### Setup Inicial (Diagnóstico + Implementação)
+Investimento único para diagnosticar o negócio, redesenhar processos e implementar a solução.
+- Diagnóstico profundo do negócio
+- Redesenho de processos
+- Implementação completa
+- Treinamento da equipe
+
+### Manutenção Contínua (Evolução + Suporte)
+Valor mensal acessível para manter a solução funcionando e evoluir conforme o negócio cresce.
+- Suporte prioritário
+- Atualizações incluídas
+- Monitoramento proativo
+- Evoluções mensais
+
+### Baseado em Resultado (Parceria Real)
+Em projetos maiores, parte do investimento pode ser vinculada aos resultados entregues.
+- Alinhamento de interesses
+- Risco compartilhado
+- Foco em impacto real
+- Parceria de longo prazo
+
+---
+
+## Estudo de Caso: E-commerce
+
+### O Desafio
+Cliente de e-commerce com problemas recorrentes de estoque: às vezes faltavam materiais críticos, outras vezes sobrava capital empatado em excesso de inventário.
+
+### A Pedida Inicial
+"Queremos uma planilha automática para controlar o estoque."
+
+### O Diagnóstico RiLiGar
+O problema não era a planilha — era a falta de regras claras de reabastecimento, ausência de níveis de autoridade para compras, e vendas prometendo prazos sem verificar inventário.
+
+### A Solução
+Implementamos gatilhos automáticos de compra baseados em dados de uso real, fluxos de aprovação hierárquica para compras grandes, e dashboards dando visibilidade em tempo real para todos.
+
+### O Impacto
+- R$ 100k+ economizados em estoque parado
+- Zero rupturas de vendas críticas
+- +15% eficiência na produção
+
+**Nota**: A maior parte do valor veio do diagnóstico e redesenho de processos — não da implementação técnica.
+
+---
+
+## Depoimentos de Clientes
+
+### Ana Silva - Sócia-Diretora, Escritório de Advocacia
+"Achávamos que precisávamos automatizar a entrada de leads. O diagnóstico revelou que nosso problema real era o processo de qualificação. Depois do redesenho, economizamos horas por dia e os leads certos chegam direto ao advogado certo."
+
+### Carlos Mendes - Diretor de Operações, Rede de Casas de Repouso
+"Queríamos automatizar planilhas de inventário. Eles descobriram que não tínhamos protocolos de recompra e vendas prometia entregas sem checar estoque. Resultado depois do redesenho: $100K economizados por ano."
+
+### Fernanda Costa - CEO, E-commerce
+"Tomávamos decisões baseadas em planilhas desatualizadas. Criaram visibilidade completa do pipeline de vendas — não automatizando o existente, mas redesenhando como a informação deveria fluir. Agora temos previsibilidade de receita."
+
+### Roberto Almeida - Sócio-Fundador, Escritório de Contabilidade
+"Clientes reclamavam da frequência de atualizações — mas era da qualidade. Redesenharam nossa comunicação inteira. A automação foi mínima; o impacto foi enorme. Agora clientes elogiam proativamente."
+
+### Patrícia Santos - Diretora Administrativa, Indústria Têxtil
+"Pensávamos que nosso problema era tecnologia ultrapassada. O diagnóstico mostrou que eram processos manuais desnecessários. Com redesenho + automação inteligente, reduzimos tempo de produção em 35%."
+
+### Marcos Lima - Fundador, Startup Tech
+"Como startup, precisávamos de um parceiro que movesse rápido sem quebrar nada. Entregaram exatamente isso. Em 3 semanas já víamos resultado. A abordagem de diagnóstico primeiro fez toda a diferença."
+
+---
+
+## Perguntas Frequentes (FAQ)
+
+### Qual a diferença entre a RiLiGar e uma agência de automação tradicional?
+A maioria das agências começa perguntando "o que você quer automatizar?" — nós perguntamos "o que está impedindo seu negócio de atingir seus objetivos?". Não vendemos ferramentas ou tecnologias. Diagnosticamos problemas de negócio, redesenhamos processos para serem mais eficazes, e só então escolhemos a tecnologia certa. O resultado é impacto real: aumento de receita, redução de custos, vantagens competitivas.
+
+### Como funciona o diagnóstico profundo?
+Começamos com uma conversa de 30 minutos para entender o negócio. Fazemos perguntas que vão além do óbvio: onde o tempo está sendo gasto? Quais decisões são tomadas com base em achismo? O que acontece quando algo dá errado? A partir daí, mapeamos processos, identificamos gargalos e quantificamos o impacto financeiro de cada problema.
+
+### Por que redesenhar processos antes de automatizar?
+Automatizar um processo quebrado significa fazer besteira mais rápido. Um processo ruim automatizado ainda é um processo ruim — só mais rápido. A tecnologia é sempre o último passo, nunca o primeiro.
+
+### Como vocês medem o sucesso de um projeto?
+Não medimos sucesso por linhas de código, funcionalidades entregues ou horas trabalhadas. Medimos por impacto de negócio: aumento de receita, redução de custos, vantagens competitivas criadas. Antes de começar qualquer projeto, definimos métricas claras de sucesso junto com o cliente.
+
+### Quanto tempo leva para ver resultados?
+Depende da complexidade, mas a abordagem é mostrar valor rapidamente. Muitos clientes começam a ver resultados em 2-3 semanas. Trabalhamos em ciclos iterativos: diagnosticamos, implementamos uma parte, medimos resultados, ajustamos, e repetimos.
+
+### Qual o investimento típico?
+O investimento varia conforme a complexidade. A pergunta certa não é "quanto custa?" — é "qual o retorno esperado?" Se uma solução de $30K gera $100K em economia ou receita adicional por ano, o payback é de 4 meses.
+
+### Vocês usam IA? Como?
+Sim, quando faz sentido — mas IA é um meio, não um fim. Não vendemos "IA" como produto; usamos tecnologias de IA como ferramentas para resolver problemas de negócio. Não recomendamos IA se uma planilha bem-feita resolve o problema.
+
+### Como começo?
+Agende uma conversa de diagnóstico. Em 30 minutos: entendemos os principais desafios, identificamos onde pode haver valor escondido, discutimos possíveis abordagens, e definimos próximos passos. Sem compromisso, sem pressão de vendas.
+
+---
+
+## Contato
+
+- **Página de Contato**: https://riligar.click/contact
+- **WhatsApp**: +55 11 98616-6966
+- **Email**: ciro@riligar.click
+
+### Páginas do Site
+- Home: https://riligar.click/
+- Sobre: https://riligar.click/about
+- Contato: https://riligar.click/contact
+- Agentes de IA: https://riligar.click/ai-agents
+- Integração de IA: https://riligar.click/ai-integration
+- Salesforce: https://riligar.click/salesforce
+- SaaS: https://riligar.click/saas

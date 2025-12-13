@@ -38,19 +38,26 @@ A RiLiGar foi fundada por Ciro Cesar Maciel, com mais de 20 anos de experiência
 
 ## Soluções
 
-- [Agentes de IA](https://riligar.com/ai-agents): Automação inteligente com agentes que entendem contexto
-- [Integração de IA](https://riligar.com/ai-integration): Integração de inteligência artificial em sistemas existentes
-- [Consultoria Salesforce](https://riligar.com/salesforce): Otimização e implementação de Salesforce
-- [Desenvolvimento SaaS](https://riligar.com/saas): Criação de plataformas escaláveis sob medida
+- [Agentes de IA](https://riligar.click/ai-agents): Automação inteligente com agentes que entendem contexto
+- [Integração de IA](https://riligar.click/ai-integration): Integração de inteligência artificial em sistemas existentes
+- [Consultoria Salesforce](https://riligar.click/salesforce): Otimização e implementação de Salesforce
+- [Desenvolvimento SaaS](https://riligar.click/saas): Criação de plataformas escaláveis sob medida
 
 ## Contato
 
-- [Página de Contato](https://riligar.com/contact): Formulário para agendar diagnóstico
+- [Página de Contato](https://riligar.click/contact): Formulário para agendar diagnóstico
 - WhatsApp: +55 11 98616-6966
-- Email: ciro@riligar.com
+- Email: ciro@riligar.click
 
 ## Páginas
 
-- [Home](https://riligar.com/): Página principal com visão geral dos serviços
-- [Sobre](https://riligar.com/about): Informações sobre a empresa e fundador
-- [Contato](https://riligar.com/contact): Formulário de contato e agendamento
+- [Home](https://riligar.click/): Página principal com visão geral dos serviços
+- [Sobre](https://riligar.click/about): Informações sobre a empresa e fundador
+- [Contato](https://riligar.click/contact): Formulário de contato e agendamento
+
+## Optional
+
+- [FAQ Completo](https://riligar.click/#faq): Perguntas frequentes sobre processo, investimento e parcerias
+- [Depoimentos de Clientes](https://riligar.click/#testimonials): Casos reais de transformação
+- [Modelo de Investimento](https://riligar.click/#pricing): Detalhes sobre setup, manutenção e modelo baseado em resultado
+- [Estudo de Caso](https://riligar.click/#casos-impacto): Case detalhado de e-commerce com economia de R$100K+
