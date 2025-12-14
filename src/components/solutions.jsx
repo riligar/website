@@ -4,6 +4,14 @@ import { useNavigate } from 'react-router-dom'
 
 const solutions = [
     {
+        id: 'https://myauth.click/',
+        title: 'Auth',
+        description:
+            'Auth é a maneira mais fácil de adicionar autenticação e gerenciamento de usuários aos seus aplicativos.',
+        image: 'https://myauth.click/images/open-graph.jpg',
+        tags: ['Web', 'autenticação', 'gerenciamento', 'usuários', 'segurança'],
+    },
+    {
         id: 'https://text-to-speech.ciromaciel.click/',
         title: 'Text to Speech',
         description:
