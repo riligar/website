@@ -150,18 +150,12 @@ export default function HeaderMegaMenu() {
                             gap={0}
                             visibleFrom="sm"
                         >
-                            <a
+                            {/* <a
                                 href="/#"
                                 className={classes.link}
                             >
                                 Início
-                            </a>
-                            <a
-                                href="/solutions"
-                                className={classes.link}
-                            >
-                                Soluções
-                            </a>
+                            </a> */}
                             {/* <HoverCard
                                 width={600}
                                 position="bottom"
@@ -260,6 +254,12 @@ export default function HeaderMegaMenu() {
                                 Por Que Nós
                             </a>
                             <a
+                                href="/solutions"
+                                className={classes.link}
+                            >
+                                Soluções
+                            </a>
+                            <a
                                 href="/#contato"
                                 className={classes.link}
                                 onClick={e => {
@@ -313,20 +313,17 @@ export default function HeaderMegaMenu() {
                     h={`calc(100vh - ${rem(80)})`}
                     mx="-md"
                 >
-                    <Divider my="sm" />
+                    <Divider
+                        my={0}
+                        mb={16}
+                    />
 
-                    <a
+                    {/* <a
                         href="/"
                         className={classes.link}
                     >
                         Início
-                    </a>
-                    <a
-                        href="/solutions"
-                        className={classes.link}
-                    >
-                        Soluções
-                    </a>
+                    </a> */}
                     {/* <UnstyledButton
                         className={classes.link}
                         onClick={toggleLinks}
@@ -372,8 +369,15 @@ export default function HeaderMegaMenu() {
                         Por Que Nós
                     </a>
                     <a
+                        href="/solutions"
+                        className={classes.link}
+                    >
+                        Soluções
+                    </a>
+                    <a
                         href="/#contato"
                         className={classes.link}
+                        style={{ marginBottom: '16px' }}
                         onClick={e => {
                             if (window.location.pathname === '/') {
                                 e.preventDefault()
