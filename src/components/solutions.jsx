@@ -35,6 +35,22 @@ const solutions = [
         image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
         tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
     },
+    {
+        id: 'https://bookmarks.ciromaciel.click/',
+        title: 'Bookmarks',
+        description:
+            'Transforme sua experiência de navegação com Bookmarks. Organize seus links de maneira inteligente e liberte-se da confusão digital. Experimente agora e descubra como Bookmarks pode simplificar sua vida online!',
+        image: 'https://bookmarks.ciromaciel.click/pt-BR/opengraph-image-s0b55b?673f97125d969340',
+        tags: ['Web', 'organização', 'links', 'bookmark'],
+    },
+    {
+        id: 'https://myblogs.click/',
+        title: 'Blogs',
+        description:
+            'Blogs é uma ferramenta versátil e indispensável que ajuda a organizar e gerenciar informações de maneira eficiente, facilitando a comunicação, o planejamento e a sua expressão criativa em diversas áreas da vida pessoal e profissional.',
+        image: 'image/blogs-opengraph.jpg',
+        tags: ['Web', 'organização', 'links', 'blog'],
+    },
 ]
 
 function SolutionCard({ solution, reversed }) {
