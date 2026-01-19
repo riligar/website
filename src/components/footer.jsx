@@ -1,6 +1,6 @@
 import logo from '/image/riligar-logo.webp'
 
-import { Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core'
+import { Text, Container, ActionIcon, Group, Image, Box, SimpleGrid, useMantineTheme } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react'
 
 import LanguageSelector from './LanguageSelector'
@@ -40,6 +40,8 @@ const data = [
 ]
 
 export default function FooterLinks() {
+    const theme = useMantineTheme()
+
     const groups = data.map(group => {
         const links = group.links.map(link => (
             <Text
@@ -112,12 +114,9 @@ export default function FooterLinks() {
                         target="_blank"
                         rel="noopener noreferrer"
                         size="xl"
-                        color="green"
-                        variant="subtle"
-                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandGithub
-                            style={{ width: rem(24), height: rem(24) }}
+                            size={24}
                             stroke={1.5}
                         />
                     </ActionIcon>
@@ -127,12 +126,9 @@ export default function FooterLinks() {
                         target="_blank"
                         rel="noopener noreferrer"
                         size="xl"
-                        color="gray"
-                        variant="subtle"
-                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandLinkedin
-                            style={{ width: rem(24), height: rem(24) }}
+                            size={24}
                             stroke={1.5}
                         />
                     </ActionIcon>
@@ -142,12 +138,9 @@ export default function FooterLinks() {
                         target="_blank"
                         rel="noopener noreferrer"
                         size="xl"
-                        color="yellow"
-                        variant="subtle"
-                        style={{ minWidth: rem(44), minHeight: rem(44) }}
                     >
                         <IconBrandGithub
-                            style={{ width: rem(24), height: rem(24) }}
+                            size={24}
                             stroke={1.5}
                         />
                     </ActionIcon>

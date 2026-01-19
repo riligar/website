@@ -1,4 +1,4 @@
-import { Box, Title, Text, Container, Table, Badge, Group, ThemeIcon, rem, Button } from '@mantine/core'
+import { Box, Title, Text, Container, Table, Badge, Group, ThemeIcon, Button, useMantineTheme } from '@mantine/core'
 import { IconCheck, IconX, IconArrowRight } from '@tabler/icons-react'
 
 const comparisons = [
@@ -53,22 +53,22 @@ const comparisons = [
 ]
 
 export default function Comparison() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Comparação com outras agências"
             py={80}
-            style={{
-                background: 'linear-gradient(180deg, rgba(249, 250, 251, 1) 0%, rgba(255, 255, 255, 0) 100%)',
-            }}
+            bg="white"
         >
-            {/* <Container size="md"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     O Diferencial Riligar
@@ -80,6 +80,7 @@ export default function Comparison() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Por Que Escolher a Riligar?
             </Title>
@@ -90,6 +91,7 @@ export default function Comparison() {
                 mb={60}
                 maw={700}
                 mx="auto"
+                fz="lg"
             >
                 Não somos apenas mais uma agência de desenvolvimento. Somos um time focado que entrega transformações —
                 não apenas código. Veja o que nos diferencia.
@@ -98,19 +100,22 @@ export default function Comparison() {
             <Box
                 style={{
                     overflowX: 'auto',
-                    border: '1px solid #e9ecef',
-                    borderRadius: '8px',
                 }}
+                bd={`1px solid ${theme.colors.gray[2]}`}
+                radius="md"
             >
-                <Table highlightOnHover>
+                <Table
+                    highlightOnHover
+                    verticalSpacing="md"
+                >
                     <Table.Thead>
                         <Table.Tr>
                             <Table.Th style={{ width: '50%' }}>Diferencial</Table.Th>
                             <Table.Th style={{ textAlign: 'center', width: '25%' }}>
                                 <Text
-                                    fw={700}
+                                    fw={800}
                                     size="lg"
-                                    c="blue"
+                                    c="dark"
                                 >
                                     RiLiGar
                                 </Text>
@@ -129,46 +134,24 @@ export default function Comparison() {
                         {comparisons.map(item => (
                             <Table.Tr key={item.id}>
                                 <Table.Td>
-                                    <Text size="sm">{item.feature}</Text>
+                                    <Text
+                                        size="sm"
+                                        fw={500}
+                                    >
+                                        {item.feature}
+                                    </Text>
                                 </Table.Td>
                                 <Table.Td style={{ textAlign: 'center' }}>
                                     {item.riligar ? (
                                         <ThemeIcon
-                                            color="teal"
+                                            color="dark"
                                             size={24}
                                             radius="xl"
                                             variant="light"
                                         >
                                             <IconCheck
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                stroke={3}
-                                            />
-                                        </ThemeIcon>
-                                    ) : (
-                                        <ThemeIcon
-                                            color="red"
-                                            size={24}
-                                            radius="xl"
-                                            variant="light"
-                                        >
-                                            <IconX
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                stroke={3}
-                                            />
-                                        </ThemeIcon>
-                                    )}
-                                </Table.Td>
-                                <Table.Td style={{ textAlign: 'center' }}>
-                                    {item.others ? (
-                                        <ThemeIcon
-                                            color="teal"
-                                            size={24}
-                                            radius="xl"
-                                            variant="light"
-                                        >
-                                            <IconCheck
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                stroke={3}
+                                                size={16}
+                                                stroke={1.5}
                                             />
                                         </ThemeIcon>
                                     ) : (
@@ -179,8 +162,36 @@ export default function Comparison() {
                                             variant="light"
                                         >
                                             <IconX
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                stroke={2}
+                                                size={16}
+                                                stroke={1.5}
+                                            />
+                                        </ThemeIcon>
+                                    )}
+                                </Table.Td>
+                                <Table.Td style={{ textAlign: 'center' }}>
+                                    {item.others ? (
+                                        <ThemeIcon
+                                            color="gray"
+                                            size={24}
+                                            radius="xl"
+                                            variant="light"
+                                        >
+                                            <IconCheck
+                                                size={16}
+                                                stroke={1.5}
+                                            />
+                                        </ThemeIcon>
+                                    ) : (
+                                        <ThemeIcon
+                                            color="gray"
+                                            size={24}
+                                            radius="xl"
+                                            variant="light"
+                                            opacity={0.5}
+                                        >
+                                            <IconX
+                                                size={16}
+                                                stroke={1.5}
                                             />
                                         </ThemeIcon>
                                     )}
@@ -197,27 +208,34 @@ export default function Comparison() {
                 ta="center"
                 mt="xl"
                 mb="lg"
+                maw={800}
+                mx="auto"
+                lh={1.6}
             >
                 Focamos no que importa: resolver seus problemas eficientemente com soluções que funcionam. Sem
                 burocracia, sem equipes inchadas, sem maximizar horas faturáveis — apenas trabalho honesto e
                 especializado.
             </Text>
 
-            <Group
+            {/* <Group
                 justify="center"
                 mt="xl"
             >
                 <Button
                     component="a"
                     href="/about"
-                    size="md"
-                    variant="light"
-                    rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
+                    size="lg"
+                    variant="outline"
+                    rightSection={
+                        <IconArrowRight
+                            size={18}
+                            stroke={1.5}
+                        />
+                    }
                 >
                     Veja Como Trabalhamos
                 </Button>
-            </Group>
-            {/* </Container> */}
+            </Group> */}
         </Box>
     )
 }

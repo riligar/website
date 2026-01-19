@@ -1,7 +1,8 @@
-import { Box, Title, Text, Button, Group, Container, SimpleGrid, rem } from '@mantine/core'
+import { Box, Title, Text, Button, Group, Container, SimpleGrid, useMantineTheme } from '@mantine/core'
 import { IconRocket, IconCalendar } from '@tabler/icons-react'
 
 export default function CTA() {
+    const theme = useMantineTheme()
     const whatsappMessage = encodeURIComponent(
         'Olá! Gostaria de agendar uma conversa para diagnóstico do meu negócio. Podemos conversar?'
     )
@@ -12,16 +13,16 @@ export default function CTA() {
             component="section"
             aria-label="Call to action"
             py={80}
-            style={{
-                background: 'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%)',
-            }}
+            bg="gray.0"
+            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
         >
             <Container size="md">
                 <Title
                     order={2}
                     ta="center"
                     size={{ base: 28, sm: 36, md: 42 }}
-                    mb="md"
+                    mb="lg"
+                    c="dark"
                 >
                     Qual Problema Está Custando Mais do Que Deveria?
                 </Title>
@@ -30,9 +31,11 @@ export default function CTA() {
                     size="lg"
                     c="dimmed"
                     ta="center"
-                    mb={40}
-                    maw={600}
+                    mb={50}
+                    maw={700}
                     mx="auto"
+                    fz="xl"
+                    lh={1.6}
                 >
                     A maioria dos empresários sabe que algo poderia funcionar melhor — mas não consegue identificar
                     exatamente o quê. Em uma conversa de 30 minutos, vamos diagnosticar seus maiores gargalos e mostrar
@@ -42,12 +45,18 @@ export default function CTA() {
                 <Group
                     justify="center"
                     gap="md"
+                    mb={60}
                 >
                     <Button
                         component="a"
                         href="/contact"
                         size="lg"
-                        leftSection={<IconRocket style={{ width: rem(24), height: rem(24) }} />}
+                        leftSection={
+                            <IconRocket
+                                size={20}
+                                stroke={1.5}
+                            />
+                        }
                     >
                         Agendar Diagnóstico
                     </Button>
@@ -58,7 +67,12 @@ export default function CTA() {
                         rel="noopener noreferrer"
                         size="lg"
                         variant="outline"
-                        leftSection={<IconCalendar style={{ width: rem(24), height: rem(24) }} />}
+                        leftSection={
+                            <IconCalendar
+                                size={20}
+                                stroke={1.5}
+                            />
+                        }
                     >
                         Agendar Conversa
                     </Button>
@@ -66,50 +80,61 @@ export default function CTA() {
 
                 <SimpleGrid
                     cols={{ base: 1, sm: 3 }}
-                    spacing={{ base: 'md', sm: 'xl' }}
-                    mt={40}
+                    spacing="xl"
                 >
                     <Box ta="center">
-                        <Text
-                            size="xl"
-                            fw={700}
-                            c="blue"
+                        <Title
+                            order={3}
+                            size="h1"
+                            fw={900}
+                            c="dark"
+                            mb={4}
                         >
                             4+
-                        </Text>
+                        </Title>
                         <Text
                             size="sm"
                             c="dimmed"
+                            fw={700}
+                            tt="uppercase"
                         >
                             Diagnósticos Realizados
                         </Text>
                     </Box>
                     <Box ta="center">
-                        <Text
-                            size="xl"
-                            fw={700}
-                            c="blue"
+                        <Title
+                            order={3}
+                            size="h1"
+                            fw={900}
+                            c="dark"
+                            mb={4}
                         >
                             2-3 Semanas
-                        </Text>
+                        </Title>
                         <Text
                             size="sm"
                             c="dimmed"
+                            fw={700}
+                            tt="uppercase"
                         >
                             Para Primeiros Resultados
                         </Text>
                     </Box>
                     <Box ta="center">
-                        <Text
-                            size="xl"
-                            fw={700}
-                            c="blue"
+                        <Title
+                            order={3}
+                            size="h1"
+                            fw={900}
+                            c="dark"
+                            mb={4}
                         >
                             24/7
-                        </Text>
+                        </Title>
                         <Text
                             size="sm"
                             c="dimmed"
+                            fw={700}
+                            tt="uppercase"
                         >
                             Sem Interrupção no Seu Negócio
                         </Text>

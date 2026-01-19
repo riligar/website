@@ -15,8 +15,8 @@ import {
     Drawer,
     Collapse,
     ScrollArea,
-    rem,
     useMantineTheme,
+    Portal,
 } from '@mantine/core'
 
 import { useDisclosure } from '@mantine/hooks'
@@ -29,12 +29,9 @@ import {
     IconRocket,
 } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
-
-import classes from './header.module.css'
-
 import { useNavigate } from 'react-router-dom'
 
-import logo from '/image/riligar-logotipo.png'
+import logo from '/image/riligar-logotipo.webp'
 
 const transformacoes = [
     {
@@ -87,11 +84,14 @@ export default function HeaderMegaMenu() {
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
 
-    const links = transformacoes.map(item => (
+    const subLinks = transformacoes.map(item => (
         <UnstyledButton
-            className={classes.subLink}
             key={item.pathname}
             onClick={() => navigate(item.pathname)}
+            w="100%"
+            p="xs"
+            style={{ borderRadius: 'var(--mantine-radius-md)' }}
+            className="header-sublink" // Temporary for potential hover logic if needed, but let's try to avoid
         >
             <Group
                 wrap="nowrap"
@@ -103,8 +103,9 @@ export default function HeaderMegaMenu() {
                     radius="md"
                 >
                     <item.icon
-                        style={{ width: rem(22), height: rem(22) }}
-                        color={theme.colors.blue[6]}
+                        size={22}
+                        stroke={1.5}
+                        color={theme.colors.gray[7]}
                     />
                 </ThemeIcon>
                 <div>
@@ -127,297 +128,254 @@ export default function HeaderMegaMenu() {
 
     return (
         <>
-            <Box className={`${classes.headerWrapper} ${scrolled ? classes.scrolled : ''}`}>
-                <header className={classes.header}>
-                    <Group
-                        justify="space-between"
-                        h="100%"
+            <Portal>
+                <Box
+                    pos="fixed"
+                    top={0}
+                    left={0}
+                    right={0}
+                    zIndex={9999}
+                    bg={scrolled ? 'white' : 'rgba(255, 255, 255, 0.85)'}
+                    bd={{ bottom: `1px solid ${theme.colors.gray[2]}` }}
+                    style={{
+                        backdropFilter: scrolled ? 'none' : 'blur(8px)',
+                        transition: 'all 0.3s ease',
+                        boxShadow: scrolled ? theme.shadows.sm : 'none',
+                    }}
+                >
+                    <Box
+                        maw={1280}
+                        mx="auto"
+                        px="md"
+                        h={60}
                     >
-                        <UnstyledButton
-                            component="a"
-                            href="/"
-                            style={{ display: 'flex', alignItems: 'center' }}
+                        <Group
+                            justify="space-between"
+                            h="100%"
                         >
-                            <Group gap="xs">
+                            <UnstyledButton
+                                component="a"
+                                href="/"
+                                style={{ display: 'flex', alignItems: 'center' }}
+                            >
                                 <Image
                                     src={logo}
                                     h={30}
                                 />
+                            </UnstyledButton>
+
+                            <Group
+                                h="100%"
+                                gap={0}
+                                visibleFrom="sm"
+                            >
+                                <Anchor
+                                    href="/#casos-impacto"
+                                    p="md"
+                                    h="100%"
+                                    underline="none"
+                                    fw={500}
+                                    fz="sm"
+                                    c="dark"
+                                    onClick={e => {
+                                        if (window.location.pathname === '/') {
+                                            e.preventDefault()
+                                            document
+                                                .getElementById('casos-impacto')
+                                                ?.scrollIntoView({ behavior: 'smooth' })
+                                        }
+                                    }}
+                                >
+                                    Casos de Sucesso
+                                </Anchor>
+                                <Anchor
+                                    href="/#quem-somos"
+                                    p="md"
+                                    h="100%"
+                                    underline="none"
+                                    fw={500}
+                                    fz="sm"
+                                    c="dark"
+                                    onClick={e => {
+                                        if (window.location.pathname === '/') {
+                                            e.preventDefault()
+                                            document
+                                                .getElementById('quem-somos')
+                                                ?.scrollIntoView({ behavior: 'smooth' })
+                                        }
+                                    }}
+                                >
+                                    Por Que Nós
+                                </Anchor>
+                                <Anchor
+                                    href="/solutions"
+                                    p="md"
+                                    h="100%"
+                                    underline="none"
+                                    fw={500}
+                                    fz="sm"
+                                    c="dark"
+                                >
+                                    Soluções
+                                </Anchor>
+                                <Anchor
+                                    href="/#contato"
+                                    p="md"
+                                    h="100%"
+                                    underline="none"
+                                    fw={500}
+                                    fz="sm"
+                                    c="dark"
+                                    onClick={e => {
+                                        if (window.location.pathname === '/') {
+                                            e.preventDefault()
+                                            document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
+                                        }
+                                    }}
+                                >
+                                    Contato
+                                </Anchor>
                             </Group>
-                        </UnstyledButton>
-                        <Group
-                            h="100%"
-                            gap={0}
-                            visibleFrom="sm"
-                        >
-                            {/* <a
-                                href="/#"
-                                className={classes.link}
-                            >
-                                Início
-                            </a> */}
-                            {/* <HoverCard
-                                width={600}
-                                position="bottom"
-                                radius="md"
-                                shadow="md"
-                                withinPortal
-                            >
-                                <HoverCard.Target>
-                                    <a
-                                        href="#"
-                                        className={classes.link}
-                                    >
-                                        <Center inline>
-                                            <Box
-                                                component="span"
-                                                mr={5}
-                                            >
-                                                Transformações
-                                            </Box>
-                                            <IconChevronDown
-                                                style={{ width: rem(16), height: rem(16) }}
-                                                color={theme.colors.blue[6]}
-                                            />
-                                        </Center>
-                                    </a>
-                                </HoverCard.Target>
-                                <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
-                                    <Group
-                                        justify="space-between"
-                                        px="md"
-                                    >
-                                        <Text fw={500}>Como Podemos Ajudar</Text>
-                                    </Group>
 
-                                    <Divider my="sm" />
+                            <Group visibleFrom="sm">
+                                <Button
+                                    component="a"
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    size="md"
+                                    leftSection={
+                                        <IconRocket
+                                            size={16}
+                                            stroke={1.5}
+                                        />
+                                    }
+                                >
+                                    Diagnóstico Grátis
+                                </Button>
+                            </Group>
 
-                                    <SimpleGrid
-                                        cols={2}
-                                        spacing={0}
-                                    >
-                                        {links}
-                                    </SimpleGrid>
-
-                                    <div className={classes.dropdownFooter}>
-                                        <Group justify="space-between">
-                                            <div>
-                                                <Text
-                                                    fw={500}
-                                                    fz="sm"
-                                                >
-                                                    Não sabe por onde começar?
-                                                </Text>
-                                                <Text
-                                                    size="xs"
-                                                    c="dimmed"
-                                                >
-                                                    Em 15 minutos identificamos seu próximo passo
-                                                </Text>
-                                            </div>
-                                            <Button
-                                                component="a"
-                                                href={whatsappLink}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                variant="default"
-                                                leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
-                                            >
-                                                Agendar Diagnóstico
-                                            </Button>
-                                        </Group>
-                                    </div>
-                                </HoverCard.Dropdown>
-                            </HoverCard> */}
-                            <a
-                                href="/#casos-impacto"
-                                className={classes.link}
-                                onClick={e => {
-                                    if (window.location.pathname === '/') {
-                                        e.preventDefault()
-                                        document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
-                                    }
-                                }}
-                            >
-                                Casos de Sucesso
-                            </a>
-                            <a
-                                href="/#quem-somos"
-                                className={classes.link}
-                                onClick={e => {
-                                    if (window.location.pathname === '/') {
-                                        e.preventDefault()
-                                        document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
-                                    }
-                                }}
-                            >
-                                Por Que Nós
-                            </a>
-                            <a
-                                href="/solutions"
-                                className={classes.link}
-                            >
-                                Soluções
-                            </a>
-                            <a
-                                href="/#contato"
-                                className={classes.link}
-                                onClick={e => {
-                                    if (window.location.pathname === '/') {
-                                        e.preventDefault()
-                                        document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
-                                    }
-                                }}
-                            >
-                                Contato
-                            </a>
-                            {/* <a
-                                href="https://www.riligar.click/llms.txt"
-                                className={classes.link}
-                                style={{ fontSize: rem(12), opacity: 0.7 }}
-                            >
-                                LLMs.txt
-                            </a> */}
+                            <Burger
+                                opened={drawerOpened}
+                                onClick={toggleDrawer}
+                                hiddenFrom="sm"
+                            />
                         </Group>
-                        <Group visibleFrom="sm">
+                    </Box>
+                </Box>
+
+                <Drawer
+                    opened={drawerOpened}
+                    onClose={closeDrawer}
+                    size="100%"
+                    padding="md"
+                    title="Navegação"
+                    hiddenFrom="sm"
+                    zIndex={1000000}
+                >
+                    <ScrollArea
+                        h="calc(100vh - 80px)"
+                        mx="-md"
+                    >
+                        <Divider
+                            my={0}
+                            mb={16}
+                        />
+                        <Anchor
+                            href="/#casos-impacto"
+                            display="block"
+                            p="md"
+                            underline="none"
+                            fw={500}
+                            fz="sm"
+                            c="dark"
+                            onClick={e => {
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault()
+                                    document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
+                                    closeDrawer()
+                                }
+                            }}
+                        >
+                            Casos de Sucesso
+                        </Anchor>
+                        <Anchor
+                            href="/#quem-somos"
+                            display="block"
+                            p="md"
+                            underline="none"
+                            fw={500}
+                            fz="sm"
+                            c="dark"
+                            onClick={e => {
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault()
+                                    document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
+                                    closeDrawer()
+                                }
+                            }}
+                        >
+                            Por Que Nós
+                        </Anchor>
+                        <Anchor
+                            href="/solutions"
+                            display="block"
+                            p="md"
+                            underline="none"
+                            fw={500}
+                            fz="sm"
+                            c="dark"
+                        >
+                            Soluções
+                        </Anchor>
+                        <Anchor
+                            href="/#contato"
+                            display="block"
+                            p="md"
+                            underline="none"
+                            fw={500}
+                            fz="sm"
+                            c="dark"
+                            mb={16}
+                            onClick={e => {
+                                if (window.location.pathname === '/') {
+                                    e.preventDefault()
+                                    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
+                                    closeDrawer()
+                                }
+                            }}
+                        >
+                            Contato
+                        </Anchor>
+
+                        <Group
+                            justify="center"
+                            grow
+                            pb="xl"
+                            px="md"
+                        >
                             <Button
                                 component="a"
                                 href={whatsappLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                size="md"
-                                leftSection={<IconRocket style={{ width: rem(16), height: rem(16) }} />}
+                                size="lg"
+                                leftSection={
+                                    <IconRocket
+                                        size={20}
+                                        stroke={1.5}
+                                    />
+                                }
                             >
                                 Diagnóstico Grátis
                             </Button>
                         </Group>
-                        <Burger
-                            opened={drawerOpened}
-                            onClick={toggleDrawer}
-                            hiddenFrom="sm"
-                        />
-                    </Group>
-                </header>
-            </Box>
-
-            <Drawer
-                opened={drawerOpened}
-                onClose={closeDrawer}
-                size="100%"
-                padding="md"
-                title="Navegação"
-                hiddenFrom="sm"
-                zIndex={1000000}
-            >
-                <ScrollArea
-                    h={`calc(100vh - ${rem(80)})`}
-                    mx="-md"
-                >
-                    <Divider
-                        my={0}
-                        mb={16}
-                    />
-
-                    {/* <a
-                        href="/"
-                        className={classes.link}
-                    >
-                        Início
-                    </a> */}
-                    {/* <UnstyledButton
-                        className={classes.link}
-                        onClick={toggleLinks}
-                    >
-                        <Center inline>
-                            <Box
-                                component="span"
-                                mr={5}
-                            >
-                                Transformações
-                            </Box>
-                            <IconChevronDown
-                                style={{ width: rem(16), height: rem(16) }}
-                                color={theme.colors.blue[6]}
-                            />
-                        </Center>
-                    </UnstyledButton>
-                    <Collapse in={linksOpened}>{links}</Collapse> */}
-                    <a
-                        href="/#casos-impacto"
-                        className={classes.link}
-                        onClick={e => {
-                            if (window.location.pathname === '/') {
-                                e.preventDefault()
-                                document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
-                                closeDrawer()
-                            }
-                        }}
-                    >
-                        Casos de Sucesso
-                    </a>
-                    <a
-                        href="/#quem-somos"
-                        className={classes.link}
-                        onClick={e => {
-                            if (window.location.pathname === '/') {
-                                e.preventDefault()
-                                document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
-                                closeDrawer()
-                            }
-                        }}
-                    >
-                        Por Que Nós
-                    </a>
-                    <a
-                        href="/solutions"
-                        className={classes.link}
-                    >
-                        Soluções
-                    </a>
-                    <a
-                        href="/#contato"
-                        className={classes.link}
-                        style={{ marginBottom: '16px' }}
-                        onClick={e => {
-                            if (window.location.pathname === '/') {
-                                e.preventDefault()
-                                document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
-                                closeDrawer()
-                            }
-                        }}
-                    >
-                        Contato
-                    </a>
-
-                    <Group
-                        justify="center"
-                        grow
-                        pb="xl"
-                        px="md"
-                    >
-                        <Button
-                            component="a"
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            size="lg"
-                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
-                        >
-                            Diagnóstico Grátis
-                        </Button>
-                    </Group>
-                </ScrollArea>
-            </Drawer>
+                    </ScrollArea>
+                </Drawer>
+            </Portal>
 
             {/* Spacer para compensar o header fixo */}
-            <Box
-                style={{ height: rem(70) }}
-                visibleFrom="sm"
-            />
-            <Box
-                style={{ height: rem(60) }}
-                hiddenFrom="sm"
-            />
+            <Box h={{ base: 60, sm: 70 }} />
         </>
     )
 }

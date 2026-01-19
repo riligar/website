@@ -1,4 +1,4 @@
-import { Badge, Group, Title, Text, Card, SimpleGrid, Box, rem, useMantineTheme } from '@mantine/core'
+import { Badge, Group, Title, Text, Card, SimpleGrid, Box, ThemeIcon, useMantineTheme } from '@mantine/core'
 import { IconCloudComputing, IconChartBar, IconBrain, IconRobot, IconSparkles, IconShield } from '@tabler/icons-react'
 
 const mockdata = [
@@ -49,41 +49,43 @@ const mockdata = [
 
 export default function Features() {
     const theme = useMantineTheme()
+
     const features = mockdata.map(feature => (
         <Card
             key={feature.id}
             shadow="md"
             radius="md"
             padding="lg"
-            style={
-                feature.highlight
-                    ? {
-                          border: `2px solid ${theme.colors.blue[6]}`,
-                          background:
-                              'linear-gradient(135deg, rgba(34, 139, 230, 0.05) 0%, rgba(58, 134, 255, 0.02) 100%)',
-                      }
-                    : {}
-            }
+            bg={feature.highlight ? 'gray.0' : 'white'}
+            bd={feature.highlight ? `2px solid ${theme.colors.gray[8]}` : `1px solid ${theme.colors.gray[2]}`}
+            style={{ transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)' }}
         >
             {feature.highlight && (
                 <Badge
                     variant="light"
-                    color="blue"
+                    color="gray"
                     size="sm"
                     mb="sm"
                 >
                     Solução Destaque
                 </Badge>
             )}
-            <feature.icon
-                style={{ width: rem(50), height: rem(50) }}
-                stroke={2}
-                color={theme.colors.blue[6]}
-            />
+            <ThemeIcon
+                size={50}
+                radius="md"
+                variant="light"
+                color="gray"
+            >
+                <feature.icon
+                    size={30}
+                    stroke={1.5}
+                />
+            </ThemeIcon>
             <Text
                 fz="lg"
-                fw={500}
+                fw={700}
                 mt="md"
+                c="dark"
             >
                 {feature.title}
             </Text>
@@ -91,6 +93,7 @@ export default function Features() {
                 fz="sm"
                 c="dimmed"
                 mt="sm"
+                lh={1.6}
             >
                 {feature.description}
             </Text>
@@ -101,11 +104,12 @@ export default function Features() {
         <Box
             component="section"
             aria-label="Solutions portfolio"
-            py="xl"
+            py={80}
         >
             <Group justify="center">
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     Problemas Que Resolvemos
@@ -115,7 +119,7 @@ export default function Features() {
             <Title
                 order={2}
                 ta="center"
-                mt="sm"
+                mt="md"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
                 Esses Problemas São Familiares?
@@ -129,12 +133,11 @@ export default function Features() {
                 mx="auto"
             >
                 Identificamos esses padrões repetidamente nos negócios. O primeiro passo é reconhecer o problema — o
-                segundo é resolvê-lo de forma que gere impacto real e mensurável. Clique em qualquer card para saber
-                como podemos ajudar.
+                segundo é resolvê-lo de forma que gere impacto real e mensurável.
             </Text>
 
             <SimpleGrid
-                cols={{ base: 1, md: 3 }}
+                cols={{ base: 1, sm: 2, md: 3 }}
                 spacing="lg"
                 mt={50}
             >

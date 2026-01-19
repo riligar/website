@@ -1,4 +1,15 @@
-import { Box, Title, Text, Container, SimpleGrid, ThemeIcon, rem, Badge, Group, Button } from '@mantine/core'
+import {
+    Box,
+    Title,
+    Text,
+    Container,
+    SimpleGrid,
+    ThemeIcon,
+    Badge,
+    Group,
+    Button,
+    useMantineTheme,
+} from '@mantine/core'
 import { IconMessageCircle, IconBulb, IconRocket, IconTrendingUp, IconCalendar } from '@tabler/icons-react'
 
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de agendar um diagnóstico com a RiLiGar. Podemos conversar?')
@@ -40,14 +51,15 @@ const steps = [
 ]
 
 export default function Process() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Our development process"
             py={80}
-            style={{
-                background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(249, 250, 251, 1) 100%)',
-            }}
+            bg="gray.0"
+            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
         >
             <Container size="xl">
                 <Group
@@ -55,7 +67,8 @@ export default function Process() {
                     mb="md"
                 >
                     <Badge
-                        variant="filled"
+                        variant="light"
+                        color="gray"
                         size="lg"
                     >
                         Nosso Processo
@@ -67,6 +80,7 @@ export default function Process() {
                     ta="center"
                     mb="md"
                     size={{ base: 28, sm: 32, md: 36 }}
+                    c="dark"
                 >
                     De Problema Invisível a Resultado Mensurável
                 </Title>
@@ -77,6 +91,7 @@ export default function Process() {
                     mb={60}
                     maw={700}
                     mx="auto"
+                    fz="lg"
                 >
                     Primeiro entendemos, depois redesenhamos, e só então implementamos. A tecnologia é sempre o último
                     passo, nunca o primeiro.
@@ -89,18 +104,17 @@ export default function Process() {
                     {steps.map(step => (
                         <Box
                             key={step.id}
-                            style={{ position: 'relative' }}
+                            pos="relative"
                         >
                             <Text
-                                size="64px"
+                                fz={72}
                                 fw={900}
-                                style={{
-                                    position: 'absolute',
-                                    top: -20,
-                                    left: 0,
-                                    opacity: 0.1,
-                                    lineHeight: 1,
-                                }}
+                                pos="absolute"
+                                top={-24}
+                                left={0}
+                                c="gray.2"
+                                lh={1}
+                                style={{ zIndex: 0, opacity: 0.5 }}
                             >
                                 {step.number}
                             </Text>
@@ -109,26 +123,31 @@ export default function Process() {
                                 size={60}
                                 radius="md"
                                 variant="light"
+                                color="gray"
                                 mb="md"
-                                style={{ position: 'relative', zIndex: 1 }}
+                                pos="relative"
+                                style={{ zIndex: 1 }}
                             >
                                 <step.icon
-                                    style={{ width: rem(30), height: rem(30) }}
-                                    stroke={2}
+                                    size={30}
+                                    stroke={1.5}
                                 />
                             </ThemeIcon>
 
-                            <Text
+                            <Title
+                                order={3}
                                 size="lg"
-                                fw={600}
+                                fw={700}
                                 mb="xs"
+                                c="dark"
                             >
                                 {step.title}
-                            </Text>
+                            </Title>
 
                             <Text
                                 size="sm"
                                 c="dimmed"
+                                lh={1.6}
                             >
                                 {step.description}
                             </Text>
@@ -146,7 +165,12 @@ export default function Process() {
                         target="_blank"
                         rel="noopener noreferrer"
                         size="lg"
-                        leftSection={<IconCalendar style={{ width: rem(20), height: rem(20) }} />}
+                        leftSection={
+                            <IconCalendar
+                                size={20}
+                                stroke={1.5}
+                            />
+                        }
                     >
                         Iniciar Diagnóstico
                     </Button>

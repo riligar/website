@@ -9,8 +9,8 @@ import {
     Group,
     List,
     ThemeIcon,
-    rem,
     Button,
+    useMantineTheme,
 } from '@mantine/core'
 import {
     IconCheck,
@@ -76,19 +76,21 @@ const useCases = [
 ]
 
 export default function UseCases() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Real-world use cases"
             py={80}
         >
-            {/* <Container size="xl"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     Casos Reais de Transformação
@@ -100,6 +102,7 @@ export default function UseCases() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Como Resolvemos Problemas de Verdade
             </Title>
@@ -110,37 +113,56 @@ export default function UseCases() {
                 mb={60}
                 maw={700}
                 mx="auto"
+                fz="lg"
             >
                 Estes são exemplos reais de como o diagnóstico profundo revela problemas que ninguém sabia que existiam
                 — e como a solução é sempre muito mais do que automação.
             </Text>
 
-            <SimpleGrid cols={{ base: 1, md: 2 }}>
+            <SimpleGrid
+                cols={{ base: 1, md: 2 }}
+                spacing="xl"
+            >
                 {useCases.map(useCase => (
                     <Card
                         key={useCase.id}
-                        shadow="md"
                         radius="md"
                         padding="xl"
                         withBorder
+                        bg="white"
+                        bd={`1px solid ${theme.colors.gray[2]}`}
                     >
-                        <Group mb="md">
-                            <useCase.icon
-                                style={{ width: rem(40), height: rem(40) }}
-                                stroke={2}
-                                color="#228be6"
-                            />
+                        <Group
+                            mb="md"
+                            justify="space-between"
+                            align="center"
+                        >
+                            <ThemeIcon
+                                size={48}
+                                radius="md"
+                                variant="light"
+                                color="gray"
+                            >
+                                <useCase.icon
+                                    size={28}
+                                    stroke={1.5}
+                                />
+                            </ThemeIcon>
                             <Badge
                                 size="sm"
                                 variant="light"
+                                color="gray"
                             >
                                 {useCase.badge}
                             </Badge>
                         </Group>
 
                         <Title
-                            order={4}
-                            mb="xs"
+                            order={3}
+                            size="lg"
+                            fw={700}
+                            mb="sm"
+                            c="dark"
                         >
                             {useCase.title}
                         </Title>
@@ -149,14 +171,16 @@ export default function UseCases() {
                             size="sm"
                             c="dimmed"
                             mb="md"
+                            lh={1.6}
                         >
                             {useCase.description}
                         </Text>
 
                         <Text
                             size="sm"
-                            fw={600}
+                            fw={700}
                             mb="xs"
+                            c="dark"
                         >
                             Resultados:
                         </Text>
@@ -169,10 +193,11 @@ export default function UseCases() {
                                     size={20}
                                     radius="xl"
                                     variant="light"
+                                    color="gray"
                                 >
                                     <IconCheck
-                                        style={{ width: rem(12), height: rem(12) }}
-                                        stroke={3}
+                                        size={12}
+                                        stroke={1.5}
                                     />
                                 </ThemeIcon>
                             }
@@ -196,12 +221,16 @@ export default function UseCases() {
                     rel="noopener noreferrer"
                     size="lg"
                     variant="outline"
-                    rightSection={<IconArrowRight style={{ width: rem(18), height: rem(18) }} />}
+                    rightSection={
+                        <IconArrowRight
+                            size={18}
+                            stroke={1.5}
+                        />
+                    }
                 >
                     Discutir Meu Caso
                 </Button>
             </Group>
-            {/* </Container> */}
         </Box>
     )
 }

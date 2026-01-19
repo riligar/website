@@ -49,7 +49,7 @@ export default function LanguageSelector() {
             onChange={handleChange}
             data={options}
             size="xs"
-            style={{ width: 170 }}
+            w={170}
             comboboxProps={{ withinPortal: false }}
             renderOption={renderSelectOption}
         />

@@ -1,4 +1,4 @@
-import { Box, Title, Text, Container, SimpleGrid, Paper, ThemeIcon, rem, Badge, Group } from '@mantine/core'
+import { Box, Title, Text, Container, SimpleGrid, Paper, ThemeIcon, Badge, Group, useMantineTheme } from '@mantine/core'
 import { IconZoomMoney, IconTrendingDown, IconTrendingUp, IconCrown } from '@tabler/icons-react'
 
 const levels = [
@@ -9,7 +9,6 @@ const levels = [
         title: 'Eficiência Operacional',
         description: 'Eliminamos tarefas repetitivas e manuais.',
         result: 'Sua equipe ganha horas produtivas de volta.',
-        color: 'blue',
     },
     {
         id: 'custos',
@@ -18,7 +17,6 @@ const levels = [
         title: 'Redução de Custos',
         description: 'Substituímos processos caros por fluxos inteligentes e enxutos.',
         result: 'Margem de lucro maior imediata.',
-        color: 'teal',
     },
     {
         id: 'receita',
@@ -27,33 +25,33 @@ const levels = [
         title: 'Aumento de Receita',
         description: 'Garantimos que nenhum lead seja perdido e que clientes atuais comprem mais.',
         result: 'O sistema se paga e gera lucro.',
-        color: 'green',
     },
     {
         id: 'diferenciacao',
         level: 'Nível 4',
         icon: IconCrown,
         title: 'Diferenciação de Mercado',
-        description: 'Criamos experiências que seus concorrentes não conseguem copiar.',
+        description: 'CriExperiences que seus concorrentes não conseguem copiar.',
         result: 'Você se torna a referência no seu setor.',
-        color: 'violet',
     },
 ]
 
 export default function ImpactLevels() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Níveis de impacto que entregamos"
             py={80}
         >
-            {/* <Container size="xl"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     Do Operacional ao Estratégico
@@ -89,16 +87,15 @@ export default function ImpactLevels() {
                         key={item.id}
                         p="xl"
                         radius="md"
-                        style={{
-                            border: '1px solid #e9ecef',
-                            position: 'relative',
-                            overflow: 'hidden',
-                        }}
+                        bg="white"
+                        bd={`1px solid ${theme.colors.gray[2]}`}
+                        pos="relative"
+                        style={{ overflow: 'hidden' }}
                     >
                         <Text
                             size="xs"
                             fw={700}
-                            c={item.color}
+                            c="dimmed"
                             tt="uppercase"
                             mb="xs"
                         >
@@ -109,12 +106,12 @@ export default function ImpactLevels() {
                             size={48}
                             radius="md"
                             variant="light"
-                            color={item.color}
+                            color="gray"
                             mb="md"
                         >
                             <item.icon
-                                style={{ width: rem(24), height: rem(24) }}
-                                stroke={2}
+                                size={24}
+                                stroke={1.5}
                             />
                         </ThemeIcon>
 
@@ -136,35 +133,14 @@ export default function ImpactLevels() {
 
                         <Text
                             size="sm"
-                            fw={500}
-                            c={item.color}
+                            fw={600}
+                            c="dark"
                         >
                             → {item.result}
                         </Text>
-
-                        {index < levels.length - 1 && (
-                            <Box
-                                style={{
-                                    position: 'absolute',
-                                    right: -12,
-                                    top: '50%',
-                                    transform: 'translateY(-50%)',
-                                    display: 'none',
-                                }}
-                                visibleFrom="lg"
-                            >
-                                <Text
-                                    size="24px"
-                                    c="dimmed"
-                                >
-                                    →
-                                </Text>
-                            </Box>
-                        )}
                     </Paper>
                 ))}
             </SimpleGrid>
-            {/* </Container> */}
         </Box>
     )
 }

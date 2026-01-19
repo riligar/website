@@ -1,4 +1,4 @@
-import { Box, Title, Text, Accordion, Space } from '@mantine/core'
+import { Box, Title, Text, Accordion, useMantineTheme } from '@mantine/core'
 
 const faq = [
     {
@@ -124,10 +124,14 @@ export default function Faq() {
         <Box
             component="section"
             aria-label="Frequently asked questions"
+            py={80}
         >
             <Title
+                order={2}
                 ta="center"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
+                mb="md"
             >
                 Perguntas Frequentes
             </Title>
@@ -135,22 +139,36 @@ export default function Faq() {
             <Text
                 c="dimmed"
                 ta="center"
-                mt="md"
+                mb={50}
+                maw={700}
+                mx="auto"
+                fz="lg"
             >
                 Tudo o que você precisa saber sobre trabalhar com a RiLiGar
             </Text>
-            <Space h="lg" />
-            <Accordion variant="separated">
+
+            <Accordion
+                variant="separated"
+                radius="md"
+            >
                 {faq.map(item => (
                     <Accordion.Item
                         key={item.id}
                         value={item.id}
                     >
-                        <Accordion.Control>{item.question}</Accordion.Control>
+                        <Accordion.Control>
+                            <Text
+                                fw={600}
+                                c="dark"
+                            >
+                                {item.question}
+                            </Text>
+                        </Accordion.Control>
                         <Accordion.Panel>
                             <Text
                                 size="sm"
                                 c="dimmed"
+                                lh={1.6}
                                 dangerouslySetInnerHTML={{ __html: item.answer }}
                             />
                         </Accordion.Panel>

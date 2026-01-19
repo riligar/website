@@ -1,20 +1,29 @@
-import { Container, Space } from '@mantine/core'
+import { Container, Box } from '@mantine/core'
 
 import Header from './components/header'
 import Footer from './components/footer'
 
 export default function Layout({ children }) {
     return (
-        <>
+        <Box
+            display="flex"
+            style={{ flexDirection: 'column', minHeight: '100vh' }}
+        >
             <Header />
-            <Space h="64" />
-            <Container
-                style={{ flex: 1 }}
-                size={1024}
+            <Box
+                component="main"
+                flex={1}
+                style={{ position: 'relative' }}
             >
-                {children}
-            </Container>
+                <Container
+                    maw={1024}
+                    w="100%"
+                    px="md"
+                >
+                    {children}
+                </Container>
+            </Box>
             <Footer />
-        </>
+        </Box>
     )
 }

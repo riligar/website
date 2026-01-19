@@ -6,11 +6,11 @@ import {
     Paper,
     SimpleGrid,
     ThemeIcon,
-    rem,
     Badge,
     Group,
     List,
     Button,
+    useMantineTheme,
 } from '@mantine/core'
 import { IconRocket, IconRefresh, IconChartLine, IconCheck, IconCalendar } from '@tabler/icons-react'
 
@@ -33,7 +33,6 @@ const phases = [
             'Implementação completa',
             'Treinamento da equipe',
         ],
-        color: 'blue',
     },
     {
         id: 'manutencao',
@@ -43,7 +42,6 @@ const phases = [
         description:
             'Valor mensal acessível para manter a solução funcionando, resolver problemas e evoluir conforme seu negócio cresce. Sem surpresas.',
         highlights: ['Suporte prioritário', 'Atualizações incluídas', 'Monitoramento proativo', 'Evoluções mensais'],
-        color: 'teal',
     },
     {
         id: 'resultado',
@@ -58,27 +56,28 @@ const phases = [
             'Foco em impacto real',
             'Parceria de longo prazo',
         ],
-        color: 'green',
     },
 ]
 
 export default function PricingModel() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
-            aria-label="Modelo de investimento"
+            aria-label="Tecnologia Que Se Paga"
             py={80}
         >
-            {/* <Container size="xl"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
-                    Modelo de Investimento
+                    Tecnologia Que Se Paga
                 </Badge>
             </Group>
 
@@ -87,6 +86,7 @@ export default function PricingModel() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Tecnologia Que Cabe no Seu Bolso
             </Title>
@@ -97,6 +97,7 @@ export default function PricingModel() {
                 mb={60}
                 maw={700}
                 mx="auto"
+                fz="lg"
             >
                 Não cobramos por hora nem por funcionalidade. Nosso modelo é transparente: um setup inicial para
                 resolver o problema, e manutenções acessíveis para manter tudo funcionando. Simples assim.
@@ -111,21 +112,20 @@ export default function PricingModel() {
                         key={phase.id}
                         p="xl"
                         radius="md"
-                        style={{
-                            border: `2px solid var(--mantine-color-${phase.color}-2)`,
-                            background: `linear-gradient(180deg, var(--mantine-color-${phase.color}-0) 0%, transparent 100%)`,
-                        }}
+                        bg="white"
+                        bd={`1px solid ${theme.colors.gray[2]}`}
+                        style={{ transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)' }}
                     >
                         <ThemeIcon
                             size={48}
                             radius="md"
                             variant="light"
-                            color={phase.color}
+                            color="gray"
                             mb="md"
                         >
                             <phase.icon
-                                style={{ width: rem(24), height: rem(24) }}
-                                stroke={2}
+                                size={24}
+                                stroke={1.5}
                             />
                         </ThemeIcon>
 
@@ -133,15 +133,17 @@ export default function PricingModel() {
                             size="xl"
                             fw={700}
                             mb={4}
+                            c="dark"
                         >
                             {phase.title}
                         </Text>
 
                         <Text
                             size="sm"
-                            c={phase.color}
+                            c="dimmed"
                             fw={600}
                             mb="md"
+                            tt="uppercase"
                         >
                             {phase.subtitle}
                         </Text>
@@ -150,6 +152,7 @@ export default function PricingModel() {
                             size="sm"
                             c="dimmed"
                             mb="lg"
+                            lh={1.6}
                         >
                             {phase.description}
                         </Text>
@@ -159,14 +162,14 @@ export default function PricingModel() {
                             size="sm"
                             icon={
                                 <ThemeIcon
-                                    color={phase.color}
+                                    color="gray"
                                     size={20}
                                     radius="xl"
                                     variant="light"
                                 >
                                     <IconCheck
-                                        style={{ width: rem(12), height: rem(12) }}
-                                        stroke={3}
+                                        size={12}
+                                        stroke={1.5}
                                     />
                                 </ThemeIcon>
                             }
@@ -181,26 +184,28 @@ export default function PricingModel() {
 
             <Paper
                 mt={40}
-                p="lg"
+                p="xl"
                 radius="md"
-                style={{
-                    border: '1px solid #e9ecef',
-                    textAlign: 'center',
-                }}
+                bg="gray.0"
+                bd={`1px solid ${theme.colors.gray[2]}`}
+                style={{ textAlign: 'center' }}
             >
-                <Text
+                <Title
+                    order={3}
                     size="lg"
-                    fw={600}
+                    fw={700}
                     mb="xs"
+                    c="dark"
                 >
                     Todos podem ser nossos clientes
-                </Text>
+                </Title>
                 <Text
                     size="sm"
                     c="dimmed"
                     maw={600}
                     mx="auto"
                     mb="lg"
+                    lh={1.6}
                 >
                     Desde pequenos negócios até grandes empresas, adaptamos o modelo ao seu momento. O importante é que
                     o investimento faça sentido e gere retorno real.
@@ -210,14 +215,17 @@ export default function PricingModel() {
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    size="md"
-                    variant="light"
-                    leftSection={<IconCalendar style={{ width: rem(18), height: rem(18) }} />}
+                    size="lg"
+                    leftSection={
+                        <IconCalendar
+                            size={20}
+                            stroke={1.5}
+                        />
+                    }
                 >
-                    Conversar Sobre Investimento
+                    Vamos Conversar?
                 </Button>
             </Paper>
-            {/* </Container> */}
         </Box>
     )
 }

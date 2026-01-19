@@ -25,7 +25,7 @@ export default defineConfig({
                 short_name: 'RiLiGar',
                 description:
                     'Intelligent AI Agents, custom Salesforce solutions, and scalable SaaS platforms. Purpose-driven technology that delivers results.',
-                theme_color: '#228be6',
+                theme_color: '#1a1b1e',
                 background_color: '#ffffff',
                 icons: [
                     {

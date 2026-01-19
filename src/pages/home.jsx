@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { Space } from '@mantine/core'
 
 import Layout from '@/layout'
 
@@ -35,34 +34,23 @@ export default function Page() {
             }, 100)
         }
     }, [location.hash])
+
     return (
         <Layout>
             <Hero />
-            <Clients />
-            <Space h="64" />
+            {/* <Clients /> */}
             <ImpactLevels />
-            <Space h="64" />
             <Features />
-            <Space h="64" />
             <Process />
-            <Space h="64" />
             <UseCases />
             <CaseStudy />
-            <Space h="64" />
             <PricingModel />
-            <Space h="64" />
             <Comparison />
-            <Space h="64" />
             <Testimonials />
-            <Space h="64" />
             <AboutSection />
-            <Space h="64" />
             <CTA />
-            <Space h="64" />
-            <Space h="64" />
             <Faq />
-            <Space h="64" />
-            <ContactSection />
+            {/* <ContactSection /> */}
         </Layout>
     )
 }

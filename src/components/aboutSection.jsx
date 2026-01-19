@@ -1,4 +1,16 @@
-import { Box, Title, Text, Container, Card, SimpleGrid, ThemeIcon, Avatar, Group, Badge, rem } from '@mantine/core'
+import {
+    Box,
+    Title,
+    Text,
+    Container,
+    Card,
+    SimpleGrid,
+    ThemeIcon,
+    Avatar,
+    Group,
+    Badge,
+    useMantineTheme,
+} from '@mantine/core'
 import { IconTarget, IconChartBar, IconUsers, IconMessageCircle } from '@tabler/icons-react'
 
 const values = [
@@ -29,19 +41,21 @@ const values = [
 ]
 
 export default function AboutSection() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             id="quem-somos"
             py="xl"
         >
-            {/* <Container size="xl"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     Quem Somos
@@ -53,6 +67,7 @@ export default function AboutSection() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Seu Negócio Merece Crescer — E Sabemos Como
             </Title>
@@ -70,12 +85,14 @@ export default function AboutSection() {
 
             {/* Founder Card */}
             <Card
-                shadow="md"
                 radius="md"
                 padding="xl"
                 mb={50}
                 maw={600}
                 mx="auto"
+                withBorder
+                bg="white"
+                bd={`1px solid ${theme.colors.gray[2]}`}
             >
                 <Group
                     align="flex-start"
@@ -85,7 +102,7 @@ export default function AboutSection() {
                     <Avatar
                         size={80}
                         radius="md"
-                        color="blue"
+                        color="gray"
                         src="https://avatars.githubusercontent.com/u/349602?v=4"
                     >
                         CM
@@ -105,6 +122,7 @@ export default function AboutSection() {
                             </Text>
                             <Badge
                                 variant="light"
+                                color="gray"
                                 size="sm"
                             >
                                 Fundador
@@ -125,18 +143,21 @@ export default function AboutSection() {
                             <Badge
                                 size="sm"
                                 variant="outline"
+                                color="gray"
                             >
                                 15+ Projetos Entregues
                             </Badge>
                             <Badge
                                 size="sm"
                                 variant="outline"
+                                color="gray"
                             >
                                 20+ Anos de Experiência
                             </Badge>
                             <Badge
                                 size="sm"
                                 variant="outline"
+                                color="gray"
                             >
                                 100% Foco em Resultados
                             </Badge>
@@ -156,23 +177,32 @@ export default function AboutSection() {
                         shadow="sm"
                         padding="lg"
                         radius="md"
+                        withBorder
+                        bg="white"
+                        bd={`1px solid ${theme.colors.gray[2]}`}
                     >
                         <ThemeIcon
                             size={40}
                             radius="md"
                             variant="light"
+                            color="gray"
                             mb="md"
                         >
-                            <value.icon style={{ width: rem(22), height: rem(22) }} />
+                            <value.icon
+                                size={24}
+                                stroke={1.5}
+                            />
                         </ThemeIcon>
 
-                        <Text
-                            fw={500}
+                        <Title
+                            order={3}
                             size="md"
-                            mb="xs"
+                            fw={700}
+                            mb="sm"
+                            c="dark"
                         >
                             {value.title}
-                        </Text>
+                        </Title>
 
                         <Text
                             size="sm"
@@ -183,7 +213,6 @@ export default function AboutSection() {
                     </Card>
                 ))}
             </SimpleGrid>
-            {/* </Container> */}
         </Box>
     )
 }

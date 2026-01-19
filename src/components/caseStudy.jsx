@@ -1,4 +1,16 @@
-import { Box, Title, Text, Container, Paper, Badge, Group, ThemeIcon, rem, Grid, Divider } from '@mantine/core'
+import {
+    Box,
+    Title,
+    Text,
+    Container,
+    Paper,
+    Badge,
+    Group,
+    ThemeIcon,
+    Grid,
+    Divider,
+    useMantineTheme,
+} from '@mantine/core'
 import { IconBulb, IconTarget, IconSearch, IconRocket, IconChartArrows } from '@tabler/icons-react'
 
 const caseData = {
@@ -37,25 +49,25 @@ const caseData = {
 }
 
 export default function CaseStudy() {
+    const theme = useMantineTheme()
     const steps = [caseData.challenge, caseData.initialRequest, caseData.diagnosis, caseData.solution]
 
     return (
         <Box
             id="casos-impacto"
             component="section"
-            aria-label="Estudo de caso de transformação"
+            aria-label="Estudo de caso de transformation"
             py={80}
-            style={{
-                background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(249, 250, 251, 1) 100%)',
-            }}
+            bg="gray.0"
+            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
         >
-            {/* <Container size="lg"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     {caseData.badgeText}
@@ -67,6 +79,7 @@ export default function CaseStudy() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Da Planilha ao Lucro Real
             </Title>
@@ -77,122 +90,128 @@ export default function CaseStudy() {
                 mb={60}
                 maw={700}
                 mx="auto"
+                fz="lg"
             >
                 Veja como transformamos uma "demanda de planilha" em uma solução que economizou mais de R$ 100 mil por
                 ano.
             </Text>
 
-            <Paper
-                p="xl"
-                radius="md"
-                style={{
-                    border: '1px solid #e9ecef',
-                }}
-            >
-                <Grid gutter="xl">
-                    <Grid.Col span={{ base: 12, md: 8 }}>
-                        {steps.map((step, index) => (
-                            <Box
-                                key={index}
-                                mb={index < steps.length - 1 ? 'xl' : 0}
+            <Container size="lg">
+                <Paper
+                    p="xl"
+                    radius="md"
+                    bg="white"
+                    bd={`1px solid ${theme.colors.gray[2]}`}
+                >
+                    <Grid gutter="xl">
+                        <Grid.Col span={{ base: 12, md: 8 }}>
+                            {steps.map((step, index) => (
+                                <Box
+                                    key={index}
+                                    mb={index < steps.length - 1 ? 'xl' : 0}
+                                >
+                                    <Group
+                                        gap="sm"
+                                        mb="xs"
+                                    >
+                                        <ThemeIcon
+                                            size={32}
+                                            radius="md"
+                                            variant="light"
+                                            color="gray"
+                                        >
+                                            <step.icon
+                                                size={16}
+                                                stroke={1.5}
+                                            />
+                                        </ThemeIcon>
+                                        <Text
+                                            fw={700}
+                                            size="md"
+                                            c="dark"
+                                        >
+                                            {step.title}
+                                        </Text>
+                                    </Group>
+                                    <Text
+                                        size="sm"
+                                        c="dimmed"
+                                        pl={44}
+                                        lh={1.6}
+                                    >
+                                        {step.text}
+                                    </Text>
+                                    {index < steps.length - 1 && (
+                                        <Divider
+                                            mt="lg"
+                                            variant="dashed"
+                                        />
+                                    )}
+                                </Box>
+                            ))}
+                        </Grid.Col>
+
+                        <Grid.Col span={{ base: 12, md: 4 }}>
+                            <Paper
+                                p="xl"
+                                radius="md"
+                                bg="gray.1"
+                                h="100%"
+                                bd={`1px solid ${theme.colors.gray[2]}`}
                             >
                                 <Group
                                     gap="sm"
-                                    mb="xs"
+                                    mb="xl"
                                 >
                                     <ThemeIcon
                                         size={32}
                                         radius="md"
-                                        variant="light"
-                                        color="blue"
+                                        variant="filled"
+                                        color="dark"
                                     >
-                                        <step.icon
-                                            style={{ width: rem(16), height: rem(16) }}
-                                            stroke={2}
+                                        <caseData.impact.icon
+                                            size={16}
+                                            stroke={1.5}
                                         />
                                     </ThemeIcon>
                                     <Text
-                                        fw={600}
-                                        size="md"
+                                        fw={800}
+                                        size="lg"
+                                        c="dark"
                                     >
-                                        {step.title}
+                                        {caseData.impact.title}
                                     </Text>
                                 </Group>
-                                <Text
-                                    size="sm"
-                                    c="dimmed"
-                                    pl={44}
-                                >
-                                    {step.text}
-                                </Text>
-                                {index < steps.length - 1 && (
-                                    <Divider
-                                        mt="lg"
-                                        variant="dashed"
-                                    />
-                                )}
-                            </Box>
-                        ))}
-                    </Grid.Col>
 
-                    <Grid.Col span={{ base: 12, md: 4 }}>
-                        <Paper
-                            p="lg"
-                            radius="md"
-                            style={{
-                                background:
-                                    'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%)',
-                                border: '1px solid rgba(34, 139, 230, 0.2)',
-                                height: '100%',
-                            }}
-                        >
-                            <Group
-                                gap="sm"
-                                mb="lg"
-                            >
-                                <ThemeIcon
-                                    size={32}
-                                    radius="md"
-                                    variant="filled"
-                                    color="blue"
-                                >
-                                    <caseData.impact.icon
-                                        style={{ width: rem(16), height: rem(16) }}
-                                        stroke={2}
-                                    />
-                                </ThemeIcon>
-                                <Text
-                                    fw={700}
-                                    size="lg"
-                                >
-                                    {caseData.impact.title}
-                                </Text>
-                            </Group>
-
-                            {caseData.impact.metrics.map((metric, index) => (
-                                <Box
-                                    key={index}
-                                    mb={index < caseData.impact.metrics.length - 1 ? 'md' : 0}
-                                >
-                                    <Text
-                                        size="30px"
-                                        fw={900}
-                                        c="blue"
+                                {caseData.impact.metrics.map((metric, index) => (
+                                    <Box
+                                        key={index}
+                                        mb={index < caseData.impact.metrics.length - 1 ? 'lg' : 0}
                                     >
-                                        {metric.value}
-                                    </Text>
-                                    <Text
-                                        size="xs"
-                                        c="dimmed"
-                                    >
-                                        {metric.label}
-                                    </Text>
-                                </Box>
-                            ))}
-                        </Paper>
-                    </Grid.Col>
-                </Grid>
-            </Paper>
+                                        <Text
+                                            fz={32}
+                                            fw={900}
+                                            c="dark"
+                                            lh={1}
+                                        >
+                                            {metric.value}
+                                        </Text>
+                                        <Text
+                                            fz="xs"
+                                            c="dimmed"
+                                            tt="uppercase"
+                                            fw={700}
+                                            mt={4}
+                                        >
+                                            {metric.label}
+                                        </Text>
+                                    </Box>
+                                ))}
+                            </Paper>
+                        </Grid.Col>
+                    </Grid>
+                </Paper>
+            </Container>
 
             <Text
                 size="sm"
@@ -203,7 +222,6 @@ export default function CaseStudy() {
             >
                 A maior parte do valor veio do diagnóstico e redesenho de processos — não da implementação técnica.
             </Text>
-            {/* </Container> */}
         </Box>
     )
 }

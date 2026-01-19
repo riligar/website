@@ -1,4 +1,4 @@
-import { Box, Title, Text, Container, SimpleGrid, Paper, rem } from '@mantine/core'
+import { Box, Text, Container, SimpleGrid, Paper, useMantineTheme } from '@mantine/core'
 
 const clients = [
     { name: 'Escritório Advocacia', industry: 'Jurídico' },
@@ -12,16 +12,15 @@ const clients = [
 ]
 
 export default function Clients() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Nossos clientes"
             py={60}
-            style={{
-                borderTop: '1px solid #e9ecef',
-                borderBottom: '1px solid #e9ecef',
-                background: 'rgba(249, 250, 251, 0.5)',
-            }}
+            bg="gray.0"
+            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
         >
             <Container size="xl">
                 <Text
@@ -31,7 +30,7 @@ export default function Clients() {
                     fw={600}
                     mb="xl"
                     tt="uppercase"
-                    style={{ letterSpacing: 2 }}
+                    style={{ letterSpacing: '0.1em' }}
                 >
                     Empresas Que Confiaram no Diagnóstico
                 </Text>
@@ -45,24 +44,24 @@ export default function Clients() {
                             key={index}
                             p="md"
                             radius="md"
+                            bg="white"
+                            bd={`1px solid ${theme.colors.gray[2]}`}
+                            display="flex"
                             style={{
-                                display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                border: '1px solid #e9ecef',
-                                background: 'white',
                                 minHeight: '100px',
-                                transition: 'all 0.2s',
+                                transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
                                 cursor: 'default',
                             }}
                             onMouseEnter={e => {
-                                e.currentTarget.style.borderColor = '#228be6'
-                                e.currentTarget.style.transform = 'scale(1.05)'
+                                e.currentTarget.style.borderColor = theme.colors.gray[8]
+                                e.currentTarget.style.transform = 'translateY(-4px)'
                             }}
                             onMouseLeave={e => {
-                                e.currentTarget.style.borderColor = '#e9ecef'
-                                e.currentTarget.style.transform = 'scale(1)'
+                                e.currentTarget.style.borderColor = theme.colors.gray[2]
+                                e.currentTarget.style.transform = 'translateY(0)'
                             }}
                         >
                             <Text

@@ -1,6 +1,20 @@
-import { Badge, Group, Title, Text, Box, Image, Stack, Flex, Grid, List, ThemeIcon, Button, rem } from '@mantine/core'
+import {
+    Badge,
+    Group,
+    Title,
+    Text,
+    Box,
+    Image,
+    Stack,
+    Flex,
+    Grid,
+    List,
+    ThemeIcon,
+    Button,
+    useMantineTheme,
+    Container,
+} from '@mantine/core'
 import { IconCheck, IconRocket, IconMessageCircle, IconExternalLink } from '@tabler/icons-react'
-import { useNavigate } from 'react-router-dom'
 
 const solutions = [
     {
@@ -62,20 +76,25 @@ const solutions = [
 ]
 
 function SolutionCard({ solution, reversed }) {
+    const theme = useMantineTheme()
+
     const content = (
         <Stack
             gap="sm"
             style={{ flex: 1 }}
         >
-            <Text
-                fz="xl"
-                fw={700}
+            <Title
+                order={3}
+                size="h3"
+                fw={800}
+                c="dark"
             >
                 {solution.title}
-            </Text>
+            </Title>
             <Text
                 fz="sm"
                 c="dimmed"
+                lh={1.6}
             >
                 {solution.description}
             </Text>
@@ -87,9 +106,8 @@ function SolutionCard({ solution, reversed }) {
                     <Badge
                         key={tag}
                         variant="light"
-                        color="blue"
+                        color="gray"
                         size="sm"
-                        radius="sm"
                     >
                         {tag}
                     </Badge>
@@ -100,10 +118,16 @@ function SolutionCard({ solution, reversed }) {
                 href={solution.id}
                 target="_blank"
                 rel="noopener noreferrer"
-                variant="light"
+                variant="outline"
                 size="sm"
                 mt="md"
-                rightSection={<IconExternalLink style={{ width: rem(16), height: rem(16) }} />}
+                w="fit-content"
+                rightSection={
+                    <IconExternalLink
+                        size={16}
+                        stroke={1.5}
+                    />
+                }
             >
                 Conhecer Solução
             </Button>
@@ -117,8 +141,9 @@ function SolutionCard({ solution, reversed }) {
                 alt={solution.title}
                 radius="md"
                 style={{
-                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+                    filter: 'grayscale(0.1)',
                 }}
+                bd={`1px solid ${theme.colors.gray[2]}`}
                 fallbackSrc="https://placehold.co/400x300?text=Solução"
             />
         </Box>
@@ -127,11 +152,9 @@ function SolutionCard({ solution, reversed }) {
     return (
         <Box
             p={{ base: 'md', md: 'xl' }}
-            style={{
-                background: 'var(--mantine-color-gray-0)',
-                borderRadius: 'var(--mantine-radius-lg)',
-                border: '1px solid var(--mantine-color-gray-2)',
-            }}
+            bg="white"
+            radius="md"
+            bd={`1px solid ${theme.colors.gray[2]}`}
         >
             <Flex
                 direction={{ base: 'column', md: reversed ? 'row-reverse' : 'row' }}
@@ -167,7 +190,10 @@ function SolutionsHero() {
             mt={80}
             mb={80}
         >
-            <Grid align="center">
+            <Grid
+                align="center"
+                gutter={60}
+            >
                 <Grid.Col
                     span={{ base: 12, sm: 6, md: 7 }}
                     order={{ base: 2, sm: 2, md: 1 }}
@@ -181,7 +207,7 @@ function SolutionsHero() {
                         <Text
                             component="span"
                             inherit
-                            c="red"
+                            c="dark"
                         >
                             um Novo Ponto de Vista
                         </Text>{' '}
@@ -191,6 +217,8 @@ function SolutionsHero() {
                         size="lg"
                         c="dimmed"
                         mt="xl"
+                        fz="xl"
+                        lh={1.6}
                     >
                         Processos manuais, sistemas desconectados, retrabalho constante, oportunidades perdidas — tudo
                         isso custa caro. A maioria dos empresários não percebe porque está ocupado demais "apagando
@@ -199,72 +227,73 @@ function SolutionsHero() {
 
                     <List
                         mt={40}
-                        spacing="lg"
+                        spacing="sm"
                         size="md"
                         icon={
                             <ThemeIcon
-                                size={24}
+                                size={28}
                                 radius="xl"
                                 variant="light"
+                                color="gray"
                             >
                                 <IconCheck
-                                    style={{ width: rem(14), height: rem(14) }}
-                                    stroke={2}
+                                    size={16}
+                                    stroke={1.5}
                                 />
                             </ThemeIcon>
                         }
                     >
                         <List.Item>
                             <Text
-                                fw={600}
+                                fw={700}
                                 component="span"
+                                c="dark"
                             >
                                 Diagnóstico Antes de Tudo
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
-                                mt={4}
                             >
                                 Identificamos onde está o problema antes de propor qualquer solução
                             </Text>
                         </List.Item>
                         <List.Item>
                             <Text
-                                fw={600}
+                                fw={700}
                                 component="span"
+                                c="dark"
                             >
                                 Resultados Mensuráveis
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
-                                mt={4}
                             >
                                 Não vendemos tecnologia — vendemos ROI comprovado e impacto real
                             </Text>
                         </List.Item>
                         <List.Item>
                             <Text
-                                fw={600}
+                                fw={700}
                                 component="span"
+                                c="dark"
                             >
                                 Soluções Sob Medida
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
-                                mt={4}
                             >
                                 Cada negócio é único — e a solução também precisa ser
                             </Text>
                         </List.Item>
                     </List>
 
-                    <Group
-                        mt={40}
+                    <Flex
+                        direction={{ base: 'column', sm: 'row' }}
+                        mt={50}
                         gap="md"
-                        style={{ flexWrap: 'wrap' }}
                     >
                         <Button
                             onClick={() => {
@@ -280,24 +309,34 @@ function SolutionsHero() {
                                 }
                             }}
                             size="lg"
-                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
-                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                            leftSection={
+                                <IconRocket
+                                    size={20}
+                                    stroke={1.5}
+                                />
+                            }
+                            w={{ base: '100%', sm: 'auto' }}
                         >
                             Quero um Diagnóstico
                         </Button>
-                        <Button
+                        {/* <Button
                             component="a"
                             href={whatsappLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             size="lg"
                             variant="outline"
-                            leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
-                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                            leftSection={
+                                <IconMessageCircle
+                                    size={20}
+                                    stroke={1.5}
+                                />
+                            }
+                            w={{ base: '100%', sm: 'auto' }}
                         >
                             Falar no WhatsApp
-                        </Button>
-                    </Group>
+                        </Button> */}
+                    </Flex>
                 </Grid.Col>
 
                 <Grid.Col
@@ -313,13 +352,12 @@ function SolutionsHero() {
                         }}
                     >
                         <Image
-                            src="/image/solutions-hero.svg"
+                            src="/image/home-hero.webp"
                             alt="Soluções RiLiGar"
-                            style={{
-                                width: '100%',
-                                maxWidth: '500px',
-                                height: 'auto',
-                            }}
+                            radius="lg"
+                            w="100%"
+                            h="100%"
+                            fit="cover"
                             fallbackSrc="https://placehold.co/500x400?text=Soluções"
                         />
                     </Box>
@@ -331,63 +369,74 @@ function SolutionsHero() {
 
 export default function Solutions() {
     return (
-        <>
-            {/* Hero Section - Similar ao da Home */}
-            <SolutionsHero />
+        <Box
+            bg="white"
+            py={80}
+            id="solucoes-page"
+        >
+            <Container size="xl">
+                {/* Hero Section - Similar ao da Home */}
+                <SolutionsHero />
 
-            {/* Solutions Cards - Layout Original */}
-            <Box
-                component="section"
-                id="solucoes"
-                aria-label="Nossas Soluções"
-                py="xl"
-                mb={80}
-            >
-                <Group justify="center">
-                    <Badge
-                        variant="filled"
-                        size="lg"
+                {/* Solutions Cards - Layout Original */}
+                <Box
+                    component="section"
+                    id="solucoes"
+                    aria-label="Nossas Soluções"
+                    py={80}
+                >
+                    <Group
+                        justify="center"
+                        mb="md"
                     >
-                        Nossas Soluções
-                    </Badge>
-                </Group>
+                        <Badge
+                            variant="light"
+                            color="gray"
+                            size="lg"
+                        >
+                            Nossas Soluções
+                        </Badge>
+                    </Group>
 
-                <Title
-                    order={2}
-                    ta="center"
-                    mt="sm"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                >
-                    Transformação Real Para Seu Negócio
-                </Title>
+                    <Title
+                        order={2}
+                        ta="center"
+                        mb="md"
+                        size={{ base: 28, sm: 32, md: 36 }}
+                        c="dark"
+                    >
+                        Transformação Real Para Seu Negócio
+                    </Title>
 
-                <Text
-                    c="dimmed"
-                    ta="center"
-                    mt="md"
-                    maw={800}
-                    mx="auto"
-                    mb={50}
-                >
-                    Não aplicamos fórmulas prontas. Primeiro diagnosticamos, depois criamos soluções que geram impacto
-                    mensurável — não apenas economia de tempo, mas aumento de receita e vantagens competitivas.
-                </Text>
+                    <Text
+                        c="dimmed"
+                        ta="center"
+                        mb={60}
+                        maw={800}
+                        mx="auto"
+                        fz="lg"
+                        lh={1.6}
+                    >
+                        Não aplicamos fórmulas prontas. Primeiro diagnosticamos, depois criamos soluções que geram
+                        impacto mensurável — não apenas economia de tempo, mas aumento de receita e vantagens
+                        competitivas.
+                    </Text>
 
-                <Stack
-                    gap="lg"
-                    maw={900}
-                    mx="auto"
-                    // px="md"
-                >
-                    {solutions.map((solution, index) => (
-                        <SolutionCard
-                            key={solution.id}
-                            solution={solution}
-                            reversed={index % 2 === 1}
-                        />
-                    ))}
-                </Stack>
-            </Box>
-        </>
+                    <Stack
+                        gap="xl"
+                        maw={1000}
+                        mx="auto"
+                    >
+                        {solutions.map((solution, index) => (
+                            <SolutionCard
+                                key={solution.id}
+                                solution={solution}
+                                reversed={index % 2 === 1}
+                            />
+                        ))}
+                    </Stack>
+                </Box>
+            </Container>
+        </Box>
     )
 }

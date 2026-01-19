@@ -1,4 +1,17 @@
-import { Box, Title, Text, Card, SimpleGrid, Avatar, Group, Rating, Container, Badge, Button, rem } from '@mantine/core'
+import {
+    Box,
+    Title,
+    Text,
+    Card,
+    SimpleGrid,
+    Avatar,
+    Group,
+    Rating,
+    Container,
+    Badge,
+    Button,
+    useMantineTheme,
+} from '@mantine/core'
 import { IconQuote, IconArrowRight } from '@tabler/icons-react'
 
 const testimonials = [
@@ -59,19 +72,21 @@ const testimonials = [
 ]
 
 export default function Testimonials() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             component="section"
             aria-label="Client testimonials"
-            py="xl"
+            py={80}
         >
-            {/* <Container size="xl"> */}
             <Group
                 justify="center"
                 mb="md"
             >
                 <Badge
-                    variant="filled"
+                    variant="light"
+                    color="gray"
                     size="lg"
                 >
                     O Que Nossos Clientes Dizem
@@ -83,6 +98,7 @@ export default function Testimonials() {
                 ta="center"
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
+                c="dark"
             >
                 Empresas Que Transformamos
             </Title>
@@ -111,7 +127,9 @@ export default function Testimonials() {
                     >
                         <IconQuote
                             size={32}
-                            style={{ opacity: 0.3, marginBottom: '1rem' }}
+                            stroke={1.5}
+                            color={theme.colors.gray[3]}
+                            style={{ marginBottom: '1rem' }}
                         />
 
                         <Text
@@ -128,25 +146,29 @@ export default function Testimonials() {
                                 readOnly
                                 size="sm"
                                 mb="md"
+                                color="dark"
                             />
 
                             <Group>
                                 <Avatar
-                                    color="blue"
+                                    color="gray"
                                     radius="xl"
+                                    variant="light"
                                 >
                                     {testimonial.avatar}
                                 </Avatar>
                                 <div>
                                     <Text
                                         size="sm"
-                                        fw={600}
+                                        fw={700}
+                                        c="dark"
                                     >
                                         {testimonial.name}
                                     </Text>
                                     <Text
                                         size="xs"
                                         c="dimmed"
+                                        fw={500}
                                     >
                                         {testimonial.role}
                                     </Text>
@@ -163,23 +185,27 @@ export default function Testimonials() {
                 ))}
             </SimpleGrid>
 
-            <Group
+            {/* <Group
                 justify="center"
-                mt={50}
+                mt={60}
             >
                 <Button
                     component="a"
                     href="https://blog.ciromaciel.click"
                     target="_blank"
                     rel="noopener noreferrer"
-                    size="md"
+                    size="lg"
                     variant="outline"
-                    rightSection={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}
+                    rightSection={
+                        <IconArrowRight
+                            size={18}
+                            stroke={1.5}
+                        />
+                    }
                 >
                     Ler Mais Histórias
                 </Button>
-            </Group>
-            {/* </Container> */}
+            </Group> */}
         </Box>
     )
 }

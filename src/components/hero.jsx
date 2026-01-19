@@ -1,4 +1,4 @@
-import { Title, Grid, Box, Text, List, ThemeIcon, Image, rem, Button, Group } from '@mantine/core'
+import { Title, Grid, Box, Text, List, ThemeIcon, Image, Button, Group } from '@mantine/core'
 import { IconCheck, IconRocket, IconMessageCircle } from '@tabler/icons-react'
 
 export default function Hero() {
@@ -14,7 +14,10 @@ export default function Hero() {
             mt={80}
             mb={80}
         >
-            <Grid align="center">
+            <Grid
+                align="center"
+                gutter="xl"
+            >
                 <Grid.Col
                     span={{ base: 12, sm: 6, md: 7 }}
                     order={{ base: 2, sm: 2, md: 1 }}
@@ -22,12 +25,13 @@ export default function Hero() {
                     <Title
                         order={1}
                         component="h1"
-                        style={{ lineHeight: 1.2 }}
+                        lh={1.2}
                     >
                         <Text
                             component="span"
                             inherit
-                            c="red"
+                            c="dark"
+                            fw={900}
                         >
                             Entendemos
                         </Text>{' '}
@@ -35,7 +39,8 @@ export default function Hero() {
                         <Text
                             component="span"
                             inherit
-                            c="red"
+                            c="dark"
+                            fw={900}
                         >
                             Antes
                         </Text>{' '}
@@ -62,8 +67,8 @@ export default function Hero() {
                                 variant="light"
                             >
                                 <IconCheck
-                                    style={{ width: rem(14), height: rem(14) }}
-                                    stroke={2}
+                                    size={14}
+                                    stroke={1.5}
                                 />
                             </ThemeIcon>
                         }
@@ -119,14 +124,20 @@ export default function Hero() {
                     <Group
                         mt={40}
                         gap="md"
-                        style={{ flexWrap: 'wrap' }}
+                        wrap="wrap"
                     >
                         <Button
                             component="a"
                             href="/#contato"
                             size="lg"
-                            leftSection={<IconRocket style={{ width: rem(20), height: rem(20) }} />}
-                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                            leftSection={
+                                <IconRocket
+                                    size={20}
+                                    stroke={1.5}
+                                />
+                            }
+                            flex="1 1 auto"
+                            miw={200}
                         >
                             Agendar Diagnóstico
                         </Button>
@@ -137,8 +148,14 @@ export default function Hero() {
                             rel="noopener noreferrer"
                             size="lg"
                             variant="outline"
-                            leftSection={<IconMessageCircle style={{ width: rem(20), height: rem(20) }} />}
-                            style={{ flex: '1 1 auto', minWidth: '200px' }}
+                            leftSection={
+                                <IconMessageCircle
+                                    size={20}
+                                    stroke={1.5}
+                                />
+                            }
+                            flex="1 1 auto"
+                            miw={200}
                         >
                             Fale Conosco
                         </Button>
@@ -150,21 +167,19 @@ export default function Hero() {
                     order={{ base: 1, sm: 1, md: 2 }}
                 >
                     <Box
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            height: '100%',
-                        }}
+                        display="flex"
+                        justify="center"
+                        align="center"
+                        h="100%"
                     >
                         <Image
-                            src="/image/home-hero.svg"
+                            src="/image/home-hero.webp"
                             alt="RiLiGar Solutions"
-                            style={{
-                                width: '100%',
-                                maxWidth: '500px',
-                                height: 'auto',
-                            }}
+                            loading="lazy"
+                            radius="lg"
+                            w="100%"
+                            maw={500}
+                            h="auto"
                         />
                     </Box>
                 </Grid.Col>
