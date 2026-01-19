@@ -56,7 +56,7 @@ export default function ContactSection() {
             {/* WhatsApp CTA */}
             <Stack
                 align="center"
-                mb={60}
+                // mb={60}
             >
                 <Button
                     component="a"
@@ -74,17 +74,17 @@ export default function ContactSection() {
                 >
                     Fale Conosco pelo WhatsApp
                 </Button>
-                <Text
+                {/* <Text
                     size="sm"
                     c="dimmed"
                     fw={500}
                 >
                     Ou agende abaixo no horário que preferir
-                </Text>
+                </Text> */}
             </Stack>
 
             {/* Google Calendar Embed */}
-            <Box
+            {/* <Box
                 maw={900}
                 mx="auto"
                 p="md"
@@ -97,7 +97,7 @@ export default function ContactSection() {
                     style={{ border: 0, width: '100%', height: 700 }}
                     title="Agendar Conversa de Diagnóstico"
                 />
-            </Box>
+            </Box> */}
         </Box>
     )
 }

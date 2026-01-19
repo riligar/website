@@ -189,7 +189,7 @@ export default function HeaderMegaMenu() {
                                     Casos de Sucesso
                                 </Anchor>
                                 <Anchor
-                                    href="/#quem-somos"
+                                    href="/#sobre"
                                     p="md"
                                     h="100%"
                                     underline="none"
@@ -199,9 +199,7 @@ export default function HeaderMegaMenu() {
                                     onClick={e => {
                                         if (window.location.pathname === '/') {
                                             e.preventDefault()
-                                            document
-                                                .getElementById('quem-somos')
-                                                ?.scrollIntoView({ behavior: 'smooth' })
+                                            document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })
                                         }
                                     }}
                                 >
@@ -300,7 +298,7 @@ export default function HeaderMegaMenu() {
                             Casos de Sucesso
                         </Anchor>
                         <Anchor
-                            href="/#quem-somos"
+                            href="/#sobre"
                             display="block"
                             p="md"
                             underline="none"
@@ -310,7 +308,7 @@ export default function HeaderMegaMenu() {
                             onClick={e => {
                                 if (window.location.pathname === '/') {
                                     e.preventDefault()
-                                    document.getElementById('quem-somos')?.scrollIntoView({ behavior: 'smooth' })
+                                    document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })
                                     closeDrawer()
                                 }
                             }}

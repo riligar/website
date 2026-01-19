@@ -50,7 +50,7 @@ export default function Page() {
             <AboutSection />
             <CTA />
             <Faq />
-            {/* <ContactSection /> */}
+            <ContactSection />
         </Layout>
     )
 }
