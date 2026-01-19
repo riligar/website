@@ -31,47 +31,52 @@ const useCases = [
         id: 'escritorio-advocacia',
         icon: IconRobot,
         badge: 'Escritório de Advocacia',
-        title: 'De Horas Manuais a Leads Qualificados em Segundos',
+        title: 'Qualificação Instantânea de Leads',
         description:
-            'Um escritório com 10 funcionários perdia horas processando leads manualmente. O problema real? Não sabiam quando enviar email, SMS ou passar para um advogado. Redesenhamos o fluxo de qualificação inteiro — a automação foi só o enabler.',
+            'Um escritório perdia 15h/semana processando leads manuais. O problema? Falta de critérios de triagem. Redesenhamos o fluxo de entrada; a automação foi apenas a ferramenta. Resultado: Advogados focados apenas em casos de alto ticket.',
         benefits: [
-            'Horas economizadas/semana',
-            'Leads processados 24/7',
-            'Menos erros humanos',
-            'Equipe focada em casos',
+            '15h economizadas por semana',
+            'Triagem 24/7 sem erros',
+            'Velocidade de contato imbatível',
+            'Foco total em peticionamento',
         ],
     },
     {
         id: 'ecommerce',
         icon: IconChartBar,
         badge: 'E-commerce',
-        title: 'De Decisões por Achismo a Dashboard Estratégico',
+        title: 'Decisões Baseadas em Lucro, Não Planilhas',
         description:
-            'Uma operação de $50M/ano tomava decisões baseadas em planilhas desatualizadas. Criamos visibilidade completa do pipeline de vendas — não por automatizar o existente, mas por redesenhar como a informação deveria fluir.',
+            'Uma operação de $50M/ano voava às cegas com dados obsoletos. Criamos uma arquitetura de dados em tempo real. O dono agora decide baseado em margem líquida por SKU, não em faturamento bruto.',
         benefits: [
-            'Visibilidade em tempo real',
-            'Decisões baseadas em dados',
-            'Previsibilidade de receita',
-            'Equipe alinhada',
+            'Margem líquida em tempo real',
+            'Previsibilidade de estoque',
+            'Redução de capital parado',
+            'Dashboards estratégicos',
         ],
     },
     {
         id: 'care-homes',
         icon: IconCloudComputing,
         badge: 'Rede de Casas de Repouso',
-        title: 'De $100K Perdidos a Inventário Inteligente',
+        title: 'Recuperando $100K em Inventário',
         description:
-            'Queriam automatizar planilhas de inventário. Descobrimos: sem protocolos de recompra, decisões ad-hoc, e vendas prometendo entregas sem checar estoque. O problema real não era tracking — era processo. Resultado: $100K economizados ao ano.',
-        benefits: ['$100K impacto anual', 'Recompra automática', 'Fluxo de aprovação', 'Dashboards de visibilidade'],
+            'Acreditavam que faltava controle. O diagnóstico revelou falta de processos de recompra. Estabelecemos protocolos rígidos e automação de gatilhos. O ROI foi imediato pela eliminação de compras ad-hoc.',
+        benefits: ['$100K de impacto anual', 'Estoque zero ruptura', 'Auditoria automatizada', 'Eficiência de compra'],
     },
     {
         id: 'contabilidade',
         icon: IconSparkles,
         badge: 'Escritório de Contabilidade',
-        title: 'De Comunicação Genérica a Clientes Satisfeitos',
+        title: 'Satisfação do Cliente Através do Sistema',
         description:
-            'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Relatórios genéricos não respondiam o que queriam saber. Redesenhamos a comunicação inteira. A automação foi mínima; o impacto foi enorme.',
-        benefits: ['Satisfação disparou', 'Comunicação clara', 'Menos reclamações', 'Clientes elogiam proativamente'],
+            'O churn estava alto por "falta de atenção". Redesenhamos a comunicação para ser proativa e baseada em entregáveis. A automação garantiu que o cliente se sinta único, sem sobrecarregar o time contábil.',
+        benefits: [
+            'Churn reduzido drasticamente',
+            'Elogios proativos',
+            'Escalabilidade de atendimento',
+            'Processos transparentes',
+        ],
     },
 ]
 
@@ -104,7 +109,7 @@ export default function UseCases() {
                 size={{ base: 28, sm: 32, md: 36 }}
                 c="dark"
             >
-                Como Resolvemos Problemas de Verdade
+                Onde o Diagnóstico Virou Lucro
             </Title>
 
             <Text
@@ -115,8 +120,8 @@ export default function UseCases() {
                 mx="auto"
                 fz="lg"
             >
-                Estes são exemplos reais de como o diagnóstico profundo revela problemas que ninguém sabia que existiam
-                — e como a solução é sempre muito mais do que automação.
+                Estes não são apenas projetos de software. São intervenções operacionais onde a tecnologia foi o último
+                passo de uma transformação profunda de resultados.
             </Text>
 
             <SimpleGrid

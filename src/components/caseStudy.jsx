@@ -19,31 +19,31 @@ const caseData = {
     badgeText: 'Estudo de Caso',
     challenge: {
         icon: IconTarget,
-        title: 'O Desafio',
-        text: 'Cliente de e-commerce com problemas recorrentes de estoque: às vezes faltavam materiais críticos, outras vezes sobrava capital empatado em excesso de inventário.',
+        title: 'O Dreno de Capital',
+        text: 'Uma operação de e-commerce sofrendo com estoque imprevisível: capital parado em excesso de alguns itens e vendas perdidas por falta de outros.',
     },
     initialRequest: {
         icon: IconBulb,
-        title: 'A Pedida Inicial',
-        text: '"Queremos uma planilha automática para controlar o estoque."',
+        title: 'A Reação Típica',
+        text: '"Precisamos de uma planilha automática para controlar o que entra e sai."',
     },
     diagnosis: {
         icon: IconSearch,
         title: 'O Diagnóstico RiLiGar',
-        text: 'O problema não era a planilha — era a falta de regras claras de reabastecimento, ausência de níveis de autoridade para compras, e vendas prometendo prazos sem verificar inventário.',
+        text: 'O problema não era a ferramenta, era o caos: falta de gatilhos de recompra, zero hierarquia de aprovação e vendas prometendo o que não tinha no galpão.',
     },
     solution: {
         icon: IconRocket,
-        title: 'A Solução',
-        text: 'Implementamos gatilhos automáticos de compra baseados em dados de uso real, fluxos de aprovação hierárquica para compras grandes, e dashboards dando visibilidade em tempo real para todos.',
+        title: 'A Intervenção',
+        text: 'Redesenho total do protocolo de suprimentos + Dashboards de visibilidade em tempo real. A automação foi apenas o enabler para o novo processo.',
     },
     impact: {
         icon: IconChartArrows,
-        title: 'O Impacto',
+        title: 'Resultado Real',
         metrics: [
-            { value: 'R$ 100k+', label: 'economizados em estoque parado' },
-            { value: 'Zero', label: 'rupturas de vendas críticas' },
-            { value: '+15%', label: 'eficiência na produção' },
+            { value: 'R$ 100k+', label: 'Recuperados em estoque parado' },
+            { value: 'Zero', label: 'Rupturas em vendas críticas' },
+            { value: '+22%', label: 'Margem operacional na categoria' },
         ],
     },
 }
@@ -81,7 +81,7 @@ export default function CaseStudy() {
                 size={{ base: 28, sm: 32, md: 36 }}
                 c="dark"
             >
-                Da Planilha ao Lucro Real
+                Da "Demanda de Planilha" ao Lucro Real
             </Title>
 
             <Text
@@ -92,8 +92,8 @@ export default function CaseStudy() {
                 mx="auto"
                 fz="lg"
             >
-                Veja como transformamos uma "demanda de planilha" em uma solução que economizou mais de R$ 100 mil por
-                ano.
+                Veja como o diagnóstico profundo revelou o problema real por trás de um "pedido de ferramenta" e como
+                isso estancou um desperdício de R$ 100 mil/ano.
             </Text>
 
             <Container size="lg">

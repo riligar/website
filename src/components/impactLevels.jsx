@@ -6,33 +6,33 @@ const levels = [
         id: 'eficiencia',
         level: 'Nível 1',
         icon: IconZoomMoney,
-        title: 'Eficiência Operacional',
-        description: 'Eliminamos tarefas repetitivas e manuais.',
-        result: 'Sua equipe ganha horas produtivas de volta.',
+        title: 'Eficiência Radical',
+        description: 'Eliminamos o desperdício manual que drena a energia e o tempo da sua equipe.',
+        result: 'Horas de alto valor recuperadas imediatamente.',
     },
     {
         id: 'custos',
         level: 'Nível 2',
         icon: IconTrendingDown,
-        title: 'Redução de Custos',
-        description: 'Substituímos processos caros por fluxos inteligentes e enxutos.',
-        result: 'Margem de lucro maior imediata.',
+        title: 'Corte de Custos Inteligente',
+        description: 'Substituímos infraestrutura cara e lenta por fluxos enxutos e automatizados.',
+        result: 'Margem de lucro protegida e ampliada.',
     },
     {
         id: 'receita',
         level: 'Nível 3',
         icon: IconTrendingUp,
-        title: 'Aumento de Receita',
-        description: 'Garantimos que nenhum lead seja perdido e que clientes atuais comprem mais.',
-        result: 'O sistema se paga e gera lucro.',
+        title: 'Aceleração de Receita',
+        description: 'Tapamos os buracos do seu funil de vendas para garantir que nenhum lead seja ignorado.',
+        result: 'ROI imediato que se paga em semanas.',
     },
     {
         id: 'diferenciacao',
         level: 'Nível 4',
         icon: IconCrown,
-        title: 'Diferenciação de Mercado',
-        description: 'CriExperiences que seus concorrentes não conseguem copiar.',
-        result: 'Você se torna a referência no seu setor.',
+        title: 'Domínio de Mercado',
+        description: 'Criamos sistemas operacionais que seus concorrentes simplesmente não conseguem copiar.',
+        result: 'Você se torna o novo benchmark do seu setor.',
     },
 ]
 
@@ -64,7 +64,7 @@ export default function ImpactLevels() {
                 mb="md"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                Onde Atuamos na Sua Empresa
+                O Sistema de Evolução RiLiGar
             </Title>
 
             <Text
@@ -74,8 +74,8 @@ export default function ImpactLevels() {
                 maw={700}
                 mx="auto"
             >
-                O valor não está na ferramenta, está no impacto. Trabalhamos em 4 níveis progressivos — cada um mais
-                valioso que o anterior.
+                O valor não está na tecnologia, está no impacto sistemático. Trabalhamos em 4 níveis progressivos — cada
+                estágio construindo a base para o próximo salto de crescimento.
             </Text>
 
             <SimpleGrid

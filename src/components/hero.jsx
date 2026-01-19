@@ -27,33 +27,34 @@ export default function Hero() {
                         component="h1"
                         lh={1.2}
                     >
+                        Pare de{' '}
                         <Text
                             component="span"
                             inherit
                             c="dark"
                             fw={900}
                         >
-                            Entendemos
+                            Automatizar
                         </Text>{' '}
-                        Seu Negócio{' '}
+                        Processos Quebrados.{' '}
                         <Text
                             component="span"
                             inherit
                             c="dark"
                             fw={900}
                         >
-                            Antes
+                            Redesenhamos
                         </Text>{' '}
-                        de Propor Soluções
+                        Sua Operação Para o Lucro Real.
                     </Title>
                     <Text
                         size="lg"
                         c="dimmed"
                         mt="xl"
                     >
-                        Antes de automatizar qualquer coisa, diagnosticamos o que realmente está impedindo seu negócio
-                        de crescer. Depois, criamos soluções que geram impacto mensurável — não apenas economia de
-                        tempo, mas aumento de receita, redução de custos e vantagens competitivas.
+                        Diagnóstico profundo + Redesenho operacional. Entregamos vantagem competitiva e impacto
+                        financeiro mensurável em menos de 3 semanas. Entendemos seu sistema antes de tocar em qualquer
+                        tecnologia.
                     </Text>
 
                     <List
@@ -78,15 +79,15 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Diagnóstico de Processos
+                                Mapeamento de Gargalos Invisíveis
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Identificamos gargalos que você não sabia que existiam e quantificamos o impacto real no
-                                seu faturamento
+                                Identificamos onde seu capital está vazando e quantificamos o impacto real no seu
+                                faturamento — antes de investir um centavo.
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -94,14 +95,15 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Redesenho de Operações
+                                Arquitetura de Sistemas Lucrativos
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Reestruturamos processos para serem mais eficazes, não apenas mais rápidos
+                                Redesenhamos seus fluxos de trabalho para serem eficazes, não apenas rápidos. Automação
+                                em cima de caos é apenas caos acelerado.
                             </Text>
                         </List.Item>
                         <List.Item>
@@ -109,14 +111,15 @@ export default function Hero() {
                                 fw={600}
                                 component="span"
                             >
-                                Vantagem Competitiva
+                                Vantagem Competitiva Real
                             </Text>
                             <Text
                                 c="dimmed"
                                 size="sm"
                                 mt={4}
                             >
-                                Criamos capacidades que seus concorrentes não conseguem replicar facilmente
+                                Criamos capacidades operacionais únicas que seus concorrentes não conseguem copiar ou
+                                replicar facilmente.
                             </Text>
                         </List.Item>
                     </List>
@@ -139,7 +142,7 @@ export default function Hero() {
                             flex="1 1 auto"
                             miw={200}
                         >
-                            Agendar Diagnóstico
+                            Agendar Diagnóstico Gratuito →
                         </Button>
                         <Button
                             component="a"
@@ -157,7 +160,7 @@ export default function Hero() {
                             flex="1 1 auto"
                             miw={200}
                         >
-                            Fale Conosco
+                            Conversar com um Especialista
                         </Button>
                     </Group>
                 </Grid.Col>

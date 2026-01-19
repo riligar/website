@@ -23,38 +23,43 @@ const phases = [
     {
         id: 'setup',
         icon: IconRocket,
-        title: 'Setup Inicial',
-        subtitle: 'Diagnóstico + Implementação',
+        title: 'Intervenção Inicial',
+        subtitle: 'Diagnóstico + Redesenho',
         description:
-            'Investimento único para diagnosticar seu negócio, redesenhar processos e implementar a solução. Pagamento pode ser parcelado conforme entregas.',
+            'Investimento focado em estancar o dreno de capital e implementar o novo workflow. O foco é pay-back rápido e impacto imediato na sua operação.',
         highlights: [
-            'Diagnóstico profundo do negócio',
-            'Redesenho de processos',
-            'Implementação completa',
-            'Treinamento da equipe',
+            'Mapeamento de gargalos reais',
+            'Arquitetura do novo processo',
+            'Implementação da tecnologia enabler',
+            'Treinamento focado em execução',
         ],
     },
     {
         id: 'manutencao',
         icon: IconRefresh,
-        title: 'Manutenção Contínua',
-        subtitle: 'Evolução + Suporte',
+        title: 'Evolução Contínua',
+        subtitle: 'Custo Marginal de Mantimento',
         description:
-            'Valor mensal acessível para manter a solução funcionando, resolver problemas e evoluir conforme seu negócio cresce. Sem surpresas.',
-        highlights: ['Suporte prioritário', 'Atualizações incluídas', 'Monitoramento proativo', 'Evoluções mensais'],
+            'Valor previsível para garantir que o sistema não degrade e continue evoluindo conforme sua escala aumenta. Sem taxas surpresas.',
+        highlights: [
+            'Monitoramento proativo de ROI',
+            'Suporte de nível operador',
+            'Ajustes finos no workflow',
+            'Segurança e infraestrutura',
+        ],
     },
     {
         id: 'resultado',
         icon: IconChartLine,
-        title: 'Baseado em Resultado',
-        subtitle: 'Parceria Real',
+        title: 'Partnership Real',
+        subtitle: 'Alinhamento de Incentivos',
         description:
-            'Em projetos maiores, parte do investimento pode ser vinculada aos resultados que entregamos. Se você ganha mais, nós também ganhamos.',
+            'Em projetos estratégicos, vinculamos parte do investimento aos resultados entregues. Se sua margem sobe, nós ganhamos com você. Risco compartilhado.',
         highlights: [
-            'Alinhamento de interesses',
-            'Risco compartilhado',
-            'Foco em impacto real',
+            'Interesses 100% alinhados',
+            'Foco obsessivo em métricas',
             'Parceria de longo prazo',
+            'Consultoria estratégica contínua',
         ],
     },
 ]
@@ -77,7 +82,7 @@ export default function PricingModel() {
                     color="gray"
                     size="lg"
                 >
-                    Tecnologia Que Se Paga
+                    Tecnologia Como Ativo Financeiro
                 </Badge>
             </Group>
 
@@ -88,7 +93,7 @@ export default function PricingModel() {
                 size={{ base: 28, sm: 32, md: 36 }}
                 c="dark"
             >
-                Tecnologia Que Cabe no Seu Bolso
+                Modelos Que Respeitam Seu Fluxo de Caixa
             </Title>
 
             <Text
@@ -99,8 +104,8 @@ export default function PricingModel() {
                 mx="auto"
                 fz="lg"
             >
-                Não cobramos por hora nem por funcionalidade. Nosso modelo é transparente: um setup inicial para
-                resolver o problema, e manutenções acessíveis para manter tudo funcionando. Simples assim.
+                Não cobramos por funcionalidade. Cobramos pela transformação do seu negócio em um sistema mais
+                lucrativo. Transparência total desde o diagnóstico inicial.
             </Text>
 
             <SimpleGrid
@@ -197,7 +202,7 @@ export default function PricingModel() {
                     mb="xs"
                     c="dark"
                 >
-                    Todos podem ser nossos clientes
+                    Focado em ROI, Indiferente ao Tamanho
                 </Title>
                 <Text
                     size="sm"
@@ -207,8 +212,8 @@ export default function PricingModel() {
                     mb="lg"
                     lh={1.6}
                 >
-                    Desde pequenos negócios até grandes empresas, adaptamos o modelo ao seu momento. O importante é que
-                    o investimento faça sentido e gere retorno real.
+                    Seja um pequeno negócio buscando o primeiro nível de eficiência ou uma grande operação redesenhando
+                    seu núcleo digital. Se o ROI faz sentido, a RiLiGar é o seu parceiro.
                 </Text>
                 <Button
                     component="a"

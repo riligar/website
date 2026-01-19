@@ -1,5 +1,5 @@
 import { Box, Title, Text, Button, Group, Container, SimpleGrid, useMantineTheme } from '@mantine/core'
-import { IconRocket, IconCalendar } from '@tabler/icons-react'
+import { IconCalendar, IconMessageCircle } from '@tabler/icons-react'
 
 export default function CTA() {
     const theme = useMantineTheme()
@@ -19,27 +19,24 @@ export default function CTA() {
             <Container size="md">
                 <Title
                     order={2}
+                    size={40}
+                    fw={900}
+                    lh={1.1}
                     ta="center"
-                    size={{ base: 28, sm: 36, md: 42 }}
-                    mb="lg"
-                    c="dark"
+                    mb="xl"
                 >
-                    Qual Problema Está Custando Mais do Que Deveria?
+                    Seu Próximo Nível Operacional Começa Com Uma Conversa de 30 Minutos.
                 </Title>
 
                 <Text
-                    size="lg"
-                    c="dimmed"
-                    ta="center"
-                    mb={50}
+                    size="xl"
+                    mb={40}
+                    opacity={0.9}
                     maw={700}
                     mx="auto"
-                    fz="xl"
-                    lh={1.6}
                 >
-                    A maioria dos empresários sabe que algo poderia funcionar melhor — mas não consegue identificar
-                    exatamente o quê. Em uma conversa de 30 minutos, vamos diagnosticar seus maiores gargalos e mostrar
-                    onde está o valor escondido no seu negócio.
+                    Sem pressão de vendas. Apenas um diagnóstico honesto para identificar onde seu negócio está vazando
+                    lucro e como um sistema real pode estancar esse dreno.
                 </Text>
 
                 <Group
@@ -49,33 +46,26 @@ export default function CTA() {
                 >
                     <Button
                         component="a"
-                        href="/contact"
-                        size="lg"
-                        leftSection={
-                            <IconRocket
-                                size={20}
-                                stroke={1.5}
-                            />
-                        }
+                        href="/#contato"
+                        size="xl"
+                        variant="outline"
+                        c="dark"
+                        leftSection={<IconCalendar size={20} />}
                     >
-                        Agendar Diagnóstico
+                        Agendar Diagnóstico Gratuito →
                     </Button>
-                    <Button
+                    {/* <Button
                         component="a"
                         href={whatsappLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        size="lg"
+                        size="xl"
                         variant="outline"
-                        leftSection={
-                            <IconCalendar
-                                size={20}
-                                stroke={1.5}
-                            />
-                        }
+                        color="gray.0"
+                        leftSection={<IconMessageCircle size={20} />}
                     >
-                        Agendar Conversa
-                    </Button>
+                        Conversar via WhatsApp
+                    </Button> */}
                 </Group>
 
                 <SimpleGrid

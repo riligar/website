@@ -11,32 +11,42 @@ import {
     Badge,
     useMantineTheme,
 } from '@mantine/core'
-import { IconTarget, IconChartBar, IconUsers, IconMessageCircle } from '@tabler/icons-react'
+import {
+    IconTarget,
+    IconChartBar,
+    IconUsers,
+    IconMessageCircle,
+    IconSearch,
+    IconChartLine,
+    IconShield,
+} from '@tabler/icons-react'
 
 const values = [
     {
         id: 'diagnostico',
-        icon: IconTarget,
-        title: 'Diagnóstico Primeiro',
-        description: 'Sem achismos. Identificamos a raiz do problema antes de gastar um centavo.',
+        icon: IconSearch,
+        title: 'Diagnóstico Sem Filtro',
+        description:
+            'Não dizemos o que você quer ouvir. Dizemos o que seu sistema precisa para parar de perder dinheiro.',
     },
     {
         id: 'resultados',
-        icon: IconChartBar,
-        title: 'Resultados Mensuráveis',
-        description: 'Se não podemos medir, não fazemos. Cada projeto tem KPIs claros desde o dia 1.',
+        icon: IconChartLine,
+        title: 'Lucro Como Métrica Única',
+        description: 'Funcionalidades são vaidade. Sucesso para nós é impacto no seu ROI e margem líquida.',
     },
     {
         id: 'parceria',
         icon: IconUsers,
-        title: 'Parceria de Verdade',
-        description: 'Não somos fornecedores que somem. Crescemos junto com você.',
+        title: 'Alinhamento Nível Sócio',
+        description: 'Não somos fornecedores distantes. Operamos como sua própria célula de tecnologia estratégica.',
     },
     {
         id: 'transparencia',
-        icon: IconMessageCircle,
-        title: 'Transparência Total',
-        description: 'Você sempre saberá o que está acontecendo — mesmo quando as notícias não são ideais.',
+        icon: IconShield,
+        title: 'Integridade Radical',
+        description:
+            'Processos abertos, faturamento sem surpresas e honestidade total sobre o que funciona e o que não.',
     },
 ]
 
@@ -45,174 +55,182 @@ export default function AboutSection() {
 
     return (
         <Box
+            id="sobre"
             component="section"
-            id="quem-somos"
-            py="xl"
+            aria-label="About RiLiGar"
+            py={80}
+            bg="gray.0"
+            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
         >
-            <Group
-                justify="center"
-                mb="md"
-            >
-                <Badge
-                    variant="light"
-                    color="gray"
-                    size="lg"
-                >
-                    Quem Somos
-                </Badge>
-            </Group>
-
-            <Title
-                order={2}
-                ta="center"
-                mb="md"
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
-            >
-                Seu Negócio Merece Crescer — E Sabemos Como
-            </Title>
-
-            <Text
-                c="dimmed"
-                ta="center"
-                mb={50}
-                maw={700}
-                mx="auto"
-            >
-                Ajudamos empresas a identificar o que realmente está travando seu crescimento — e implementamos soluções
-                que geram resultados mensuráveis em semanas, não anos.
-            </Text>
-
-            {/* Founder Card */}
-            <Card
-                radius="md"
-                padding="xl"
-                mb={50}
-                maw={600}
-                mx="auto"
-                withBorder
-                bg="white"
-                bd={`1px solid ${theme.colors.gray[2]}`}
-            >
+            <Container size="xl">
                 <Group
-                    align="flex-start"
-                    wrap="nowrap"
-                    gap="xl"
+                    justify="center"
+                    mb="md"
                 >
-                    <Avatar
-                        size={80}
-                        radius="md"
+                    <Badge
+                        variant="light"
                         color="gray"
-                        src="https://avatars.githubusercontent.com/u/349602?v=4"
+                        size="lg"
                     >
-                        CM
-                    </Avatar>
+                        Nossa Filosofia
+                    </Badge>
+                </Group>
 
-                    <Box>
-                        <Group
-                            mb="xs"
-                            gap="xs"
-                            wrap="wrap"
+                <Title
+                    order={2}
+                    ta="center"
+                    mb="lg"
+                    size={{ base: 28, sm: 32, md: 36 }}
+                    c="dark"
+                >
+                    Diagnóstico Primeiro, Código Depois
+                </Title>
+
+                <Text
+                    c="dimmed"
+                    ta="center"
+                    mb={60}
+                    maw={800}
+                    mx="auto"
+                    fz="lg"
+                    lh={1.6}
+                >
+                    A RiLiGar nasceu para estancar o desperdício tecnológico. Acreditamos que a maioria dos problemas
+                    que empresas tentam resolver com "mais software" são, na verdade, problemas de processo mal
+                    resolvidos. Nossa missão é trazer clareza operacional e lucro através de sistemas pragmáticos.
+                </Text>
+
+                {/* Founder Card */}
+                <Card
+                    radius="md"
+                    padding="xl"
+                    mb={50}
+                    maw={600}
+                    mx="auto"
+                    withBorder
+                    bg="white"
+                    bd={`1px solid ${theme.colors.gray[2]}`}
+                >
+                    <Group
+                        align="flex-start"
+                        wrap="nowrap"
+                        gap="xl"
+                    >
+                        <Avatar
+                            size={80}
+                            radius="md"
+                            color="gray"
+                            src="https://avatars.githubusercontent.com/u/349602?v=4"
                         >
-                            <Text
-                                size="lg"
-                                fw={700}
+                            CM
+                        </Avatar>
+
+                        <Box>
+                            <Group
+                                mb="xs"
+                                gap="xs"
+                                wrap="wrap"
                             >
-                                Ciro Cesar Maciel
+                                <Text
+                                    size="lg"
+                                    fw={700}
+                                >
+                                    Ciro Cesar Maciel
+                                </Text>
+                                <Badge
+                                    variant="light"
+                                    color="gray"
+                                    size="sm"
+                                >
+                                    Fundador
+                                </Badge>
+                            </Group>
+
+                            <Text
+                                size="sm"
+                                c="dimmed"
+                                mb="md"
+                            >
+                                Já ajudei dezenas de empresas a reduzir custos operacionais, automatizar processos e
+                                desbloquear novos canais de receita. Minha missão é garantir que tecnologia trabalhe
+                                para o seu negócio, não contra ele.
                             </Text>
-                            <Badge
+
+                            <Group gap="xs">
+                                <Badge
+                                    size="sm"
+                                    variant="outline"
+                                    color="gray"
+                                >
+                                    15+ Projetos Entregues
+                                </Badge>
+                                <Badge
+                                    size="sm"
+                                    variant="outline"
+                                    color="gray"
+                                >
+                                    20+ Anos de Experiência
+                                </Badge>
+                                <Badge
+                                    size="sm"
+                                    variant="outline"
+                                    color="gray"
+                                >
+                                    100% Foco em Resultados
+                                </Badge>
+                            </Group>
+                        </Box>
+                    </Group>
+                </Card>
+
+                {/* Values Grid */}
+                <SimpleGrid
+                    cols={{ base: 1, sm: 2, lg: 4 }}
+                    spacing="lg"
+                >
+                    {values.map(value => (
+                        <Card
+                            key={value.id}
+                            shadow="sm"
+                            padding="lg"
+                            radius="md"
+                            withBorder
+                            bg="white"
+                            bd={`1px solid ${theme.colors.gray[2]}`}
+                        >
+                            <ThemeIcon
+                                size={40}
+                                radius="md"
                                 variant="light"
                                 color="gray"
-                                size="sm"
+                                mb="md"
                             >
-                                Fundador
-                            </Badge>
-                        </Group>
+                                <value.icon
+                                    size={24}
+                                    stroke={1.5}
+                                />
+                            </ThemeIcon>
 
-                        <Text
-                            size="sm"
-                            c="dimmed"
-                            mb="md"
-                        >
-                            Já ajudei dezenas de empresas a reduzir custos operacionais, automatizar processos e
-                            desbloquear novos canais de receita. Minha missão é garantir que tecnologia trabalhe para o
-                            seu negócio, não contra ele.
-                        </Text>
-
-                        <Group gap="xs">
-                            <Badge
-                                size="sm"
-                                variant="outline"
-                                color="gray"
+                            <Title
+                                order={3}
+                                size="md"
+                                fw={700}
+                                mb="sm"
+                                c="dark"
                             >
-                                15+ Projetos Entregues
-                            </Badge>
-                            <Badge
+                                {value.title}
+                            </Title>
+
+                            <Text
                                 size="sm"
-                                variant="outline"
-                                color="gray"
+                                c="dimmed"
                             >
-                                20+ Anos de Experiência
-                            </Badge>
-                            <Badge
-                                size="sm"
-                                variant="outline"
-                                color="gray"
-                            >
-                                100% Foco em Resultados
-                            </Badge>
-                        </Group>
-                    </Box>
-                </Group>
-            </Card>
-
-            {/* Values Grid */}
-            <SimpleGrid
-                cols={{ base: 1, sm: 2, lg: 4 }}
-                spacing="lg"
-            >
-                {values.map(value => (
-                    <Card
-                        key={value.id}
-                        shadow="sm"
-                        padding="lg"
-                        radius="md"
-                        withBorder
-                        bg="white"
-                        bd={`1px solid ${theme.colors.gray[2]}`}
-                    >
-                        <ThemeIcon
-                            size={40}
-                            radius="md"
-                            variant="light"
-                            color="gray"
-                            mb="md"
-                        >
-                            <value.icon
-                                size={24}
-                                stroke={1.5}
-                            />
-                        </ThemeIcon>
-
-                        <Title
-                            order={3}
-                            size="md"
-                            fw={700}
-                            mb="sm"
-                            c="dark"
-                        >
-                            {value.title}
-                        </Title>
-
-                        <Text
-                            size="sm"
-                            c="dimmed"
-                        >
-                            {value.description}
-                        </Text>
-                    </Card>
-                ))}
-            </SimpleGrid>
+                                {value.description}
+                            </Text>
+                        </Card>
+                    ))}
+                </SimpleGrid>
+            </Container>
         </Box>
     )
 }

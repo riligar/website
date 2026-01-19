@@ -4,49 +4,49 @@ import { IconCheck, IconX, IconArrowRight } from '@tabler/icons-react'
 const comparisons = [
     {
         id: 'diagnosis',
-        feature: 'Diagnóstico profundo antes de propor soluções',
+        feature: 'Mapeamento de dreno de capital (Diagnóstico profundo)',
         riligar: true,
         others: false,
     },
     {
         id: 'process',
-        feature: 'Redesenho de processos antes da automação',
+        feature: 'Arquitetura operacional anti-caos (Redesenho)',
         riligar: true,
         others: false,
     },
     {
         id: 'results',
-        feature: 'Foco em resultados de negócio mensuráveis',
+        feature: 'Foco obsessivo em ROI e impacto financeiro',
         riligar: true,
         others: false,
     },
     {
         id: 'partnership',
-        feature: 'Parceria de transformação (não apenas fornecimento)',
+        feature: 'Célula de tecnologia dedicada (Partnership real)',
         riligar: true,
         others: false,
     },
     {
         id: 'speed',
-        feature: 'Iterações rápidas (2-3 semanas para primeiros resultados)',
+        feature: 'Valor real entregue em menos de 21 dias',
         riligar: true,
         others: false,
     },
     {
         id: 'transparency',
-        feature: 'Transparência total (sem taxas escondidas)',
+        feature: 'Zero surpresas no faturamento (Sem taxas ocultas)',
         riligar: true,
         others: false,
     },
     {
         id: 'tech-as-tool',
-        feature: 'Tecnologia como ferramenta (não como objetivo)',
+        feature: 'Tecnologia como enabler pragmático, não objetivo',
         riligar: true,
         others: false,
     },
     {
         id: 'personal',
-        feature: 'Atenção pessoal dedicada a cada projeto',
+        feature: 'Comprometimento nível sócio em cada projeto',
         riligar: true,
         others: false,
     },
@@ -71,7 +71,7 @@ export default function Comparison() {
                     color="gray"
                     size="lg"
                 >
-                    O Diferencial Riligar
+                    RiLiGar vs. Agências de Software
                 </Badge>
             </Group>
 
@@ -82,7 +82,7 @@ export default function Comparison() {
                 size={{ base: 28, sm: 32, md: 36 }}
                 c="dark"
             >
-                Por Que Escolher a Riligar?
+                Por Que Somos o Oposto do Tradicional?
             </Title>
 
             <Text
@@ -93,8 +93,8 @@ export default function Comparison() {
                 mx="auto"
                 fz="lg"
             >
-                Não somos apenas mais uma agência de desenvolvimento. Somos um time focado que entrega transformações —
-                não apenas código. Veja o que nos diferencia.
+                Não faturamos horas. Resolvemos gargalos. Enquanto agências tradicionais lucram com a complexidade e o
+                atraso, a RiLiGar lucra com a sua eficiência.
             </Text>
 
             <Box

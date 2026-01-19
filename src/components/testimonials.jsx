@@ -21,7 +21,7 @@ const testimonials = [
         role: 'Sócia-Diretora',
         company: 'Escritório de Advocacia',
         rating: 5,
-        text: 'Achávamos que precisávamos automatizar a entrada de leads. O diagnóstico revelou que nosso problema real era o processo de qualificação. Depois do redesenho, economizamos horas por dia e os leads certos chegam direto ao advogado certo.',
+        text: 'Acreditamos que o gargalo era a entrada de leads. O diagnóstico da RiLiGar provou que estávamos perdendo 15h semanais em triagem manual ineficiente. O redesenho do fluxo nos devolveu esse tempo e triplicou nossa velocidade de resposta.',
         avatar: 'AS',
     },
     {
@@ -30,44 +30,26 @@ const testimonials = [
         role: 'Diretor de Operações',
         company: 'Rede de Casas de Repouso',
         rating: 5,
-        text: 'Queríamos automatizar planilhas de inventário. Eles descobriram que não tínhamos protocolos de recompra e vendas prometia entregas sem checar estoque. Resultado depois do redesenho: $100K economizados por ano.',
+        text: 'Estávamos prontos para gastar em um software complexo de inventário. A RiLiGar nos parou, diagnosticou falhas no protocolo de compra e economizou $100K ao ano com uma solução simples e pragmática.',
         avatar: 'CM',
     },
-    {
-        id: 'fernanda-costa',
-        name: 'Fernanda Costa',
-        role: 'CEO',
-        company: 'E-commerce',
-        rating: 5,
-        text: 'Tomávamos decisões baseadas em planilhas desatualizadas. Criaram visibilidade completa do pipeline de vendas — não automatizando o existente, mas redesenhando como a informação deveria fluir. Agora temos previsibilidade de receita.',
-        avatar: 'FC',
-    },
+    // {
+    //     id: 'fernanda-costa',
+    //     name: 'Fernanda Costa',
+    //     role: 'CEO',
+    //     company: 'E-commerce',
+    //     rating: 5,
+    //     text: 'Vínhamos tomando decisões no escuro. Hoje, operamos com margens reais por produto em tempo real. Não foi só uma entrega técnica, foi uma mudança de nível operacional.',
+    //     avatar: 'FC',
+    // },
     {
         id: 'roberto-almeida',
         name: 'Roberto Almeida',
         role: 'Sócio-Fundador',
         company: 'Escritório de Contabilidade',
         rating: 5,
-        text: 'Clientes reclamavam da frequência de atualizações — mas era da qualidade. Redesenharam nossa comunicação inteira. A automação foi mínima; o impacto foi enorme. Agora clientes elogiam proativamente.',
+        text: 'Onde outros viam problemas de suporte, a RiLiGar viu problemas de processo. Redesenhamos a comunicação e o churn parou. O sistema novo se tornou nosso maior diferencial de venda.',
         avatar: 'RA',
-    },
-    {
-        id: 'patricia-santos',
-        name: 'Patrícia Santos',
-        role: 'Diretora Administrativa',
-        company: 'Indústria Têxtil',
-        rating: 5,
-        text: 'Pensávamos que nosso problema era tecnologia ultrapassada. O diagnóstico mostrou que eram processos manuais desnecessários. Com redesenho + automação inteligente, reduzimos tempo de produção em 35%.',
-        avatar: 'PS',
-    },
-    {
-        id: 'marcos-lima',
-        name: 'Marcos Lima',
-        role: 'Fundador',
-        company: 'Startup Tech',
-        rating: 5,
-        text: 'Como startup, precisávamos de um parceiro que movesse rápido sem quebrar nada. Entregaram exatamente isso. Em 3 semanas já víamos resultado. A abordagem de diagnóstico primeiro fez toda a diferença.',
-        avatar: 'ML',
     },
 ]
 
@@ -89,7 +71,7 @@ export default function Testimonials() {
                     color="gray"
                     size="lg"
                 >
-                    O Que Nossos Clientes Dizem
+                    Quem Estancou o Desperdício
                 </Badge>
             </Group>
 
@@ -100,7 +82,7 @@ export default function Testimonials() {
                 size={{ base: 28, sm: 32, md: 36 }}
                 c="dark"
             >
-                Empresas Que Transformamos
+                Sistemas Que Geram Lucro Real
             </Title>
 
             <Text
@@ -110,7 +92,7 @@ export default function Testimonials() {
                 maw={700}
                 mx="auto"
             >
-                Esses são depoimentos de empresas que passaram pelo nosso processo de diagnóstico e transformação.
+                Estes são depoimentos de operadores que trocaram o caos por sistemas de alta performance.
             </Text>
 
             <SimpleGrid

@@ -19,9 +19,9 @@ const steps = [
     {
         id: 'diagnostico',
         icon: IconMessageCircle,
-        title: 'Diagnóstico Profundo',
+        title: 'Diagnóstico Brutalmente Honesto',
         description:
-            'Não perguntamos "o que você quer automatizar?" — perguntamos "o que está impedindo seu negócio de atingir seus objetivos?" Analisamos processos e quantificamos gargalos.',
+            'Não perguntamos "o que você quer construir?" — perguntamos "o que está impedindo seu negócio de lucrar 10x mais?". Mapeamos gargalos que você nem sabia que existiam.',
         number: '01',
     },
     {
@@ -29,23 +29,23 @@ const steps = [
         icon: IconBulb,
         title: 'Redesenho de Processos',
         description:
-            'Antes de escolher qualquer tecnologia, redesenhamos como o processo DEVERIA funcionar. Um processo ruim automatizado ainda é um processo ruim — só mais rápido.',
+            'Automação sem redesenho é acelerar o erro. Criamos fluxos otimizados para a escala, garantindo que o sistema novo não herde vícios do antigo.',
         number: '02',
     },
     {
         id: 'implementacao',
         icon: IconRocket,
-        title: 'Implementação Focada em Resultados',
+        title: 'Implementação de Sistemas',
         description:
-            'Construímos a solução que habilita o processo redesenhado. A tecnologia é um meio, não o objetivo. Medimos sucesso por impacto de negócio, não por funcionalidades.',
+            'Construímos ferramentas pragmáticas que habilitam o processo redesenhado. Tecnologia focada em ROI e impacto, sem complexidade desnecessária.',
         number: '03',
     },
     {
         id: 'parceria',
         icon: IconTrendingUp,
-        title: 'Parceria de Transformação',
+        title: 'Crescimento Composto',
         description:
-            'Não somos fornecedores de serviços técnicos — somos parceiros na transformação do seu negócio. Acompanhamos resultados e evoluímos as soluções conforme você cresce.',
+            'Não somos fornecedores, somos sua célula de tecnologia de elite. Evoluímos seus sistemas conforme sua operação cresce e novos desafios surgem.',
         number: '04',
     },
 ]
@@ -71,7 +71,7 @@ export default function Process() {
                         color="gray"
                         size="lg"
                     >
-                        Nosso Processo
+                        Nosso Workflow
                     </Badge>
                 </Group>
 
@@ -82,7 +82,7 @@ export default function Process() {
                     size={{ base: 28, sm: 32, md: 36 }}
                     c="dark"
                 >
-                    De Problema Invisível a Resultado Mensurável
+                    De Gargalos Invisíveis a Resultados Mensuráveis
                 </Title>
 
                 <Text
@@ -93,8 +93,7 @@ export default function Process() {
                     mx="auto"
                     fz="lg"
                 >
-                    Primeiro entendemos, depois redesenhamos, e só então implementamos. A tecnologia é sempre o último
-                    passo, nunca o primeiro.
+                    Primeiro entendemos, depois simplificamos. A tecnologia é o enabler final, nunca o ponto de partida.
                 </Text>
 
                 <SimpleGrid

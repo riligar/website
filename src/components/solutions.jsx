@@ -200,29 +200,21 @@ function SolutionsHero() {
                 >
                     <Title
                         order={1}
-                        component="h1"
-                        style={{ lineHeight: 1.2 }}
+                        size={40}
+                        lh={1.1}
+                        fw={900}
+                        c="dark"
                     >
-                        Seu Negócio Precisa de{' '}
-                        <Text
-                            component="span"
-                            inherit
-                            c="dark"
-                        >
-                            um Novo Ponto de Vista
-                        </Text>{' '}
-                        para Alavancar
+                        Sistemas Que Pagam a Si Mesmos.
                     </Title>
                     <Text
-                        size="lg"
+                        size="xl"
                         c="dimmed"
                         mt="xl"
-                        fz="xl"
                         lh={1.6}
                     >
-                        Processos manuais, sistemas desconectados, retrabalho constante, oportunidades perdidas — tudo
-                        isso custa caro. A maioria dos empresários não percebe porque está ocupado demais "apagando
-                        incêndios".
+                        Não focamos em funcionalidades isoladas. Construímos ativos operacionais que atacam gargalos
+                        específicos, aumentam seu ROI e preparam seu negócio para a escala sem caos.
                     </Text>
 
                     <List

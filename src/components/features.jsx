@@ -4,45 +4,45 @@ import { IconCloudComputing, IconChartBar, IconBrain, IconRobot, IconSparkles, I
 const mockdata = [
     {
         id: 'leads-perdidos',
-        title: 'Leads Caindo Entre as Frestas?',
+        title: 'Leads Vazando Pelo Funil?',
         description:
-            'Quando leads passam despercebidos ou não recebem follow-up adequado, você perde receita. Garantimos que cada lead de alto valor receba atenção imediata, enquanto consultas rotineiras são tratadas automaticamente.',
+            'Leads de alto valor ignorados ou com follow-up tardio são faturamento jogado fora. Criamos sistemas que garantem atenção imediata onde importa, enquanto a IA cuida do resto.',
         icon: IconRobot,
         highlight: true,
     },
     {
         id: 'pipeline-cego',
-        title: 'Pipeline de Vendas Sem Visibilidade?',
+        title: 'Pipeline de Vendas Sem Previsibilidade?',
         description:
-            'Decisões baseadas em achismo custam caro. Criamos visibilidade completa do seu funil de vendas com dashboards que mostram exatamente onde estão os gargalos e oportunidades.',
+            'Decidir no "feel" custa caro. Estabelecemos visibilidade total com dashboards de verdade, expondo exatamente onde o dinheiro está travado no seu fluxo.',
         icon: IconChartBar,
     },
     {
         id: 'produto-nao-escala',
-        title: 'Produto Que Não Escala com Seu Crescimento?',
+        title: 'Operação Travando o Crescimento?',
         description:
-            'Seu sistema atual está travando seu crescimento? Desenvolvemos plataformas que escalam conforme seu negócio cresce, sem surpresas de custo ou performance.',
+            'Sistemas legados e processos manuais são o teto do seu lucro. Desenhamos infraestruturas que escalam conforme você cresce, sem surpresas de custo.',
         icon: IconCloudComputing,
     },
     {
         id: 'dados-manual',
-        title: 'Horas Perdidas em Trabalho Manual?',
+        title: 'Dreno de Tempo em Trabalho Manual?',
         description:
-            'Dados não estruturados e processos manuais consomem tempo da sua equipe. Automatizamos a extração, análise e processamento para liberar seu time para trabalho estratégico.',
+            'Sua equipe deveria estar fechando negócios, não preenchendo planilhas. Automatizamos a extração e processamento de dados para liberar inteligência.',
         icon: IconSparkles,
     },
     {
         id: 'software-generico',
-        title: 'Software Genérico Que Não Resolve Seu Problema?',
+        title: 'Refém de Softwares Genéricos?',
         description:
-            'Quando soluções de prateleira não atendem seus processos únicos, desenvolvemos ferramentas sob medida que realmente se encaixam no seu workflow.',
+            'Tentar encaixar seu negócio único em uma ferramenta de prateleira é receita para o caos. Criamos soluções sob medida para o seu workflow específico.',
         icon: IconBrain,
     },
     {
         id: 'incerteza-tecnologia',
-        title: 'Incerteza Sobre Onde Investir em Tecnologia?',
+        title: 'Paralisia por Excesso de Opções?',
         description:
-            'Com tantas opções disponíveis, é difícil saber qual caminho seguir. Diagnosticamos seu negócio e criamos um roadmap claro de onde a tecnologia pode gerar mais valor.',
+            'A tecnologia certa é aquela que resolve o problema agora. Diagnosticamos sua empresa e entregamos um roadmap pragmático focado em ROI.',
         icon: IconShield,
     },
 ]
@@ -122,7 +122,7 @@ export default function Features() {
                 mt="md"
                 size={{ base: 28, sm: 32, md: 36 }}
             >
-                Esses Problemas São Familiares?
+                Estes Sintomas Parecem Familiares?
             </Title>
 
             <Text
@@ -132,8 +132,8 @@ export default function Features() {
                 maw={800}
                 mx="auto"
             >
-                Identificamos esses padrões repetidamente nos negócios. O primeiro passo é reconhecer o problema — o
-                segundo é resolvê-lo de forma que gere impacto real e mensurável.
+                A maioria dos negócios está operando abaixo do potencial não por falta de esforço, mas por processos
+                inflados. Nosso papel é diagnosticar, simplificar e lucrar.
             </Text>
 
             <SimpleGrid
