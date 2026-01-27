@@ -1,4 +1,4 @@
-import logo from '/image/riligar-logo.webp'
+import logo from '/images/logo.webp'
 
 import { Text, Container, ActionIcon, Group, Image, Box, SimpleGrid, useMantineTheme } from '@mantine/core'
 import { IconBrandLinkedin, IconBrandYoutube, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react'
@@ -24,6 +24,7 @@ const data = [
         links: [
             { id: 'about', label: 'Sobre Nós', link: '/#quem-somos' },
             { id: 'contact', label: 'Contato', link: '/#contato' },
+            { id: 'branding', label: 'Branding', link: '/branding' },
             { id: 'llms', label: 'LLMs.txt', link: 'https://www.riligar.click/llms.txt' },
             { id: 'llms', label: 'LLMs Contexto.txt', link: 'https://www.riligar.click/llms-ctx.txt' },
         ],

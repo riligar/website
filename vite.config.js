@@ -29,23 +29,23 @@ export default defineConfig({
                 background_color: '#ffffff',
                 icons: [
                     {
-                        src: 'image/android-chrome-512x512.png',
+                        src: 'images/android-chrome-512x512.png',
                         sizes: '512x512',
-                        type: 'image/png',
+                        type: 'images/png',
                     },
                 ],
                 screenshots: [
                     {
-                        src: 'image/android-chrome-512x512.png',
+                        src: 'images/android-chrome-512x512.png',
                         sizes: '512x512',
-                        type: 'image/png',
+                        type: 'images/png',
                         form_factor: 'wide',
                         label: 'Application',
                     },
                     {
-                        src: 'image/android-chrome-512x512.png',
+                        src: 'images/android-chrome-512x512.png',
                         sizes: '512x512',
-                        type: 'image/png',
+                        type: 'images/png',
                         form_factor: 'narrow',
                         label: 'Application',
                     },

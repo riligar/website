@@ -176,7 +176,7 @@ export default function Hero() {
                         h="100%"
                     >
                         <Image
-                            src="/image/home-hero.webp"
+                            src="/images/home-hero.webp"
                             alt="RiLiGar Solutions"
                             loading="lazy"
                             radius="lg"

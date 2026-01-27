@@ -7,31 +7,36 @@
  * O código do componente deve ser limpo.
  */
 
-import { createTheme, rem } from '@mantine/core'
+import { createTheme } from '@mantine/core'
 
-export const rlgTheme = createTheme({
+export const theme = createTheme({
     fontFamily: 'Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
 
     colors: {
-        // Escala Neutra Universal (Substitui o gray padrão)
+        // Escala Baseada nas cores fornecidas
+        // Preto: #34322D
+        // Cinza: #F8F8F8
+        // Branco: #FFFFFF
         gray: [
-            '#F9FAFB', // 0: App Background
-            '#F3F4F6', // 1: Hover/Subtle
-            '#E5E7EB', // 2: Borders
-            '#D1D5DB', // 3: Disabled
-            '#9CA3AF', // 4: Placeholder
-            '#6B7280', // 5: Text Secondary
-            '#4B5563', // 6: Text Primary Soft
-            '#374151', // 7: Text Primary
-            '#1F2937', // 8: Headers
-            '#11181C', // 9: Absolute Black
+            '#F8F8F8', // 0: Gray (Background)
+            '#FFFFFF', // 1: White
+            '#EEEEEE', // 2: Light Gray (Borders)
+            '#E0E0E0', // 3: Disabled
+            '#BDBDBD', // 4: Placeholder
+            '#757575', // 5: Text Secondary
+            '#616161', // 6: Text Primary Soft
+            '#424242', // 7: Text Primary
+            '#34322D', // 8: Black (Headers/Deep)
+            '#212121', // 9: Absolute Black
         ],
-        // Semânticos
-        error: ['#FEF2F2', '#FEE2E2', '#FECACA', '#FCA5A5', '#F87171', '#EF4444', '#DC2626', '#B91C1C', '#991B1B', '#7F1D1D'],
-        success: ['#F0FDF4', '#DCFCE7', '#BBF7D0', '#86EFAC', '#4ADE80', '#22C55E', '#16A34A', '#15803D', '#166534', '#14532D'],
+        // Semânticos neutralizados para manter monochromaticidade total
+        error: ['#F9FAFB', '#F3F4F6', '#E5E7EB', '#D1D5DB', '#9CA3AF', '#6B7280', '#4B5563', '#374151', '#1F2937', '#11181C'],
+        success: ['#F9FAFB', '#F3F4F6', '#E5E7EB', '#D1D5DB', '#9CA3AF', '#6B7280', '#4B5563', '#374151', '#1F2937', '#11181C'],
     },
 
-    primaryColor: 'dark', // Escala dark mapeada para cinzas
+    primaryColor: 'gray',
+    black: '#34322D',
+    white: '#FFFFFF',
     autoContrast: true,
 
     defaultRadius: 'md', // 6px
@@ -90,7 +95,7 @@ export const rlgTheme = createTheme({
                 input: {
                     border: `1px solid ${theme.colors.gray[2]}`, // Garante borda 1px
                     '&:focus': {
-                        borderColor: theme.colors.dark[8],
+                        borderColor: theme.colors.gray[5], // Force gray focus
                     },
                 },
             }),

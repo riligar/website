@@ -4,7 +4,7 @@
 /llms-ctx.txt https://riligar.click/llms-ctx.txt 200
 /robots.txt /robots.txt 200
 /sitemap.xml /sitemap.xml 200
-/favicon.ico /favicon.ico 200
+/favicon.webp /favicon.webp 200
 /manifest.webmanifest /manifest.webmanifest 200
 /sw.js /sw.js 200
 /registerSW.js /registerSW.js 200

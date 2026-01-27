@@ -9,7 +9,6 @@ import {
     IconCheck,
 } from '@tabler/icons-react'
 
-
 const techStack = [
     {
         id: 'tech1',
@@ -115,9 +114,7 @@ export default function SalesforceTechStack() {
             component="section"
             aria-label="Salesforce tech stack"
             py={80}
-            style={{
-                background: 'linear-gradient(180deg, rgba(249, 250, 251, 1) 0%, rgba(255, 255, 255, 0) 100%)',
-            }}
+            bg="gray.0"
         >
             <Container size="xl">
                 <Title
@@ -136,10 +133,8 @@ export default function SalesforceTechStack() {
                     mx="auto"
                     mb={60}
                 >
-                    
-                        We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and
-                        modern DevOps practices. 20+ years of software engineering applied to Salesforce development.
-                    
+                    We use the full power of the Salesforce platform—Lightning Web Components, Apex, Flow, and modern
+                    DevOps practices. 20+ years of software engineering applied to Salesforce development.
                 </Text>
 
                 <SimpleGrid
@@ -147,20 +142,9 @@ export default function SalesforceTechStack() {
                     spacing="xl"
                 >
                     {techStack.map(stack => (
-                        <Card
-                            key={stack.id}
-                            shadow="md"
-                            radius="md"
-                            padding="xl"
-                            withBorder
-                        >
+                        <Card key={stack.id}>
                             <Group mb="md">
-                                <ThemeIcon
-                                    size={50}
-                                    radius="md"
-                                    variant="light"
-                                    color={stack.color}
-                                >
+                                <ThemeIcon size={50}>
                                     <stack.icon
                                         style={{ width: rem(30), height: rem(30) }}
                                         stroke={1.5}
@@ -219,11 +203,9 @@ export default function SalesforceTechStack() {
                 <Box
                     mt={60}
                     p="xl"
-                    style={{
-                        background:
-                            'linear-gradient(135deg, rgba(34, 139, 230, 0.1) 0%, rgba(58, 134, 255, 0.05) 100%)',
-                        borderRadius: '12px',
-                    }}
+                    bg="gray.0"
+                    bd="1px solid gray.2"
+                    style={{ borderRadius: 'var(--mantine-radius-lg)' }}
                 >
                     <Title
                         order={3}
@@ -238,12 +220,10 @@ export default function SalesforceTechStack() {
                         maw={900}
                         mx="auto"
                     >
-                        
-                            We're not just Salesforce developers—we're software engineers who happen to specialize in
-                            Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and
-                            all the best practices from enterprise software development. Your Salesforce org deserves
-                            better than quick hacks—it deserves engineering excellence.
-                        
+                        We're not just Salesforce developers—we're software engineers who happen to specialize in
+                        Salesforce. That means clean, maintainable code; proper testing; version control; CI/CD; and all
+                        the best practices from enterprise software development. Your Salesforce org deserves better
+                        than quick hacks—it deserves engineering excellence.
                     </Text>
                 </Box>
             </Container>

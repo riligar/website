@@ -10,6 +10,7 @@ import { rlgTheme } from './theme.js'
 import Home from './pages/home.jsx'
 import NotFoundPage from './pages/404.jsx'
 import SolutionsPage from './pages/solutions.jsx'
+import BrandingPage from './pages/branding.jsx'
 
 export default function AppRoutes() {
     return (
@@ -23,6 +24,10 @@ export default function AppRoutes() {
                     <Route
                         path="/solutions"
                         element={<SolutionsPage />}
+                    />
+                    <Route
+                        path="/branding"
+                        element={<BrandingPage />}
                     />
                     <Route
                         path="*"

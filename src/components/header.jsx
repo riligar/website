@@ -31,7 +31,7 @@ import {
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import logo from '/image/riligar-logotipo.webp'
+import logo from '/images/logotipo.webp'
 
 const transformacoes = [
     {

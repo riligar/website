@@ -131,3 +131,7 @@ dist
 bun.lockb
 public/.DS_Store
 .agent/skills/riligar-design-system/.DS_Store
+
+
+.agent
+.agent/skills/riligar-design-system/references/.DS_Store

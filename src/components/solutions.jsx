@@ -30,7 +30,7 @@ const solutions = [
         title: 'Text to Speech',
         description:
             'Aplicação de texto para fala com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.jpg',
+        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.webp',
         tags: ['Web', 'IA', 'Áudio', 'LLM', 'API', 'vozes'],
     },
     {
@@ -38,7 +38,7 @@ const solutions = [
         title: 'Password Manager',
         description:
             'Gerenciador de senhas com criptografia avançada e sincronização em tempo real. Proteja suas credenciais com segurança e facilidade.',
-        image: 'https://passwords.ciromaciel.click/images/opengraph.jpg',
+        image: 'https://passwords.ciromaciel.click/images/opengraph.webp',
         tags: ['Web', 'criptografia', 'sincronização', 'senhas', 'segurança'],
     },
     {
@@ -46,7 +46,7 @@ const solutions = [
         title: 'S3 Explorer',
         description:
             'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
+        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.webp',
         tags: ['Web', 'BI', 'S3', 'AWS'],
     },
     {
@@ -54,7 +54,7 @@ const solutions = [
         title: 'Web to AI',
         description:
             'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
-        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
+        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.webp',
         tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
     },
     {
@@ -70,7 +70,7 @@ const solutions = [
         title: 'Blogs',
         description:
             'Blogs é uma ferramenta versátil e indispensável que ajuda a organizar e gerenciar informações de maneira eficiente, facilitando a comunicação, o planejamento e a sua expressão criativa em diversas áreas da vida pessoal e profissional.',
-        image: 'image/blogs-opengraph.jpg',
+        image: 'images/blogs-opengraph.webp',
         tags: ['Web', 'organização', 'links', 'blog'],
     },
 ]
@@ -344,7 +344,7 @@ function SolutionsHero() {
                         }}
                     >
                         <Image
-                            src="/image/home-hero.webp"
+                            src="/images/home-hero.webp"
                             alt="Soluções RiLiGar"
                             radius="lg"
                             w="100%"
