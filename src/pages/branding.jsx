@@ -21,13 +21,13 @@ export default function BrandingPage() {
                             size="lg"
                             radius="sm"
                         >
-                            BRAND RECURSOS
+                            Baixar ativos da marca
                         </Badge>
                         <Title
                             order={1}
                             style={{ fontSize: '64px', letterSpacing: '-0.04em' }}
                         >
-                            Identidade RiLiGar
+                            Recursos da marca
                         </Title>
                         <Text
                             c="dimmed"
@@ -35,8 +35,8 @@ export default function BrandingPage() {
                             maw={600}
                             mx="auto"
                         >
-                            A síntese visual do nosso compromisso com a clareza, precisão e excelência em engenharia de
-                            negócios.
+                            Tudo que você precisa para exibir a marca RiLiGar da maneira certa - logotipos, cores e
+                            mais, tudo em um só lugar.
                         </Text>
                     </Stack>
                 </Container>
@@ -100,8 +100,10 @@ export default function BrandingPage() {
                                     c="dimmed"
                                     size="lg"
                                 >
-                                    Nossa marca gráfica é um testamento de progresso. As linhas paralelas representam o
-                                    alinhamento estratégico entre tecnologia e negócios.
+                                    O Raio RiLiGar é a manifestação visual da energia que impulsiona a transformação.
+                                    Suas linhas paralelas e precisas simbolizam o alinhamento inquebrável entre a
+                                    velocidade da inovação e o rigor da engenharia estratégica, capturando a essência da
+                                    centelha que gera escala e resultados.
                                 </Text>
                             </Grid.Col>
                             <Grid.Col span={{ base: 12, md: 7 }}>

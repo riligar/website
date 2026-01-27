@@ -4,6 +4,7 @@ import {
     Image,
     Button,
     UnstyledButton,
+    Stack,
     Text,
     Anchor,
     SimpleGrid,
@@ -59,6 +60,38 @@ const transformacoes = [
         pathname: '/ai-integration',
     },
 ]
+
+function NavLink({ href, label, mobile, onClick }) {
+    const isAnchor = href.startsWith('/#')
+
+    const handleClick = e => {
+        if (isAnchor && window.location.pathname === '/') {
+            e.preventDefault()
+            const id = href.split('#')[1]
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+        }
+        onClick?.()
+    }
+
+    return (
+        <Anchor
+            href={href}
+            underline="none"
+            fw={500}
+            fz="sm"
+            c="dark"
+            onClick={handleClick}
+            p={mobile ? 'md' : 0}
+            display={mobile ? 'block' : 'inline-block'}
+            style={{
+                transition: 'color 0.2s ease',
+            }}
+            className="hover-fade"
+        >
+            {label}
+        </Anchor>
+    )
+}
 
 export default function HeaderMegaMenu() {
     const navigate = useNavigate()
@@ -166,73 +199,25 @@ export default function HeaderMegaMenu() {
 
                             <Group
                                 h="100%"
-                                gap={0}
+                                gap="xl"
                                 visibleFrom="sm"
                             >
-                                <Anchor
+                                <NavLink
                                     href="/#casos-impacto"
-                                    p="md"
-                                    h="100%"
-                                    underline="none"
-                                    fw={500}
-                                    fz="sm"
-                                    c="dark"
-                                    onClick={e => {
-                                        if (window.location.pathname === '/') {
-                                            e.preventDefault()
-                                            document
-                                                .getElementById('casos-impacto')
-                                                ?.scrollIntoView({ behavior: 'smooth' })
-                                        }
-                                    }}
-                                >
-                                    Casos de Sucesso
-                                </Anchor>
-                                <Anchor
+                                    label="Casos de Sucesso"
+                                />
+                                <NavLink
                                     href="/#sobre"
-                                    p="md"
-                                    h="100%"
-                                    underline="none"
-                                    fw={500}
-                                    fz="sm"
-                                    c="dark"
-                                    onClick={e => {
-                                        if (window.location.pathname === '/') {
-                                            e.preventDefault()
-                                            document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })
-                                        }
-                                    }}
-                                >
-                                    Por Que Nós
-                                </Anchor>
-                                <Anchor
+                                    label="Por Que Nós"
+                                />
+                                <NavLink
                                     href="/solutions"
-                                    p="md"
-                                    h="100%"
-                                    underline="none"
-                                    fw={500}
-                                    fz="sm"
-                                    c="dark"
-                                >
-                                    Soluções
-                                </Anchor>
-                                <Anchor
+                                    label="Soluções"
+                                />
+                                <NavLink
                                     href="/#contato"
-                                    p="md"
-                                    h="100%"
-                                    underline="none"
-                                    fw={500}
-                                    fz="sm"
-                                    c="dark"
-                                    onClick={e => {
-                                        if (window.location.pathname === '/') {
-                                            e.preventDefault()
-                                            document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
-                                        }
-                                    }}
-                                >
-                                    Contato
-                                </Anchor>
+                                    label="Contato"
+                                />
                             </Group>
 
                             <Group visibleFrom="sm">
@@ -279,78 +264,39 @@ export default function HeaderMegaMenu() {
                             my={0}
                             mb={16}
                         />
-                        <Anchor
-                            href="/#casos-impacto"
-                            display="block"
-                            p="md"
-                            underline="none"
-                            fw={500}
-                            fz="sm"
-                            c="dark"
-                            onClick={e => {
-                                if (window.location.pathname === '/') {
-                                    e.preventDefault()
-                                    document.getElementById('casos-impacto')?.scrollIntoView({ behavior: 'smooth' })
-                                    closeDrawer()
-                                }
-                            }}
-                        >
-                            Casos de Sucesso
-                        </Anchor>
-                        <Anchor
-                            href="/#sobre"
-                            display="block"
-                            p="md"
-                            underline="none"
-                            fw={500}
-                            fz="sm"
-                            c="dark"
-                            onClick={e => {
-                                if (window.location.pathname === '/') {
-                                    e.preventDefault()
-                                    document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })
-                                    closeDrawer()
-                                }
-                            }}
-                        >
-                            Por Que Nós
-                        </Anchor>
-                        <Anchor
-                            href="/solutions"
-                            display="block"
-                            p="md"
-                            underline="none"
-                            fw={500}
-                            fz="sm"
-                            c="dark"
-                        >
-                            Soluções
-                        </Anchor>
-                        <Anchor
-                            href="/#contato"
-                            display="block"
-                            p="md"
-                            underline="none"
-                            fw={500}
-                            fz="sm"
-                            c="dark"
-                            mb={16}
-                            onClick={e => {
-                                if (window.location.pathname === '/') {
-                                    e.preventDefault()
-                                    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
-                                    closeDrawer()
-                                }
-                            }}
-                        >
-                            Contato
-                        </Anchor>
+                        <Stack gap={0}>
+                            <NavLink
+                                href="/#casos-impacto"
+                                label="Casos de Sucesso"
+                                mobile
+                                onClick={closeDrawer}
+                            />
+                            <NavLink
+                                href="/#sobre"
+                                label="Por Que Nós"
+                                mobile
+                                onClick={closeDrawer}
+                            />
+                            <NavLink
+                                href="/solutions"
+                                label="Soluções"
+                                mobile
+                                onClick={closeDrawer}
+                            />
+                            <NavLink
+                                href="/#contato"
+                                label="Contato"
+                                mobile
+                                onClick={closeDrawer}
+                            />
+                        </Stack>
 
                         <Group
                             justify="center"
                             grow
                             pb="xl"
                             px="md"
+                            mt="xl"
                         >
                             <Button
                                 component="a"
