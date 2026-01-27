@@ -348,7 +348,7 @@ export default function BrandingPage() {
                             >
                                 <Image
                                     src="/images/logo.webp"
-                                    h={60}
+                                    h={128}
                                     w="auto"
                                 />
                                 <Badge
@@ -362,7 +362,7 @@ export default function BrandingPage() {
                                         transform: 'translateX(-50%)',
                                     }}
                                 >
-                                    CLEAR SPACE
+                                    32px
                                 </Badge>
                                 <Badge
                                     variant="light"
@@ -375,7 +375,7 @@ export default function BrandingPage() {
                                         transform: 'translateX(-50%)',
                                     }}
                                 >
-                                    CLEAR SPACE
+                                    32px
                                 </Badge>
                                 <Badge
                                     variant="light"
@@ -388,7 +388,7 @@ export default function BrandingPage() {
                                         transform: 'translateY(-50%)',
                                     }}
                                 >
-                                    CLEAR SPACE
+                                    32px
                                 </Badge>
                                 <Badge
                                     variant="light"
@@ -401,7 +401,7 @@ export default function BrandingPage() {
                                         transform: 'translateY(-50%)',
                                     }}
                                 >
-                                    CLEAR SPACE
+                                    32px
                                 </Badge>
                             </Box>
                         </Card>
@@ -436,7 +436,6 @@ export default function BrandingPage() {
                                             position: 'relative',
                                             borderRadius: '8px',
                                             overflow: 'hidden',
-                                            border: '1px solid var(--mantine-color-gray-2)',
                                         }}
                                     >
                                         <Image
