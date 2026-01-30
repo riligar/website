@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.riligar.click/</loc>
+    <loc>https://riligar.click/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- About Us Page -->
   <url>
-    <loc>https://www.riligar.click/about</loc>
+    <loc>https://riligar.click/about</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://www.riligar.click/contact</loc>
+    <loc>https://riligar.click/contact</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

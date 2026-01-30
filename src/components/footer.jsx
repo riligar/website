@@ -25,8 +25,8 @@ const data = [
             { id: 'about', label: 'Sobre Nós', link: '/#quem-somos' },
             { id: 'contact', label: 'Contato', link: '/#contato' },
             { id: 'branding', label: 'Branding', link: '/branding' },
-            { id: 'llms', label: 'LLMs.txt', link: 'https://www.riligar.click/llms.txt' },
-            { id: 'llms', label: 'LLMs Contexto.txt', link: 'https://www.riligar.click/llms-ctx.txt' },
+            { id: 'llms', label: 'LLMs.txt', link: 'https://riligar.click/llms.txt' },
+            { id: 'llms', label: 'LLMs Contexto.txt', link: 'https://riligar.click/llms-ctx.txt' },
         ],
     },
     {

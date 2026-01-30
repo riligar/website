@@ -13,5 +13,5 @@ User-agent: CCBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://www.riligar.click/sitemap.xml
+Sitemap: https://riligar.click/sitemap.xml
 
