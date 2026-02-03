@@ -22,23 +22,23 @@ const solutions = [
         title: 'Auth',
         description:
             'Auth é a maneira mais fácil de adicionar autenticação e gerenciamento de usuários aos seus aplicativos.',
-        image: 'https://myauth.click/images/open-graph.jpg',
+        image: 'https://myauth.click/images/opengraph.webp',
         tags: ['Web', 'autenticação', 'gerenciamento', 'usuários', 'segurança'],
     },
     {
-        id: 'https://text-to-speech.ciromaciel.click/',
-        title: 'Text to Speech',
+        id: 'https://myfeeds.click/',
+        title: 'Feeds',
         description:
-            'Aplicação de texto para fala com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-        image: 'https://text-to-speech.ciromaciel.click/images/opengraph.webp',
-        tags: ['Web', 'IA', 'Áudio', 'LLM', 'API', 'vozes'],
+            'O Feeds é o primeiro orquestrador de Onipresença Digital. Escreva uma única ideia e deixe nossa engenharia híbrida distribuir sua voz em todos os lugares, enquanto você foca no que realmente importa: seu negócio.',
+        image: 'https://myfeeds.click/images/og-image.webp',
+        tags: ['Web', 'feeds', 'orquestrador', 'onipresença', 'digital'],
     },
     {
         id: 'https://passwords.ciromaciel.click/',
         title: 'Password Manager',
         description:
             'Gerenciador de senhas com criptografia avançada e sincronização em tempo real. Proteja suas credenciais com segurança e facilidade.',
-        image: 'https://passwords.ciromaciel.click/images/opengraph.webp',
+        image: 'https://passwords.ciromaciel.click//images/opengraph.jpg',
         tags: ['Web', 'criptografia', 'sincronização', 'senhas', 'segurança'],
     },
     {
@@ -46,7 +46,7 @@ const solutions = [
         title: 'S3 Explorer',
         description:
             'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.webp',
+        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
         tags: ['Web', 'BI', 'S3', 'AWS'],
     },
     {
@@ -54,7 +54,7 @@ const solutions = [
         title: 'Web to AI',
         description:
             'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
-        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.webp',
+        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
         tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
     },
     {
@@ -64,14 +64,6 @@ const solutions = [
             'Transforme sua experiência de navegação com Bookmarks. Organize seus links de maneira inteligente e liberte-se da confusão digital. Experimente agora e descubra como Bookmarks pode simplificar sua vida online!',
         image: 'https://bookmarks.ciromaciel.click/pt-BR/opengraph-image-s0b55b?673f97125d969340',
         tags: ['Web', 'organização', 'links', 'bookmark'],
-    },
-    {
-        id: 'https://myblogs.click/',
-        title: 'Blogs',
-        description:
-            'Blogs é uma ferramenta versátil e indispensável que ajuda a organizar e gerenciar informações de maneira eficiente, facilitando a comunicação, o planejamento e a sua expressão criativa em diversas áreas da vida pessoal e profissional.',
-        image: 'images/blogs-opengraph.webp',
-        tags: ['Web', 'organização', 'links', 'blog'],
     },
 ]
 
@@ -344,7 +336,7 @@ function SolutionsHero() {
                         }}
                     >
                         <Image
-                            src="/images/home-hero.webp"
+                            src="/images/solutions-hero.webp"
                             alt="Soluções RiLiGar"
                             radius="lg"
                             w="100%"
