@@ -53,7 +53,7 @@ export default function Hero() {
                         mt="xl"
                     >
                         Diagnóstico profundo + Redesenho operacional. Entregamos vantagem competitiva e impacto
-                        financeiro mensurável em menos de 3 semanas. Entendemos seu sistema antes de tocar em qualquer
+                        financeiro mensurável em menos de 3 meses. Entendemos seu sistema antes de tocar em qualquer
                         tecnologia.
                     </Text>
 
