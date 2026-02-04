@@ -26,20 +26,20 @@ const solutions = [
         tags: ['Web', 'autenticação', 'gerenciamento', 'usuários', 'segurança'],
     },
     {
+        id: 'https://myflows.click/',
+        title: 'Flows',
+        description:
+            'O Flows é a central de comando da sua operação. Capture sinais dos seus clientes e reaja instantaneamente — sem TI ou infraestruturas complexas.',
+        image: 'https://myflows.click/open-graph.webp',
+        tags: ['Web', 'fluxos', 'automação', 'workflows', 'produtividade'],
+    },
+    {
         id: 'https://myfeeds.click/',
         title: 'Feeds',
         description:
             'O Feeds é o primeiro orquestrador de Onipresença Digital. Escreva uma única ideia e deixe nossa engenharia híbrida distribuir sua voz em todos os lugares, enquanto você foca no que realmente importa: seu negócio.',
         image: 'https://myfeeds.click/images/og-image.webp',
         tags: ['Web', 'feeds', 'orquestrador', 'onipresença', 'digital'],
-    },
-    {
-        id: 'https://passwords.ciromaciel.click/',
-        title: 'Password Manager',
-        description:
-            'Gerenciador de senhas com criptografia avançada e sincronização em tempo real. Proteja suas credenciais com segurança e facilidade.',
-        image: 'https://passwords.ciromaciel.click//images/opengraph.jpg',
-        tags: ['Web', 'criptografia', 'sincronização', 'senhas', 'segurança'],
     },
     {
         id: 'https://s3-explorer.ciromaciel.click/',
