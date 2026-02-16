@@ -45,7 +45,7 @@ const solutions = [
         title: 'Feeds',
         description:
             'O Feeds é o primeiro orquestrador de Onipresença Digital. Escreva uma única ideia e deixe nossa engenharia híbrida distribuir sua voz em todos os lugares, enquanto você foca no que realmente importa: seu negócio.',
-        image: 'https://myfeeds.click/images/og-image.webp',
+        image: 'https://myfeeds.click/images/opengraph.webp',
         tags: ['Web', 'feeds', 'orquestrador', 'onipresença', 'digital'],
     },
     {
