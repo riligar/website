@@ -26,6 +26,13 @@ const solutions = [
         tags: ['Web', 'autenticação', 'gerenciamento', 'usuários', 'segurança'],
     },
     {
+        id: 'https://mypages.click/',
+        title: 'Pages',
+        description: 'A forma mais rápida de colocar sua oferta no ar com performance e design premium.',
+        image: 'https://mypages.click/images/opengraph.webp',
+        tags: ['Web', 'pages', 'gerenciamento', 'usuários', 'segurança'],
+    },
+    {
         id: 'https://myblogs.click/',
         title: 'Blogs',
         description: 'Blogs é a maneira mais fácil de criar e gerenciar seus blogs.',
@@ -48,22 +55,22 @@ const solutions = [
         image: 'https://myfeeds.click/images/opengraph.webp',
         tags: ['Web', 'feeds', 'orquestrador', 'onipresença', 'digital'],
     },
-    {
-        id: 'https://s3-explorer.ciromaciel.click/',
-        title: 'S3 Explorer',
-        description:
-            'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-        image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'BI', 'S3', 'AWS'],
-    },
-    {
-        id: 'https://web-to-ai.ciromaciel.click/',
-        title: 'Web to AI',
-        description:
-            'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
-        image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
-        tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
-    },
+    // {
+    //     id: 'https://s3-explorer.ciromaciel.click/',
+    //     title: 'S3 Explorer',
+    //     description:
+    //         'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
+    //     image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
+    //     tags: ['Web', 'BI', 'S3', 'AWS'],
+    // },
+    // {
+    //     id: 'https://web-to-ai.ciromaciel.click/',
+    //     title: 'Web to AI',
+    //     description:
+    //         'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
+    //     image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
+    //     tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
+    // },
     // {
     //     id: 'https://bookmarks.ciromaciel.click/',
     //     title: 'Bookmarks',
