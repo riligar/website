@@ -41,7 +41,7 @@ export default function Page() {
             {/* <Clients /> */}
             <ImpactLevels />
             <Features />
-            <Process />
+            {/* <Process /> */}
             <UseCases />
             <CaseStudy />
             <PricingModel />

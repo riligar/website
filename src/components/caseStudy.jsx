@@ -66,7 +66,7 @@ export default function CaseStudy() {
                 mb="md"
             >
                 <Badge
-                    variant="light"
+                    variant="dot"
                     color="gray"
                     size="lg"
                 >
@@ -78,8 +78,7 @@ export default function CaseStudy() {
                 order={2}
                 ta="center"
                 mb="md"
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Da "Demanda de Planilha" ao Lucro Real
             </Title>
@@ -97,120 +96,106 @@ export default function CaseStudy() {
             </Text>
 
             <Container size="lg">
-                <Paper
-                    p="xl"
-                    radius="md"
-                    bg="white"
-                    bd={`1px solid ${theme.colors.gray[2]}`}
-                >
-                    <Grid gutter="xl">
-                        <Grid.Col span={{ base: 12, md: 8 }}>
-                            {steps.map((step, index) => (
-                                <Box
-                                    key={index}
-                                    mb={index < steps.length - 1 ? 'xl' : 0}
-                                >
-                                    <Group
-                                        gap="sm"
-                                        mb="xs"
-                                    >
-                                        <ThemeIcon
-                                            size={32}
-                                            radius="md"
-                                            variant="light"
-                                            color="gray"
-                                        >
-                                            <step.icon
-                                                size={16}
-                                                stroke={1.5}
-                                            />
-                                        </ThemeIcon>
-                                        <Text
-                                            fw={700}
-                                            size="md"
-                                            c="dark"
-                                        >
-                                            {step.title}
-                                        </Text>
-                                    </Group>
-                                    <Text
-                                        size="sm"
-                                        c="dimmed"
-                                        pl={44}
-                                        lh={1.6}
-                                    >
-                                        {step.text}
-                                    </Text>
-                                    {index < steps.length - 1 && (
-                                        <Divider
-                                            mt="lg"
-                                            variant="dashed"
-                                        />
-                                    )}
-                                </Box>
-                            ))}
-                        </Grid.Col>
-
-                        <Grid.Col span={{ base: 12, md: 4 }}>
+                <Grid gutter="xl">
+                    {steps.map((step, index) => (
+                        <Grid.Col
+                            key={index}
+                            span={{ base: 12, md: 6 }}
+                        >
                             <Paper
                                 p="xl"
-                                radius="md"
-                                bg="gray.1"
-                                h="100%"
+                                radius="sm"
+                                bg="white"
                                 bd={`1px solid ${theme.colors.gray[2]}`}
+                                style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                             >
                                 <Group
                                     gap="sm"
                                     mb="xl"
                                 >
                                     <ThemeIcon
-                                        size={32}
-                                        radius="md"
-                                        variant="filled"
-                                        color="dark"
+                                        size={48}
+                                        radius="sm"
+                                        variant="light"
+                                        color="gray"
                                     >
-                                        <caseData.impact.icon
-                                            size={16}
+                                        <step.icon
+                                            size={24}
                                             stroke={1.5}
                                         />
                                     </ThemeIcon>
                                     <Text
                                         fw={800}
-                                        size="lg"
-                                        c="dark"
+                                        size="h4"
+                                        style={{ letterSpacing: '-0.02em', color: theme.black }}
                                     >
-                                        {caseData.impact.title}
+                                        {step.title}
                                     </Text>
                                 </Group>
+                                <Text
+                                    size="md"
+                                    c="dimmed"
+                                    lh={1.6}
+                                    style={{ flexGrow: 1 }}
+                                >
+                                    {step.text}
+                                </Text>
+                            </Paper>
+                        </Grid.Col>
+                    ))}
 
+                    <Grid.Col span={{ base: 12 }}>
+                        <Paper
+                            p="xl"
+                            radius="sm"
+                            bg="gray.0"
+                            bd={`1px solid ${theme.colors.gray[2]}`}
+                        >
+                            <Group
+                                gap="sm"
+                                mb="xl"
+                                justify="center"
+                            >
+                                <ThemeIcon
+                                    size={48}
+                                    radius="sm"
+                                    variant="filled"
+                                    color="dark"
+                                >
+                                    <caseData.impact.icon
+                                        size={24}
+                                        stroke={1.5}
+                                    />
+                                </ThemeIcon>
+                                <Text
+                                    fw={800}
+                                    size="h3"
+                                    style={{ letterSpacing: '-0.02em', color: theme.black }}
+                                >
+                                    {caseData.impact.title}
+                                </Text>
+                            </Group>
+
+                            <Grid gutter="xl">
                                 {caseData.impact.metrics.map((metric, index) => (
-                                    <Box
+                                    <Grid.Col
                                         key={index}
-                                        mb={index < caseData.impact.metrics.length - 1 ? 'lg' : 0}
+                                        span={{ base: 12, md: 4 }}
+                                        ta="center"
                                     >
                                         <Text
-                                            fz={32}
-                                            fw={900}
-                                            c="dark"
-                                            lh={1}
+                                            data-zen-metric="true"
+                                            mb="sm"
                                         >
                                             {metric.value}
                                         </Text>
-                                        <Text
-                                            fz="xs"
-                                            c="dimmed"
-                                            tt="uppercase"
-                                            fw={700}
-                                            mt={4}
-                                        >
-                                            {metric.label}
-                                        </Text>
-                                    </Box>
+                                        <Text data-zen-subtitle="true">{metric.label}</Text>
+                                    </Grid.Col>
                                 ))}
-                            </Paper>
-                        </Grid.Col>
-                    </Grid>
-                </Paper>
+                            </Grid>
+                        </Paper>
+                    </Grid.Col>
+                </Grid>
             </Container>
 
             <Text
