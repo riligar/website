@@ -266,7 +266,6 @@ export default function Solutions() {
                                             />
                                         }
                                         style={{
-                                            borderTop: `1px solid ${theme.colors.gray[2]}`,
                                             width: '100%',
                                             justifyContent: 'space-between',
                                             border: 'none',

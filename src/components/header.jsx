@@ -255,6 +255,14 @@ export default function HeaderMegaMenu() {
                     title="Navegação"
                     hiddenFrom="sm"
                     zIndex={1000000}
+                    styles={{
+                        content: {
+                            backgroundColor: 'white',
+                        },
+                        header: {
+                            backgroundColor: 'white',
+                        },
+                    }}
                 >
                     <ScrollArea
                         h="calc(100vh - 80px)"
