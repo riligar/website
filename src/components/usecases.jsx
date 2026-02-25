@@ -87,150 +87,190 @@ export default function UseCases() {
         <Box
             component="section"
             aria-label="Real-world use cases"
-            py={80}
+            py={120}
         >
-            <Group
-                justify="center"
-                mb="md"
-            >
-                <Badge
-                    variant="dot"
-                    color="gray"
-                    size="lg"
+            <style>{`
+                .usecase-card {
+                    transition: border-color 0.4s ease;
+                }
+                .usecase-card:hover {
+                    border-color: #212121;
+                }
+                .cta-button {
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+                .cta-button:hover {
+                    transform: scale(1.05);
+                }
+            `}</style>
+
+            <Container size="lg">
+                <Group
+                    justify="center"
+                    mb="md"
                 >
-                    Casos Reais de Transformação
-                </Badge>
-            </Group>
-
-            <Title
-                order={2}
-                ta="center"
-                mb="md"
-                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
-            >
-                Onde o Diagnóstico Virou Lucro
-            </Title>
-
-            <Text
-                c="dimmed"
-                ta="center"
-                mb={60}
-                maw={700}
-                mx="auto"
-                fz="lg"
-            >
-                Estes não são apenas projetos de software. São intervenções operacionais onde a tecnologia foi o último
-                passo de uma transformação profunda de resultados.
-            </Text>
-
-            <SimpleGrid
-                cols={{ base: 1, md: 2 }}
-                spacing="xl"
-            >
-                {useCases.map(useCase => (
-                    <Card
-                        key={useCase.id}
-                        radius="sm"
-                        padding="xl"
-                        style={{ backgroundColor: 'transparent' }}
+                    <Badge
+                        variant="dot"
+                        color="dark"
+                        size="lg"
                     >
-                        <Group
-                            mb="md"
-                            justify="space-between"
-                            align="center"
+                        Casos Reais de Transformação
+                    </Badge>
+                </Group>
+
+                <Title
+                    order={2}
+                    ta="center"
+                    mb="md"
+                    style={{ fontSize: 'clamp(32px, 5vw, 56px)', letterSpacing: '-0.04em' }}
+                >
+                    Onde o Diagnóstico Virou Lucro
+                </Title>
+
+                <Text
+                    c="dimmed"
+                    ta="center"
+                    mb={80}
+                    maw={700}
+                    mx="auto"
+                    fz="lg"
+                >
+                    Estes não são apenas projetos de software. São intervenções operacionais onde a tecnologia foi o
+                    último passo de uma transformação profunda de resultados.
+                </Text>
+
+                <SimpleGrid
+                    cols={{ base: 1, md: 2 }}
+                    spacing="xl"
+                >
+                    {useCases.map(useCase => (
+                        <Card
+                            key={useCase.id}
+                            className="usecase-card"
+                            radius="sm"
+                            padding="xl"
+                            bg="white"
+                            bd={`1px solid ${theme.colors.gray[2]}`}
                         >
-                            <ThemeIcon
-                                size={48}
-                                radius="sm"
-                                variant="light"
-                                color="gray"
+                            <Group
+                                mb="xl"
+                                justify="space-between"
+                                align="center"
                             >
-                                <useCase.icon
-                                    size={28}
-                                    stroke={1.5}
-                                />
-                            </ThemeIcon>
-                            <Badge
-                                size="sm"
-                                variant="dot"
-                                color="gray"
-                            >
-                                {useCase.badge}
-                            </Badge>
-                        </Group>
-
-                        <Title
-                            order={3}
-                            size="h3"
-                            fw={800}
-                            mb="sm"
-                            style={{ letterSpacing: '-0.02em' }}
-                        >
-                            {useCase.title}
-                        </Title>
-
-                        <Text
-                            size="sm"
-                            c="dimmed"
-                            mb="md"
-                            lh={1.6}
-                        >
-                            {useCase.description}
-                        </Text>
-
-                        <Text
-                            data-zen-subtitle="true"
-                            mb="sm"
-                        >
-                            Resultados:
-                        </Text>
-
-                        <List
-                            spacing="xs"
-                            size="sm"
-                            icon={
                                 <ThemeIcon
-                                    size={20}
-                                    radius="xl"
+                                    size={48}
+                                    radius="sm"
                                     variant="light"
                                     color="gray"
                                 >
-                                    <IconCheck
-                                        size={12}
+                                    <useCase.icon
+                                        size={28}
                                         stroke={1.5}
                                     />
                                 </ThemeIcon>
+                                <Badge
+                                    size="sm"
+                                    variant="dot"
+                                    color="gray"
+                                >
+                                    {useCase.badge}
+                                </Badge>
+                            </Group>
+
+                            <Title
+                                order={3}
+                                size="h3"
+                                fw={800}
+                                mb="sm"
+                                style={{ letterSpacing: '-0.02em', color: theme.black }}
+                            >
+                                {useCase.title}
+                            </Title>
+
+                            <Text
+                                size="md"
+                                c="dimmed"
+                                mb="xl"
+                                lh={1.6}
+                                style={{ flexGrow: 1 }}
+                            >
+                                {useCase.description}
+                            </Text>
+
+                            <Box style={{ borderTop: `1px solid ${theme.colors.gray[2]}`, paddingTop: '16px' }}>
+                                <Text
+                                    data-zen-subtitle="true"
+                                    mb="sm"
+                                >
+                                    Resultados:
+                                </Text>
+
+                                <List
+                                    spacing="xs"
+                                    size="sm"
+                                    icon={
+                                        <ThemeIcon
+                                            size={20}
+                                            radius="xl"
+                                            variant="light"
+                                            color="gray"
+                                        >
+                                            <IconCheck
+                                                size={12}
+                                                stroke={1.5}
+                                            />
+                                        </ThemeIcon>
+                                    }
+                                >
+                                    {useCase.benefits.map((benefit, idx) => (
+                                        <List.Item key={idx}>
+                                            <Text
+                                                fw={600}
+                                                c="dark"
+                                            >
+                                                {benefit}
+                                            </Text>
+                                        </List.Item>
+                                    ))}
+                                </List>
+                            </Box>
+                        </Card>
+                    ))}
+                </SimpleGrid>
+
+                <Box
+                    mt={100}
+                    ta="center"
+                >
+                    <Text
+                        data-zen-subtitle="true"
+                        mb="md"
+                        c="dark"
+                    >
+                        Pronto Para Ser o Próximo Estudo de Caso?
+                    </Text>
+                    <Group justify="center">
+                        <Button
+                            component="a"
+                            href={whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            size="xl"
+                            color="dark"
+                            radius="sm"
+                            className="cta-button"
+                            rightSection={
+                                <IconArrowRight
+                                    size={20}
+                                    stroke={2}
+                                />
                             }
                         >
-                            {useCase.benefits.map((benefit, idx) => (
-                                <List.Item key={idx}>{benefit}</List.Item>
-                            ))}
-                        </List>
-                    </Card>
-                ))}
-            </SimpleGrid>
-
-            <Group
-                justify="center"
-                mt={50}
-            >
-                <Button
-                    component="a"
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    size="lg"
-                    variant="outline"
-                    rightSection={
-                        <IconArrowRight
-                            size={18}
-                            stroke={1.5}
-                        />
-                    }
-                >
-                    Discutir Meu Caso
-                </Button>
-            </Group>
+                            Agendar Diagnóstico Estratégico
+                        </Button>
+                    </Group>
+                </Box>
+            </Container>
         </Box>
     )
 }
