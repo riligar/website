@@ -1,4 +1,4 @@
-import { Badge, Group, Title, Text, Card, SimpleGrid, Box, ThemeIcon, useMantineTheme } from '@mantine/core'
+import { Badge, Group, Title, Text, SimpleGrid, Box, ThemeIcon, Grid, Paper, useMantineTheme } from '@mantine/core'
 import { IconCloudComputing, IconChartBar, IconBrain, IconRobot, IconSparkles, IconShield } from '@tabler/icons-react'
 
 const mockdata = [
@@ -9,6 +9,7 @@ const mockdata = [
             'Leads de alto valor ignorados ou com follow-up tardio são faturamento jogado fora. Criamos sistemas que garantem atenção imediata onde importa, enquanto a IA cuida do resto.',
         icon: IconRobot,
         highlight: true,
+        span: 7,
     },
     {
         id: 'pipeline-cego',
@@ -16,6 +17,7 @@ const mockdata = [
         description:
             'Decidir no "feel" custa caro. Estabelecemos visibilidade total com dashboards de verdade, expondo exatamente onde o dinheiro está travado no seu fluxo.',
         icon: IconChartBar,
+        span: 5,
     },
     {
         id: 'produto-nao-escala',
@@ -23,6 +25,7 @@ const mockdata = [
         description:
             'Sistemas legados e processos manuais são o teto do seu lucro. Desenhamos infraestruturas que escalam conforme você cresce, sem surpresas de custo.',
         icon: IconCloudComputing,
+        span: 5,
     },
     {
         id: 'dados-manual',
@@ -30,6 +33,7 @@ const mockdata = [
         description:
             'Sua equipe deveria estar fechando negócios, não preenchendo planilhas. Automatizamos a extração e processamento de dados para liberar inteligência.',
         icon: IconSparkles,
+        span: 7,
     },
     {
         id: 'software-generico',
@@ -37,6 +41,7 @@ const mockdata = [
         description:
             'Tentar encaixar seu negócio único em uma ferramenta de prateleira é receita para o caos. Criamos soluções sob medida para o seu workflow específico.',
         icon: IconBrain,
+        span: 6,
     },
     {
         id: 'incerteza-tecnologia',
@@ -44,60 +49,66 @@ const mockdata = [
         description:
             'A tecnologia certa é aquela que resolve o problema agora. Diagnosticamos sua empresa e entregamos um roadmap pragmático focado em ROI.',
         icon: IconShield,
+        span: 6,
     },
 ]
 
 export default function Features() {
     const theme = useMantineTheme()
 
-    const features = mockdata.map(feature => (
-        <Card
+    const featuresList = mockdata.map(feature => (
+        <Grid.Col
             key={feature.id}
-            shadow="md"
-            radius="md"
-            padding="lg"
-            bg={feature.highlight ? 'gray.0' : 'white'}
-            bd={feature.highlight ? `2px solid ${theme.colors.gray[8]}` : `1px solid ${theme.colors.gray[2]}`}
-            style={{ transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)' }}
+            span={{ base: 12, md: feature.span }}
         >
-            {feature.highlight && (
-                <Badge
+            <Paper
+                p="xl"
+                radius="sm"
+                bg="gray.0"
+                bd={`1px solid ${theme.colors.gray[2]}`}
+                style={{ height: '100%', display: 'flex', flexDirection: 'column', position: 'relative' }}
+            >
+                {feature.highlight && (
+                    <Badge
+                        variant="filled"
+                        color="dark"
+                        size="sm"
+                        mb="xl"
+                        style={{ alignSelf: 'flex-start' }}
+                    >
+                        Ponto Crítico
+                    </Badge>
+                )}
+                <ThemeIcon
+                    size={50}
+                    radius="sm"
                     variant="light"
                     color="gray"
-                    size="sm"
-                    mb="sm"
+                    mb="xl"
                 >
-                    Solução Destaque
-                </Badge>
-            )}
-            <ThemeIcon
-                size={50}
-                radius="md"
-                variant="light"
-                color="gray"
-            >
-                <feature.icon
-                    size={30}
-                    stroke={1.5}
-                />
-            </ThemeIcon>
-            <Text
-                fz="lg"
-                fw={700}
-                mt="md"
-                c="dark"
-            >
-                {feature.title}
-            </Text>
-            <Text
-                fz="sm"
-                c="dimmed"
-                mt="sm"
-                lh={1.6}
-            >
-                {feature.description}
-            </Text>
-        </Card>
+                    <feature.icon
+                        size={30}
+                        stroke={1.5}
+                    />
+                </ThemeIcon>
+                <Text
+                    fz="xl"
+                    fw={800}
+                    mb="md"
+                    style={{ letterSpacing: '-0.02em', color: theme.black }}
+                >
+                    {feature.title}
+                </Text>
+                <Text
+                    fz="md"
+                    c="dimmed"
+                    lh={1.6}
+                    style={{ flexGrow: 1 }}
+                >
+                    {feature.description}
+                </Text>
+            </Paper>
+        </Grid.Col>
     ))
 
     return (
@@ -108,7 +119,7 @@ export default function Features() {
         >
             <Group justify="center">
                 <Badge
-                    variant="light"
+                    variant="dot"
                     color="gray"
                     size="lg"
                 >
@@ -120,7 +131,7 @@ export default function Features() {
                 order={2}
                 ta="center"
                 mt="md"
-                size={{ base: 28, sm: 32, md: 36 }}
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Estes Sintomas Parecem Familiares?
             </Title>
@@ -136,13 +147,12 @@ export default function Features() {
                 inflados. Nosso papel é diagnosticar, simplificar e lucrar.
             </Text>
 
-            <SimpleGrid
-                cols={{ base: 1, sm: 2, md: 3 }}
-                spacing="lg"
-                mt={50}
+            <Grid
+                gutter="xl"
+                mt={60}
             >
-                {features}
-            </SimpleGrid>
+                {featuresList}
+            </Grid>
         </Box>
     )
 }

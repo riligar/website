@@ -23,7 +23,7 @@ export default function ContactSection() {
                 mb="md"
             >
                 <Badge
-                    variant="light"
+                    variant="dot"
                     color="gray"
                     size="lg"
                 >
@@ -35,8 +35,7 @@ export default function ContactSection() {
                 order={2}
                 ta="center"
                 mb="md"
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Agende Sua Conversa de Diagnóstico
             </Title>
@@ -63,12 +62,13 @@ export default function ContactSection() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    size="lg"
+                    size="xl"
                     color="dark"
+                    radius="sm"
                     leftSection={
                         <IconBrandWhatsapp
                             size={20}
-                            stroke={1.5}
+                            stroke={2}
                         />
                     }
                 >

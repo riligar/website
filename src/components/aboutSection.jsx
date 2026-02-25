@@ -58,9 +58,12 @@ export default function AboutSection() {
             id="sobre"
             component="section"
             aria-label="About RiLiGar"
-            py={80}
-            bg="gray.0"
-            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
+            py={120}
+            bg="white"
+            style={{
+                borderTop: `1px solid ${theme.colors.gray[2]}`,
+                borderBottom: `1px solid ${theme.colors.gray[2]}`,
+            }}
         >
             <Container size="xl">
                 <Group
@@ -68,7 +71,7 @@ export default function AboutSection() {
                     mb="md"
                 >
                     <Badge
-                        variant="light"
+                        variant="dot"
                         color="gray"
                         size="lg"
                     >
@@ -80,8 +83,7 @@ export default function AboutSection() {
                     order={2}
                     ta="center"
                     mb="lg"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                    c="dark"
+                    style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
                 >
                     Diagnóstico Primeiro, Código Depois
                 </Title>
@@ -102,14 +104,12 @@ export default function AboutSection() {
 
                 {/* Founder Card */}
                 <Card
-                    radius="md"
+                    radius="sm"
                     padding="xl"
                     mb={50}
                     maw={600}
                     mx="auto"
-                    withBorder
-                    bg="white"
-                    bd={`1px solid ${theme.colors.gray[2]}`}
+                    style={{ backgroundColor: 'transparent' }}
                 >
                     <Group
                         align="flex-start"
@@ -138,7 +138,7 @@ export default function AboutSection() {
                                     Ciro Cesar Maciel
                                 </Text>
                                 <Badge
-                                    variant="light"
+                                    variant="dot"
                                     color="gray"
                                     size="sm"
                                 >
@@ -191,16 +191,13 @@ export default function AboutSection() {
                     {values.map(value => (
                         <Card
                             key={value.id}
-                            shadow="sm"
-                            padding="lg"
-                            radius="md"
-                            withBorder
-                            bg="white"
-                            bd={`1px solid ${theme.colors.gray[2]}`}
+                            padding="xl"
+                            radius="sm"
+                            style={{ backgroundColor: 'transparent' }}
                         >
                             <ThemeIcon
                                 size={40}
-                                radius="md"
+                                radius="sm"
                                 variant="light"
                                 color="gray"
                                 mb="md"
@@ -213,10 +210,10 @@ export default function AboutSection() {
 
                             <Title
                                 order={3}
-                                size="md"
-                                fw={700}
+                                size="h4"
+                                fw={800}
                                 mb="sm"
-                                c="dark"
+                                style={{ letterSpacing: '-0.02em' }}
                             >
                                 {value.title}
                             </Title>

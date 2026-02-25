@@ -37,8 +37,7 @@ export default function Stats() {
                 order={2}
                 ta="center"
                 mb={60}
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Resultados Mensuráveis, Não Promessas Vazias
             </Title>
@@ -51,29 +50,22 @@ export default function Stats() {
                     <Paper
                         key={index}
                         p="xl"
-                        radius="md"
-                        bg="gray.0"
-                        bd={`1px solid ${theme.colors.gray[2]}`}
+                        radius="sm"
                         style={{
                             textAlign: 'center',
-                            transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                            backgroundColor: 'transparent',
                         }}
                     >
                         <Text
-                            fz={48}
-                            fw={900}
-                            c="dark"
-                            mb="xs"
-                            lh={1}
+                            data-zen-metric="true"
+                            mb="sm"
                         >
                             {stat.value}
                         </Text>
 
                         <Text
-                            size="sm"
-                            fw={700}
+                            data-zen-subtitle="true"
                             mb="xs"
-                            c="dark"
                         >
                             {stat.label}
                         </Text>

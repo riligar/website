@@ -94,7 +94,7 @@ export default function UseCases() {
                 mb="md"
             >
                 <Badge
-                    variant="light"
+                    variant="dot"
                     color="gray"
                     size="lg"
                 >
@@ -106,8 +106,7 @@ export default function UseCases() {
                 order={2}
                 ta="center"
                 mb="md"
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Onde o Diagnóstico Virou Lucro
             </Title>
@@ -131,11 +130,9 @@ export default function UseCases() {
                 {useCases.map(useCase => (
                     <Card
                         key={useCase.id}
-                        radius="md"
+                        radius="sm"
                         padding="xl"
-                        withBorder
-                        bg="white"
-                        bd={`1px solid ${theme.colors.gray[2]}`}
+                        style={{ backgroundColor: 'transparent' }}
                     >
                         <Group
                             mb="md"
@@ -144,7 +141,7 @@ export default function UseCases() {
                         >
                             <ThemeIcon
                                 size={48}
-                                radius="md"
+                                radius="sm"
                                 variant="light"
                                 color="gray"
                             >
@@ -155,7 +152,7 @@ export default function UseCases() {
                             </ThemeIcon>
                             <Badge
                                 size="sm"
-                                variant="light"
+                                variant="dot"
                                 color="gray"
                             >
                                 {useCase.badge}
@@ -164,10 +161,10 @@ export default function UseCases() {
 
                         <Title
                             order={3}
-                            size="lg"
-                            fw={700}
+                            size="h3"
+                            fw={800}
                             mb="sm"
-                            c="dark"
+                            style={{ letterSpacing: '-0.02em' }}
                         >
                             {useCase.title}
                         </Title>
@@ -182,10 +179,8 @@ export default function UseCases() {
                         </Text>
 
                         <Text
-                            size="sm"
-                            fw={700}
-                            mb="xs"
-                            c="dark"
+                            data-zen-subtitle="true"
+                            mb="sm"
                         >
                             Resultados:
                         </Text>

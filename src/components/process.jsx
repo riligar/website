@@ -57,9 +57,12 @@ export default function Process() {
         <Box
             component="section"
             aria-label="Our development process"
-            py={80}
-            bg="gray.0"
-            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
+            py={120}
+            bg="white"
+            style={{
+                borderTop: `1px solid ${theme.colors.gray[2]}`,
+                borderBottom: `1px solid ${theme.colors.gray[2]}`,
+            }}
         >
             <Container size="xl">
                 <Group
@@ -79,8 +82,7 @@ export default function Process() {
                     order={2}
                     ta="center"
                     mb="md"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                    c="dark"
+                    style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
                 >
                     De Gargalos Invisíveis a Resultados Mensuráveis
                 </Title>
@@ -106,21 +108,19 @@ export default function Process() {
                             pos="relative"
                         >
                             <Text
-                                fz={72}
-                                fw={900}
+                                data-zen-metric="true"
                                 pos="absolute"
-                                top={-24}
+                                top={-40}
                                 left={0}
-                                c="gray.2"
-                                lh={1}
-                                style={{ zIndex: 0, opacity: 0.5 }}
+                                c="gray.1"
+                                style={{ zIndex: 0, fontSize: '120px' }} // massive size for bg number
                             >
                                 {step.number}
                             </Text>
 
                             <ThemeIcon
                                 size={60}
-                                radius="md"
+                                radius="sm"
                                 variant="light"
                                 color="gray"
                                 mb="md"
@@ -135,10 +135,10 @@ export default function Process() {
 
                             <Title
                                 order={3}
-                                size="lg"
-                                fw={700}
+                                size="h3"
+                                fw={800}
                                 mb="xs"
-                                c="dark"
+                                style={{ letterSpacing: '-0.02em', zIndex: 1, position: 'relative' }}
                             >
                                 {step.title}
                             </Title>

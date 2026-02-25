@@ -78,7 +78,7 @@ export default function PricingModel() {
                 mb="md"
             >
                 <Badge
-                    variant="light"
+                    variant="dot"
                     color="gray"
                     size="lg"
                 >
@@ -90,8 +90,7 @@ export default function PricingModel() {
                 order={2}
                 ta="center"
                 mb="md"
-                size={{ base: 28, sm: 32, md: 36 }}
-                c="dark"
+                style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
             >
                 Modelos Que Respeitam Seu Fluxo de Caixa
             </Title>
@@ -116,14 +115,15 @@ export default function PricingModel() {
                     <Paper
                         key={phase.id}
                         p="xl"
-                        radius="md"
-                        bg="white"
-                        bd={`1px solid ${theme.colors.gray[2]}`}
-                        style={{ transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)' }}
+                        radius="sm"
+                        style={{
+                            backgroundColor: 'transparent',
+                            transition: 'transform 0.2s cubic-bezier(0.4, 0, 0.2, 1)',
+                        }}
                     >
                         <ThemeIcon
                             size={48}
-                            radius="md"
+                            radius="sm"
                             variant="light"
                             color="gray"
                             mb="md"
@@ -135,20 +135,17 @@ export default function PricingModel() {
                         </ThemeIcon>
 
                         <Text
-                            size="xl"
-                            fw={700}
+                            size="h3"
+                            fw={800}
                             mb={4}
-                            c="dark"
+                            style={{ letterSpacing: '-0.02em' }}
                         >
                             {phase.title}
                         </Text>
 
                         <Text
-                            size="sm"
-                            c="dimmed"
-                            fw={600}
+                            data-zen-subtitle="true"
                             mb="md"
-                            tt="uppercase"
                         >
                             {phase.subtitle}
                         </Text>
@@ -188,19 +185,15 @@ export default function PricingModel() {
             </SimpleGrid>
 
             <Paper
-                mt={40}
+                mt={80} // Zen: mais padding
                 p="xl"
-                radius="md"
-                bg="gray.0"
-                bd={`1px solid ${theme.colors.gray[2]}`}
-                style={{ textAlign: 'center' }}
+                radius="sm"
+                style={{ textAlign: 'center', backgroundColor: 'transparent' }}
             >
                 <Title
                     order={3}
-                    size="lg"
-                    fw={700}
+                    style={{ fontSize: 'clamp(24px, 3vw, 36px)', letterSpacing: '-0.02em' }}
                     mb="xs"
-                    c="dark"
                 >
                     Focado em ROI, Indiferente ao Tamanho
                 </Title>

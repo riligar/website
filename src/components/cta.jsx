@@ -12,18 +12,19 @@ export default function CTA() {
         <Box
             component="section"
             aria-label="Call to action"
-            py={80}
-            bg="gray.0"
-            bd={{ top: `1px solid ${theme.colors.gray[2]}`, bottom: `1px solid ${theme.colors.gray[2]}` }}
+            py={120}
+            bg="white"
+            style={{
+                borderTop: `1px solid ${theme.colors.gray[2]}`,
+                borderBottom: `1px solid ${theme.colors.gray[2]}`,
+            }}
         >
             <Container size="md">
                 <Title
                     order={2}
-                    size={40}
-                    fw={900}
-                    lh={1.1}
                     ta="center"
                     mb="xl"
+                    style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em', lineHeight: 1.1 }}
                 >
                     Seu Próximo Nível Operacional Começa Com Uma Conversa de 30 Minutos.
                 </Title>
@@ -47,9 +48,9 @@ export default function CTA() {
                     <Button
                         component="a"
                         href="/#contato"
-                        size="xl"
-                        variant="outline"
-                        c="dark"
+                        size="xl" // Big hit area
+                        variant="default" // subtlety rules
+                        radius="sm"
                         leftSection={<IconCalendar size={20} />}
                     >
                         Agendar Diagnóstico Gratuito →
@@ -73,15 +74,12 @@ export default function CTA() {
                     spacing="xl"
                 >
                     <Box ta="center">
-                        <Title
-                            order={3}
-                            size="h1"
-                            fw={900}
-                            c="dark"
+                        <Text
+                            data-zen-metric="true"
                             mb={4}
                         >
                             4+
-                        </Title>
+                        </Text>
                         <Text
                             size="sm"
                             c="dimmed"
@@ -92,15 +90,13 @@ export default function CTA() {
                         </Text>
                     </Box>
                     <Box ta="center">
-                        <Title
-                            order={3}
-                            size="h1"
-                            fw={900}
-                            c="dark"
+                        <Text
+                            data-zen-metric="true"
                             mb={4}
+                            style={{ fontSize: 'clamp(32px, 5vw, 64px)' }} // override for longer text
                         >
-                            2-3 Semanas
-                        </Title>
+                            2-3 Sem
+                        </Text>
                         <Text
                             size="sm"
                             c="dimmed"
@@ -111,15 +107,12 @@ export default function CTA() {
                         </Text>
                     </Box>
                     <Box ta="center">
-                        <Title
-                            order={3}
-                            size="h1"
-                            fw={900}
-                            c="dark"
+                        <Text
+                            data-zen-metric="true"
                             mb={4}
                         >
                             24/7
-                        </Title>
+                        </Text>
                         <Text
                             size="sm"
                             c="dimmed"
