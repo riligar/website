@@ -21,344 +21,120 @@ const solutions = [
         id: 'https://myauth.click/',
         title: 'Auth',
         description:
-            'Auth é a maneira mais fácil de adicionar autenticação e gerenciamento de usuários aos seus aplicativos.',
-        image: 'https://myauth.click/images/opengraph.webp',
-        tags: ['Web', 'autenticação', 'gerenciamento', 'usuários', 'segurança'],
+            'A maneira mais simples de adicionar autenticação robusta e gerenciamento de usuários aos seus aplicativos.',
+        tags: ['Web', 'Autenticação', 'Segurança'],
+        span: 7,
     },
     {
         id: 'https://mypages.click/',
         title: 'Pages',
-        description: 'A forma mais rápida de colocar sua oferta no ar com performance e design premium.',
-        image: 'https://mypages.click/images/opengraph.webp',
-        tags: ['Web', 'pages', 'gerenciamento', 'usuários', 'segurança'],
+        description: 'Coloque sua oferta no ar instantaneamente com performance extrema e design premium.',
+        tags: ['Web', 'Landing Pages', 'Conversão'],
+        span: 5,
     },
     {
         id: 'https://myblogs.click/',
         title: 'Blogs',
-        description: 'Blogs é a maneira mais fácil de criar e gerenciar seus blogs.',
-        image: 'https://myblogs.click/images/opengraph.webp',
-        tags: ['Web', 'blogs', 'gerenciamento', 'usuários', 'segurança'],
+        description: 'Gestão de conteúdo simplificada para escalar a atração orgânica do seu negócio.',
+        tags: ['CMS', 'Conteúdo', 'SEO'],
+        span: 5,
     },
     {
         id: 'https://myflows.click/',
         title: 'Flows',
         description:
-            'O Flows é a central de comando da sua operação. Capture sinais dos seus clientes e reaja instantaneamente — sem TI ou infraestruturas complexas.',
-        image: 'https://myflows.click/open-graph.webp',
-        tags: ['Web', 'fluxos', 'automação', 'workflows', 'produtividade'],
+            'O hub central da sua operação. Capture sinais e automatize reações instantâneas, sem precisar de infraestrutura complexa.',
+        tags: ['Automação', 'Workflows', 'Produtividade'],
+        span: 7,
     },
     {
         id: 'https://myfeeds.click/',
         title: 'Feeds',
         description:
-            'O Feeds é o primeiro orquestrador de Onipresença Digital. Escreva uma única ideia e deixe nossa engenharia híbrida distribuir sua voz em todos os lugares, enquanto você foca no que realmente importa: seu negócio.',
-        image: 'https://myfeeds.click/images/opengraph.webp',
-        tags: ['Web', 'feeds', 'orquestrador', 'onipresença', 'digital'],
+            'Nosso orquestrador de onipresença. Escreva uma vez, distribua em todos os canais e domine o seu espaço de atenção enquanto ganha tempo.',
+        tags: ['Distribuição', 'Marketing', 'Omnichannel'],
+        span: 12,
     },
-    // {
-    //     id: 'https://s3-explorer.ciromaciel.click/',
-    //     title: 'S3 Explorer',
-    //     description:
-    //         'Explorer para arquivos no S3 com suporte a múltiplos idiomas e vozes naturais. Converta qualquer texto em áudio de alta qualidade instantaneamente.',
-    //     image: 'https://s3-explorer.ciromaciel.click/images/opengraph.jpg',
-    //     tags: ['Web', 'BI', 'S3', 'AWS'],
-    // },
-    // {
-    //     id: 'https://web-to-ai.ciromaciel.click/',
-    //     title: 'Web to AI',
-    //     description:
-    //         'A tarefa de extrair e limpar conteúdo de sites para treinar modelos de IA sempre foi um processo manual e demorado, cheio de ruídos como anúncios, menus e scripts. Para resolver essa dor, desenvolvi o Web to AI, uma ferramenta que personifica minha filosofia de desenvolvimento: criar soluções de alta performance, com custo zero e código enxuto.',
-    //     image: 'https://web-to-ai.ciromaciel.click/images/opengraph.jpg',
-    //     tags: ['Web', 'WhatsApp', 'IA', 'LLM', 'API'],
-    // },
-    // {
-    //     id: 'https://bookmarks.ciromaciel.click/',
-    //     title: 'Bookmarks',
-    //     description:
-    //         'Transforme sua experiência de navegação com Bookmarks. Organize seus links de maneira inteligente e liberte-se da confusão digital. Experimente agora e descubra como Bookmarks pode simplificar sua vida online!',
-    //     image: 'https://bookmarks.ciromaciel.click/pt-BR/opengraph-image-s0b55b?673f97125d969340',
-    //     tags: ['Web', 'organização', 'links', 'bookmark'],
-    // },
 ]
 
-function SolutionCard({ solution, reversed }) {
-    const theme = useMantineTheme()
-
-    const content = (
-        <Stack
-            gap="sm"
-            style={{ flex: 1 }}
-        >
-            <Title
-                order={3}
-                size="h3"
-                fw={800}
-                c="dark"
-            >
-                {solution.title}
-            </Title>
-            <Text
-                fz="sm"
-                c="dimmed"
-                lh={1.6}
-            >
-                {solution.description}
-            </Text>
-            <Group
-                gap="xs"
-                mt="xs"
-            >
-                {solution.tags.map(tag => (
-                    <Badge
-                        key={tag}
-                        variant="light"
-                        color="gray"
-                        size="sm"
-                    >
-                        {tag}
-                    </Badge>
-                ))}
-            </Group>
-            <Button
-                component="a"
-                href={solution.id}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="outline"
-                size="sm"
-                mt="md"
-                w="fit-content"
-                rightSection={
-                    <IconExternalLink
-                        size={16}
-                        stroke={1.5}
-                    />
-                }
-            >
-                Conhecer Solução
-            </Button>
-        </Stack>
-    )
-
-    const image = (
-        <Box style={{ flex: 1 }}>
-            <Image
-                src={solution.image}
-                alt={solution.title}
-                radius="md"
-                style={{
-                    filter: 'grayscale(0.1)',
-                }}
-                bd={`1px solid ${theme.colors.gray[2]}`}
-                fallbackSrc="https://placehold.co/400x300?text=Solução"
-            />
-        </Box>
-    )
-
-    return (
-        <Box
-            p={{ base: 'md', md: 'xl' }}
-            bg="white"
-            radius="md"
-            bd={`1px solid ${theme.colors.gray[2]}`}
-        >
-            <Flex
-                direction={{ base: 'column', md: reversed ? 'row-reverse' : 'row' }}
-                gap={{ base: 'lg', md: 'xl' }}
-                align="center"
-            >
-                {reversed ? (
-                    <>
-                        {image}
-                        {content}
-                    </>
-                ) : (
-                    <>
-                        {content}
-                        {image}
-                    </>
-                )}
-            </Flex>
-        </Box>
-    )
-}
-
 function SolutionsHero() {
-    const whatsappMessage = encodeURIComponent(
-        'Olá! Tenho interesse em conhecer as soluções da RiLiGar. Gostaria de agendar uma conversa de diagnóstico.'
-    )
-    const whatsappLink = `https://wa.me/5511986166966?text=${whatsappMessage}`
-
     return (
         <Box
             component="section"
             aria-label="Soluções Hero"
-            mt={80}
-            mb={80}
+            mt={{ base: 40, md: 120 }}
+            mb={{ base: 40, md: 120 }}
+            style={{ textAlign: 'center' }}
         >
             <Grid
                 align="center"
-                gutter={60}
+                gutter="xl"
             >
                 <Grid.Col
-                    span={{ base: 12, sm: 6, md: 7 }}
-                    order={{ base: 2, sm: 2, md: 1 }}
+                    span={12}
+                    order={1}
                 >
+                    <Text
+                        data-zen-subtitle="true"
+                        mb="xl"
+                    >
+                        Nossos Produtos
+                    </Text>
                     <Title
                         order={1}
-                        size={40}
-                        lh={1.1}
-                        fw={900}
-                        c="dark"
+                        component="h1"
+                        style={{
+                            fontSize: 'clamp(40px, 6vw, 72px)',
+                            lineHeight: 1,
+                            textWrap: 'balance',
+                            letterSpacing: '-0.04em',
+                        }}
+                        mx="auto"
+                        maw={900}
                     >
                         Sistemas Que Pagam a Si Mesmos.
                     </Title>
                     <Text
                         size="xl"
-                        c="dimmed"
+                        c="gray.6"
                         mt="xl"
-                        lh={1.6}
+                        mx="auto"
+                        maw={700}
+                        style={{ fontWeight: 500, lineHeight: 1.6 }}
                     >
                         Não focamos em funcionalidades isoladas. Construímos ativos operacionais que atacam gargalos
                         específicos, aumentam seu ROI e preparam seu negócio para a escala sem caos.
                     </Text>
 
-                    <List
-                        mt={40}
-                        spacing="sm"
-                        size="md"
-                        icon={
-                            <ThemeIcon
-                                size={28}
-                                radius="xl"
-                                variant="light"
-                                color="gray"
-                            >
-                                <IconCheck
-                                    size={16}
-                                    stroke={1.5}
-                                />
-                            </ThemeIcon>
-                        }
-                    >
-                        <List.Item>
-                            <Text
-                                fw={700}
-                                component="span"
-                                c="dark"
-                            >
-                                Diagnóstico Antes de Tudo
-                            </Text>
-                            <Text
-                                c="dimmed"
-                                size="sm"
-                            >
-                                Identificamos onde está o problema antes de propor qualquer solução
-                            </Text>
-                        </List.Item>
-                        <List.Item>
-                            <Text
-                                fw={700}
-                                component="span"
-                                c="dark"
-                            >
-                                Resultados Mensuráveis
-                            </Text>
-                            <Text
-                                c="dimmed"
-                                size="sm"
-                            >
-                                Não vendemos tecnologia — vendemos ROI comprovado e impacto real
-                            </Text>
-                        </List.Item>
-                        <List.Item>
-                            <Text
-                                fw={700}
-                                component="span"
-                                c="dark"
-                            >
-                                Soluções Sob Medida
-                            </Text>
-                            <Text
-                                c="dimmed"
-                                size="sm"
-                            >
-                                Cada negócio é único — e a solução também precisa ser
-                            </Text>
-                        </List.Item>
-                    </List>
-
-                    <Flex
-                        direction={{ base: 'column', sm: 'row' }}
-                        mt={50}
-                        gap="md"
+                    <Group
+                        mt={60}
+                        gap="lg"
+                        justify="center"
                     >
                         <Button
                             onClick={() => {
-                                // Se já está na home, faz scroll direto
                                 if (window.location.pathname === '/') {
                                     const element = document.getElementById('contato')
                                     if (element) {
                                         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                                     }
                                 } else {
-                                    // Navega para home com hash
                                     window.location.href = '/#contato'
                                 }
                             }}
-                            size="lg"
+                            size="xl"
+                            color="dark"
+                            radius="sm"
                             leftSection={
                                 <IconRocket
                                     size={20}
-                                    stroke={1.5}
+                                    stroke={2}
                                 />
                             }
-                            w={{ base: '100%', sm: 'auto' }}
                         >
                             Quero um Diagnóstico
                         </Button>
-                        {/* <Button
-                            component="a"
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            size="lg"
-                            variant="outline"
-                            leftSection={
-                                <IconMessageCircle
-                                    size={20}
-                                    stroke={1.5}
-                                />
-                            }
-                            w={{ base: '100%', sm: 'auto' }}
-                        >
-                            Falar no WhatsApp
-                        </Button> */}
-                    </Flex>
-                </Grid.Col>
-
-                <Grid.Col
-                    span={{ base: 12, sm: 6, md: 5 }}
-                    order={{ base: 1, sm: 1, md: 2 }}
-                >
-                    <Box
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            height: '100%',
-                        }}
-                    >
-                        <Image
-                            src="/images/solutions-hero.webp"
-                            alt="Soluções RiLiGar"
-                            radius="lg"
-                            w="100%"
-                            h="100%"
-                            fit="cover"
-                            fallbackSrc="https://placehold.co/500x400?text=Soluções"
-                        />
-                    </Box>
+                    </Group>
                 </Grid.Col>
             </Grid>
         </Box>
@@ -366,33 +142,40 @@ function SolutionsHero() {
 }
 
 export default function Solutions() {
+    const theme = useMantineTheme()
+
     return (
         <Box
             bg="white"
-            py={80}
             id="solucoes-page"
         >
             <Container size="xl">
-                {/* Hero Section - Similar ao da Home */}
+                {/* Hero Section */}
                 <SolutionsHero />
+            </Container>
 
-                {/* Solutions Cards - Layout Original */}
-                <Box
-                    component="section"
-                    id="solucoes"
-                    aria-label="Nossas Soluções"
-                    py={80}
-                >
+            <Box
+                component="section"
+                id="solucoes"
+                aria-label="Nossas Soluções"
+                py={120}
+                style={{
+                    borderTop: `1px solid ${theme.colors.gray[2]}`,
+                    // borderBottom: `1px solid ${theme.colors.gray[2]}`,
+                }}
+                bg="gray.0"
+            >
+                <Container size="lg">
                     <Group
                         justify="center"
                         mb="md"
                     >
                         <Badge
-                            variant="light"
-                            color="gray"
+                            variant="dot"
+                            color="dark"
                             size="lg"
                         >
-                            Nossas Soluções
+                            Ecossistema
                         </Badge>
                     </Group>
 
@@ -400,8 +183,7 @@ export default function Solutions() {
                         order={2}
                         ta="center"
                         mb="md"
-                        size={{ base: 28, sm: 32, md: 36 }}
-                        c="dark"
+                        style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
                     >
                         Transformação Real Para Seu Negócio
                     </Title>
@@ -409,7 +191,7 @@ export default function Solutions() {
                     <Text
                         c="dimmed"
                         ta="center"
-                        mb={60}
+                        mb={80}
                         maw={800}
                         mx="auto"
                         fz="lg"
@@ -420,21 +202,87 @@ export default function Solutions() {
                         competitivas.
                     </Text>
 
-                    <Stack
-                        gap="xl"
-                        maw={1000}
-                        mx="auto"
-                    >
-                        {solutions.map((solution, index) => (
-                            <SolutionCard
-                                key={solution.id}
-                                solution={solution}
-                                reversed={index % 2 === 1}
-                            />
+                    <Grid gutter="xl">
+                        {solutions.map(item => (
+                            <Grid.Col
+                                key={item.id}
+                                span={{ base: 12, md: item.span }}
+                            >
+                                <Box
+                                    p="xl"
+                                    bg="white"
+                                    bd={`1px solid ${theme.colors.gray[2]}`}
+                                    style={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                                >
+                                    <Title
+                                        order={3}
+                                        size="h2"
+                                        fw={800}
+                                        mb="md"
+                                        style={{ letterSpacing: '-0.02em', color: theme.black }}
+                                    >
+                                        {item.title}
+                                    </Title>
+
+                                    <Text
+                                        size="md"
+                                        c="dimmed"
+                                        lh={1.6}
+                                        mb="xl"
+                                        style={{ flexGrow: 1 }}
+                                    >
+                                        {item.description}
+                                    </Text>
+
+                                    <Box mb="xl">
+                                        <Group gap="xs">
+                                            {item.tags.map(tag => (
+                                                <Badge
+                                                    key={tag}
+                                                    variant="light"
+                                                    color="gray"
+                                                    size="sm"
+                                                    radius="sm"
+                                                >
+                                                    {tag}
+                                                </Badge>
+                                            ))}
+                                        </Group>
+                                    </Box>
+
+                                    <Button
+                                        component="a"
+                                        href={item.id}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        variant="default"
+                                        size="md"
+                                        radius="sm"
+                                        w="fit-content"
+                                        rightSection={
+                                            <IconExternalLink
+                                                size={16}
+                                                stroke={1.5}
+                                            />
+                                        }
+                                        style={{
+                                            borderTop: `1px solid ${theme.colors.gray[2]}`,
+                                            width: '100%',
+                                            justifyContent: 'space-between',
+                                            border: 'none',
+                                            borderTop: `1px solid ${theme.colors.gray[2]}`,
+                                            paddingTop: '16px',
+                                            marginTop: 'auto',
+                                        }}
+                                    >
+                                        Conhecer a Ferramenta
+                                    </Button>
+                                </Box>
+                            </Grid.Col>
                         ))}
-                    </Stack>
-                </Box>
-            </Container>
+                    </Grid>
+                </Container>
+            </Box>
         </Box>
     )
 }

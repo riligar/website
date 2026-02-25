@@ -45,7 +45,7 @@ export default function Faq() {
                     mb="md"
                 >
                     <Badge
-                        variant="light"
+                        variant="dot"
                         color="gray"
                         size="lg"
                     >
@@ -57,10 +57,9 @@ export default function Faq() {
                     order={2}
                     ta="center"
                     mb="md"
-                    size={{ base: 28, sm: 32, md: 36 }}
-                    c="dark"
+                    style={{ fontSize: 'clamp(28px, 4vw, 48px)', letterSpacing: '-0.04em' }}
                 >
-                    Respostas Diretas Para Dúvidas Honestamente Céticas
+                    Respostas Diretas para Dúvidas Honestamente Céticas
                 </Title>
 
                 <Text
@@ -76,28 +75,45 @@ export default function Faq() {
 
                 <Accordion
                     variant="separated"
-                    radius="md"
+                    radius="sm"
+                    styles={{
+                        item: {
+                            backgroundColor: theme.colors.gray[0],
+                            border: `1px solid ${theme.colors.gray[2]}`,
+                            '&[data-active]': {
+                                backgroundColor: theme.white,
+                                borderColor: theme.black,
+                            },
+                        },
+                        control: {
+                            padding: theme.spacing.xl,
+                        },
+                        label: {
+                            fontWeight: 800,
+                            color: theme.black,
+                            fontSize: theme.fontSizes.lg,
+                            letterSpacing: '-0.01em',
+                        },
+                        content: {
+                            padding: theme.spacing.xl,
+                            paddingTop: 0,
+                        },
+                    }}
                 >
                     {faqs.map(item => (
                         <Accordion.Item
                             key={item.id}
                             value={item.id}
                         >
-                            <Accordion.Control>
-                                <Text
-                                    fw={600}
-                                    c="dark"
-                                >
-                                    {item.question}
-                                </Text>
-                            </Accordion.Control>
+                            <Accordion.Control>{item.question}</Accordion.Control>
                             <Accordion.Panel>
                                 <Text
-                                    size="sm"
+                                    size="md"
                                     c="dimmed"
                                     lh={1.6}
-                                    dangerouslySetInnerHTML={{ __html: item.answer }}
-                                />
+                                >
+                                    {item.answer}
+                                </Text>
                             </Accordion.Panel>
                         </Accordion.Item>
                     ))}

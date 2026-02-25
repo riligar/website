@@ -12,8 +12,8 @@ const data = [
         title: 'Entregamos',
         links: [
             { id: 'solutions', label: 'Soluções', link: '/solutions' },
-            { id: 'diagnostico', label: 'Diagnóstico', link: '/#quem-somos' },
-            { id: 'redesenho', label: 'Redesenho', link: '/#quem-somos' },
+            { id: 'diagnostico', label: 'Diagnóstico', link: '/#sobre' },
+            { id: 'redesenho', label: 'Redesenho', link: '/#sobre' },
             { id: 'resultados', label: 'Resultados', link: '/#casos-impacto' },
             { id: 'parceria', label: 'Parceria', link: '/#contato' },
         ],
@@ -22,7 +22,7 @@ const data = [
         id: 'company',
         title: 'Empresa',
         links: [
-            { id: 'about', label: 'Sobre Nós', link: '/#quem-somos' },
+            { id: 'about', label: 'Sobre Nós', link: '/#sobre' },
             { id: 'contact', label: 'Contato', link: '/#contato' },
             { id: 'branding', label: 'Branding', link: '/branding' },
             { id: 'llms', label: 'LLMs.txt', link: 'https://riligar.click/llms.txt' },

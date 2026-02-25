@@ -48,7 +48,7 @@ export default function Page() {
             <Comparison />
             <Testimonials />
             <AboutSection />
-            <CTA />
+            {/* <CTA /> */}
             <Faq />
             <ContactSection />
         </Layout>
