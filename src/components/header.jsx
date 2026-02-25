@@ -189,6 +189,12 @@ export default function HeaderMegaMenu() {
                             <UnstyledButton
                                 component="a"
                                 href="/"
+                                onClick={e => {
+                                    if (window.location.pathname === '/') {
+                                        e.preventDefault()
+                                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                                    }
+                                }}
                                 style={{ display: 'flex', alignItems: 'center' }}
                             >
                                 <Image
